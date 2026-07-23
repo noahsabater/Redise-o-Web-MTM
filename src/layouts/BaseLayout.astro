@@ -11,6 +11,8 @@ interface Props {
   ogImage?: string;
   /** true en páginas con hero a pantalla completa: el header se superpone transparente */
   transparentHeader?: boolean;
+  /** true en páginas de fondo oscuro: el header adopta la variante oscura */
+  darkHeader?: boolean;
 }
 
 const {
@@ -18,6 +20,7 @@ const {
   description = site.description,
   ogImage = '/og-default.jpg',
   transparentHeader = false,
+  darkHeader = false,
 } = Astro.props;
 
 const pageTitle = title ? `${title} · ${site.shortName}` : `${site.name} · Materiales premium`;
@@ -66,7 +69,7 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
 
   <body>
     <a href="#main" class="skip-link">Saltar al contenido</a>
-    <Header transparent={transparentHeader} />
+    <Header transparent={transparentHeader} dark={darkHeader} />
     <main id="main" class:list={['page-main', { 'has-hero': transparentHeader }]}>
       <slot />
     </main>

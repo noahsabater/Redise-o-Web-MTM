@@ -8,8 +8,10 @@ import { site } from '../../data/site';
 interface Props {
   /** true = header transparente superpuesto sobre el hero (se vuelve sólido al hacer scroll) */
   transparent?: boolean;
+  /** true = variante oscura, para páginas con fondo negro */
+  dark?: boolean;
 }
-const { transparent = false } = Astro.props;
+const { transparent = false, dark = false } = Astro.props;
 
 // Menú completo (overlay a pantalla completa que abre el logo)
 const menuItems = [
@@ -24,7 +26,10 @@ const menuItems = [
 ];
 ---
 
-<header class:list={['site-header', { 'is-transparent': transparent, 'is-solid': !transparent }]} data-transparent={transparent}>
+<header
+  class:list={['site-header', { 'is-transparent': transparent, 'is-solid': !transparent, 'is-dark': dark }]}
+  data-transparent={transparent}
+>
   <div class="container-mtm">
     <nav class="nav" aria-label="Navegación principal">
       <ul class="nav-group nav-left">
@@ -188,6 +193,16 @@ const menuItems = [
 
   .site-header.is-transparent { --nav-fg: #f4f4f2; }
   .site-header.is-solid { --nav-fg: var(--color-ink); }
+
+  /* Variante oscura: para páginas con fondo negro, el header se funde con
+     ellas en vez de cortarlas con una barra clara. */
+  .site-header.is-dark.is-solid {
+    background: color-mix(in srgb, var(--color-carbon) 88%, transparent);
+    border-bottom-color: rgba(244, 244, 242, 0.12);
+    --nav-fg: var(--color-paper);
+  }
+  .site-header.is-dark.is-solid .brand-white { opacity: 1; }
+  .site-header.is-dark.is-solid .brand-dark { opacity: 0; }
 
   .brand { display: flex; justify-content: center; align-items: center; position: relative; cursor: pointer; }
   .brand-img { height: 30px; width: auto; transition: opacity 0.5s var(--ease-soft); }

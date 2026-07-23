@@ -1,10 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import p1 from '../../assets/proyectos/aplicaciones-01.webp';
-import p2 from '../../assets/proyectos/aplicaciones-02.webp';
-import p3 from '../../assets/proyectos/aplicaciones-03.webp';
-import p4 from '../../assets/proyectos/aplicaciones-04.webp';
-import p5 from '../../assets/proyectos/aplicaciones-05.webp';
+import p1 from '../../assets/proyectos/pf-tixol-nature.png';
+import p2 from '../../assets/proyectos/pf-oxitec.png';
+import p3 from '../../assets/proyectos/pf-nature-wall.png';
+import p4 from '../../assets/proyectos/pf-microcemento.png';
+import p5 from '../../assets/proyectos/pf-epoxi.png';
 
 const shots = [
   { image: p1, name: 'Tixol Nature', place: 'Pavimento continuo' },
@@ -15,57 +15,216 @@ const shots = [
 ];
 ---
 
-<section class="pf section">
+<section class="pf">
   <div class="container-mtm">
     <div class="pf-head reveal">
       <div>
         <span class="label label--tick">Proyectos</span>
         <h2 class="pf-title">El resultado de elegir bien</h2>
       </div>
-      <p class="pf-sub">Echa un vistazo a cómo nuestros productos transforman espacios reales.</p>
+      <div class="pf-head-r">
+        <p class="pf-sub">Echa un vistazo a cómo nuestros productos transforman espacios reales.</p>
+        <div class="pf-nav">
+          <button class="pf-arrow" type="button" data-pf-prev aria-label="Anterior" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+          </button>
+          <button class="pf-arrow" type="button" data-pf-next aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="pf-scroller">
-      {shots.map((s, i) => (
-        <figure class="pf-item reveal" style={`--reveal-delay: ${i * 70}ms`}>
+  <div class="pf-scroller" data-pf-scroller data-lenis-prevent>
+    {shots.map((s, i) => (
+      <figure class="pf-item reveal" style={`--reveal-delay: ${i * 70}ms`}>
+        <div class="pf-card">
           <div class="pf-media">
-            <Image src={s.image} alt={`${s.name} — ${s.place}`} widths={[480, 820]} sizes="(max-width: 880px) 80vw, 30vw" class="pf-img" />
+            <Image src={s.image} alt={`${s.name} — ${s.place}`} widths={[480, 700, 1000]} sizes="(max-width: 880px) 72vw, 26vw" class="pf-img" />
+            <div class="pf-scrim"></div>
+            <figcaption class="pf-cap">
+              <span class="pf-name">{s.name}</span>
+              <span class="pf-place">{s.place}</span>
+            </figcaption>
           </div>
-          <figcaption class="pf-cap">
-            <span class="pf-name">{s.name}</span>
-            <span class="pf-place">{s.place}</span>
-          </figcaption>
-        </figure>
-      ))}
-    </div>
+        </div>
+      </figure>
+    ))}
   </div>
 </section>
 
 <style>
+  .pf {
+    background: var(--color-carbon);
+    color: var(--color-paper);
+    padding-block: clamp(3.5rem, 8vw, 7rem);
+    overflow: hidden;
+  }
+
   .pf-head {
     display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end;
-    gap: 1.5rem; margin-bottom: clamp(2.2rem, 4vw, 3.2rem);
+    gap: 1.5rem; margin-bottom: clamp(2.5rem, 5vw, 4rem);
   }
-  .pf-title { font-size: var(--text-display); line-height: var(--text-display--line-height); margin-top: 1.1rem; }
-  .pf-sub { color: var(--color-slate); max-width: 36ch; font-size: 1.173rem; }
+  .pf-title {
+    color: var(--color-paper);
+    font-size: var(--text-display);
+    line-height: var(--text-display--line-height);
+    margin-top: 1.1rem;
+  }
+  .pf-head :global(.label) { color: rgba(244, 244, 242, 0.72); }
+  .pf-head-r { display: flex; flex-direction: column; align-items: flex-end; gap: 1.4rem; }
+  .pf-sub { color: rgba(244, 244, 242, 0.7); max-width: 36ch; font-size: 1.173rem; text-align: right; }
 
+  /* Flechas de navegación (para ratón; con trackpad se desliza directamente) */
+  .pf-nav { display: flex; gap: 0.7rem; }
+  .pf-arrow {
+    width: 48px; height: 48px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(244, 244, 242, 0.3);
+    color: var(--color-paper);
+    cursor: pointer;
+    transition: background 0.3s var(--ease-soft), border-color 0.3s var(--ease-soft), opacity 0.3s var(--ease-soft);
+  }
+  .pf-arrow svg { width: 20px; height: 20px; }
+  .pf-arrow:hover { background: var(--color-paper); border-color: var(--color-paper); color: var(--color-ink); }
+  .pf-arrow:disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+
+  /* Carril horizontal con perspectiva 3D */
   .pf-scroller {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(clamp(240px, 30vw, 360px), 1fr);
-    gap: clamp(1rem, 2vw, 1.6rem);
+    grid-auto-columns: minmax(clamp(230px, 25vw, 330px), 1fr);
+    gap: clamp(1rem, 2vw, 1.8rem);
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-    margin-inline: calc(-1 * clamp(1.25rem, 5vw, 5rem));
-    padding-inline: clamp(1.25rem, 5vw, 5rem);
-    scrollbar-width: thin;
+    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 5vw, 5rem) clamp(1.8rem, 3.5vw, 3rem);
+    perspective: 1600px;
+    scrollbar-width: none;
+    cursor: grab;
   }
-  .pf-item { scroll-snap-align: start; }
-  .pf-media { overflow: hidden; aspect-ratio: 4 / 5; }
-  .pf-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s var(--ease-soft); }
-  .pf-item:hover .pf-img { transform: scale(1.05); }
-  .pf-cap { display: flex; flex-direction: column; gap: 0.2rem; padding-top: 1rem; }
-  .pf-name { font-size: 1.208rem; }
-  .pf-place { font-size: 0.828rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ash); }
+  .pf-scroller::-webkit-scrollbar { display: none; }
+  .pf-scroller.is-dragging { cursor: grabbing; }
+  .pf-scroller.is-dragging .pf-item { pointer-events: none; }
+
+  .pf-item { margin: 0; }
+
+  /* La tarjeta es el elemento que se mueve en 3D */
+  .pf-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) translateZ(0);
+    transition: transform 0.7s var(--ease-soft), box-shadow 0.7s var(--ease-soft);
+    box-shadow: 0 20px 45px -25px rgba(0, 0, 0, 0.85);
+    will-change: transform;
+  }
+  .pf-item:hover .pf-card {
+    transform: translateY(-14px) rotateX(6deg) rotateY(-7deg) translateZ(40px) scale(1.02);
+    box-shadow: 0 55px 90px -30px rgba(0, 0, 0, 0.9);
+  }
+
+  .pf-media {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    border-radius: 6px;
+  }
+  .pf-img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.9s var(--ease-soft);
+  }
+  .pf-item:hover .pf-img { transform: scale(1.06); }
+
+  /* Sombreado al pie para el texto superpuesto */
+  .pf-scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(11, 11, 10, 0.82) 0%, rgba(11, 11, 10, 0.32) 30%, rgba(11, 11, 10, 0) 55%);
+    pointer-events: none;
+  }
+  .pf-cap {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    display: flex; flex-direction: column; gap: 0.35rem;
+    padding: clamp(1.4rem, 2.5vw, 2rem);
+    color: var(--color-paper);
+    transform: translateZ(60px); /* el texto flota por delante en 3D */
+  }
+  .pf-name { font-size: clamp(1.3rem, 2vw, 1.7rem); line-height: 1.15; }
+  .pf-place {
+    font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(244, 244, 242, 0.75);
+  }
+
+  @media (max-width: 640px) {
+    .pf-head-r { align-items: flex-start; }
+    .pf-sub { text-align: left; }
+    .pf-nav { display: none; } /* en móvil se desliza con el dedo */
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pf-card, .pf-item:hover .pf-card,
+    .pf-img, .pf-item:hover .pf-img { transition: none; transform: none; }
+    .pf-cap { transform: none; }
+  }
 </style>
+
+<script>
+  const scroller = document.querySelector<HTMLElement>('[data-pf-scroller]');
+  const prev = document.querySelector<HTMLButtonElement>('[data-pf-prev]');
+  const next = document.querySelector<HTMLButtonElement>('[data-pf-next]');
+
+  if (scroller) {
+    // Distancia de un "paso": ancho de una tarjeta + hueco
+    const step = () => {
+      const first = scroller.querySelector<HTMLElement>('.pf-item');
+      const gap = parseFloat(getComputedStyle(scroller).columnGap || '0') || 24;
+      return (first?.offsetWidth ?? 320) + gap;
+    };
+
+    // Activa/desactiva las flechas según la posición
+    const sync = () => {
+      const max = scroller.scrollWidth - scroller.clientWidth - 2;
+      prev?.toggleAttribute('disabled', scroller.scrollLeft <= 2);
+      next?.toggleAttribute('disabled', scroller.scrollLeft >= max);
+    };
+    scroller.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+
+    prev?.addEventListener('click', () => scroller.scrollBy({ left: -step(), behavior: 'smooth' }));
+    next?.addEventListener('click', () => scroller.scrollBy({ left: step(), behavior: 'smooth' }));
+
+    // ---- Arrastrar con el ratón (clic y arrastrar) ----
+    let down = false;
+    let startX = 0;
+    let startScroll = 0;
+    let moved = 0;
+
+    scroller.addEventListener('pointerdown', (e) => {
+      if (e.pointerType === 'touch') return; // el táctil ya se desliza solo
+      down = true;
+      moved = 0;
+      startX = e.clientX;
+      startScroll = scroller.scrollLeft;
+      scroller.setPointerCapture(e.pointerId);
+    });
+    scroller.addEventListener('pointermove', (e) => {
+      if (!down) return;
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) > 4) scroller.classList.add('is-dragging');
+      moved = Math.abs(dx);
+      scroller.scrollLeft = startScroll - dx;
+    });
+    const end = (e: PointerEvent) => {
+      if (!down) return;
+      down = false;
+      scroller.classList.remove('is-dragging');
+      try { scroller.releasePointerCapture(e.pointerId); } catch {}
+    };
+    scroller.addEventListener('pointerup', end);
+    scroller.addEventListener('pointercancel', end);
+    // Evita que el arrastre dispare la navegación del enlace/tarjeta
+    scroller.addEventListener('click', (e) => {
+      if (moved > 6) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+  }
+</script>

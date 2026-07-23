@@ -52,41 +52,55 @@ let index = 0;
 <BaseLayout
   title="Aplicaciones · Espacios transformados"
   description="Aplicaciones reales de los materiales de MTM: cal natural, microcemento, Nature Floor y Oxitec en construcciones de alta gama."
+  darkHeader
 >
-  <PageHeader
-    eyebrow="Aplicaciones"
-    title="Espacios"
-    accent="transformados"
-    intro="De la teoría al acabado real. Nature, cales naturales, Oxitec y Nature Floor en arquitectura contemporánea de alta gama."
-  />
+  <div class="dark">
+    <PageHeader
+      eyebrow="Aplicaciones"
+      title="Espacios"
+      accent="transformados"
+      intro="De la teoría al acabado real. Nature, cales naturales, Oxitec y Nature Floor en arquitectura contemporánea de alta gama."
+    />
 
-  <section class="collage">
-    {rows.map((row) => (
-      <div class="row">
-        {row.map((s) => {
-          const i = index++;
-          return (
-            <figure class="shot" style={`flex-grow:${s.ar.toFixed(4)}`}>
-              <Image
-                src={s.src}
-                alt={s.name}
-                widths={[600, 1000, 1600]}
-                sizes="(max-width: 640px) 100vw, 50vw"
-                loading={i < 3 ? 'eager' : 'lazy'}
-                class="shot-img"
-              />
-              {s.name && <figcaption class="shot-cap">{s.name}</figcaption>}
-            </figure>
-          );
-        })}
-      </div>
-    ))}
-  </section>
+    <section class="collage">
+      {rows.map((row) => (
+        <div class="row">
+          {row.map((s) => {
+            const i = index++;
+            return (
+              <figure class="shot" style={`flex-grow:${s.ar.toFixed(4)}`}>
+                <Image
+                  src={s.src}
+                  alt={s.name}
+                  widths={[600, 1000, 1600]}
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  loading={i < 3 ? 'eager' : 'lazy'}
+                  class="shot-img"
+                />
+                {s.name && <figcaption class="shot-cap">{s.name}</figcaption>}
+              </figure>
+            );
+          })}
+        </div>
+      ))}
+    </section>
+  </div>
 
   <Catalogo />
 </BaseLayout>
 
 <style>
+  /* Página en oscuro: las fotos brillan sobre negro y enlaza con el
+     bloque de catálogo y el footer, que ya son oscuros. */
+  .dark {
+    background: var(--color-carbon);
+    color: var(--color-paper);
+  }
+  .dark :global(.ph-title) { color: var(--color-paper); }
+  .dark :global(.ph-intro) { color: rgba(244, 244, 242, 0.82); }
+  .dark :global(.label) { color: rgba(244, 244, 242, 0.72); }
+  .dark :global(.hairline) { background-color: rgba(244, 244, 242, 0.16); }
+
   .collage { width: 100%; }
 
   /* Cada fila llena el 100% del ancho; las fotos comparten altura y se pegan

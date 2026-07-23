@@ -1,10 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import m1 from '../../assets/categorias/materiales-1.webp';
-import m2 from '../../assets/categorias/materiales-2.webp';
-import m3 from '../../assets/categorias/materiales-3.webp';
-import m4 from '../../assets/categorias/materiales-4.webp';
+import m1 from '../../assets/categorias/cat-revestimientos.png';
+import m2 from '../../assets/categorias/cat-tixol-nature.png';
+import m3 from '../../assets/categorias/cat-soluciones.png';
+import m4 from '../../assets/categorias/cat-interiores.png';
 
+// Rejilla 2×2 ordenada: se emparejan por orientación — arriba las dos
+// horizontales, abajo las dos verticales — y cada fila comparte proporción.
 const cats = [
   {
     n: '01',
@@ -12,27 +14,31 @@ const cats = [
     desc: 'Texturas honestas de cal, arcilla y microcemento para paredes y suelos continuos.',
     image: m1,
     href: '/productos/tixol/nature',
+    ratio: '3 / 2',
   },
   {
     n: '02',
-    name: 'Tixol Nature',
-    desc: 'Pinturas y morteros de cal natural: acabados sanos, transpirables y atemporales.',
-    image: m2,
-    href: '/tixol',
-  },
-  {
-    n: '03',
-    name: 'Soluciones',
-    desc: 'Enfocados a resolver problemas específicos como humedades y otras aplicaciones concretas.',
-    image: m3,
-    href: '/productos/tixol/soluciones',
-  },
-  {
-    n: '04',
     name: 'Interiores',
     desc: 'Sistemas decorativos para interiores con carácter: del pavimento a la pared.',
     image: m4,
     href: '/aplicaciones',
+    ratio: '3 / 2',
+  },
+  {
+    n: '03',
+    name: 'Tixol Nature',
+    desc: 'Pinturas y morteros de cal natural: acabados sanos, transpirables y atemporales.',
+    image: m2,
+    href: '/tixol',
+    ratio: '4 / 5',
+  },
+  {
+    n: '04',
+    name: 'Soluciones',
+    desc: 'Enfocados a resolver problemas específicos como humedades y otras aplicaciones concretas.',
+    image: m3,
+    href: '/productos/tixol/soluciones',
+    ratio: '4 / 5',
   },
 ];
 ---
@@ -46,9 +52,9 @@ const cats = [
 
     <div class="cats-grid">
       {cats.map((c, i) => (
-        <a class="cat reveal" href={c.href} style={`--reveal-delay: ${i * 90}ms`}>
+        <a class="cat reveal" href={c.href} style={`--reveal-delay: ${i * 90}ms; --ratio: ${c.ratio}`}>
           <div class="cat-media">
-            <Image src={c.image} alt={c.name} widths={[420, 720]} sizes="(max-width: 880px) 100vw, 25vw" class="cat-img" />
+            <Image src={c.image} alt={c.name} widths={[600, 900, 1400]} sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 45vw" class="cat-img" />
             <span class="cat-n">N.º {c.n}</span>
           </div>
           <div class="cat-body">
@@ -76,11 +82,12 @@ const cats = [
 
   .cats-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: clamp(1.2rem, 2.5vw, 2rem);
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem);
+    align-items: start;
   }
   .cat { display: flex; flex-direction: column; }
-  .cat-media { position: relative; overflow: hidden; aspect-ratio: 3 / 4; }
+  .cat-media { position: relative; overflow: hidden; aspect-ratio: var(--ratio); }
   .cat-img {
     width: 100%; height: 100%; object-fit: cover; display: block;
     transition: transform 0.8s var(--ease-soft);
@@ -103,6 +110,8 @@ const cats = [
   .cat-link svg { width: 15px; height: 15px; transition: transform 0.4s var(--ease-soft); }
   .cat:hover .cat-link svg { transform: translateX(5px); }
 
-  @media (max-width: 1080px) { .cats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
-  @media (max-width: 520px) { .cats-grid { grid-template-columns: 1fr; } }
+  /* Móvil: una por fila */
+  @media (max-width: 620px) {
+    .cats-grid { grid-template-columns: 1fr; }
+  }
 </style>
