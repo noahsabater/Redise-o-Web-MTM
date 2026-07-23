@@ -1,0 +1,518 @@
+---
+import { Image } from 'astro:assets';
+import logoDark from '../../assets/logos/mtm-logo.webp';
+import logoWhite from '../../assets/logos/mtm-logo-white.png';
+import { navLeft, navRight } from '../../data/nav';
+import { site } from '../../data/site';
+
+interface Props {
+  /** true = header transparente superpuesto sobre el hero (se vuelve sólido al hacer scroll) */
+  transparent?: boolean;
+}
+const { transparent = false } = Astro.props;
+
+// Menú completo (overlay a pantalla completa que abre el logo)
+const menuItems = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Nosotros', href: '/nosotros' },
+  { label: 'Marcas', href: '/marcas' },
+  { label: 'Productos', href: '/productos' },
+  { label: 'Aplicaciones', href: '/aplicaciones' },
+  { label: 'Formación', href: '/formacion' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contacto', href: '/contacto' },
+];
+---
+
+<header class:list={['site-header', { 'is-transparent': transparent, 'is-solid': !transparent }]} data-transparent={transparent}>
+  <div class="container-mtm">
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav-group nav-left">
+        {navLeft.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+
+      <!-- Logo centrado: transición de trapecios que lleva al home (hero) -->
+      <a class="brand" href="/" aria-label="MTM · Ir al inicio" data-home-transition>
+        <Image src={logoWhite} alt="MTM · Materiales Modernos" widths={[140, 280]} sizes="140px" class="brand-img brand-white" />
+        <Image src={logoDark} alt="" aria-hidden="true" densities={[1, 2]} class="brand-img brand-dark" />
+      </a>
+
+      <div class="nav-right">
+        <ul class="nav-group">
+          {navRight.map((item) => (
+            <li><a href={item.href}>{item.label}</a></li>
+          ))}
+        </ul>
+        <a class="search" href="/productos" aria-label="Buscar productos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <span>Buscar</span>
+        </a>
+      </div>
+
+      <!-- Botón menú móvil: abre el mismo overlay -->
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-open>
+        <span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- =========================================================
+     MENÚ A PANTALLA COMPLETA · transición de dos trapecios negros
+     ========================================================= -->
+<div class="mtm-menu" id="mtm-menu" data-menu hidden>
+  <!-- Los dos trapecios (puertas) que se abren desde el centro a 45º -->
+  <div class="doors" aria-hidden="true">
+    <div class="door door-l"></div>
+    <div class="door door-r"></div>
+  </div>
+
+  <!-- Contenido del menú, revelado tras las puertas -->
+  <div class="menu-panel">
+    <div class="container-mtm menu-inner">
+      <div class="menu-bar">
+        <span class="menu-kicker">Menú</span>
+        <button class="menu-close" type="button" data-menu-close aria-label="Cerrar menú">
+          <span>Cerrar</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
+      </div>
+
+      <nav class="menu-nav" aria-label="Menú principal">
+        <ol>
+          {menuItems.map((item, i) => (
+            <li class="mi" style={`--i: ${i}`}>
+              <a href={item.href}>
+                <span class="mi-n">{String(i + 1).padStart(2, '0')}</span>
+                <span class="mi-label">{item.label}</span>
+                <svg class="mi-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+
+      <div class="menu-foot">
+        <div class="mf-block">
+          <span class="mf-k">Contacto</span>
+          <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+          <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`}>{site.contact.phone}</a>
+        </div>
+        <div class="mf-block">
+          <span class="mf-k">Síguenos</span>
+          <div class="mf-social">
+            <a href={site.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href={site.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     TRANSICIÓN AL INICIO · el logo se ilumina y se parte por la mitad
+     ========================================================= -->
+<div class="home-intro" id="home-intro" data-home-intro hidden aria-hidden="true">
+  <div class="hi-half hi-l"><span class="hi-logo"></span></div>
+  <div class="hi-half hi-r"><span class="hi-logo"></span></div>
+</div>
+
+<style>
+  .site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 50;
+    border-bottom: 1px solid transparent;
+    transition:
+      background 0.5s var(--ease-soft),
+      border-color 0.5s var(--ease-soft),
+      backdrop-filter 0.5s var(--ease-soft);
+  }
+  .site-header.is-transparent::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(11, 11, 10, 0.42), rgba(11, 11, 10, 0));
+    opacity: 1;
+    transition: opacity 0.5s var(--ease-soft);
+  }
+  .site-header.is-solid::before { opacity: 0; }
+  .site-header.is-solid {
+    background: color-mix(in srgb, var(--color-paper) 85%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom-color: var(--color-line);
+  }
+
+  .nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: 76px;
+    gap: 1rem;
+  }
+  .nav-group { display: flex; list-style: none; margin: 0; padding: 0; gap: clamp(1rem, 2.6vw, 2.6rem); }
+  .nav-left { justify-content: flex-start; }
+  .nav-right { display: flex; align-items: center; justify-content: flex-end; }
+
+  .nav a {
+    font-family: var(--font-sans);
+    font-size: 1.13rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    position: relative;
+    padding-block: 0.5rem;
+    color: var(--nav-fg, var(--color-ink));
+    opacity: 0.72;
+    transition: opacity 0.3s var(--ease-soft), color 0.5s var(--ease-soft);
+  }
+  .nav a:hover { opacity: 1; }
+  .nav a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0.15rem;
+    height: 1px; width: 0;
+    background: currentColor;
+    transition: width 0.4s var(--ease-soft);
+  }
+  .nav a:hover::after { width: 100%; }
+
+  .site-header.is-transparent { --nav-fg: #f4f4f2; }
+  .site-header.is-solid { --nav-fg: var(--color-ink); }
+
+  .brand { display: flex; justify-content: center; align-items: center; position: relative; cursor: pointer; }
+  .brand-img { height: 30px; width: auto; transition: opacity 0.5s var(--ease-soft); }
+  .brand-dark { filter: grayscale(1) contrast(1.05); }
+  .brand-white { position: relative; z-index: 2; }
+  .brand-dark { position: absolute; inset: 0; margin: auto; z-index: 1; }
+  .site-header.is-transparent .brand-white { opacity: 1; }
+  .site-header.is-transparent .brand-dark { opacity: 0; }
+  .site-header.is-solid .brand-white { opacity: 0; }
+  .site-header.is-solid .brand-dark { opacity: 1; }
+
+  .search {
+    margin-left: 1.4rem;
+    display: inline-flex; align-items: center; gap: 0.55rem;
+    font-family: var(--font-sans);
+    font-size: 1.043rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--nav-fg, var(--color-slate));
+    opacity: 0.82;
+    transition: opacity 0.3s var(--ease-soft), color 0.5s var(--ease-soft);
+  }
+  .search:hover { opacity: 1; }
+  .search svg { width: 15px; height: 15px; }
+
+  .menu-toggle {
+    display: none;
+    justify-self: end;
+    grid-column: 3;
+    width: 40px; height: 40px;
+    background: none; border: 0; cursor: pointer; padding: 0;
+    flex-direction: column; align-items: flex-end; justify-content: center; gap: 6px;
+  }
+  .menu-toggle span {
+    display: block; height: 1px;
+    background: var(--nav-fg, var(--color-ink));
+    transition: width 0.35s var(--ease-soft), background 0.5s var(--ease-soft);
+  }
+  .menu-toggle span:nth-child(1) { width: 26px; }
+  .menu-toggle span:nth-child(2) { width: 18px; }
+
+  /* ===== Overlay del menú ===== */
+  .mtm-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+  .mtm-menu[hidden] { display: none; }
+  .mtm-menu.is-active { opacity: 1; }
+  /* Modo "solo puertas": transición hacia el home; se oculta el panel de índice
+     para que las puertas revelen la propia página (el hero) al abrirse. */
+  .mtm-menu.doors-only .menu-panel { display: none; }
+
+  /* Trapecios (puertas). Cerradas: cubren toda la pantalla con costura diagonal a ~45º */
+  .doors { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+  .door {
+    position: absolute; inset: 0;
+    background: var(--color-carbon);
+    transform: translateX(0);
+    transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+    will-change: transform;
+  }
+  .door-l { clip-path: polygon(0 0, 75% 0, 25% 100%, 0 100%); }
+  .door-r { clip-path: polygon(75% 0, 100% 0, 100% 100%, 25% 100%); }
+  /* Abiertas: se separan desde el centro hacia los lados */
+  .mtm-menu.is-open .door-l { transform: translateX(-115%); }
+  .mtm-menu.is-open .door-r { transform: translateX(115%); }
+
+  /* ===== Transición al inicio: el logo se ilumina y se abre en 2 trapecios ===== */
+  .home-intro {
+    --logo-w: clamp(152px, 24vw, 352px);
+    --logo-h: calc(var(--logo-w) / 2.577);
+    position: fixed;
+    inset: 0;
+    z-index: 210;
+    pointer-events: none;
+  }
+  .home-intro[hidden] { display: none; }
+
+  /* Fundido de entrada del overlay (cubrir en negro suavemente) */
+  .home-intro.fade { opacity: 0; transition: opacity 0.3s var(--ease-soft); }
+  .home-intro.fade.show { opacity: 1; }
+
+  /* Dos trapecios negros a pantalla completa con costura diagonal a ~45º.
+     Ambos comparten el mismo sistema de coordenadas (inset:0), así que el
+     logo, centrado idéntico en cada mitad, se ve como uno solo, cortado por
+     la diagonal. Al separarse revelan el inicio. */
+  .hi-half {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: var(--color-carbon);
+    will-change: transform;
+    transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  /* Solapan ~0,6% en la costura para que no se vea la línea de separación
+     (mismo negro → el solape es invisible y tapa el hueco de antialias). */
+  .hi-l { clip-path: polygon(0 0, 75.6% 0, 25.6% 100%, 0 100%); }
+  .hi-r { clip-path: polygon(75% 0, 100% 0, 100% 100%, 25% 100%); }
+
+  /* Logo centrado en cada mitad (superpuestos → un único logo entero) */
+  .hi-logo {
+    position: absolute;
+    top: calc(50% - var(--logo-h) / 2);
+    left: calc(50% - var(--logo-w) / 2);
+    width: var(--logo-w);
+    height: var(--logo-h);
+    background: url('/mtm-logo-white.png') center / contain no-repeat;
+    /* apagado: tenue, casi sin brillo */
+    opacity: 0;
+    filter: brightness(0.35);
+    transition: opacity 0.5s var(--ease-soft), filter 0.75s var(--ease-soft);
+  }
+
+  /* Fase "encendido": el propio logo se ilumina; el resplandor sigue la forma
+     de las letras (drop-shadow sobre su alfa), sin ningún círculo de luz. */
+  .home-intro.lit .hi-logo {
+    opacity: 1;
+    filter: brightness(2)
+      drop-shadow(0 0 12px rgba(255, 255, 255, 0.95))
+      drop-shadow(0 0 30px rgba(255, 255, 255, 0.6))
+      drop-shadow(0 0 60px rgba(255, 255, 255, 0.35));
+  }
+
+  /* Fase "partido": los dos trapecios se separan en diagonal y revelan el inicio */
+  .home-intro.split .hi-l { transform: translateX(-115%); }
+  .home-intro.split .hi-r { transform: translateX(115%); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-intro { display: none !important; }
+  }
+
+  /* Panel revelado */
+  .menu-panel {
+    position: absolute; inset: 0; z-index: 1;
+    background: var(--color-paper);
+    display: flex; align-items: stretch;
+    overflow-y: auto;
+  }
+  .menu-inner {
+    display: flex; flex-direction: column;
+    padding-block: clamp(1.5rem, 4vh, 2.5rem) clamp(2rem, 5vh, 3rem);
+    min-height: 100%;
+    width: 100%;
+  }
+  .menu-bar { display: flex; justify-content: space-between; align-items: center; padding-bottom: clamp(1.5rem, 4vh, 3rem); }
+  .menu-kicker { font-size: 0.805rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-ash); }
+  .menu-close {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: none; border: 0; cursor: pointer; padding: 0.5rem 0;
+    font-family: var(--font-sans); font-size: 0.828rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-ink);
+  }
+  .menu-close svg { width: 18px; height: 18px; transition: transform 0.4s var(--ease-soft); }
+  .menu-close:hover svg { transform: rotate(90deg); }
+
+  .menu-nav { flex: 1; display: flex; align-items: center; }
+  .menu-nav ol { list-style: none; margin: 0; padding: 0; width: 100%; }
+  .mi { border-top: 1px solid var(--color-line); }
+  .menu-nav ol .mi:last-child { border-bottom: 1px solid var(--color-line); }
+  .mi a {
+    display: grid; grid-template-columns: 3.5rem 1fr auto; align-items: center; gap: 1.2rem;
+    padding: clamp(0.7rem, 1.8vh, 1.15rem) 0;
+    color: var(--color-ink);
+    transition: padding-left 0.4s var(--ease-soft), color 0.3s var(--ease-soft);
+    /* Entrada escalonada de cada enlace */
+    opacity: 0; transform: translateY(14px);
+  }
+  .mtm-menu.is-open .mi a {
+    opacity: 1; transform: none;
+    transition: padding-left 0.4s var(--ease-soft), color 0.3s var(--ease-soft),
+      opacity 0.5s var(--ease-soft) calc(0.35s + var(--i) * 0.05s),
+      transform 0.5s var(--ease-soft) calc(0.35s + var(--i) * 0.05s);
+  }
+  .mi a:hover { padding-left: 0.8rem; }
+  .mi-n { font-size: 0.828rem; letter-spacing: 0.14em; color: var(--color-ash); }
+  .mi-label { font-size: clamp(1.8rem, 6vw, 3.6rem); line-height: 1.04; letter-spacing: 0em; }
+  .mi-arr { width: 22px; height: 22px; opacity: 0; transform: translateX(-6px); transition: opacity 0.3s var(--ease-soft), transform 0.3s var(--ease-soft); }
+  .mi a:hover .mi-arr { opacity: 1; transform: none; }
+
+  .menu-foot {
+    display: flex; flex-wrap: wrap; gap: 2.5rem 4rem;
+    padding-top: clamp(1.5rem, 4vh, 2.5rem);
+    border-top: 1px solid var(--color-line);
+    margin-top: clamp(1.5rem, 4vh, 2.5rem);
+  }
+  .mf-block { display: flex; flex-direction: column; gap: 0.5rem; }
+  .mf-k { font-size: 0.782rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-ash); margin-bottom: 0.3rem; }
+  .mf-block a { font-size: 1.092rem; color: var(--color-slate); transition: color 0.3s var(--ease-soft); }
+  .mf-block a:hover { color: var(--color-ink); }
+  .mf-social { display: flex; gap: 1.4rem; }
+
+  @media (max-width: 880px) {
+    .nav { grid-template-columns: auto 1fr; height: 60px; }
+    .nav-left, .nav-right { display: none; }
+    .brand { justify-content: flex-start; grid-column: 1; }
+    .menu-toggle { display: flex; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .door { transition: none; }
+    .mi a, .mtm-menu.is-open .mi a { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+
+<script>
+  const header = document.querySelector<HTMLElement>('.site-header');
+  const menu = document.querySelector<HTMLElement>('[data-menu]');
+  const menuOpeners = document.querySelectorAll<HTMLElement>('[data-menu-open]');
+  const homeLinks = document.querySelectorAll<HTMLElement>('[data-home-transition]');
+  const closer = document.querySelector<HTMLElement>('[data-menu-close]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DOOR_MS = 850;
+
+  let closeTimer: number | undefined;
+
+  // ---- Menú de índice (hamburguesa): las puertas se abren y revelan el índice ----
+  function openMenu() {
+    if (!menu) return;
+    window.clearTimeout(closeTimer);
+    menu.hidden = false;
+    menu.classList.remove('doors-only');
+    document.body.style.overflow = 'hidden';
+    (window as any).__lenis?.stop();
+    void menu.getBoundingClientRect();
+    menu.classList.add('is-active');
+    requestAnimationFrame(() => requestAnimationFrame(() => menu.classList.add('is-open')));
+  }
+  function closeMenu() {
+    if (!menu) return;
+    menu.classList.remove('is-open');
+    const finish = () => {
+      menu.classList.remove('is-active');
+      menu.hidden = true;
+      document.body.style.overflow = '';
+      (window as any).__lenis?.start();
+    };
+    if (reduce) finish();
+    else closeTimer = window.setTimeout(finish, DOOR_MS);
+  }
+  menuOpeners.forEach((el) =>
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openMenu();
+    })
+  );
+  closer?.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu && !menu.hidden) closeMenu();
+  });
+
+  // ---- Logo → inicio: aparece el logo (fundido) y se abre en 2 trapecios ----
+  const hi = document.querySelector<HTMLElement>('[data-home-intro]');
+  const root = document.documentElement;
+  const LIT_MS = 900; // el logo visible antes de abrirse
+  const SPLIT_MS = 850; // apertura de los trapecios (= transición CSS)
+
+  function endIntro() {
+    if (!hi) return;
+    hi.classList.remove('lit', 'split', 'fade', 'show');
+    hi.hidden = true;
+    root.classList.remove('hi-active');
+  }
+
+  // El overlay ya está cubriendo en negro: funde el logo y luego lo abre.
+  function revealLogoThenSplit() {
+    if (!hi || reduce) return endIntro();
+    hi.hidden = false;
+    hi.classList.remove('split', 'fade', 'show'); // negro fijo, sin fundido
+    void hi.getBoundingClientRect();
+    requestAnimationFrame(() => requestAnimationFrame(() => hi.classList.add('lit'))); // logo entra
+    window.setTimeout(() => hi.classList.add('split'), LIT_MS); // se abre en 2 trapecios
+    window.setTimeout(endIntro, LIT_MS + SPLIT_MS + 150);
+  }
+
+  // Ya en el inicio: funde a negro (corto) y reproduce la secuencia.
+  function playOnHome() {
+    window.scrollTo({ top: 0 });
+    if (!hi || reduce) return;
+    hi.hidden = false;
+    hi.classList.remove('lit', 'split');
+    hi.classList.add('fade'); // opacity 0
+    void hi.getBoundingClientRect();
+    requestAnimationFrame(() => hi.classList.add('show')); // funde a negro
+    window.setTimeout(revealLogoThenSplit, 320);
+  }
+
+  // Desde otra página: funde a negro y navega; el inicio ya arranca en negro
+  // (armado en <head>), así que la continuidad es total, sin corte.
+  function leaveToHome() {
+    sessionStorage.setItem('mtm-home-intro', '1');
+    if (!hi || reduce) return void (window.location.href = '/');
+    hi.hidden = false;
+    hi.classList.remove('lit', 'split');
+    hi.classList.add('fade');
+    void hi.getBoundingClientRect();
+    requestAnimationFrame(() => hi.classList.add('show'));
+    window.setTimeout(() => { window.location.href = '/'; }, 300);
+  }
+
+  homeLinks.forEach((el) =>
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (window.location.pathname === '/') playOnHome();
+      else leaveToHome();
+    })
+  );
+
+  // Al cargar el inicio desde el logo: el overlay ya está en negro; solo hay
+  // que fundir el logo y abrirlo.
+  if (sessionStorage.getItem('mtm-home-intro')) {
+    sessionStorage.removeItem('mtm-home-intro');
+    revealLogoThenSplit();
+  }
+
+  // ===== Transparencia del header sobre el hero =====
+  const isTransparent = header?.dataset.transparent === 'true';
+  if (header && isTransparent) {
+    const sync = () => {
+      const solid = window.scrollY > window.innerHeight - header.offsetHeight - 8;
+      header.classList.toggle('is-solid', solid);
+      header.classList.toggle('is-transparent', !solid);
+    };
+    window.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
+</script>

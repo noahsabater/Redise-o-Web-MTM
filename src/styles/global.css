@@ -1,0 +1,265 @@
+/* ============================================================
+   MTM · Materiales Modernos — Hoja de estilos global
+   Sistema de diseño: minimalismo material, blanco elegante & negro.
+   Tipografía de estudio de arquitectura (ref. studiocouture.co):
+     · NATS         → estructura: titulares, cuerpo, navegación, etiquetas
+     · Bodoni Moda  → acento editorial serif (cursiva elegante), sustituto
+                      libre (OFL) de Bodoni 72, forma y contraste equivalentes
+   Tailwind CSS v4 (config en CSS con @theme).
+   ============================================================ */
+
+@import 'tailwindcss';
+
+/* Bodoni Moda auto-hospedada vía @fontsource (sin llamadas externas).
+   Variable: eje opsz + wght (400–900), en normal e itálica. */
+@import '@fontsource-variable/bodoni-moda/standard.css';
+@import '@fontsource-variable/bodoni-moda/standard-italic.css';
+
+/* ------------------------------------------------------------
+   0. TIPOGRAFÍA AUTO-HOSPEDADA  (NATS, OFL — mismo woff2 que la referencia)
+   ------------------------------------------------------------ */
+@font-face {
+  font-family: 'Nats';
+  src: url('/fonts/NATS-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------
+   1. DESIGN TOKENS  →  generan utilidades de Tailwind
+      (bg-paper, text-ink, font-display, text-hero, …)
+   ------------------------------------------------------------ */
+@theme {
+  /* ---- Monocromo: blanco elegante → negro ---- */
+  --color-paper: #f4f4f2; /* fondo principal            */
+  --color-surface: #ffffff; /* superficies elevadas      */
+  --color-mist: #ecebe7; /* sección alterna, sutil     */
+  --color-line: #e1e0db; /* filetes / bordes           */
+  --color-ash: #9a9893; /* decorativo apagado         */
+  --color-slate: #6c6a66; /* texto secundario (AA)      */
+  --color-ink: #121110; /* texto principal / negro    */
+  --color-carbon: #0b0b0a; /* fondo oscuro profundo      */
+
+  /* ---- Tipografía (misma familia y grosor que la referencia) ---- */
+  --font-display: 'Nats', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Nats', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Bodoni Moda Variable', 'Bodoni 72', 'Times New Roman', Georgia, serif;
+
+  /* ---- Escala tipográfica fluida ----
+     NATS es de un solo grosor (Regular) y trazo ligero: los titulares
+     respiran con tracking neutro (0em), igual que en la referencia. */
+  --text-hero: clamp(3rem, 9.5vw, 8.4rem);
+  --text-hero--line-height: 0.96;
+  --text-hero--letter-spacing: 0em;
+
+  --text-display: clamp(2.2rem, 5vw, 3.8rem);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: 0em;
+
+  --text-title: clamp(1.6rem, 2.8vw, 2.4rem);
+  --text-title--line-height: 1.12;
+
+  /* ---- Easing editorial ---- */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ---- Contenedor ---- */
+  --breakpoint-3xl: 96rem;
+}
+
+/* ------------------------------------------------------------
+   2. BASE
+   ------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Titulares en NATS, grosor normal y tracking neutro, como la referencia */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    color: var(--color-ink);
+    letter-spacing: 0em;
+    line-height: 1.05;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  p { text-wrap: pretty; }
+
+  /* Acento editorial serif (Bodoni 72 cursiva) — el toque elegante
+     que la referencia usa para destacar palabras dentro de titulares. */
+  .serif {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: 0.005em;
+  }
+  .serif-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+  }
+
+  ::selection {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 1.5px solid var(--color-ink);
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------
+   3. COMPONENTES / UTILIDADES DE MARCA
+   ------------------------------------------------------------ */
+@layer components {
+  /* Contenedor editorial */
+  .container-mtm {
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 5rem);
+  }
+
+  /* Transición al inicio: negro cubriendo desde el primer pintado (armado en
+     <head>) para que no haya pantallazo ni corte al navegar. */
+  html.hi-active { background: #0b0b0a; }
+  html.hi-active .home-intro { display: block !important; }
+
+  /* Ritmo vertical de sección */
+  .section {
+    padding-block: clamp(4.5rem, 9vw, 8rem);
+  }
+
+  /* Micro-etiqueta con filete (eyebrow) */
+  .label {
+    font-family: var(--font-sans);
+    font-size: 0.805rem;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--color-slate);
+  }
+  .label--tick {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .label--tick::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+  }
+  .on-dark { color: rgba(244, 244, 242, 0.72); }
+
+  /* Filete fino */
+  .hairline {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-line);
+    border: 0;
+  }
+
+  /* Botones */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: var(--font-sans);
+    font-size: 0.851rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 1.05rem 1.9rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+      background 0.4s var(--ease-soft),
+      color 0.4s var(--ease-soft),
+      border-color 0.4s var(--ease-soft);
+  }
+  .btn svg { width: 16px; height: 16px; transition: transform 0.4s var(--ease-soft); }
+  .btn:hover svg { transform: translateX(5px); }
+  .btn--light { background: var(--color-paper); color: var(--color-ink); }
+  .btn--light:hover { background: var(--color-ink); color: var(--color-paper); }
+  .btn--ink { background: var(--color-ink); color: var(--color-paper); }
+  .btn--ink:hover { background: var(--color-carbon); }
+  .btn--ghost { background: transparent; color: var(--color-paper); border-color: rgba(244, 244, 242, 0.4); }
+  .btn--ghost:hover { border-color: var(--color-paper); background: rgba(244, 244, 242, 0.07); }
+  .btn--ghost-ink { background: transparent; color: var(--color-ink); border-color: rgba(18, 17, 16, 0.25); }
+  .btn--ghost-ink:hover { border-color: var(--color-ink); }
+}
+
+/* ------------------------------------------------------------
+   4. REVELADO AL HACER SCROLL (IntersectionObserver en BaseLayout)
+   ------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.9s var(--ease-soft),
+    transform 0.9s var(--ease-soft);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ------------------------------------------------------------
+   5. SCROLL SUAVE (Lenis) + TRANSICIÓN DE PÁGINA (barrido negro)
+   ------------------------------------------------------------ */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+/* Barrido negro lateral entre páginas */
+.page-sweep {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: var(--color-carbon);
+  transform: translateX(-100%);
+  pointer-events: none;
+  will-change: transform;
+}
+.page-sweep.cover { transform: translateX(0); }
+.page-sweep.sweep-in { animation: sweepIn 0.42s cubic-bezier(0.76, 0, 0.24, 1) forwards; }
+.page-sweep.sweep-out { animation: sweepOut 0.46s cubic-bezier(0.76, 0, 0.24, 1) forwards; }
+@keyframes sweepIn { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@keyframes sweepOut { from { transform: translateX(0); } to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .page-sweep { display: none; }
+}

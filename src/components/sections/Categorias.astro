@@ -1,0 +1,108 @@
+---
+import { Image } from 'astro:assets';
+import m1 from '../../assets/categorias/materiales-1.webp';
+import m2 from '../../assets/categorias/materiales-2.webp';
+import m3 from '../../assets/categorias/materiales-3.webp';
+import m4 from '../../assets/categorias/materiales-4.webp';
+
+const cats = [
+  {
+    n: '01',
+    name: 'Revestimientos Naturales',
+    desc: 'Texturas honestas de cal, arcilla y microcemento para paredes y suelos continuos.',
+    image: m1,
+    href: '/productos/tixol/nature',
+  },
+  {
+    n: '02',
+    name: 'Tixol Nature',
+    desc: 'Pinturas y morteros de cal natural: acabados sanos, transpirables y atemporales.',
+    image: m2,
+    href: '/tixol',
+  },
+  {
+    n: '03',
+    name: 'Soluciones',
+    desc: 'Enfocados a resolver problemas específicos como humedades y otras aplicaciones concretas.',
+    image: m3,
+    href: '/productos/tixol/soluciones',
+  },
+  {
+    n: '04',
+    name: 'Interiores',
+    desc: 'Sistemas decorativos para interiores con carácter: del pavimento a la pared.',
+    image: m4,
+    href: '/aplicaciones',
+  },
+];
+---
+
+<section class="cats section">
+  <div class="container-mtm">
+    <div class="cats-head reveal">
+      <span class="label label--tick">Colecciones</span>
+      <h2 class="cats-title">Materiales que marcan la diferencia</h2>
+    </div>
+
+    <div class="cats-grid">
+      {cats.map((c, i) => (
+        <a class="cat reveal" href={c.href} style={`--reveal-delay: ${i * 90}ms`}>
+          <div class="cat-media">
+            <Image src={c.image} alt={c.name} widths={[420, 720]} sizes="(max-width: 880px) 100vw, 25vw" class="cat-img" />
+            <span class="cat-n">N.º {c.n}</span>
+          </div>
+          <div class="cat-body">
+            <h3 class="cat-name">{c.name}</h3>
+            <p class="cat-desc">{c.desc}</p>
+            <span class="cat-link">
+              Ver colección
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .cats-head {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  .cats-title { font-size: var(--text-display); line-height: var(--text-display--line-height); max-width: 20ch; }
+
+  .cats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1.2rem, 2.5vw, 2rem);
+  }
+  .cat { display: flex; flex-direction: column; }
+  .cat-media { position: relative; overflow: hidden; aspect-ratio: 3 / 4; }
+  .cat-img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.8s var(--ease-soft);
+  }
+  .cat:hover .cat-img { transform: scale(1.05); }
+  .cat-n {
+    position: absolute; top: 1rem; left: 1rem;
+    font-size: 0.782rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--color-paper); mix-blend-mode: difference;
+  }
+  .cat-body { padding-top: 1.3rem; }
+  .cat-name { font-size: 1.472rem; margin-bottom: 0.5rem; }
+  .cat-desc { font-size: 1.092rem; color: var(--color-slate); line-height: 1.55; max-width: 34ch; }
+  .cat-link {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.828rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--color-ink);
+  }
+  .cat-link svg { width: 15px; height: 15px; transition: transform 0.4s var(--ease-soft); }
+  .cat:hover .cat-link svg { transform: translateX(5px); }
+
+  @media (max-width: 1080px) { .cats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
+  @media (max-width: 520px) { .cats-grid { grid-template-columns: 1fr; } }
+</style>

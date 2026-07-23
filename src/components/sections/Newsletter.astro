@@ -1,0 +1,54 @@
+---
+// Newsletter — captación de profesionales.
+---
+
+<section class="nl">
+  <div class="container-mtm nl-inner reveal">
+    <div class="nl-text">
+      <span class="label label--tick on-dark">Newsletter</span>
+      <h2 class="nl-h">
+        Únete a una comunidad selecta de profesionales de la decoración y las reformas
+      </h2>
+    </div>
+
+    <form class="nl-form" name="newsletter" method="post" data-newsletter>
+      <div class="nl-row">
+        <input class="nl-input" type="email" name="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico" />
+        <button class="btn btn--light" type="submit">
+          Suscribirse
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </button>
+      </div>
+      <label class="nl-check">
+        <input type="checkbox" name="privacy" required />
+        <span>He leído y acepto la <a href="/politica-de-privacidad">política de privacidad</a>.</span>
+      </label>
+    </form>
+  </div>
+</section>
+
+<style>
+  .nl { background: var(--color-ink); color: var(--color-paper); padding-block: clamp(4rem, 9vw, 7rem); }
+  .nl-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
+  .nl-h { color: var(--color-paper); font-size: var(--text-title); line-height: 1.15; max-width: 20ch; margin-top: 1.4rem; }
+
+  .nl-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .nl-input {
+    flex: 1 1 220px;
+    background: transparent;
+    border: 0; border-bottom: 1px solid rgba(244, 244, 242, 0.4);
+    color: var(--color-paper);
+    padding: 0.9rem 0.2rem;
+    font-family: var(--font-sans); font-size: 1.15rem;
+  }
+  .nl-input::placeholder { color: rgba(244, 244, 242, 0.5); }
+  .nl-input:focus { outline: none; border-bottom-color: var(--color-paper); }
+  .nl-check {
+    display: flex; gap: 0.6rem; align-items: flex-start;
+    margin-top: 1.3rem; font-size: 0.943rem; color: rgba(244, 244, 242, 0.7);
+  }
+  .nl-check a { color: var(--color-paper); text-decoration: underline; text-underline-offset: 3px; }
+  .nl-check input { margin-top: 0.2rem; accent-color: var(--color-paper); }
+
+  @media (max-width: 880px) { .nl-inner { grid-template-columns: 1fr; } }
+</style>

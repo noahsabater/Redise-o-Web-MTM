@@ -1,0 +1,163 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../../assets/logos/mtm-logo.webp';
+import { site } from '../../data/site';
+
+const year = new Date().getFullYear();
+
+const colecciones = [
+  { label: 'Revestimientos Naturales', href: '/productos' },
+  { label: 'Cal para suelos', href: '/productos' },
+  { label: 'Sistemas de Pavimentos', href: '/productos' },
+  { label: 'Fachadas Exteriores', href: '/productos' },
+];
+const sobre = [
+  { label: 'Nosotros', href: '/nosotros' },
+  { label: 'Marcas', href: '/marcas' },
+  { label: 'Catálogo', href: '/productos' },
+  { label: 'Contacto', href: '/contacto' },
+];
+const legal = [
+  { label: 'Privacidad', href: '/politica-de-privacidad' },
+  { label: 'Términos y condiciones', href: '/terminos-y-condiciones' },
+  { label: 'Cookies', href: '/politica-de-cookies' },
+];
+const socials = [
+  { label: 'Instagram', href: site.social.instagram },
+  { label: 'Facebook', href: site.social.facebook },
+  { label: 'LinkedIn', href: site.social.linkedin },
+  { label: 'YouTube', href: site.social.youtube },
+];
+---
+
+<footer class="site-footer">
+  <div class="container-mtm">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <Image src={logo} alt="MTM · Materiales Modernos" densities={[1, 2]} class="footer-logo" />
+        <p class="footer-tagline">{site.tagline}</p>
+        <ul class="footer-social">
+          {socials.map((s) => (
+            <li><a href={s.href} target="_blank" rel="noopener noreferrer">{s.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Colecciones">
+        <h2 class="footer-h">Colecciones</h2>
+        <ul>{colecciones.map((i) => <li><a href={i.href}>{i.label}</a></li>)}</ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Sobre MTM">
+        <h2 class="footer-h">Sobre MTM</h2>
+        <ul>{sobre.map((i) => <li><a href={i.href}>{i.label}</a></li>)}</ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-h">Contacto</h2>
+        <address class="footer-contact">
+          <p>{site.contact.address}</p>
+          <p><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></p>
+          <p><a href={`tel:${site.contact.phone.replace(/\s/g, '')}`}>{site.contact.phone}</a></p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© {year} {site.legalName} · Todos los derechos reservados.</p>
+      <ul class="footer-legal">
+        {legal.map((i) => <li><a href={i.href}>{i.label}</a></li>)}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--color-carbon);
+    color: rgba(244, 244, 242, 0.66);
+    padding-block: clamp(3.5rem, 7vw, 6rem) 2.2rem;
+    font-family: var(--font-sans);
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    padding-bottom: clamp(3rem, 6vw, 4.5rem);
+    border-bottom: 1px solid rgba(244, 244, 242, 0.14);
+  }
+
+  .footer-logo { height: 34px; width: auto; filter: grayscale(1) brightness(1.5); }
+  .footer-tagline {
+    margin-top: 1.4rem;
+    max-width: 34ch;
+    font-size: 1.092rem;
+    line-height: 1.6;
+    color: rgba(244, 244, 242, 0.7);
+  }
+  .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 1.8rem 0 0;
+    padding: 0;
+  }
+  .footer-social a {
+    font-size: 0.828rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(244, 244, 242, 0.7);
+    transition: color 0.3s var(--ease-soft);
+  }
+  .footer-social a:hover { color: var(--color-paper); }
+
+  .footer-h {
+    font-family: var(--font-sans);
+    font-size: 0.805rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(244, 244, 242, 0.45);
+    margin: 0 0 1.4rem;
+  }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+  .footer-col a {
+    font-size: 1.058rem;
+    color: rgba(244, 244, 242, 0.72);
+    transition: color 0.3s var(--ease-soft);
+  }
+  .footer-col a:hover { color: var(--color-paper); }
+
+  .footer-contact { font-style: normal; display: flex; flex-direction: column; gap: 0.85rem; }
+  .footer-contact p { font-size: 1.058rem; line-height: 1.55; color: rgba(244, 244, 242, 0.72); }
+  .footer-contact a:hover { color: var(--color-paper); }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  .footer-copy { font-size: 0.874rem; letter-spacing: 0.03em; color: rgba(244, 244, 242, 0.5); }
+  .footer-legal { display: flex; flex-wrap: wrap; gap: 1.4rem; list-style: none; margin: 0; padding: 0; }
+  .footer-legal a {
+    font-size: 0.828rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(244, 244, 242, 0.5);
+    transition: color 0.3s var(--ease-soft);
+  }
+  .footer-legal a:hover { color: var(--color-paper); }
+
+  @media (max-width: 880px) {
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem 1.5rem; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 520px) {
+    .footer-top { grid-template-columns: 1fr; }
+  }
+</style>

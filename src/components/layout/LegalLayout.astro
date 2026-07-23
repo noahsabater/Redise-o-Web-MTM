@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from './PageHeader.astro';
+
+interface Props {
+  title: string;
+  accent?: string;
+  eyebrow?: string;
+  updated?: string;
+}
+const { title, accent, eyebrow = 'Legal', updated = 'julio de 2026' } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <PageHeader eyebrow={eyebrow} title={title} accent={accent} />
+  <section class="section">
+    <div class="legal-wrap">
+      <p class="legal-updated">Última actualización: {updated}</p>
+      <div class="legal-body">
+        <slot />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal-wrap { width: 100%; max-width: 52rem; margin-inline: auto; padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .legal-updated { font-size: 0.851rem; letter-spacing: 0.06em; color: var(--color-ash); margin-bottom: 2.5rem; }
+  .legal-body { font-size: 1.15rem; line-height: 1.7; color: #2a2926; }
+  .legal-body :global(h2) { font-size: clamp(1.3rem, 2.4vw, 1.7rem); line-height: 1.2; margin: 2.4rem 0 1rem; color: var(--color-ink); }
+  .legal-body :global(p) { margin-bottom: 1.2rem; }
+  .legal-body :global(ul) { margin: 0 0 1.4rem; padding-left: 1.3rem; }
+  .legal-body :global(li) { margin-bottom: 0.5rem; }
+  .legal-body :global(a) { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
+</style>

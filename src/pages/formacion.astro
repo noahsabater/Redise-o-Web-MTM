@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/layout/PageHeader.astro';
+import Newsletter from '../components/sections/Newsletter.astro';
+import { Image } from 'astro:assets';
+import trending from '../assets/formacion/trending-1.jpg';
+import certificaciones from '../assets/formacion/certificaciones.jpg';
+import equipos from '../assets/formacion/equipos.jpg';
+import showroom from '../assets/formacion/showroom.jpg';
+
+const blocks = [
+  {
+    tag: 'Eventos',
+    title: 'Trending Sessions',
+    body: 'Eventos exclusivos para decoradores, arquitectos e interioristas. Disfruta de una experiencia inspiradora, en un ambiente cómodo y moderno, mientras descubres las mejores soluciones para tus proyectos, así como las últimas tendencias en Revestimientos Naturales. Conoce nuestros productos de una manera única, con exposiciones visuales y muestras reales.',
+    cta: 'Quiero asistir',
+    image: trending,
+  },
+  {
+    tag: 'Certificación',
+    title: 'Aplicador Homologado Tixol',
+    body: '¿Te apasionan los revestimientos decorativos y quieres llevar tu carrera al siguiente nivel? Conviértete en Aplicador Homologado Tixol.',
+    list: [
+      'Jornada completa de formación intensiva, teórico-práctica.',
+      'Dirigido a grupos de entre 5 y 15 personas, en nuestras instalaciones o en las de tu empresa.',
+      'Formación de 3 gamas por jornada. Opción Nature (Nature Floor, Wall y Arcilla) u Opción Deco (Oxitec, Cement Floor y Epoxi 3D).',
+      'Acceso a una bolsa exclusiva de profesionales certificados.',
+    ],
+    cta: 'Quiero certificarme',
+    image: certificaciones,
+  },
+  {
+    tag: 'Empresas',
+    title: 'Formación Equipos Comerciales',
+    body: 'Formamos a tu equipo comercial para que domine nuestras soluciones y las últimas tendencias en revestimientos naturales. Una experiencia práctica, con muestras reales y casos de uso, pensada para vender mejor y con más confianza.',
+    cta: 'Quiero más formación',
+    image: equipos,
+  },
+  {
+    tag: 'Showroom',
+    title: 'Showroom MTM',
+    body: 'Sabemos que elegir la decoración perfecta es una decisión importante. Por eso abrimos las puertas de nuestra casa para que te sientas en la tuya. En nuestro Showroom podrás recorrer espacios reales, descubrir cómo interactúa la luz con nuestros acabados y llevarte la seguridad de que lo que ves es exactamente lo que sueñas.',
+    cta: 'Muy pronto',
+    image: showroom,
+  },
+];
+---
+
+<BaseLayout
+  title="Formación · Fórmate con nosotros"
+  description="Programas de formación técnica y certificaciones oficiales de Tixol. De la teoría a la práctica de alto rendimiento."
+>
+  <PageHeader
+    eyebrow="Formación"
+    title="Fórmate"
+    accent="con nosotros"
+    intro="Accede con MTM a programas de formación técnica y certificaciones oficiales de Tixol. De la teoría a la práctica de alto rendimiento."
+  />
+
+  <section class="section blocks">
+    <div class="container-mtm">
+      {blocks.map((b, i) => (
+        <article class={`fblock ${i % 2 === 1 ? 'reverse' : ''}`}>
+          <div class="fmedia reveal">
+            <Image src={b.image} alt={b.title} widths={[560, 900]} sizes="(max-width: 900px) 100vw, 48vw" class="fimg" />
+            <span class="fn">0{i + 1}</span>
+          </div>
+          <div class="fbody reveal" style="--reveal-delay: 120ms">
+            <span class="label label--tick">{b.tag}</span>
+            <h2 class="fh">{b.title}</h2>
+            <p class="ftext">{b.body}</p>
+            {b.list && (
+              <ul class="flist">
+                {b.list.map((li) => <li>{li}</li>)}
+              </ul>
+            )}
+            <a class="btn btn--ghost-ink" href="/contacto">{b.cta}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <Newsletter />
+</BaseLayout>
+
+<style>
+  .blocks { display: flex; flex-direction: column; }
+  .fblock {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4.5rem); align-items: center;
+    padding-block: clamp(2.5rem, 5vw, 4rem);
+  }
+  .fblock.reverse .fmedia { order: 2; }
+  .fmedia { position: relative; overflow: hidden; }
+  .fimg { width: 100%; height: clamp(320px, 40vw, 500px); object-fit: cover; display: block; }
+  .fn { position: absolute; top: 1rem; left: 1rem; font-size: 0.828rem; letter-spacing: 0.22em; color: var(--color-paper); mix-blend-mode: difference; }
+  .fh { font-size: var(--text-title); line-height: 1.12; margin: 1.2rem 0 1.2rem; }
+  .ftext { color: var(--color-slate); line-height: 1.7; max-width: 48ch; margin-bottom: 1.4rem; }
+  .flist { list-style: none; margin: 0 0 1.8rem; padding: 0; }
+  .flist li { position: relative; padding: 0.75rem 0 0.75rem 1.5rem; border-top: 1px solid var(--color-line); font-size: 1.081rem; color: var(--color-slate); line-height: 1.5; }
+  .flist li::before { content: ''; position: absolute; left: 0; top: 1.15rem; width: 8px; height: 1px; background: var(--color-ink); }
+  .flist li:last-child { border-bottom: 1px solid var(--color-line); }
+
+  @media (max-width: 880px) {
+    .fblock, .fblock.reverse { grid-template-columns: 1fr; }
+    .fblock.reverse .fmedia { order: 0; }
+  }
+</style>

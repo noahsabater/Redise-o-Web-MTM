@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Newsletter from '../../components/sections/Newsletter.astro';
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const fmt = (d: Date) =>
+  d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<BaseLayout title={post.data.title} description={post.data.excerpt}>
+  <article class="post">
+    <header class="post-head">
+      <div class="container-narrow">
+        <a class="back" href="/blog">← Volver al blog</a>
+        <div class="post-meta">
+          <span class="cat">{post.data.category}</span>
+          <span class="date">{fmt(post.data.date)}</span>
+        </div>
+        <h1 class="post-title">{post.data.title}</h1>
+      </div>
+    </header>
+
+    {post.data.cover && (
+      <div class="post-cover">
+        <Image src={post.data.cover} alt={post.data.title} widths={[900, 1440, 1920]} sizes="100vw" loading="eager" class="post-cover-img" />
+      </div>
+    )}
+
+    <div class="container-narrow post-body">
+      <Content />
+    </div>
+  </article>
+
+  <Newsletter />
+</BaseLayout>
+
+<style>
+  .container-narrow { width: 100%; max-width: 46rem; margin-inline: auto; padding-inline: clamp(1.25rem, 5vw, 2rem); }
+  .post-head { padding-top: clamp(2.5rem, 6vw, 4.5rem); padding-bottom: clamp(1.8rem, 4vw, 2.6rem); }
+  .back { font-size: 0.828rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }
+  .back:hover { color: var(--color-ink); }
+  .post-meta { display: flex; gap: 1rem; align-items: center; margin: 1.8rem 0 1rem; }
+  .cat { font-size: 0.782rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ink); }
+  .date { font-size: 0.851rem; color: var(--color-ash); }
+  .post-title { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.05; max-width: 20ch; }
+
+  .post-cover { margin-block: clamp(1.5rem, 4vw, 2.5rem); }
+  .post-cover-img { width: 100%; height: clamp(320px, 50vw, 620px); object-fit: cover; display: block; }
+
+  .post-body { padding-block: clamp(1.5rem, 4vw, 2.5rem) clamp(3rem, 7vw, 5rem); font-size: 1.242rem; line-height: 1.75; color: var(--color-ink); }
+  .post-body :global(p) { margin-bottom: 1.5rem; color: #2a2926; }
+  .post-body :global(h2) { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.15; margin: 2.8rem 0 1.1rem; }
+  .post-body :global(h3) { font-size: clamp(1.38rem, 2.2vw, 1.667rem); line-height: 1.2; margin: 2rem 0 0.9rem; }
+  .post-body :global(ul), .post-body :global(ol) { margin: 0 0 1.6rem; padding-left: 1.3rem; color: #2a2926; }
+  .post-body :global(li) { margin-bottom: 0.6rem; }
+  .post-body :global(strong) { font-weight: 700; color: var(--color-ink); }
+  .post-body :global(a) { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
+</style>

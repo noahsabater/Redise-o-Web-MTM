@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Autor from '../components/sections/Autor.astro';
+import Categorias from '../components/sections/Categorias.astro';
+import Catalogo from '../components/sections/Catalogo.astro';
+import Portfolio from '../components/sections/Portfolio.astro';
+import BlogTeaser from '../components/sections/BlogTeaser.astro';
+import Newsletter from '../components/sections/Newsletter.astro';
+---
+
+<BaseLayout
+  title="Materiales premium para arquitectura e interiorismo"
+  description="Texturas naturales y acabados honestos para proyectos que buscan marcar la diferencia. Revestimientos naturales, Tixol Nature, soluciones para humedades e interiores."
+  transparentHeader={true}
+>
+  <Hero />
+  <Autor />
+  <Categorias />
+  <Catalogo />
+  <Portfolio />
+  <BlogTeaser />
+  <Newsletter />
+</BaseLayout>

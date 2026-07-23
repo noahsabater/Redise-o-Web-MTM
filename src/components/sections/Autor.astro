@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import img from '../../assets/hero/home-2.jpg';
+---
+
+<section class="autor section">
+  <div class="container-mtm autor-grid">
+    <div class="autor-text reveal">
+      <span class="label label--tick">MTM · Materiales Modernos</span>
+      <h2 class="autor-h">
+        Soluciones pensadas para transformar espacios sin alma en espacios de autor.
+      </h2>
+      <a class="btn btn--ink" href="/productos">
+        Explorar catálogo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </a>
+    </div>
+    <div class="autor-media reveal" style="--reveal-delay: 120ms">
+      <Image src={img} alt="Interior con acabado natural de autor" widths={[560, 900]} sizes="(max-width: 900px) 100vw, 45vw" class="autor-img" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .autor-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(2.5rem, 6vw, 6rem);
+    align-items: center;
+  }
+  .autor-h {
+    font-size: var(--text-display);
+    line-height: var(--text-display--line-height);
+    max-width: 18ch;
+    margin: clamp(1.5rem, 3vw, 2.2rem) 0 clamp(2rem, 4vw, 2.8rem);
+  }
+  .autor-media { overflow: hidden; }
+  .autor-img { width: 100%; height: clamp(340px, 44vw, 560px); object-fit: cover; display: block; }
+
+  @media (max-width: 880px) {
+    .autor-grid { grid-template-columns: 1fr; }
+    .autor-media { order: -1; }
+  }
+</style>

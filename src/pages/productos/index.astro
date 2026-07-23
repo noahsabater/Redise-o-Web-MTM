@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import tixol from '../../assets/marcas/portada-tixol.png';
+import scalp from '../../assets/marcas/portada-scalp.png';
+import supertape from '../../assets/marcas/portada-supertape.png';
+
+const panels = [
+  { slug: 'tixol', name: 'Tixol', tagline: 'Pinturas, revestimientos y decoración', img: tixol, count: 134 },
+  { slug: 'scalp', name: 'Scalp', tagline: 'Limpieza y protección de superficies', img: scalp, count: 60 },
+  { slug: 'supertape', name: 'Supertape', tagline: 'Protección para reformas', img: supertape, count: 10 },
+];
+---
+
+<BaseLayout
+  title="Productos · Elige una marca"
+  description="Explora el catálogo de MTM por marca: Tixol, Scalp y Supertape."
+  transparentHeader={true}
+>
+  <section class="chooser" aria-label="Elige una marca">
+    {panels.map((p, i) => (
+      <a class="panel" href={`/productos/${p.slug}`} style={`--i:${i}`}>
+        <div class="panel-media">
+          <Image src={p.img} alt={p.name} widths={[600, 900, 1200]} sizes="34vw" class="panel-img" loading="eager" />
+        </div>
+        <div class="panel-scrim"></div>
+        <div class="panel-inner">
+          <span class="panel-eyebrow">N.º 0{i + 1} · Marca</span>
+          <h2 class="panel-title">{p.name}</h2>
+          <span class="panel-tag">{p.tagline}</span>
+          <span class="panel-cta">
+            Ver productos ({p.count})
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </span>
+        </div>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .chooser {
+    display: flex;
+    height: 100svh;
+    min-height: 600px;
+    background: var(--color-carbon);
+  }
+  .panel {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    color: var(--color-paper);
+    transition: flex 0.6s var(--ease-soft);
+  }
+  .panel-media { position: absolute; inset: 0; }
+  .panel-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease-soft); }
+  .panel-scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(11,11,10,0.82) 0%, rgba(11,11,10,0.25) 45%, rgba(11,11,10,0.35) 100%);
+    transition: background 0.6s var(--ease-soft);
+  }
+  .panel-inner {
+    position: relative; z-index: 2;
+    padding: clamp(2rem, 4vw, 3.5rem);
+    display: flex; flex-direction: column; gap: 0.7rem;
+    width: 100%;
+  }
+  .panel-eyebrow { font-size: 0.782rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(244,244,242,0.7); }
+  .panel-title { font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; color: var(--color-paper); }
+  .panel-tag { font-size: clamp(1.092rem, 1.3vw, 1.265rem); color: rgba(244,244,242,0.82); max-width: 26ch; }
+  .panel-cta {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    margin-top: 1rem; font-size: 0.828rem; letter-spacing: 0.14em; text-transform: uppercase;
+    opacity: 0; transform: translateY(10px);
+    transition: opacity 0.5s var(--ease-soft), transform 0.5s var(--ease-soft);
+  }
+  .panel-cta svg { width: 16px; height: 16px; transition: transform 0.4s var(--ease-soft); }
+
+  /* Divisor entre paneles */
+  .panel + .panel { box-shadow: -1px 0 0 rgba(244,244,242,0.14); }
+
+  /* Hover: el panel activo se ensancha y revela el CTA */
+  @media (hover: hover) and (min-width: 861px) {
+    .chooser:hover .panel { flex: 0.82; }
+    .chooser .panel:hover { flex: 1.5; }
+    .panel:hover .panel-img { transform: scale(1.06); }
+    .panel:hover .panel-scrim { background: linear-gradient(to top, rgba(11,11,10,0.78) 0%, rgba(11,11,10,0.15) 55%, rgba(11,11,10,0.25) 100%); }
+    .panel:hover .panel-cta { opacity: 1; transform: none; }
+  }
+  @media (hover: none) { .panel-cta { opacity: 1; transform: none; } }
+
+  @media (max-width: 860px) {
+    .chooser { flex-direction: column; height: auto; }
+    .panel { min-height: 46svh; }
+    .panel-cta { opacity: 1; transform: none; }
+  }
+</style>

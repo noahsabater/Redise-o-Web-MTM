@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BrandShowcase from '../components/sections/BrandShowcase.astro';
+import { brandBySlug } from '../data/brands';
+import hero from '../assets/marcas/supertape-01.webp';
+import gallery from '../assets/marcas/supertape-02.webp';
+
+const brand = brandBySlug('supertape')!;
+---
+
+<BaseLayout title="Supertape · Protección para reformas" description={brand.tagline} transparentHeader={true}>
+  <BrandShowcase brand={brand} hero={hero} gallery={gallery} origin="Marca española" />
+</BaseLayout>

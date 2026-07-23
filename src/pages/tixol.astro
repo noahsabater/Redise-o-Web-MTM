@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BrandShowcase from '../components/sections/BrandShowcase.astro';
+import { brandBySlug } from '../data/brands';
+import hero from '../assets/marcas/tixol-01.webp';
+import gallery from '../assets/marcas/tixol-02.webp';
+
+const brand = brandBySlug('tixol')!;
+---
+
+<BaseLayout title="Tixol · Pinturas y revestimientos" description={brand.tagline} transparentHeader={true}>
+  <BrandShowcase brand={brand} hero={hero} gallery={gallery} origin="Marca española" />
+</BaseLayout>

@@ -1,0 +1,31 @@
+---
+// Banda de descarga del catálogo completo (PDF).
+---
+
+<section class="catalogo">
+  <div class="container-mtm catalogo-inner reveal">
+    <div class="catalogo-text">
+      <span class="label label--tick on-dark">Catálogo Completo</span>
+      <h2 class="catalogo-h">Todo nuestro universo de materiales, en tus manos</h2>
+    </div>
+    <a class="btn btn--light" href="/catalogo-mtm.pdf" download>
+      Descargar catálogo (PDF)
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v13M7 12l5 5 5-5M5 21h14"></path></svg>
+    </a>
+  </div>
+</section>
+
+<style>
+  .catalogo { background: var(--color-carbon); color: var(--color-paper); padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+  .catalogo-inner {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+    gap: 2.5rem;
+  }
+  .catalogo-h {
+    color: var(--color-paper);
+    font-size: var(--text-title);
+    line-height: 1.15;
+    max-width: 22ch;
+    margin-top: 1.4rem;
+  }
+</style>

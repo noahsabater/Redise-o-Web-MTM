@@ -1,0 +1,203 @@
+---
+import '../styles/global.css';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import { site } from '../data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Ruta de imagen social (og:image), opcional */
+  ogImage?: string;
+  /** true en páginas con hero a pantalla completa: el header se superpone transparente */
+  transparentHeader?: boolean;
+}
+
+const {
+  title,
+  description = site.description,
+  ogImage = '/og-default.jpg',
+  transparentHeader = false,
+} = Astro.props;
+
+const pageTitle = title ? `${title} · ${site.shortName}` : `${site.name} · Materiales premium`;
+const canonical = new URL(Astro.url.pathname, site.url).href;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Precarga de la tipografía crítica del hero (NATS) -->
+    <link rel="preload" href="/fonts/NATS-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(ogImage, site.url).href} />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Si llegamos al inicio desde el logo, cubrimos de negro ANTES del primer
+         pintado para que la transición sea continua (sin pantallazo ni corte). -->
+    <script is:inline>
+      try {
+        if (
+          sessionStorage.getItem('mtm-home-intro') &&
+          !matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          document.documentElement.classList.add('hi-active');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+    <Header transparent={transparentHeader} />
+    <main id="main" class:list={['page-main', { 'has-hero': transparentHeader }]}>
+      <slot />
+    </main>
+    <Footer />
+
+    <!-- Barrido negro para la transición entre páginas -->
+    <div class="page-sweep" data-sweep aria-hidden="true"></div>
+
+    <!-- Revelado sutil al hacer scroll (respeta prefers-reduced-motion) -->
+    <script>
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const els = document.querySelectorAll<HTMLElement>('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach((el) => el.classList.add('is-visible'));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+        );
+        els.forEach((el) => io.observe(el));
+      }
+    </script>
+
+    <!-- Scroll suave (Lenis) + transición de página (barrido negro lateral) -->
+    <script>
+      import Lenis from 'lenis';
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // ---- Scroll suave y fluido ----
+      if (!reduce) {
+        const lenis = new Lenis({ lerp: 0.09, smoothWheel: true, wheelMultiplier: 1 });
+        const raf = (t: number) => {
+          lenis.raf(t);
+          requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+        (window as any).__lenis = lenis;
+
+        // Anclas internas con desplazamiento suave
+        document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
+          a.addEventListener('click', (e) => {
+            const id = a.getAttribute('href');
+            if (!id || id.length < 2) return;
+            const target = document.querySelector(id);
+            if (target) {
+              e.preventDefault();
+              lenis.scrollTo(target as HTMLElement, { offset: -80 });
+            }
+          });
+        });
+      }
+
+      // ---- Transición de página: barrido negro lateral rápido ----
+      const sweep = document.querySelector<HTMLElement>('[data-sweep]');
+      if (sweep && !reduce) {
+        // Salida al cargar la nueva página (si venimos de un barrido)
+        if (sessionStorage.getItem('mtm-sweep')) {
+          sessionStorage.removeItem('mtm-sweep');
+          sweep.classList.add('cover');
+          requestAnimationFrame(() =>
+            requestAnimationFrame(() => {
+              sweep.classList.remove('cover');
+              sweep.classList.add('sweep-out');
+            })
+          );
+          sweep.addEventListener('animationend', () => sweep.classList.remove('sweep-out'), { once: true });
+        }
+
+        // Entrada al pinchar cualquier enlace interno
+        document.addEventListener(
+          'click',
+          (e) => {
+            const a = (e.target as HTMLElement)?.closest?.('a');
+            if (!a) return;
+            if (a.hasAttribute('data-home-transition') || a.hasAttribute('data-no-sweep')) return;
+            if (!a.getAttribute('href')) return;
+            let url: URL;
+            try {
+              url = new URL(a.href, location.href);
+            } catch {
+              return;
+            }
+            if (url.origin !== location.origin) return;
+            if (a.target === '_blank' || a.hasAttribute('download')) return;
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || (e as MouseEvent).button !== 0) return;
+            if (url.pathname === location.pathname) return; // ancla en la misma página
+            e.preventDefault();
+            sessionStorage.setItem('mtm-sweep', '1');
+            sweep.classList.add('sweep-in');
+            let done = false;
+            const go = () => {
+              if (done) return;
+              done = true;
+              location.href = url.href;
+            };
+            sweep.addEventListener('animationend', go, { once: true });
+            window.setTimeout(go, 600);
+          },
+          true
+        );
+      }
+    </script>
+
+    <style>
+      /* El header es fijo; las páginas sin hero necesitan compensar su altura */
+      .page-main:not(.has-hero) { padding-top: 76px; }
+      @media (max-width: 880px) {
+        .page-main:not(.has-hero) { padding-top: 60px; }
+      }
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: 0;
+        z-index: 100;
+        background: var(--color-ink);
+        color: var(--color-paper);
+        padding: 0.75rem 1.25rem;
+        font-size: 0.92rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .skip-link:focus {
+        left: 0;
+      }
+    </style>
+  </body>
+</html>

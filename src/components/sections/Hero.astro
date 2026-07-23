@@ -1,0 +1,201 @@
+---
+import heroImg from '../../assets/hero/hero-inicio.webp';
+---
+
+<section class="hero" aria-label="Portada">
+  <div class="hero-media">
+    <video
+      class="hero-img"
+      id="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster={heroImg.src}
+      aria-label="Cocina mediterránea revestida en microcemento, con arcos, luz cálida y fibras naturales"
+    >
+      <source src="/video/hero-mtm.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero-scrim"></div>
+
+  <span class="hero-index">Materiales Premium — N.º 01</span>
+
+  <div class="hero-inner container-mtm">
+    <span class="label label--tick on-dark anim d1">MTM · Materiales Modernos</span>
+    <h1 class="hero-title">
+      <span class="anim d1">Dale vida</span><br />
+      <span class="anim d2 serif-italic">a tus ideas</span>
+    </h1>
+    <div class="hero-foot anim d3">
+      <p class="hero-sub">
+        Texturas naturales y acabados honestos para proyectos que buscan marcar la diferencia.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn--light" href="/productos">
+          Explorar catálogo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+        <a class="btn btn--ghost" href="/aplicaciones">Ver aplicaciones</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    height: 100svh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    background: var(--color-carbon);
+  }
+
+  .hero-media { position: absolute; inset: 0; overflow: hidden; }
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: heroZoom 1.6s var(--ease-soft) both;
+    will-change: transform;
+  }
+  @keyframes heroZoom {
+    from { transform: scale(1.12); }
+    to { transform: scale(1); }
+  }
+
+  .hero-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(11, 11, 10, 0.62),
+      rgba(11, 11, 10, 0.12) 42%,
+      rgba(11, 11, 10, 0.05) 70%,
+      rgba(11, 11, 10, 0.18)
+    );
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .label.on-dark { margin-bottom: clamp(1.4rem, 3vw, 2.2rem); display: inline-flex; }
+
+  .hero-title {
+    color: var(--color-paper);
+    font-size: var(--text-hero);
+    line-height: 0.96;
+    font-weight: 400;
+    letter-spacing: 0em;
+    max-width: 16ch;
+  }
+  /* El acento serif (Bodoni cursiva) pide algo más de aire óptico */
+  .hero-title .serif-italic {
+    letter-spacing: 0.01em;
+    padding-right: 0.06em;
+  }
+
+  .hero-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-top: clamp(1.8rem, 4vw, 2.8rem);
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(244, 244, 242, 0.22);
+  }
+  .hero-sub {
+    color: rgba(244, 244, 242, 0.82);
+    font-size: clamp(1.15rem, 1.4vw, 1.357rem);
+    max-width: 42ch;
+    font-weight: 400;
+  }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+  .hero-index {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-inline: clamp(1.25rem, 5vw, 5rem);
+    z-index: 2;
+    font-family: var(--font-display);
+    font-size: 0.828rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: rgba(244, 244, 242, 0.6);
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hero-index::after {
+    content: '';
+    height: 70px;
+    width: 1px;
+    background: rgba(244, 244, 242, 0.4);
+  }
+
+  /* Animación de entrada escalonada */
+  .anim { opacity: 0; transform: translateY(26px); animation: rise 1s var(--ease-soft) forwards; }
+  .anim.d1 { animation-delay: 0.15s; }
+  .anim.d2 { animation-delay: 0.32s; }
+  .anim.d3 { animation-delay: 0.5s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .anim { opacity: 1; transform: none; animation: none; }
+    .hero-img { animation: none; }
+  }
+
+  @media (max-width: 880px) {
+    .hero-index { display: none; }
+    .hero-foot { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<script>
+  const img = document.getElementById('hero-video') as HTMLVideoElement | null;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Asegura la reproducción automática desde el primer momento.
+  // Algunos navegadores pausan el autoplay hasta que hay interacción; forzamos play().
+  if (img) {
+    const tryPlay = () => {
+      const p = img.play();
+      if (p && typeof p.catch === 'function') p.catch(() => {});
+    };
+    tryPlay();
+    img.addEventListener('canplay', tryPlay, { once: true });
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) tryPlay();
+    });
+  }
+
+  // Parallax ligero del hero
+  if (img && !reduce) {
+    let ticking = false;
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const y = Math.min(window.scrollY, 900);
+            img.style.transform = `translate3d(0, ${y * 0.12}px, 0)`;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+  }
+</script>

@@ -1,0 +1,29 @@
+# build output
+dist/
+.output/
+
+# dependencies
+node_modules/
+
+# astro
+.astro/
+
+# environment
+.env
+.env.production
+
+# logs
+npm-debug.log*
+*.log
+
+# macOS / editor
+.DS_Store
+Thumbs.db
+
+# Material de trabajo pesado que NO necesita la web
+# (el vídeo del hero vive en public/video y sí se sube)
+Imágenes web (referencia)/
+Video referencia web.mov
+Hero Web MTM video.mp4
+Captura de pantalla*.png
+*.mov

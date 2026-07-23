@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/layout/PageHeader.astro';
+import { reps } from '../data/reps';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="Contacto"
+  description="Ponte en contacto con el equipo de MTM Materiales Modernos a través del formulario, email o teléfono. Red de representantes por toda España."
+>
+  <PageHeader
+    eyebrow="Contacto"
+    title="Hablemos de tu"
+    accent="proyecto"
+    intro="Si necesitas información, puedes ponerte en contacto con nuestro equipo a través del formulario, por email o por teléfono."
+  />
+
+  <section class="section">
+    <div class="container-mtm contact-grid">
+      <!-- Datos + formulario -->
+      <div class="c-form-col">
+        <div class="c-direct reveal">
+          <div class="c-item">
+            <span class="c-k">Dirección</span>
+            <span class="c-v">P.I. Torre Alcayna, C/ San Pancracio 2 y 4, 30110 · Murcia</span>
+          </div>
+          <div class="c-item">
+            <span class="c-k">Teléfono</span>
+            <a class="c-v" href="tel:+34968306060">+34 968 306 060</a>
+          </div>
+          <div class="c-item">
+            <span class="c-k">Email</span>
+            <a class="c-v" href="mailto:mtm@mtm-murcia.com">mtm@mtm-murcia.com</a>
+          </div>
+        </div>
+
+        <form class="c-form reveal" name="contacto" method="post" style="--reveal-delay: 120ms">
+          <div class="c-row">
+            <label class="field">
+              <span>Nombre</span>
+              <input type="text" name="nombre" required />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <div class="c-row">
+            <label class="field">
+              <span>Teléfono</span>
+              <input type="tel" name="telefono" />
+            </label>
+            <label class="field">
+              <span>Asunto</span>
+              <input type="text" name="asunto" />
+            </label>
+          </div>
+          <label class="field">
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="5" required></textarea>
+          </label>
+          <label class="c-check">
+            <input type="checkbox" name="privacy" required />
+            <span>Al enviar este formulario, acepto la <a href="/politica-de-privacidad">Política de Privacidad</a>.</span>
+          </label>
+          <button class="btn btn--ink" type="submit">
+            Enviar mensaje
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Departamento técnico -->
+      <aside class="c-tech reveal" style="--reveal-delay: 200ms">
+        <span class="label label--tick">Departamento técnico</span>
+        <p class="c-tech-lead">¿Consultas sobre producto o aplicación? Nuestro equipo técnico te ayuda.</p>
+        <div class="c-item">
+          <span class="c-k">Responsable</span>
+          <span class="c-v">Jerónimo Sánchez</span>
+        </div>
+        <div class="c-item">
+          <span class="c-k">Teléfono</span>
+          <a class="c-v" href="tel:+34611819441">611 819 441</a>
+        </div>
+        <div class="c-item">
+          <span class="c-k">Email</span>
+          <a class="c-v" href="mailto:tecnico@mtm-murcia.com">tecnico@mtm-murcia.com</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Red comercial -->
+  <section class="section reps-sec">
+    <div class="container-mtm">
+      <div class="reps-head reveal">
+        <span class="label label--tick">Red comercial</span>
+        <h2 class="reps-h">Representantes por zona</h2>
+      </div>
+      <div class="reps-table reveal">
+        <div class="reps-row reps-thead">
+          <span>Zona</span><span>Representante</span><span>Teléfono</span><span>Email</span>
+        </div>
+        {reps.map((r) => (
+          <div class="reps-row">
+            <span class="reps-region">{r.region}</span>
+            <span>{r.name}</span>
+            <a href={`tel:+34${r.phone.replace(/\s/g, '')}`}>{r.phone}</a>
+            <a href={`mailto:${r.email}`} class="reps-email">{r.email}</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1.5fr 0.9fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
+
+  .c-direct { display: flex; flex-wrap: wrap; gap: 2rem 3rem; padding-bottom: 2.2rem; margin-bottom: 2.4rem; border-bottom: 1px solid var(--color-line); }
+  .c-item { display: flex; flex-direction: column; gap: 0.35rem; }
+  .c-k { font-size: 0.782rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ash); }
+  .c-v { font-size: 1.15rem; color: var(--color-ink); }
+  a.c-v:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .c-form { display: flex; flex-direction: column; gap: 1.2rem; }
+  .c-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .field { display: flex; flex-direction: column; gap: 0.5rem; }
+  .field span { font-size: 0.805rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }
+  .field input, .field textarea {
+    background: transparent; border: 0; border-bottom: 1px solid var(--color-line);
+    padding: 0.7rem 0.1rem; font-family: var(--font-sans); font-size: 1.15rem; color: var(--color-ink);
+    resize: vertical;
+  }
+  .field input:focus, .field textarea:focus { outline: none; border-bottom-color: var(--color-ink); }
+  .c-check { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.943rem; color: var(--color-slate); margin-top: 0.4rem; }
+  .c-check input { margin-top: 0.2rem; accent-color: var(--color-ink); }
+  .c-check a { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
+  .c-form .btn { align-self: flex-start; margin-top: 0.6rem; }
+
+  .c-tech { background: var(--color-mist); padding: clamp(1.8rem, 3vw, 2.4rem); display: flex; flex-direction: column; gap: 1.3rem; }
+  .c-tech-lead { color: var(--color-slate); line-height: 1.6; font-size: 1.092rem; }
+
+  .reps-sec { background: var(--color-carbon); color: rgba(244,244,242,0.72); }
+  .reps-head { display: flex; flex-direction: column; gap: 1rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+  .reps-head .label { color: rgba(244,244,242,0.7); }
+  .reps-h { color: var(--color-paper); font-size: var(--text-display); line-height: var(--text-display--line-height); }
+  .reps-table { display: flex; flex-direction: column; }
+  .reps-row {
+    display: grid; grid-template-columns: 1.1fr 1.3fr 0.9fr 1.7fr; gap: 1rem;
+    padding: 1rem 0; border-top: 1px solid rgba(244,244,242,0.14); align-items: center;
+    font-size: 1.058rem;
+  }
+  .reps-thead { color: rgba(244,244,242,0.45); font-size: 0.782rem; letter-spacing: 0.14em; text-transform: uppercase; }
+  .reps-region { color: var(--color-paper); }
+  .reps-row a { color: rgba(244,244,242,0.72); }
+  .reps-row a:hover { color: var(--color-paper); }
+  .reps-email { overflow-wrap: anywhere; }
+
+  @media (max-width: 880px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .c-row { grid-template-columns: 1fr; }
+    .reps-row { grid-template-columns: 1fr 1fr; gap: 0.3rem 1rem; padding: 1.1rem 0; }
+    .reps-thead { display: none; }
+    .reps-region { grid-column: 1 / -1; font-size: 0.828rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-ash); }
+    .reps-email { grid-column: 1 / -1; }
+  }
+</style>

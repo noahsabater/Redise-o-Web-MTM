@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BrandShowcase from '../components/sections/BrandShowcase.astro';
+import { brandBySlug } from '../data/brands';
+import hero from '../assets/marcas/scalp-01.webp';
+
+const brand = brandBySlug('scalp')!;
+---
+
+<BaseLayout title="Scalp · Limpieza y protección de superficies" description={brand.tagline} transparentHeader={true}>
+  <BrandShowcase brand={brand} hero={hero} origin="Marca francesa" />
+</BaseLayout>

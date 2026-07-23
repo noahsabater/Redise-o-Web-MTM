@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import products from '../../data/products.json';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+const related = products
+  .filter((p) => p.slug !== product.slug && p.gamaMain && p.gamaMain === product.gamaMain)
+  .slice(0, 4);
+const brandHref = `/productos/${product.brand}`;
+---
+
+<BaseLayout title={`${product.name} · ${product.brandName}`} description={product.short || product.name}>
+  <div class="wrap">
+    <!-- Migas -->
+    <nav class="crumbs container-mtm" aria-label="Miga de pan">
+      <a href="/productos">Productos</a>
+      <span>/</span>
+      <a href={brandHref}>{product.brandName}</a>
+      {product.gamaMain && (<><span>/</span><span class="crumb-cur">{product.gamaMain}</span></>)}
+    </nav>
+
+    <section class="detail container-mtm">
+      <div class="detail-media">
+        {product.image ? (
+          <img src={product.image} alt={product.imageAlt} loading="eager" class="detail-img" />
+        ) : (
+          <div class="detail-noimg">{product.brandName}</div>
+        )}
+      </div>
+
+      <div class="detail-info">
+        <div class="tags">
+          <a href={brandHref} class="tag tag--brand">{product.brandName}</a>
+          {product.tone && <span class="tag">{product.tone}</span>}
+        </div>
+        <h1 class="detail-title">{product.name}</h1>
+        {product.short && <p class="detail-short">{product.short}</p>}
+
+        {product.gamas.length > 0 && (
+          <div class="detail-cats">
+            <span class="dc-k">Gama</span>
+            <div class="dc-list">
+              {product.gamas.map((g) => <span class="dc-pill">{g.name}</span>)}
+            </div>
+          </div>
+        )}
+
+        <div class="detail-cta">
+          <a class="btn btn--ink" href="/contacto">
+            Solicitar información
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a class="btn btn--ghost-ink" href="/productos">Volver al catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    {product.description.length > 0 && (
+      <section class="desc container-mtm">
+        <h2 class="desc-h">Descripción</h2>
+        <div class="desc-body">
+          {product.description.map((para) =>
+            para.startsWith('•') ? <p class="desc-li">{para}</p> : <p>{para}</p>
+          )}
+        </div>
+      </section>
+    )}
+
+    {related.length > 0 && (
+      <section class="related container-mtm">
+        <div class="related-head">
+          <span class="label label--tick">Misma gama</span>
+          <h2 class="related-h">Productos relacionados</h2>
+        </div>
+        <div class="related-grid">
+          {related.map((r) => (
+            <a class="rcard" href={`/producto/${r.slug}`}>
+              <div class="rcard-media">
+                {r.image && <img src={r.image} alt={r.imageAlt} loading="lazy" class="rcard-img" />}
+              </div>
+              <span class="rcard-brand">{r.brandName}</span>
+              <span class="rcard-name">{r.name}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap { padding-top: clamp(2rem, 6vw, 4rem); }
+  .crumbs { display: flex; gap: 0.6rem; align-items: center; font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-ash); margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
+  .crumbs a { color: var(--color-slate); }
+  .crumbs a:hover { color: var(--color-ink); }
+  .crumb-cur { color: var(--color-ink); }
+
+  .detail { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+  .detail-media { background: var(--color-surface); border: 1px solid var(--color-line); aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; position: sticky; top: 100px; }
+  .detail-img { width: 100%; height: 100%; object-fit: contain; padding: clamp(1.5rem, 4vw, 3rem); }
+  .detail-noimg { font-size: 1.61rem; color: var(--color-ash); letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .tags { display: flex; gap: 0.6rem; margin-bottom: 1.4rem; }
+  .tag { font-size: 0.759rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-slate); border: 1px solid var(--color-line); padding: 0.4rem 0.8rem; border-radius: 999px; }
+  .tag--brand { color: var(--color-paper); background: var(--color-ink); border-color: var(--color-ink); }
+  .detail-title { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.04; margin-bottom: 1.4rem; }
+  .detail-short { font-size: clamp(1.208rem, 1.6vw, 1.438rem); line-height: 1.6; color: var(--color-slate); margin-bottom: 2rem; }
+
+  .detail-cats { padding-block: 1.6rem; border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .dc-k { font-size: 0.759rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ash); }
+  .dc-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .dc-pill { font-size: 0.977rem; color: var(--color-ink); background: var(--color-mist); padding: 0.4rem 0.8rem; }
+  .detail-cta { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+  .desc { margin-top: clamp(3rem, 7vw, 5.5rem); max-width: 62rem; }
+  .desc-h { font-size: var(--text-title); margin-bottom: 1.4rem; }
+  .desc-body { font-size: 1.208rem; line-height: 1.75; color: #2a2926; }
+  .desc-body p { margin-bottom: 1.1rem; }
+  .desc-li { padding-left: 0.4rem; }
+
+  .related { margin-top: clamp(3.5rem, 8vw, 6rem); padding-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--color-line); }
+  .related-head { display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: clamp(1.8rem, 3vw, 2.6rem); }
+  .related-h { font-size: var(--text-title); }
+  .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2vw, 1.6rem); }
+  .rcard { display: flex; flex-direction: column; background: var(--color-surface); border: 1px solid var(--color-line); transition: transform 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft); }
+  .rcard:hover { transform: translateY(-3px); box-shadow: 0 16px 36px -22px rgba(11,11,10,0.4); }
+  .rcard-media { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .rcard-img { width: 100%; height: 100%; object-fit: contain; padding: 1.2rem; }
+  .rcard-brand { font-size: 0.713rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ash); margin: 0 1rem; }
+  .rcard-name { font-size: 1.092rem; line-height: 1.25; margin: 0.3rem 1rem 1.1rem; }
+
+  @media (max-width: 880px) {
+    .detail { grid-template-columns: 1fr; }
+    .detail-media { position: relative; top: 0; aspect-ratio: 4 / 3; }
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>

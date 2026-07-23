@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/layout/PageHeader.astro';
+import products from '../../data/products.json';
+import { catalog } from '../../data/catalog';
+
+export function getStaticPaths() {
+  return ['tixol', 'scalp', 'supertape'].map((slug) => ({
+    params: { brand: slug },
+    props: { brand: slug, items: products.filter((p) => p.brand === slug) },
+  }));
+}
+
+const { brand, items } = Astro.props;
+const meta: Record<string, { name: string; tagline: string }> = {
+  tixol: { name: 'Tixol', tagline: 'Pinturas, revestimientos y soluciones decorativas para interior y exterior.' },
+  scalp: { name: 'Scalp', tagline: 'Limpieza, hidrofugado y protección de superficies.' },
+  supertape: { name: 'Supertape', tagline: 'Cintas y sistemas de protección para reformas.' },
+};
+const brandName = meta[brand].name;
+const gamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
+const toneOrder = ['Natural', 'Gris', 'Óxido', 'Metálico', 'Blanco', 'Negro', 'Transparente'];
+const tones = toneOrder.filter((t) => items.some((p) => p.tone === t));
+const PAGE_SIZE = 12;
+---
+
+<BaseLayout title={`Productos ${brandName} · Catálogo`} description={meta[brand].tagline}>
+  <PageHeader eyebrow={`Catálogo · ${brandName}`} title={`Productos ${brandName}`} intro={meta[brand].tagline} />
+
+  <div class="catalog-bg"></div>
+
+  <section class="catalog container-mtm">
+    <!-- Filtros (glassmorphism) -->
+    <aside class="side" data-filters data-page-size={PAGE_SIZE}>
+      <div class="side-inner">
+        <a class="side-back" href="/productos">← Todas las marcas</a>
+
+        <div class="fblock">
+          <label class="fsearch">
+            <span class="fl">Buscar</span>
+            <input type="search" placeholder={`Buscar en ${brandName}…`} data-search />
+          </label>
+        </div>
+
+        {tones.length > 0 && (
+          <div class="fblock">
+            <span class="fl">Tono</span>
+            <div class="fopts fopts--wrap" data-group="tone">
+              <button class="fchip is-on" data-value="" type="button">Todos</button>
+              {tones.map((t) => <button class="fchip" data-value={t} type="button">{t}</button>)}
+            </div>
+          </div>
+        )}
+
+        <div class="fblock">
+          <span class="fl">Categoría</span>
+          <select class="fcat" data-cat>
+            <option value="">Todas las categorías</option>
+            {gamas.map((g) => <option value={g.slug}>{g.name}</option>)}
+          </select>
+        </div>
+
+        <div class="side-foot">
+          <span class="fcount"><span data-count>{items.length}</span> productos</span>
+          <button class="freset" type="button" data-reset>Limpiar</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Rejilla + paginación -->
+    <div class="main">
+      <ul class="pgrid" data-grid>
+        {items.map((p) => (
+          <li
+            class="pcard"
+            data-cats={p.gamas.map((g) => g.slug).join(' ')}
+            data-tone={p.tone ?? ''}
+            data-name={p.name.toLowerCase()}
+          >
+            <a href={`/producto/${p.slug}`}>
+              <div class="pcard-media">
+                {p.image && <img src={p.image} alt={p.imageAlt} loading="lazy" class="pcard-img" />}
+              </div>
+              <div class="pcard-body">
+                <h3 class="pcard-name">{p.name}</h3>
+                {p.gamaMain && <span class="pcard-gama">{p.gamaMain}</span>}
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <p class="pempty" data-empty hidden>No hay productos que coincidan. <button type="button" data-reset>Limpiar filtros</button></p>
+      <nav class="pager" data-pager aria-label="Paginación"></nav>
+      <p class="pager-info" data-pager-info></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .catalog-bg {
+    position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(42rem 42rem at 12% 18%, rgba(190, 178, 160, 0.22), transparent 60%),
+      radial-gradient(38rem 38rem at 88% 42%, rgba(150, 160, 170, 0.18), transparent 60%);
+  }
+  .catalog {
+    display: grid; grid-template-columns: 17rem 1fr;
+    gap: clamp(1.5rem, 3vw, 2.6rem); align-items: start;
+    padding-top: clamp(1.5rem, 3vw, 2.5rem); padding-bottom: clamp(4rem, 8vw, 7rem);
+  }
+
+  /* Panel de filtros: único elemento con blur (barato) */
+  .side { position: sticky; top: 92px; }
+  .side-inner {
+    display: flex; flex-direction: column; gap: 1.5rem;
+    padding: 1.5rem 1.4rem; border-radius: 20px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(18px) saturate(1.4);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 18px 44px -24px rgba(11, 11, 10, 0.28);
+  }
+  .side-back { font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-slate); }
+  .side-back:hover { color: var(--color-ink); }
+  .fblock { display: flex; flex-direction: column; gap: 0.75rem; }
+  .fl { font-size: 0.736rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-slate); }
+  .fsearch { display: flex; flex-direction: column; gap: 0.6rem; }
+  .fsearch input, .fcat {
+    font-family: var(--font-sans); font-size: 1.035rem; color: var(--color-ink);
+    background: rgba(255, 255, 255, 0.6); border: 1px solid var(--color-line);
+    border-radius: 11px; padding: 0.65rem 0.8rem; width: 100%;
+  }
+  .fsearch input:focus, .fcat:focus { outline: none; border-color: var(--color-ink); background: #fff; }
+  .fopts--wrap { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .fchip {
+    font-size: 0.851rem; color: var(--color-slate); cursor: pointer;
+    padding: 0.4rem 0.8rem; border: 1px solid var(--color-line); border-radius: 999px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: color 0.2s var(--ease-soft), background 0.2s var(--ease-soft), border-color 0.2s var(--ease-soft);
+  }
+  .fchip:hover { color: var(--color-ink); border-color: var(--color-ash); }
+  .fchip.is-on { background: var(--color-ink); color: var(--color-paper); border-color: var(--color-ink); }
+  .side-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 1.1rem; border-top: 1px solid var(--color-line); }
+  .fcount { font-size: 0.828rem; color: var(--color-slate); }
+  .fcount span { color: var(--color-ink); }
+  .freset { font-size: 0.782rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); background: none; border: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .freset:hover { color: var(--color-ink); }
+
+  /* Tarjetas: SIN backdrop-filter (rendimiento) — cristal simulado con translúcido + sombra */
+  .pgrid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 1.8vw, 1.5rem); }
+  .pcard {
+    display: flex; border-radius: 18px; overflow: hidden;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 12px 28px -18px rgba(11, 11, 10, 0.2);
+    transition: transform 0.35s var(--ease-soft), box-shadow 0.35s var(--ease-soft);
+  }
+  .pcard.hidden { display: none; }
+  .pcard:hover { transform: translateY(-5px); box-shadow: 0 26px 48px -24px rgba(11, 11, 10, 0.32); }
+  .pcard > a { display: flex; flex-direction: column; width: 100%; }
+  .pcard-media { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #fff; }
+  .pcard-img { width: 100%; height: 100%; object-fit: contain; padding: 1.4rem; transition: transform 0.5s var(--ease-soft); }
+  .pcard:hover .pcard-img { transform: scale(1.05); }
+  .pcard-body { padding: 1rem 1.15rem 1.3rem; border-top: 1px solid var(--color-line); display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+  .pcard-name { font-size: 1.127rem; line-height: 1.25; color: var(--color-ink); }
+  .pcard-gama { font-size: 0.736rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-ash); margin-top: auto; }
+
+  .pempty { text-align: center; color: var(--color-slate); padding: 3rem 0; }
+  .pempty button { color: var(--color-ink); background: none; border: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Paginación — los botones se generan por JS, así que sus estilos van con :global */
+  .pager { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.55rem; margin-top: clamp(3rem, 6vw, 5rem); }
+  .pager:empty { display: none; }
+  .pager :global(.pager-btn) {
+    height: 3.2rem; min-width: 3.2rem; padding: 0 0.7rem;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+    flex: 0 0 auto; white-space: nowrap;
+    background: rgba(255,255,255,0.7); border: 1px solid var(--color-line); border-radius: 13px;
+    font-family: var(--font-sans); font-size: 1.05rem; color: var(--color-ink); cursor: pointer;
+    transition: background 0.2s var(--ease-soft), border-color 0.2s var(--ease-soft), color 0.2s var(--ease-soft), transform 0.2s var(--ease-soft);
+  }
+  .pager :global(.pager-btn:hover:not(:disabled)) { border-color: var(--color-ink); background: #fff; transform: translateY(-2px); }
+  .pager :global(.pager-btn.is-current) { background: var(--color-ink); color: var(--color-paper); border-color: var(--color-ink); }
+  .pager :global(.pager-btn:disabled) { opacity: 0.3; cursor: default; }
+  .pager :global(.pager-btn svg) { width: 18px; height: 18px; flex: 0 0 auto; }
+  .pager :global(.pager-nav) { padding: 0 1.2rem; }
+  .pager :global(.pager-lbl) { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; }
+  .pager :global(.pager-gap) { color: var(--color-ash); align-self: center; padding: 0 0.1rem; }
+  .pager-info { text-align: center; width: 100%; margin-top: 1.2rem; font-size: 0.85rem; letter-spacing: 0.04em; color: var(--color-slate); }
+  .pager-info:empty { display: none; }
+
+  @media (max-width: 560px) { .pager-lbl { display: none; } .pager-nav { padding: 0 0.6rem; } }
+
+  @media (max-width: 1080px) { .pgrid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 860px) {
+    .catalog { grid-template-columns: 1fr; }
+    .side { position: static; }
+    .side-inner { flex-direction: row; flex-wrap: wrap; align-items: flex-end; gap: 1.1rem 1.5rem; }
+    .fblock { flex: 1 1 auto; }
+    .fsearch { flex: 1 1 100%; }
+    .side-back { flex: 1 1 100%; }
+  }
+  @media (max-width: 520px) { .pgrid { grid-template-columns: 1fr 1fr; } }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-filters]');
+  const grid = document.querySelector<HTMLElement>('[data-grid]');
+  const pager = document.querySelector<HTMLElement>('[data-pager]');
+  if (root && grid && pager) {
+    const PAGE = parseInt(root.dataset.pageSize || '12', 10);
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('.pcard'));
+    const countEl = document.querySelector<HTMLElement>('[data-count]');
+    const emptyEl = document.querySelector<HTMLElement>('[data-empty]');
+    const catSel = document.querySelector<HTMLSelectElement>('[data-cat]');
+    const searchEl = document.querySelector<HTMLInputElement>('[data-search]');
+    const state = { tone: '', cat: '', q: '' };
+    let page = 1;
+    let filtered = cards;
+
+    const compute = () => {
+      const q = state.q.trim().toLowerCase();
+      filtered = cards.filter((card) => {
+        const okTone = !state.tone || card.dataset.tone === state.tone;
+        const okCat = !state.cat || (card.dataset.cats || '').split(' ').includes(state.cat);
+        const okQ = !q || (card.dataset.name || '').includes(q);
+        return okTone && okCat && okQ;
+      });
+    };
+
+    const pagerInfo = document.querySelector<HTMLElement>('[data-pager-info]');
+
+    const render = (scroll = false) => {
+      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE));
+      if (page > totalPages) page = totalPages;
+      const start = (page - 1) * PAGE;
+      const slice = new Set(filtered.slice(start, start + PAGE));
+      cards.forEach((c) => c.classList.toggle('hidden', !slice.has(c)));
+      if (countEl) countEl.textContent = String(filtered.length);
+      if (emptyEl) emptyEl.hidden = filtered.length !== 0;
+      buildPager(totalPages);
+      if (pagerInfo) pagerInfo.textContent = filtered.length > PAGE ? `Página ${page} de ${totalPages}` : '';
+      if (scroll) {
+        const y = grid.getBoundingClientRect().top + window.scrollY - 110;
+        const lenis = (window as any).__lenis;
+        if (lenis) lenis.scrollTo(y); else window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+
+    const ICON_L = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>';
+    const ICON_R = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+
+    const buildPager = (total: number) => {
+      pager.innerHTML = '';
+      if (total <= 1) return;
+      const num = (i: number) => {
+        const b = document.createElement('button');
+        b.className = 'pager-btn' + (i === page ? ' is-current' : '');
+        b.textContent = String(i);
+        if (i === page) b.setAttribute('aria-current', 'page');
+        else b.addEventListener('click', () => { page = i; render(true); });
+        return b;
+      };
+      const nav = (dir: 'prev' | 'next', p: number, dis: boolean) => {
+        const b = document.createElement('button');
+        b.className = 'pager-btn pager-nav';
+        b.disabled = dis;
+        b.setAttribute('aria-label', dir === 'prev' ? 'Página anterior' : 'Página siguiente');
+        b.innerHTML = dir === 'prev'
+          ? `${ICON_L}<span class="pager-lbl">Anterior</span>`
+          : `<span class="pager-lbl">Siguiente</span>${ICON_R}`;
+        if (!dis) b.addEventListener('click', () => { page = p; render(true); });
+        return b;
+      };
+      const gap = () => { const s = document.createElement('span'); s.className = 'pager-gap'; s.textContent = '…'; return s; };
+
+      pager.appendChild(nav('prev', page - 1, page === 1));
+      const pages: number[] = [];
+      for (let i = 1; i <= total; i++) if (i === 1 || i === total || Math.abs(i - page) <= 1) pages.push(i);
+      let prev = 0;
+      for (const i of pages) { if (i - prev > 1) pager.appendChild(gap()); pager.appendChild(num(i)); prev = i; }
+      pager.appendChild(nav('next', page + 1, page === total));
+    };
+
+    const update = (scroll = false) => { compute(); if (!scroll) page = 1; render(scroll); };
+
+    root.querySelectorAll<HTMLElement>('[data-group]').forEach((groupEl) => {
+      groupEl.querySelectorAll<HTMLButtonElement>('button').forEach((b) => {
+        b.addEventListener('click', () => {
+          groupEl.querySelectorAll('button').forEach((x) => x.classList.remove('is-on'));
+          b.classList.add('is-on');
+          state.tone = b.dataset.value || '';
+          update();
+        });
+      });
+    });
+    catSel?.addEventListener('change', () => { state.cat = catSel.value; update(); });
+    searchEl?.addEventListener('input', () => { state.q = searchEl.value; update(); });
+
+    const reset = () => {
+      state.tone = ''; state.cat = ''; state.q = '';
+      root.querySelectorAll('[data-group]').forEach((g) => g.querySelectorAll('button').forEach((b, i) => b.classList.toggle('is-on', i === 0)));
+      if (catSel) catSel.value = '';
+      if (searchEl) searchEl.value = '';
+      update();
+    };
+    document.querySelectorAll<HTMLElement>('[data-reset]').forEach((b) => b.addEventListener('click', reset));
+
+    update();
+  }
+</script>

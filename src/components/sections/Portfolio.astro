@@ -1,0 +1,71 @@
+---
+import { Image } from 'astro:assets';
+import p1 from '../../assets/proyectos/aplicaciones-01.webp';
+import p2 from '../../assets/proyectos/aplicaciones-02.webp';
+import p3 from '../../assets/proyectos/aplicaciones-03.webp';
+import p4 from '../../assets/proyectos/aplicaciones-04.webp';
+import p5 from '../../assets/proyectos/aplicaciones-05.webp';
+
+const shots = [
+  { image: p1, name: 'Tixol Nature', place: 'Pavimento continuo' },
+  { image: p2, name: 'Tixol Oxitec', place: 'Revestimiento metalizado' },
+  { image: p3, name: 'Tixol Nature Wall', place: 'Pared decorativa' },
+  { image: p4, name: 'Microcemento a rodillo', place: 'Cocina' },
+  { image: p5, name: 'Epoxi 3D', place: 'Suelo continuo' },
+];
+---
+
+<section class="pf section">
+  <div class="container-mtm">
+    <div class="pf-head reveal">
+      <div>
+        <span class="label label--tick">Proyectos</span>
+        <h2 class="pf-title">El resultado de elegir bien</h2>
+      </div>
+      <p class="pf-sub">Echa un vistazo a cómo nuestros productos transforman espacios reales.</p>
+    </div>
+
+    <div class="pf-scroller">
+      {shots.map((s, i) => (
+        <figure class="pf-item reveal" style={`--reveal-delay: ${i * 70}ms`}>
+          <div class="pf-media">
+            <Image src={s.image} alt={`${s.name} — ${s.place}`} widths={[480, 820]} sizes="(max-width: 880px) 80vw, 30vw" class="pf-img" />
+          </div>
+          <figcaption class="pf-cap">
+            <span class="pf-name">{s.name}</span>
+            <span class="pf-place">{s.place}</span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .pf-head {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end;
+    gap: 1.5rem; margin-bottom: clamp(2.2rem, 4vw, 3.2rem);
+  }
+  .pf-title { font-size: var(--text-display); line-height: var(--text-display--line-height); margin-top: 1.1rem; }
+  .pf-sub { color: var(--color-slate); max-width: 36ch; font-size: 1.173rem; }
+
+  .pf-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(clamp(240px, 30vw, 360px), 1fr);
+    gap: clamp(1rem, 2vw, 1.6rem);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    margin-inline: calc(-1 * clamp(1.25rem, 5vw, 5rem));
+    padding-inline: clamp(1.25rem, 5vw, 5rem);
+    scrollbar-width: thin;
+  }
+  .pf-item { scroll-snap-align: start; }
+  .pf-media { overflow: hidden; aspect-ratio: 4 / 5; }
+  .pf-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s var(--ease-soft); }
+  .pf-item:hover .pf-img { transform: scale(1.05); }
+  .pf-cap { display: flex; flex-direction: column; gap: 0.2rem; padding-top: 1rem; }
+  .pf-name { font-size: 1.208rem; }
+  .pf-place { font-size: 0.828rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ash); }
+</style>

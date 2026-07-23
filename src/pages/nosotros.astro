@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/layout/PageHeader.astro';
+import Newsletter from '../components/sections/Newsletter.astro';
+import { Image } from 'astro:assets';
+import n1 from '../assets/nosotros/nosotros-1.webp';
+import n2 from '../assets/nosotros/nosotros-2.webp';
+
+const stats = [
+  { n: '+30', label: 'Años de experiencia' },
+  { n: '3', label: 'Marcas propias y distribuidas' },
+  { n: '+200', label: 'Productos en catálogo' },
+  { n: '100%', label: 'Fabricación española' },
+];
+---
+
+<BaseLayout
+  title="Sobre MTM · Nosotros"
+  description="MTM es una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora."
+>
+  <PageHeader
+    eyebrow="Sobre MTM"
+    title="Fabricamos"
+    accent="con intención"
+    intro="Una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora."
+  />
+
+  <section class="section">
+    <div class="container-mtm about-grid">
+      <div class="about-media reveal">
+        <Image src={n1} alt="Instalaciones de MTM Materiales Modernos" widths={[560, 900]} sizes="(max-width: 900px) 100vw, 48vw" class="about-img" />
+      </div>
+      <div class="about-text reveal" style="--reveal-delay: 120ms">
+        <h2 class="about-h">Materiales que resuelven, acabados que emocionan</h2>
+        <p>
+          Nuestra gama abarca desde revestimientos de protección hasta soluciones decorativas
+          y aplicaciones artísticas: pinturas aislantes, morteros de cal natural, epoxi 3D,
+          papel de protección y revestimientos de fibras naturales.
+        </p>
+        <p>
+          Trabajamos con un firme compromiso con la innovación, desarrollando productos
+          ecológicos y especializados, adaptados a las necesidades de los profesionales de la
+          pintura, la construcción y el bricolaje.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-band">
+    <div class="container-mtm stats-grid">
+      {stats.map((s) => (
+        <div class="stat reveal">
+          <span class="stat-n">{s.n}</span>
+          <span class="stat-l">{s.label}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section quote-sec">
+    <div class="container-mtm quote-grid">
+      <blockquote class="quote reveal">
+        <p class="quote-mark serif-italic">“</p>
+        <p class="quote-text">
+          Nuestra apuesta por la innovación es innegociable. Trabajamos día a día para
+          desarrollar productos que den solución a problemas específicos del sector de la
+          pintura, reformas y decoración.
+        </p>
+        <footer class="quote-by">
+          <span class="quote-name">Rubén Sabater</span>
+          <span class="quote-role">CEO · MTM Materiales Modernos</span>
+        </footer>
+      </blockquote>
+      <div class="quote-media reveal" style="--reveal-delay: 120ms">
+        <Image src={n2} alt="Detalle de acabado natural MTM" widths={[480, 800]} sizes="(max-width: 900px) 100vw, 40vw" class="about-img" />
+      </div>
+    </div>
+  </section>
+
+  <Newsletter />
+</BaseLayout>
+
+<style>
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
+  .about-img { width: 100%; height: clamp(360px, 46vw, 580px); object-fit: cover; display: block; }
+  .about-h { font-size: var(--text-title); line-height: 1.15; margin-bottom: 1.6rem; max-width: 20ch; }
+  .about-text p { color: var(--color-slate); line-height: 1.7; margin-bottom: 1.1rem; max-width: 46ch; }
+
+  .stats-band { background: var(--color-mist); padding-block: clamp(2.8rem, 6vw, 4.5rem); }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+  .stat { display: flex; flex-direction: column; gap: 0.5rem; }
+  .stat-n { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 400; line-height: 1; letter-spacing: -0.01em; }
+  .stat-l { font-size: 0.897rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-slate); }
+
+  .quote-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
+  .quote { margin: 0; }
+  .quote-mark { font-size: 4rem; line-height: 0.4; color: var(--color-ash); display: block; }
+  .quote-text { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; margin: 1.2rem 0 2rem; }
+  .quote-by { display: flex; flex-direction: column; gap: 0.2rem; }
+  .quote-name { font-size: 1.15rem; }
+  .quote-role { font-size: 0.851rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }
+
+  @media (max-width: 880px) {
+    .about-grid, .quote-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.6rem 1rem; }
+    .quote-media { order: -1; }
+  }
+</style>

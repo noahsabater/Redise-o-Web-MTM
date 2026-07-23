@@ -1,0 +1,29 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  /** Palabra(s) a resaltar en serif cursiva dentro del título */
+  accent?: string;
+  intro?: string;
+}
+const { eyebrow, title, accent, intro } = Astro.props;
+---
+
+<header class="ph">
+  <div class="container-mtm ph-inner">
+    {eyebrow && <span class="label label--tick">{eyebrow}</span>}
+    <h1 class="ph-title">
+      {accent ? `${title} ${accent}` : title}
+    </h1>
+    {intro && <p class="ph-intro">{intro}</p>}
+  </div>
+  <hr class="hairline" />
+</header>
+
+<style>
+  .ph { padding-top: clamp(3rem, 8vw, 6rem); }
+  .ph-inner { display: flex; flex-direction: column; gap: 1.4rem; padding-bottom: clamp(2.5rem, 5vw, 4rem); }
+  .ph-title { font-size: var(--text-hero); line-height: 1.0; letter-spacing: 0em; max-width: 16ch; }
+  .ph-intro { color: var(--color-slate); font-size: clamp(1.173rem, 1.4vw, 1.38rem); line-height: 1.6; max-width: 52ch; }
+  .ph .hairline { max-width: 88rem; margin-inline: auto; }
+</style>
