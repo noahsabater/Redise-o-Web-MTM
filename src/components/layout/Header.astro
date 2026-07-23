@@ -503,6 +503,21 @@ const menuItems = [
     revealLogoThenSplit();
   }
 
+  // ---- Volver atrás (bfcache) ----
+  // La página se restaura congelada tal y como estaba al salir: con el overlay
+  // negro cubriendo (o el menú abierto). Hay que devolverla a su estado normal.
+  window.addEventListener('pageshow', (e) => {
+    if (!(e as PageTransitionEvent).persisted) return;
+    window.clearTimeout(closeTimer);
+    endIntro(); // quita el negro de la transición del logo
+    if (menu) {
+      menu.classList.remove('is-open', 'is-active', 'doors-only');
+      menu.hidden = true;
+    }
+    document.body.style.overflow = '';
+    (window as any).__lenis?.start();
+  });
+
   // ===== Transparencia del header sobre el hero =====
   const isTransparent = header?.dataset.transparent === 'true';
   if (header && isTransparent) {

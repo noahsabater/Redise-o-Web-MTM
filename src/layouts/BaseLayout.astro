@@ -175,6 +175,15 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
           true
         );
       }
+
+      // ---- Volver atrás (bfcache) ----
+      // Al pulsar "atrás", el navegador restaura la página congelada tal y como
+      // estaba al salir: con el barrido negro cubriendo. Como no se recarga el
+      // JS, hay que limpiarlo a mano o se queda la pantalla en negro.
+      window.addEventListener('pageshow', (e) => {
+        if (!(e as PageTransitionEvent).persisted) return;
+        sweep?.classList.remove('sweep-in', 'cover', 'sweep-out');
+      });
     </script>
 
     <style>
