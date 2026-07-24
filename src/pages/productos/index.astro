@@ -21,7 +21,7 @@ const panels = [
     {panels.map((p, i) => (
       <a class="panel" href={`/productos/${p.slug}`} style={`--i:${i}`}>
         <div class="panel-media">
-          <Image src={p.img} alt={p.name} widths={[600, 900, 1200]} sizes="34vw" class="panel-img" loading="eager" />
+          <Image src={p.img} alt={p.name} widths={[700, 1000, 1400]} sizes="34vw" quality={88} class="panel-img" loading="eager" />
         </div>
         <div class="panel-scrim"></div>
         <div class="panel-inner">

@@ -54,7 +54,7 @@ const cats = [
       {cats.map((c, i) => (
         <a class="cat reveal" href={c.href} style={`--reveal-delay: ${i * 90}ms; --ratio: ${c.ratio}`}>
           <div class="cat-media">
-            <Image src={c.image} alt={c.name} widths={[600, 900, 1400]} sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 45vw" class="cat-img" />
+            <Image src={c.image} alt={c.name} widths={[800, 1200, 1600, 2000]} sizes="(max-width: 620px) 100vw, (max-width: 1080px) 50vw, 45vw" quality={88} class="cat-img" />
             <span class="cat-n">N.º {c.n}</span>
           </div>
           <div class="cat-body">

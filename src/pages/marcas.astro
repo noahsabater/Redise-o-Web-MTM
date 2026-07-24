@@ -11,7 +11,12 @@ import imgTixol from '../assets/marcas/marca-tixol.png';
 import imgScalp from '../assets/marcas/marca-scalp.png';
 import imgSupertape from '../assets/marcas/marca-supertape.png';
 
+import logoTixol from '../assets/logos/marca-logo-tixol.png';
+import logoScalp from '../assets/logos/marca-logo-scalp.png';
+import logoSupertape from '../assets/logos/marca-logo-supertape.png';
+
 const imgs: Record<string, ImageMetadata> = { tixol: imgTixol, scalp: imgScalp, supertape: imgSupertape };
+const logos: Record<string, ImageMetadata> = { tixol: logoTixol, scalp: logoScalp, supertape: logoSupertape };
 const origin: Record<string, string> = { tixol: 'Marca española', scalp: 'Marca francesa', supertape: 'Marca española' };
 const count = (slug: string) => products.filter((p) => p.brand === slug).length;
 ---
@@ -30,14 +35,16 @@ const count = (slug: string) => products.filter((p) => p.brand === slug).length;
     {brands.map((b, i) => (
       <article class:list={['band', { 'band--right': i % 2 === 1 }]}>
         <div class="band-media">
-          <Image src={imgs[b.slug]} alt={b.name} widths={[900, 1440, 1920]} sizes="100vw" class="band-img" loading={i === 0 ? 'eager' : 'lazy'} />
+          <Image src={imgs[b.slug]} alt={b.name} widths={[1200, 1800, 2400, 3000]} sizes="100vw" quality={88} class="band-img" loading={i === 0 ? 'eager' : 'lazy'} />
           <div class="band-scrim"></div>
         </div>
 
         <div class="band-inner container-mtm">
           <div class="band-content reveal">
             <span class="band-eyebrow">{origin[b.slug]} · {b.role}</span>
-            <h2 class="band-name">{b.name}</h2>
+            <h2 class="band-name">
+              <Image src={logos[b.slug]} alt={b.name} widths={[280, 460]} sizes="(max-width: 760px) 60vw, 22vw" class="band-logo" />
+            </h2>
             <p class="band-desc">{b.description}</p>
 
             <ul class="band-tags">
@@ -93,11 +100,18 @@ const count = (slug: string) => products.filter((p) => p.brand === slug).length;
     color: rgba(244,244,242,0.72); margin-bottom: 1.2rem;
   }
   .band-name {
-    color: var(--color-paper);
-    font-size: clamp(3rem, 8vw, 6.5rem);
-    line-height: 0.95; letter-spacing: -0.01em;
-    margin-bottom: 1.4rem;
+    margin: 0 0 1.6rem;
+    line-height: 0;
   }
+  .band-logo {
+    display: block;
+    width: auto;
+    height: clamp(48px, 7vw, 96px);
+    max-width: min(360px, 70%);
+    object-fit: contain;
+    object-position: left center;
+  }
+  .band--right .band-logo { object-position: right center; margin-left: auto; }
   .band-desc {
     color: rgba(244,244,242,0.86);
     font-size: clamp(1.05rem, 1.5vw, 1.25rem);

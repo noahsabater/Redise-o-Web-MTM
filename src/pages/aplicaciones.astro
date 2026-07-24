@@ -72,8 +72,9 @@ let index = 0;
                 <Image
                   src={s.src}
                   alt={s.name}
-                  widths={[600, 1000, 1600]}
+                  widths={[700, 1100, 1600]}
                   sizes="(max-width: 640px) 100vw, 50vw"
+                  quality={87}
                   loading={i < 3 ? 'eager' : 'lazy'}
                   class="shot-img"
                 />
