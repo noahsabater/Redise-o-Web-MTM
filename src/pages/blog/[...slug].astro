@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Newsletter from '../../components/sections/Newsletter.astro';
 import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
+import { site } from '../../data/site';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -13,54 +14,211 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d: Date) =>
   d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Tiempo de lectura estimado (~200 palabras/min)
+const words = (post.body ?? '').split(/\s+/).filter(Boolean).length;
+const readingMin = Math.max(1, Math.round(words / 200));
+
+// Artículos relacionados: misma categoría; si faltan, se rellena con los últimos
+const all = await getCollection('blog');
+let related = all
+  .filter((p) => p.id !== post.id && p.data.category === post.data.category)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+if (related.length < 3) {
+  const ids = new Set([post.id, ...related.map((r) => r.id)]);
+  const extra = all
+    .filter((p) => !ids.has(p.id))
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .slice(0, 3 - related.length);
+  related = [...related, ...extra];
+}
+
+// ---- SEO: datos estructurados ----
+const url = new URL(`/blog/${post.id}`, site.url).href;
+const coverUrl = post.data.cover ? new URL(post.data.cover.src, site.url).href : undefined;
+const iso = post.data.date.toISOString();
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.excerpt,
+  datePublished: iso,
+  dateModified: iso,
+  ...(coverUrl ? { image: [coverUrl] } : {}),
+  articleSection: post.data.category,
+  author: { '@type': 'Organization', name: site.name, url: site.url },
+  publisher: {
+    '@type': 'Organization',
+    name: site.name,
+    logo: { '@type': 'ImageObject', url: new URL('/mtm-logo-white.png', site.url).href },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: site.url },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog', site.url).href },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: url },
+  ],
+};
 ---
 
-<BaseLayout title={post.data.title} description={post.data.excerpt}>
+<BaseLayout title={post.data.title} description={post.data.excerpt} ogType="article" ogImage={post.data.cover?.src}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleLd)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbLd)} />
+
+  <div class="reading-bar" data-reading-bar aria-hidden="true"></div>
+
   <article class="post">
     <header class="post-head">
       <div class="container-narrow">
-        <a class="back" href="/blog">← Volver al blog</a>
+        <nav class="crumbs" aria-label="Ruta de navegación">
+          <a href="/">Inicio</a><span aria-hidden="true">/</span>
+          <a href="/blog">Blog</a><span aria-hidden="true">/</span>
+          <span class="crumb-current">{post.data.category}</span>
+        </nav>
+
         <div class="post-meta">
           <span class="cat">{post.data.category}</span>
+          <span class="dot" aria-hidden="true"></span>
           <span class="date">{fmt(post.data.date)}</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="rtime">{readingMin} min de lectura</span>
         </div>
         <h1 class="post-title">{post.data.title}</h1>
+        <p class="post-lead">{post.data.excerpt}</p>
       </div>
     </header>
 
     {post.data.cover && (
-      <div class="post-cover">
-        <Image src={post.data.cover} alt={post.data.title} widths={[900, 1440, 1920]} sizes="100vw" loading="eager" class="post-cover-img" />
+      <div class="post-cover container-mtm">
+        <Image src={post.data.cover} alt={post.data.title} widths={[900, 1440, 1920]} sizes="100vw" quality={86} loading="eager" class="post-cover-img" />
       </div>
     )}
 
     <div class="container-narrow post-body">
       <Content />
     </div>
+
+    <footer class="post-foot container-narrow">
+      <a class="back" href="/blog">← Volver al blog</a>
+    </footer>
   </article>
+
+  {related.length > 0 && (
+    <section class="related section">
+      <div class="container-mtm">
+        <div class="related-head">
+          <span class="label label--tick">Seguir leyendo</span>
+          <h2 class="related-title">Artículos relacionados</h2>
+        </div>
+        <div class="related-grid">
+          {related.map((r) => (
+            <a class="rcard" href={`/blog/${r.id}`}>
+              {r.data.cover && (
+                <div class="rcard-media">
+                  <Image src={r.data.cover} alt={r.data.title} widths={[380, 620]} sizes="(max-width: 880px) 100vw, 33vw" class="rcard-img" />
+                </div>
+              )}
+              <div class="rcard-body">
+                <span class="rcard-cat">{r.data.category}</span>
+                <h3 class="rcard-h">{r.data.title}</h3>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <Newsletter />
 </BaseLayout>
 
 <style>
   .container-narrow { width: 100%; max-width: 46rem; margin-inline: auto; padding-inline: clamp(1.25rem, 5vw, 2rem); }
-  .post-head { padding-top: clamp(2.5rem, 6vw, 4.5rem); padding-bottom: clamp(1.8rem, 4vw, 2.6rem); }
-  .back { font-size: 0.828rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }
-  .back:hover { color: var(--color-ink); }
-  .post-meta { display: flex; gap: 1rem; align-items: center; margin: 1.8rem 0 1rem; }
+
+  /* Barra de progreso de lectura */
+  .reading-bar {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0;
+    background: var(--color-ink); z-index: 60;
+    transition: width 0.1s linear;
+  }
+
+  .post-head { padding-top: clamp(2rem, 5vw, 3.5rem); padding-bottom: clamp(1.5rem, 3vw, 2.2rem); }
+  .crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; font-size: 0.8rem; letter-spacing: 0.04em; color: var(--color-ash); margin-bottom: 1.8rem; }
+  .crumbs a { color: var(--color-slate); }
+  .crumbs a:hover { color: var(--color-ink); }
+  .crumb-current { color: var(--color-ink); }
+
+  .post-meta { display: flex; flex-wrap: wrap; gap: 0.7rem; align-items: center; margin-bottom: 1.1rem; }
   .cat { font-size: 0.782rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-ink); }
-  .date { font-size: 0.851rem; color: var(--color-ash); }
-  .post-title { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.05; max-width: 20ch; }
+  .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--color-ash); }
+  .date, .rtime { font-size: 0.851rem; color: var(--color-ash); }
+  .post-title { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.06; max-width: 24ch; }
+  .post-lead { margin-top: 1.2rem; font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.6; color: var(--color-slate); max-width: 52ch; }
 
   .post-cover { margin-block: clamp(1.5rem, 4vw, 2.5rem); }
-  .post-cover-img { width: 100%; height: clamp(320px, 50vw, 620px); object-fit: cover; display: block; }
+  .post-cover-img { width: 100%; height: clamp(320px, 50vw, 620px); object-fit: cover; display: block; border-radius: 16px; }
 
-  .post-body { padding-block: clamp(1.5rem, 4vw, 2.5rem) clamp(3rem, 7vw, 5rem); font-size: 1.242rem; line-height: 1.75; color: var(--color-ink); }
+  .post-body { padding-block: clamp(1.5rem, 4vw, 2.5rem) clamp(2rem, 5vw, 3rem); font-size: 1.208rem; line-height: 1.8; color: var(--color-ink); }
   .post-body :global(p) { margin-bottom: 1.5rem; color: #2a2926; }
-  .post-body :global(h2) { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.15; margin: 2.8rem 0 1.1rem; }
+  .post-body :global(h2) { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.15; margin: 2.8rem 0 1.1rem; letter-spacing: -0.01em; }
   .post-body :global(h3) { font-size: clamp(1.38rem, 2.2vw, 1.667rem); line-height: 1.2; margin: 2rem 0 0.9rem; }
   .post-body :global(ul), .post-body :global(ol) { margin: 0 0 1.6rem; padding-left: 1.3rem; color: #2a2926; }
   .post-body :global(li) { margin-bottom: 0.6rem; }
+  .post-body :global(li::marker) { color: var(--color-ash); }
   .post-body :global(strong) { font-weight: 700; color: var(--color-ink); }
-  .post-body :global(a) { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
+  .post-body :global(a) { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--color-ash); }
+  .post-body :global(a:hover) { text-decoration-color: var(--color-ink); }
+  .post-body :global(blockquote) {
+    margin: 2rem 0; padding: 0.4rem 0 0.4rem 1.4rem;
+    border-left: 3px solid var(--color-ink); color: var(--color-slate); font-style: italic;
+  }
+  .post-body :global(img) { width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; }
+
+  .post-foot { padding-bottom: clamp(2.5rem, 6vw, 4rem); }
+  .back { font-size: 0.828rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }
+  .back:hover { color: var(--color-ink); }
+
+  /* ===== Relacionados ===== */
+  .related { border-top: 1px solid var(--color-line); }
+  .related-head { display: flex; flex-direction: column; gap: 1rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+  .related-title { font-size: var(--text-title); line-height: 1.1; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.4rem, 2.4vw, 2rem); }
+  .rcard {
+    display: flex; flex-direction: column; border-radius: 16px; overflow: hidden;
+    background: var(--color-surface); border: 1px solid var(--color-line);
+    transition: transform 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft), border-color 0.4s var(--ease-soft);
+  }
+  .rcard:hover { transform: translateY(-4px); border-color: var(--color-ash); box-shadow: 0 22px 46px -30px rgba(11, 11, 10, 0.4); }
+  .rcard-media { overflow: hidden; aspect-ratio: 16 / 10; }
+  .rcard-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease-soft); }
+  .rcard:hover .rcard-img { transform: scale(1.05); }
+  .rcard-body { padding: 1.1rem 1.2rem 1.4rem; }
+  .rcard-cat { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-ash); }
+  .rcard-h { font-size: 1.16rem; line-height: 1.25; margin-top: 0.5rem; }
+
+  @media (max-width: 880px) { .related-grid { grid-template-columns: 1fr; } }
 </style>
+
+<script>
+  // Barra de progreso de lectura
+  const barEl = document.querySelector<HTMLElement>('[data-reading-bar]');
+  const article = document.querySelector<HTMLElement>('.post');
+  if (barEl && article) {
+    const onScroll = () => {
+      const start = article.offsetTop;
+      const end = start + article.offsetHeight - window.innerHeight;
+      const p = Math.min(1, Math.max(0, (window.scrollY - start) / Math.max(1, end - start)));
+      barEl.style.width = `${p * 100}%`;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+</script>

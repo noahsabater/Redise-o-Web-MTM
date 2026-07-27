@@ -158,7 +158,12 @@ import heroImg from '../../assets/hero/hero-inicio.webp';
 
   @media (max-width: 880px) {
     .hero-index { display: none; }
-    .hero-foot { flex-direction: column; align-items: flex-start; }
+    .hero-foot { flex-direction: column; align-items: stretch; }
+    .hero-sub { max-width: none; width: 100%; }
+  }
+  @media (max-width: 520px) {
+    .hero-cta { width: 100%; gap: 0.7rem; }
+    .hero-cta .btn { flex: 1 1 100%; justify-content: center; }
   }
 </style>
 

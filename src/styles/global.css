@@ -85,7 +85,13 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Red de seguridad: ningún elemento provoca scroll horizontal.
+       'clip' no rompe position:sticky (a diferencia de overflow hidden). */
+    overflow-x: clip;
   }
+
+  /* Las imágenes y multimedia nunca desbordan su contenedor */
+  img, svg, video { max-width: 100%; }
 
   /* Titulares en NATS, grosor normal y tracking neutro, como la referencia */
   h1, h2, h3, h4 {

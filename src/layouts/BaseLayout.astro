@@ -13,6 +13,8 @@ interface Props {
   transparentHeader?: boolean;
   /** true en páginas de fondo oscuro: el header adopta la variante oscura */
   darkHeader?: boolean;
+  /** Tipo Open Graph (website por defecto; "article" en posts del blog) */
+  ogType?: string;
 }
 
 const {
@@ -21,6 +23,7 @@ const {
   ogImage = '/og-default.jpg',
   transparentHeader = false,
   darkHeader = false,
+  ogType = 'website',
 } = Astro.props;
 
 const pageTitle = title ? `${title} · ${site.shortName}` : `${site.name} · Materiales premium`;
@@ -42,7 +45,7 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
     <meta name="description" content={description} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
@@ -52,6 +55,9 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Datos estructurados / metadatos específicos de cada página (JSON-LD) -->
+    <slot name="head" />
 
     <!-- Si llegamos al inicio desde el logo, cubrimos de negro ANTES del primer
          pintado para que la transición sea continua (sin pantallazo ni corte). -->

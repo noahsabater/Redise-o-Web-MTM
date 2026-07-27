@@ -18,7 +18,11 @@ const meta: Record<string, { name: string; tagline: string }> = {
   supertape: { name: 'Supertape', tagline: 'Cintas y sistemas de protección para reformas.' },
 };
 const brandName = meta[brand].name;
-const gamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
+const allGamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
+// Solo categorías que realmente tienen productos, con su recuento
+const gamas = allGamas
+  .map((g) => ({ ...g, count: items.filter((p) => p.gamas.some((x) => x.slug === g.slug)).length }))
+  .filter((g) => g.count > 0);
 const toneOrder = ['Natural', 'Gris', 'Óxido', 'Metálico', 'Blanco', 'Negro', 'Transparente'];
 const tones = toneOrder.filter((t) => items.some((p) => p.tone === t));
 const PAGE_SIZE = 12;
@@ -54,10 +58,24 @@ const PAGE_SIZE = 12;
 
         <div class="fblock">
           <span class="fl">Categoría</span>
-          <select class="fcat" data-cat>
-            <option value="">Todas las categorías</option>
-            {gamas.map((g) => <option value={g.slug}>{g.name}</option>)}
-          </select>
+          <div class="fsel" data-select>
+            <button class="fsel-btn" type="button" data-select-btn aria-haspopup="listbox" aria-expanded="false">
+              <span data-select-label>Todas las categorías</span>
+              <svg class="fsel-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+            </button>
+            <div class="fsel-menu" data-select-menu role="listbox">
+              <button class="fsel-opt is-on" type="button" role="option" data-value="">
+                <span class="fsel-name">Todas las categorías</span>
+                <span class="fsel-count">{items.length}</span>
+              </button>
+              {gamas.map((g) => (
+                <button class="fsel-opt" type="button" role="option" data-value={g.slug}>
+                  <span class="fsel-name">{g.name}</span>
+                  <span class="fsel-count">{g.count}</span>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div class="side-foot">
@@ -126,12 +144,59 @@ const PAGE_SIZE = 12;
   .fblock { display: flex; flex-direction: column; gap: 0.75rem; }
   .fl { font-size: 0.736rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-slate); }
   .fsearch { display: flex; flex-direction: column; gap: 0.6rem; }
-  .fsearch input, .fcat {
+  .fsearch input {
     font-family: var(--font-sans); font-size: 1.035rem; color: var(--color-ink);
     background: rgba(255, 255, 255, 0.6); border: 1px solid var(--color-line);
     border-radius: 11px; padding: 0.65rem 0.8rem; width: 100%;
   }
-  .fsearch input:focus, .fcat:focus { outline: none; border-color: var(--color-ink); background: #fff; }
+  .fsearch input:focus { outline: none; border-color: var(--color-ink); background: #fff; }
+
+  /* ===== Desplegable de categoría (propio, con nuestro diseño) ===== */
+  .fsel { position: relative; }
+  .fsel-btn {
+    width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 0.6rem;
+    font-family: var(--font-sans); font-size: 1.035rem; color: var(--color-ink); text-align: left;
+    background: rgba(255, 255, 255, 0.6); border: 1px solid var(--color-line);
+    border-radius: 11px; padding: 0.65rem 0.8rem; cursor: pointer;
+    transition: border-color 0.2s var(--ease-soft), background 0.2s var(--ease-soft);
+  }
+  .fsel-btn:hover { border-color: var(--color-ash); }
+  .fsel.is-open .fsel-btn { border-color: var(--color-ink); background: #fff; }
+  .fsel-chev { width: 18px; height: 18px; flex: 0 0 auto; color: var(--color-slate); transition: transform 0.3s var(--ease-soft); }
+  .fsel.is-open .fsel-chev { transform: rotate(180deg); }
+
+  .fsel-menu {
+    position: absolute; top: calc(100% + 0.5rem); left: 0; right: 0; z-index: 30;
+    display: flex; flex-direction: column; gap: 0.1rem;
+    padding: 0.45rem; border-radius: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px) saturate(1.5);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 22px 50px -22px rgba(11, 11, 10, 0.35);
+    max-height: 340px; overflow-y: auto;
+    opacity: 0; transform: translateY(-8px); visibility: hidden; pointer-events: none;
+    transition: opacity 0.22s var(--ease-soft), transform 0.22s var(--ease-soft), visibility 0.22s;
+  }
+  .fsel.is-open .fsel-menu { opacity: 1; transform: none; visibility: visible; pointer-events: auto; }
+
+  .fsel-opt {
+    display: flex; align-items: center; justify-content: space-between; gap: 0.7rem;
+    padding: 0.6rem 0.7rem; border-radius: 9px; border: 0; cursor: pointer;
+    background: none; text-align: left;
+    font-family: var(--font-sans); font-size: 1rem; color: var(--color-slate);
+    transition: background 0.18s var(--ease-soft), color 0.18s var(--ease-soft);
+  }
+  .fsel-name { line-height: 1.25; }
+  .fsel-opt:hover { background: rgba(11, 11, 10, 0.05); color: var(--color-ink); }
+  .fsel-opt.is-on { background: var(--color-ink); color: var(--color-paper); }
+  .fsel-count {
+    flex: 0 0 auto; font-size: 0.72rem; letter-spacing: 0.02em;
+    color: var(--color-ash); background: rgba(11, 11, 10, 0.06);
+    padding: 0.12rem 0.5rem; border-radius: 999px;
+  }
+  .fsel-opt:hover .fsel-count { color: var(--color-slate); }
+  .fsel-opt.is-on .fsel-count { color: var(--color-paper); background: rgba(244, 244, 242, 0.22); }
   .fopts--wrap { display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .fchip {
     font-size: 0.851rem; color: var(--color-slate); cursor: pointer;
@@ -200,6 +265,8 @@ const PAGE_SIZE = 12;
     .fblock { flex: 1 1 auto; }
     .fsearch { flex: 1 1 100%; }
     .side-back { flex: 1 1 100%; }
+    /* El pie a ancho completo: separa "N productos" de "Limpiar" */
+    .side-foot { flex: 1 1 100%; }
   }
   @media (max-width: 520px) { .pgrid { grid-template-columns: 1fr 1fr; } }
 </style>
@@ -213,7 +280,10 @@ const PAGE_SIZE = 12;
     const cards = Array.from(grid.querySelectorAll<HTMLElement>('.pcard'));
     const countEl = document.querySelector<HTMLElement>('[data-count]');
     const emptyEl = document.querySelector<HTMLElement>('[data-empty]');
-    const catSel = document.querySelector<HTMLSelectElement>('[data-cat]');
+    const selectEl = document.querySelector<HTMLElement>('[data-select]');
+    const selectBtn = document.querySelector<HTMLButtonElement>('[data-select-btn]');
+    const selectMenu = document.querySelector<HTMLElement>('[data-select-menu]');
+    const selectLabel = document.querySelector<HTMLElement>('[data-select-label]');
     const searchEl = document.querySelector<HTMLInputElement>('[data-search]');
     const state = { tone: '', cat: '', q: '' };
     let page = 1;
@@ -295,13 +365,35 @@ const PAGE_SIZE = 12;
         });
       });
     });
-    catSel?.addEventListener('change', () => { state.cat = catSel.value; update(); });
+    // ---- Desplegable de categoría propio ----
+    const openSelect = () => { selectEl?.classList.add('is-open'); selectBtn?.setAttribute('aria-expanded', 'true'); };
+    const closeSelect = () => { selectEl?.classList.remove('is-open'); selectBtn?.setAttribute('aria-expanded', 'false'); };
+    selectBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      selectEl?.classList.contains('is-open') ? closeSelect() : openSelect();
+    });
+    selectMenu?.querySelectorAll<HTMLButtonElement>('.fsel-opt').forEach((opt) => {
+      opt.addEventListener('click', () => {
+        selectMenu.querySelectorAll('.fsel-opt').forEach((o) => o.classList.remove('is-on'));
+        opt.classList.add('is-on');
+        state.cat = opt.dataset.value || '';
+        if (selectLabel) selectLabel.textContent = opt.querySelector('.fsel-name')?.textContent || 'Todas las categorías';
+        closeSelect();
+        update();
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (selectEl && !selectEl.contains(e.target as Node)) closeSelect();
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSelect(); });
+
     searchEl?.addEventListener('input', () => { state.q = searchEl.value; update(); });
 
     const reset = () => {
       state.tone = ''; state.cat = ''; state.q = '';
       root.querySelectorAll('[data-group]').forEach((g) => g.querySelectorAll('button').forEach((b, i) => b.classList.toggle('is-on', i === 0)));
-      if (catSel) catSel.value = '';
+      if (selectMenu) selectMenu.querySelectorAll('.fsel-opt').forEach((o, i) => o.classList.toggle('is-on', i === 0));
+      if (selectLabel) selectLabel.textContent = 'Todas las categorías';
       if (searchEl) searchEl.value = '';
       update();
     };
