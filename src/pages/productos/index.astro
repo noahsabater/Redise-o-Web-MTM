@@ -4,11 +4,14 @@ import { Image } from 'astro:assets';
 import tixol from '../../assets/marcas/portada-tixol.png';
 import scalp from '../../assets/marcas/portada-scalp.png';
 import supertape from '../../assets/marcas/portada-supertape.png';
+import logoTixol from '../../assets/logos/marca-logo-tixol.png';
+import logoScalp from '../../assets/logos/marca-logo-scalp.png';
+import logoSupertape from '../../assets/logos/marca-logo-supertape.png';
 
 const panels = [
-  { slug: 'tixol', name: 'Tixol', tagline: 'Pinturas, revestimientos y decoración', img: tixol, count: 134 },
-  { slug: 'scalp', name: 'Scalp', tagline: 'Limpieza y protección de superficies', img: scalp, count: 60 },
-  { slug: 'supertape', name: 'Supertape', tagline: 'Protección para reformas', img: supertape, count: 10 },
+  { slug: 'tixol', name: 'Tixol', tagline: 'Pinturas, revestimientos y decoración', img: tixol, logo: logoTixol, count: 134 },
+  { slug: 'scalp', name: 'Scalp', tagline: 'Limpieza y protección de superficies', img: scalp, logo: logoScalp, count: 60 },
+  { slug: 'supertape', name: 'Supertape', tagline: 'Protección para reformas', img: supertape, logo: logoSupertape, count: 10 },
 ];
 ---
 
@@ -26,7 +29,9 @@ const panels = [
         <div class="panel-scrim"></div>
         <div class="panel-inner">
           <span class="panel-eyebrow">N.º 0{i + 1} · Marca</span>
-          <h2 class="panel-title">{p.name}</h2>
+          <h2 class="panel-title">
+            <Image src={p.logo} alt={p.name} widths={[280, 460]} sizes="(max-width: 860px) 55vw, 22vw" class="panel-logo" />
+          </h2>
           <span class="panel-tag">{p.tagline}</span>
           <span class="panel-cta">
             Ver productos ({p.count})
@@ -68,7 +73,13 @@ const panels = [
     width: 100%;
   }
   .panel-eyebrow { font-size: 0.782rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(244,244,242,0.7); }
-  .panel-title { font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; color: var(--color-paper); }
+  .panel-title { margin: 0.2rem 0 0.1rem; line-height: 0; }
+  .panel-logo {
+    display: block; width: auto;
+    height: clamp(44px, 5vw, 78px);
+    max-width: min(320px, 80%);
+    object-fit: contain; object-position: left center;
+  }
   .panel-tag { font-size: clamp(1.092rem, 1.3vw, 1.265rem); color: rgba(244,244,242,0.82); max-width: 26ch; }
   .panel-cta {
     display: inline-flex; align-items: center; gap: 0.6rem;

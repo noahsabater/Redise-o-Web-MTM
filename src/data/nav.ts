@@ -17,6 +17,7 @@ export const navLeft: NavItem[] = [
 export const navRight: NavItem[] = [
   { label: 'Aplicaciones', href: '/aplicaciones' },
   { label: 'Blog', href: '/blog' },
+  { label: 'Nosotros', href: '/nosotros' },
   { label: 'Contacto', href: '/contacto' },
 ];
 

@@ -63,7 +63,7 @@ const PAGE_SIZE = 12;
               <span data-select-label>Todas las categorías</span>
               <svg class="fsel-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
             </button>
-            <div class="fsel-menu" data-select-menu role="listbox">
+            <div class="fsel-menu" data-select-menu data-lenis-prevent role="listbox">
               <button class="fsel-opt is-on" type="button" role="option" data-value="">
                 <span class="fsel-name">Todas las categorías</span>
                 <span class="fsel-count">{items.length}</span>
@@ -174,11 +174,15 @@ const PAGE_SIZE = 12;
     -webkit-backdrop-filter: blur(20px) saturate(1.5);
     border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 22px 50px -22px rgba(11, 11, 10, 0.35);
-    max-height: 340px; overflow-y: auto;
+    /* Nunca más alto que la pantalla; scroll interno para el resto */
+    max-height: min(400px, 70vh); overflow-y: auto; overscroll-behavior: contain;
     opacity: 0; transform: translateY(-8px); visibility: hidden; pointer-events: none;
     transition: opacity 0.22s var(--ease-soft), transform 0.22s var(--ease-soft), visibility 0.22s;
   }
   .fsel.is-open .fsel-menu { opacity: 1; transform: none; visibility: visible; pointer-events: auto; }
+  /* Si no cabe abajo, se despliega hacia arriba */
+  .fsel--up .fsel-menu { top: auto; bottom: calc(100% + 0.5rem); transform: translateY(8px); }
+  .fsel--up.fsel.is-open .fsel-menu { transform: none; }
 
   .fsel-opt {
     display: flex; align-items: center; justify-content: space-between; gap: 0.7rem;
@@ -366,7 +370,16 @@ const PAGE_SIZE = 12;
       });
     });
     // ---- Desplegable de categoría propio ----
-    const openSelect = () => { selectEl?.classList.add('is-open'); selectBtn?.setAttribute('aria-expanded', 'true'); };
+    const openSelect = () => {
+      if (!selectEl) return;
+      // Si no hay espacio suficiente debajo del botón, se abre hacia arriba
+      const rect = selectBtn?.getBoundingClientRect();
+      const below = rect ? window.innerHeight - rect.bottom : 999;
+      const menuH = Math.min(400, window.innerHeight * 0.7) + 16;
+      selectEl.classList.toggle('fsel--up', below < menuH && (rect ? rect.top > below : false));
+      selectEl.classList.add('is-open');
+      selectBtn?.setAttribute('aria-expanded', 'true');
+    };
     const closeSelect = () => { selectEl?.classList.remove('is-open'); selectBtn?.setAttribute('aria-expanded', 'false'); };
     selectBtn?.addEventListener('click', (e) => {
       e.stopPropagation();
