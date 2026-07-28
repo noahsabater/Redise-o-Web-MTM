@@ -27,3 +27,12 @@ Video referencia web.mov
 Hero Web MTM video.mp4
 Captura de pantalla*.png
 *.mov
+
+# Documentos de apoyo personales (no forman parte de la web)
+Guiones MTM/
+
+# Copia de trabajo de imágenes de producto (exportadas por marca)
+Imagenes productos web/
+
+# Salidas de mejora IA de producto
+Imagenes productos web/mejoradas/
