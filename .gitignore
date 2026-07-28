@@ -36,3 +36,9 @@ Imagenes productos web/
 
 # Salidas de mejora IA de producto
 Imagenes productos web/mejoradas/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
