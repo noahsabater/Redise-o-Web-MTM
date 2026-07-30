@@ -130,8 +130,7 @@ const menuItems = [
     border-bottom: 1px solid transparent;
     transition:
       background 0.5s var(--ease-soft),
-      border-color 0.5s var(--ease-soft),
-      backdrop-filter 0.5s var(--ease-soft);
+      border-color 0.5s var(--ease-soft);
   }
   .site-header.is-transparent::before {
     content: '';
@@ -143,10 +142,10 @@ const menuItems = [
     transition: opacity 0.5s var(--ease-soft);
   }
   .site-header.is-solid::before { opacity: 0; }
+  /* Fondo translúcido SÓLIDO (sin backdrop-filter: el blur repintaba en cada
+     frame de scroll y era la mayor fuente de tirones en Windows/Chrome). */
   .site-header.is-solid {
-    background: color-mix(in srgb, var(--color-paper) 85%, transparent);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: color-mix(in srgb, var(--color-paper) 94%, transparent);
     border-bottom-color: var(--color-line);
   }
 

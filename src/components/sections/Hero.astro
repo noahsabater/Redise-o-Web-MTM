@@ -169,7 +169,6 @@ import heroImg from '../../assets/hero/hero-villa.jpg';
 
 <script>
   const img = document.getElementById('hero-video') as HTMLVideoElement | null;
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Asegura la reproducción automática desde el primer momento.
   // Algunos navegadores pausan el autoplay hasta que hay interacción; forzamos play().
@@ -183,24 +182,5 @@ import heroImg from '../../assets/hero/hero-villa.jpg';
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden) tryPlay();
     });
-  }
-
-  // Parallax ligero del hero
-  if (img && !reduce) {
-    let ticking = false;
-    window.addEventListener(
-      'scroll',
-      () => {
-        if (!ticking) {
-          window.requestAnimationFrame(() => {
-            const y = Math.min(window.scrollY, 900);
-            img.style.transform = `translate3d(0, ${y * 0.12}px, 0)`;
-            ticking = false;
-          });
-          ticking = true;
-        }
-      },
-      { passive: true }
-    );
   }
 </script>

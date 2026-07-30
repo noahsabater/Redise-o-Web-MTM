@@ -108,32 +108,22 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
 
     <!-- Scroll suave (Lenis) + transición de página (barrido negro lateral) -->
     <script>
-      import Lenis from 'lenis';
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      // ---- Scroll suave y fluido ----
-      if (!reduce) {
-        const lenis = new Lenis({ lerp: 0.09, smoothWheel: true, wheelMultiplier: 1 });
-        const raf = (t: number) => {
-          lenis.raf(t);
-          requestAnimationFrame(raf);
-        };
-        requestAnimationFrame(raf);
-        (window as any).__lenis = lenis;
-
-        // Anclas internas con desplazamiento suave
-        document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
-          a.addEventListener('click', (e) => {
-            const id = a.getAttribute('href');
-            if (!id || id.length < 2) return;
-            const target = document.querySelector(id);
-            if (target) {
-              e.preventDefault();
-              lenis.scrollTo(target as HTMLElement, { offset: -80 });
-            }
-          });
+      // ---- Scroll NATIVO (máxima fluidez en todas las plataformas, sobre todo con
+      //      rueda de ratón en Windows). Sin librería de smooth-scroll que intercepte
+      //      la rueda y provoque tirones. Solo compensamos el header fijo en las anclas. ----
+      document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href');
+          if (!id || id.length < 2) return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          const y = (target as HTMLElement).getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: y, behavior: reduce ? 'auto' : 'smooth' });
         });
-      }
+      });
 
       // ---- Transición de página: barrido negro lateral rápido ----
       const sweep = document.querySelector<HTMLElement>('[data-sweep]');

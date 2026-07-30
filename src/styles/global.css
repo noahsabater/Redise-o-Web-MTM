@@ -232,7 +232,6 @@
     opacity 0.9s var(--ease-soft),
     transform 0.9s var(--ease-soft);
   transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
 }
 .reveal.is-visible {
   opacity: 1;
@@ -243,13 +242,11 @@
 }
 
 /* ------------------------------------------------------------
-   5. SCROLL SUAVE (Lenis) + TRANSICIÓN DE PÁGINA (barrido negro)
+   5. TRANSICIÓN DE PÁGINA (barrido negro)
    ------------------------------------------------------------ */
-html.lenis, html.lenis body { height: auto; }
-.lenis.lenis-smooth { scroll-behavior: auto !important; }
-.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
-.lenis.lenis-stopped { overflow: hidden; }
-.lenis.lenis-smooth iframe { pointer-events: none; }
+/* Contención del scroll de los carruseles/desplegables internos para que
+   la rueda no arrastre la página cuando se está sobre ellos. */
+[data-lenis-prevent] { overscroll-behavior: contain; }
 
 /* Barrido negro lateral entre páginas */
 .page-sweep {
