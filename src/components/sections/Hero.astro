@@ -72,13 +72,17 @@ import heroImg from '../../assets/hero/hero-villa.jpg';
   .hero-scrim {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      to top,
-      rgba(11, 11, 10, 0.62),
-      rgba(11, 11, 10, 0.12) 42%,
-      rgba(11, 11, 10, 0.05) 70%,
-      rgba(11, 11, 10, 0.18)
-    );
+    /* Capa doble: un velo plano que baja la exposición (apaga detalles) +
+       un degradado más marcado abajo para el contraste del texto. */
+    background:
+      linear-gradient(
+        to top,
+        rgba(11, 11, 10, 0.78),
+        rgba(11, 11, 10, 0.42) 45%,
+        rgba(11, 11, 10, 0.4) 75%,
+        rgba(11, 11, 10, 0.5)
+      ),
+      rgba(11, 11, 10, 0.22);
   }
 
   .hero-inner {
