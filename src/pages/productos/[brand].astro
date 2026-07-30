@@ -409,6 +409,20 @@ const PAGE_SIZE = 12;
     };
     document.querySelectorAll<HTMLElement>('[data-reset]').forEach((b) => b.addEventListener('click', reset));
 
+    // ---- Filtro de categoría pre-aplicado por URL (?gama=slug) ----
+    //      Al pulsar una gama en "Explora el universo" se llega aquí con el filtro puesto.
+    const preGama = new URLSearchParams(location.search).get('gama');
+    if (preGama && selectMenu) {
+      const opt = Array.from(selectMenu.querySelectorAll<HTMLButtonElement>('.fsel-opt'))
+        .find((o) => o.dataset.value === preGama);
+      if (opt) {
+        selectMenu.querySelectorAll('.fsel-opt').forEach((o) => o.classList.remove('is-on'));
+        opt.classList.add('is-on');
+        state.cat = preGama;
+        if (selectLabel) selectLabel.textContent = opt.querySelector('.fsel-name')?.textContent || 'Todas las categorías';
+      }
+    }
+
     update();
   }
 </script>

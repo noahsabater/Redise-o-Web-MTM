@@ -2,6 +2,8 @@
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import type { Brand } from '../../data/brands';
+import { catalog } from '../../data/catalog';
+import products from '../../data/products.json';
 
 interface Props {
   brand: Brand;
@@ -10,108 +12,209 @@ interface Props {
   origin?: string; // p.ej. "Marca francesa"
 }
 const { brand, hero, gallery, origin } = Astro.props;
+
+// Gamas reales de la marca con su recuento de productos (para destacar
+// "qué hay dentro" y poder enlazar al catálogo con el filtro ya aplicado).
+const gamas = (catalog.find((c) => c.slug === brand.slug)?.gamas ?? [])
+  .map((g) => ({
+    ...g,
+    count: products.filter((p) => p.brand === brand.slug && p.gamas.some((x) => x.slug === g.slug)).length,
+  }))
+  .filter((g) => g.count > 0);
+
+const totalProducts = products.filter((p) => p.brand === brand.slug).length;
 ---
 
-<section class="bh">
-  <div class="bh-media">
-    <Image src={hero} alt={brand.name} widths={[900, 1440, 1920]} sizes="100vw" loading="eager" class="bh-img" />
-    <div class="bh-scrim"></div>
-  </div>
-  <div class="container-mtm bh-inner">
-    <span class="label label--tick on-dark">{origin ?? 'Marca'} · {brand.role}</span>
-    <h1 class="bh-title">{brand.name}</h1>
-    <p class="bh-tag">{brand.tagline}</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container-mtm intro-grid">
-    <p class="intro-lead reveal">{brand.description}</p>
-    {brand.features && (
-      <ul class="feat reveal" style="--reveal-delay: 120ms">
-        {brand.features.map((f) => (
-          <li class="feat-li">{f}</li>
-        ))}
-      </ul>
-    )}
-  </div>
-</section>
-
-<section class="section cat-sec">
-  <div class="container-mtm">
-    <div class="cat-head reveal">
-      <span class="label label--tick">Gamas</span>
-      <h2 class="cat-h">Explora el universo {brand.name}</h2>
+<div class="brandshow">
+  <!-- ===== Hero ===== -->
+  <section class="bh">
+    <div class="bh-media">
+      <Image src={hero} alt={brand.name} widths={[900, 1440, 1920]} sizes="100vw" loading="eager" class="bh-img" />
+      <div class="bh-scrim"></div>
     </div>
-    <ul class="cat-list">
-      {brand.categories.map((c, i) => (
-        <li class="catrow reveal" style={`--reveal-delay: ${i * 50}ms`}>
-          <span class="catrow-n">{String(i + 1).padStart(2, '0')}</span>
-          <span class="catrow-name">{c}</span>
-          <a class="catrow-link" href={`/productos/${brand.slug}`} aria-label={`Ver productos de ${c}`}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</section>
-
-{gallery && (
-  <section class="bh-gallery">
-    <Image src={gallery} alt={`Aplicación de ${brand.name}`} widths={[900, 1440, 1920]} sizes="100vw" class="bh-gallery-img" />
+    <div class="container-mtm bh-inner">
+      <span class="label label--tick on-dark">{origin ?? 'Marca'} · {brand.role}</span>
+      <h1 class="bh-title">{brand.name}</h1>
+      <p class="bh-tag">{brand.tagline}</p>
+    </div>
   </section>
-)}
 
-<section class="brand-cta">
-  <div class="container-mtm brand-cta-inner reveal">
-    <h2 class="brand-cta-h">¿Listo para trabajar con {brand.name}?</h2>
-    <div class="brand-cta-btns">
-      <a class="btn btn--light" href="/aplicaciones">Ver aplicaciones
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-      </a>
-      <a class="btn btn--ghost" href="/contacto">Hablar con MTM</a>
+  <!-- ===== Intro + cifras ===== -->
+  <section class="section intro-sec">
+    <div class="container-mtm intro-grid">
+      <p class="intro-lead reveal">{brand.description}</p>
+      <div class="intro-side">
+        <div class="stats reveal" style="--reveal-delay: 80ms">
+          <div class="stat">
+            <span class="stat-n">{totalProducts}</span>
+            <span class="stat-l">Referencias</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">{gamas.length}</span>
+            <span class="stat-l">Gamas</span>
+          </div>
+        </div>
+        {brand.features && (
+          <ul class="feat reveal" style="--reveal-delay: 160ms">
+            {brand.features.map((f) => (
+              <li class="feat-li">{f}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ===== Explora el universo (gamas → catálogo filtrado) ===== -->
+  <section class="section cat-sec">
+    <div class="container-mtm">
+      <div class="cat-head reveal">
+        <span class="label label--tick on-dark">Gamas</span>
+        <h2 class="cat-h">Explora el universo {brand.name}</h2>
+        <p class="cat-intro">Pulsa una gama y verás su catálogo con el filtro ya aplicado.</p>
+      </div>
+      <div class="gama-grid">
+        {gamas.map((g, i) => (
+          <a
+            class="gama-card reveal"
+            href={`/productos/${brand.slug}?gama=${g.slug}`}
+            style={`--reveal-delay: ${i * 55}ms`}
+            aria-label={`Ver ${g.count} productos de ${g.name}`}
+          >
+            <span class="gama-n">{String(i + 1).padStart(2, '0')}</span>
+            <div class="gama-body">
+              <h3 class="gama-name">{g.name}</h3>
+              {g.sub && g.sub.length > 0 && (
+                <p class="gama-sub">{g.sub.slice(0, 4).map((s) => s.name).join(' · ')}</p>
+              )}
+            </div>
+            <div class="gama-foot">
+              <span class="gama-count">{g.count} productos</span>
+              <span class="gama-arr">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {gallery && (
+    <section class="bh-gallery">
+      <Image src={gallery} alt={`Aplicación de ${brand.name}`} widths={[900, 1440, 1920]} sizes="100vw" class="bh-gallery-img" />
+      <div class="bh-gallery-scrim"></div>
+    </section>
+  )}
+
+  <!-- ===== CTA ===== -->
+  <section class="brand-cta">
+    <div class="container-mtm brand-cta-inner reveal">
+      <h2 class="brand-cta-h">¿Listo para trabajar con {brand.name}?</h2>
+      <div class="brand-cta-btns">
+        <a class="btn btn--light" href="/aplicaciones">Ver aplicaciones
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+        <a class="btn btn--ghost" href="/contacto">Hablar con MTM</a>
+      </div>
+    </div>
+  </section>
+</div>
 
 <style>
-  .bh { position: relative; min-height: clamp(420px, 62vh, 640px); display: flex; align-items: flex-end; overflow: hidden; background: var(--color-carbon); }
-  .bh-media { position: absolute; inset: 0; }
-  .bh-img { width: 100%; height: 100%; object-fit: cover; }
-  .bh-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,11,10,0.7), rgba(11,11,10,0.15) 55%, rgba(11,11,10,0.35)); }
-  .bh-inner { position: relative; z-index: 2; padding-block: clamp(2.5rem, 5vw, 4rem); color: var(--color-paper); }
+  /* Toda la página en negro para destacar el contenido */
+  .brandshow { background: var(--color-carbon); }
+
+  /* ---- Hero ---- */
+  .bh { position: relative; min-height: clamp(460px, 74vh, 760px); display: flex; align-items: flex-end; overflow: hidden; background: var(--color-carbon); }
+  .bh-media { position: absolute; inset: 0; overflow: hidden; }
+  .bh-img { width: 100%; height: 100%; object-fit: cover; animation: bhZoom 1.6s var(--ease-soft) both; }
+  @keyframes bhZoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+  .bh-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,11,10,0.92), rgba(11,11,10,0.3) 55%, rgba(11,11,10,0.45)); }
+  .bh-inner { position: relative; z-index: 2; padding-block: clamp(2.5rem, 5vw, 4.5rem); color: var(--color-paper); }
   .bh-title { color: var(--color-paper); font-size: var(--text-hero); line-height: 1; margin: 1.2rem 0 1rem; }
   .bh-tag { color: rgba(244,244,242,0.85); max-width: 48ch; font-size: clamp(1.15rem, 1.5vw, 1.38rem); line-height: 1.55; }
 
-  .intro-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
-  .intro-lead { font-size: clamp(1.2rem, 2.2vw, 1.7rem); line-height: 1.5; max-width: 40ch; }
+  /* ---- Intro + cifras ---- */
+  .intro-sec { background: var(--color-carbon); color: var(--color-paper); }
+  .intro-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
+  .intro-lead { font-size: clamp(1.2rem, 2.2vw, 1.7rem); line-height: 1.5; max-width: 42ch; color: rgba(244,244,242,0.9); }
+  .intro-side { display: flex; flex-direction: column; gap: 2rem; }
+  .stats { display: flex; gap: 2.5rem; }
+  .stat { display: flex; flex-direction: column; gap: 0.35rem; }
+  .stat-n { font-family: var(--font-display); font-size: clamp(2.4rem, 4vw, 3.4rem); line-height: 1; color: var(--color-paper); }
+  .stat-l { font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(244,244,242,0.55); }
   .feat { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
-  .feat-li { padding: 0.9rem 0; border-top: 1px solid var(--color-line); font-size: 1.092rem; color: var(--color-slate); }
-  .feat-li:last-child { border-bottom: 1px solid var(--color-line); }
+  .feat-li { padding: 0.85rem 0; border-top: 1px solid rgba(244,244,242,0.14); font-size: 1.05rem; color: rgba(244,244,242,0.72); }
+  .feat-li:last-child { border-bottom: 1px solid rgba(244,244,242,0.14); }
 
-  .cat-sec { background: var(--color-mist); }
-  .cat-head { display: flex; flex-direction: column; gap: 1rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
-  .cat-h { font-size: var(--text-display); line-height: var(--text-display--line-height); }
-  .cat-list { list-style: none; margin: 0; padding: 0; }
-  .catrow { display: grid; grid-template-columns: 3rem 1fr auto; align-items: center; gap: 1.5rem; padding: clamp(1.1rem, 2.2vw, 1.6rem) 0; border-top: 1px solid var(--color-line); transition: padding-left 0.4s var(--ease-soft); }
-  .cat-list .catrow:last-child { border-bottom: 1px solid var(--color-line); }
-  .catrow:hover { padding-left: 0.8rem; }
-  .catrow-n { font-size: 0.828rem; letter-spacing: 0.16em; color: var(--color-ash); }
-  .catrow-name { font-size: clamp(1.2rem, 2.4vw, 1.8rem); }
-  .catrow-link { color: var(--color-ink); }
-  .catrow-link svg { width: 20px; height: 20px; transition: transform 0.4s var(--ease-soft); }
-  .catrow:hover .catrow-link svg { transform: translateX(6px); }
+  /* ---- Gamas ---- */
+  .cat-sec { background: var(--color-carbon); color: var(--color-paper); }
+  .cat-head { display: flex; flex-direction: column; gap: 1rem; margin-bottom: clamp(2.2rem, 4vw, 3.2rem); }
+  .cat-h { color: var(--color-paper); font-size: var(--text-display); line-height: var(--text-display--line-height); }
+  .cat-intro { color: rgba(244,244,242,0.6); font-size: 1.03rem; }
 
-  .bh-gallery { line-height: 0; }
-  .bh-gallery-img { width: 100%; height: clamp(320px, 50vw, 620px); object-fit: cover; }
+  .gama-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: clamp(1rem, 1.6vw, 1.4rem);
+  }
+  .gama-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: clamp(1.5rem, 2.4vw, 2rem);
+    border-radius: 16px;
+    /* Glass simulado en negro (sin backdrop-filter, por rendimiento) */
+    background: linear-gradient(160deg, rgba(244,244,242,0.07), rgba(244,244,242,0.025));
+    border: 1px solid rgba(244,244,242,0.1);
+    color: var(--color-paper);
+    min-height: 190px;
+    overflow: hidden;
+    transition: transform 0.4s var(--ease-soft), border-color 0.4s var(--ease-soft), background 0.4s var(--ease-soft);
+  }
+  .gama-card::after {
+    content: '';
+    position: absolute; inset: 0; border-radius: 16px; pointer-events: none;
+    background: radial-gradient(120% 90% at 100% 0%, rgba(244,244,242,0.09), transparent 55%);
+    opacity: 0; transition: opacity 0.4s var(--ease-soft);
+  }
+  .gama-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(244,244,242,0.28);
+    background: linear-gradient(160deg, rgba(244,244,242,0.1), rgba(244,244,242,0.04));
+  }
+  .gama-card:hover::after { opacity: 1; }
 
-  .brand-cta { background: var(--color-ink); color: var(--color-paper); padding-block: clamp(4rem, 9vw, 7rem); }
+  .gama-n { font-family: var(--font-display); font-size: 0.82rem; letter-spacing: 0.18em; color: rgba(244,244,242,0.45); }
+  .gama-body { flex: 1; }
+  .gama-name { color: var(--color-paper); font-size: clamp(1.35rem, 2vw, 1.7rem); line-height: 1.12; }
+  .gama-sub { margin-top: 0.7rem; font-size: 0.9rem; line-height: 1.5; color: rgba(244,244,242,0.55); }
+  .gama-foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.1rem; border-top: 1px solid rgba(244,244,242,0.12); }
+  .gama-count { font-size: 0.8rem; letter-spacing: 0.06em; color: rgba(244,244,242,0.7); }
+  .gama-arr {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 1px solid rgba(244,244,242,0.2); color: var(--color-paper);
+    transition: transform 0.4s var(--ease-soft), background 0.4s var(--ease-soft), color 0.4s var(--ease-soft);
+  }
+  .gama-arr svg { width: 18px; height: 18px; }
+  .gama-card:hover .gama-arr { background: var(--color-paper); color: var(--color-ink); transform: translateX(4px); }
+
+  /* ---- Galería ---- */
+  .bh-gallery { position: relative; line-height: 0; }
+  .bh-gallery-img { width: 100%; height: clamp(340px, 52vw, 660px); object-fit: cover; }
+  .bh-gallery-scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(11,11,10,0.35), transparent 30%, rgba(11,11,10,0.35)); pointer-events: none; }
+
+  /* ---- CTA ---- */
+  .brand-cta { background: #060605; color: var(--color-paper); padding-block: clamp(4rem, 9vw, 7rem); border-top: 1px solid rgba(244,244,242,0.08); }
   .brand-cta-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem; }
   .brand-cta-h { color: var(--color-paper); font-size: var(--text-display); line-height: var(--text-display--line-height); max-width: 18ch; }
   .brand-cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
 
   @media (max-width: 880px) {
     .intro-grid { grid-template-columns: 1fr; }
+    .gama-grid { grid-template-columns: 1fr; }
   }
 </style>
