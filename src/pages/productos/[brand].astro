@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import PageHeader from '../../components/layout/PageHeader.astro';
+import { Image } from 'astro:assets';
 import products from '../../data/products.json';
 import { catalog } from '../../data/catalog';
+import ambTixol from '../../assets/marcas/portada-tixol.png';
+import ambScalp from '../../assets/marcas/portada-scalp.png';
+import ambSupertape from '../../assets/marcas/portada-supertape.png';
 
 export function getStaticPaths() {
   return ['tixol', 'scalp', 'supertape'].map((slug) => ({
@@ -12,69 +15,56 @@ export function getStaticPaths() {
 }
 
 const { brand, items } = Astro.props;
-const meta: Record<string, { name: string; tagline: string }> = {
-  tixol: { name: 'Tixol', tagline: 'Pinturas, revestimientos y soluciones decorativas para interior y exterior.' },
-  scalp: { name: 'Scalp', tagline: 'Limpieza, hidrofugado y protección de superficies.' },
-  supertape: { name: 'Supertape', tagline: 'Cintas y sistemas de protección para reformas.' },
+const meta: Record<string, { name: string }> = {
+  tixol: { name: 'Tixol' },
+  scalp: { name: 'Scalp' },
+  supertape: { name: 'Supertape' },
 };
 const brandName = meta[brand].name;
+const amb: Record<string, any> = { tixol: ambTixol, scalp: ambScalp, supertape: ambSupertape };
+const ambImg = amb[brand];
 
-// Categorías (gamas) reales de la marca, con recuento e imagen representativa
+// Categorías (gamas) reales con recuento
 const allGamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
 const gamas = allGamas
-  .map((g) => ({
-    ...g,
-    count: items.filter((p) => p.gamas.some((x) => x.slug === g.slug)).length,
-    img: items.find((p) => p.gamas.some((x) => x.slug === g.slug) && p.image)?.image ?? null,
-  }))
+  .map((g) => ({ ...g, count: items.filter((p) => p.gamas.some((x) => x.slug === g.slug)).length }))
   .filter((g) => g.count > 0);
-const allImg = items.find((p) => p.image)?.image ?? null;
 
-const arrow =
-  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>';
+// Distintos encuadres para que cada panel de la misma foto se vea diferente
+const positions = ['center', 'left top', 'right center', 'center bottom', '30% 30%', 'right top', 'left bottom', '70% 40%'];
+
+// Panel de "Todos los productos" + una por categoría
+const panels = [
+  { href: `/productos/${brand}/todo`, eyebrow: 'Catálogo completo', name: 'Todos los productos', count: items.length, all: true },
+  ...gamas.map((g, i) => ({ href: `/productos/${brand}/${g.slug}`, eyebrow: `N.º ${String(i + 1).padStart(2, '0')}`, name: g.name, count: g.count, all: false })),
+];
 ---
 
-<BaseLayout title={`Productos ${brandName} · Categorías`} description={`Explora el catálogo de ${brandName} por categorías.`}>
-  <PageHeader
-    eyebrow={`Catálogo · ${brandName}`}
-    title="Elige una"
-    accent="categoría"
-    intro={`Explora los productos de ${brandName} por categoría, o entra al catálogo completo.`}
-  />
-
-  <div class="catalog-bg"></div>
-
-  <section class="cats container-mtm">
-    <a class="back" href="/productos">← Todas las marcas</a>
+<BaseLayout
+  title={`Productos ${brandName} · Categorías`}
+  description={`Explora el catálogo de ${brandName} por categorías.`}
+  transparentHeader={true}
+  darkHeader={true}
+>
+  <section class="cats">
+    <div class="cats-top container-mtm">
+      <a class="cats-back" href="/productos">← Todas las marcas</a>
+      <span class="cats-kicker">{brandName} · Categorías</span>
+    </div>
 
     <div class="cgrid">
-      <!-- Catálogo completo -->
-      <a class="ccard ccard--all" href={`/productos/${brand}/todo`}>
-        <div class="ccard-media">
-          {allImg && <img src={allImg} alt="" class="ccard-img" loading="eager" />}
-        </div>
-        <div class="ccard-body">
-          <span class="ccard-eyebrow">Catálogo completo</span>
-          <h2 class="ccard-name">Todos los productos</h2>
-          <span class="ccard-foot">
-            <span class="ccard-count">{items.length} productos</span>
-            <span class="ccard-arr" set:html={arrow}></span>
-          </span>
-        </div>
-      </a>
-
-      <!-- Categorías -->
-      {gamas.map((g, i) => (
-        <a class="ccard" href={`/productos/${brand}/${g.slug}`}>
-          <div class="ccard-media">
-            {g.img && <img src={g.img} alt="" class="ccard-img" loading="lazy" />}
+      {panels.map((p, i) => (
+        <a class={`cpanel${p.all ? ' cpanel--all' : ''}`} href={p.href}>
+          <div class="cpanel-media">
+            <Image src={ambImg} alt="" widths={[500, 800, 1100]} sizes="(max-width: 860px) 100vw, 33vw" class="cpanel-img" style={`object-position:${positions[i % positions.length]}`} loading={i < 3 ? 'eager' : 'lazy'} />
           </div>
-          <div class="ccard-body">
-            <span class="ccard-eyebrow">N.º {String(i + 1).padStart(2, '0')}</span>
-            <h2 class="ccard-name">{g.name}</h2>
-            <span class="ccard-foot">
-              <span class="ccard-count">{g.count} productos</span>
-              <span class="ccard-arr" set:html={arrow}></span>
+          <div class="cpanel-scrim"></div>
+          <div class="cpanel-inner">
+            <span class="cpanel-eyebrow">{p.eyebrow}</span>
+            <h2 class="cpanel-name">{p.name}</h2>
+            <span class="cpanel-cta">
+              {p.count} productos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
             </span>
           </div>
         </a>
@@ -84,73 +74,61 @@ const arrow =
 </BaseLayout>
 
 <style>
-  .catalog-bg {
-    position: fixed; inset: 0; z-index: -1; pointer-events: none;
-    background:
-      radial-gradient(42rem 42rem at 12% 18%, rgba(190, 178, 160, 0.22), transparent 60%),
-      radial-gradient(38rem 38rem at 88% 42%, rgba(150, 160, 170, 0.18), transparent 60%);
+  .cats { background: var(--color-carbon); min-height: 100svh; padding-bottom: clamp(2rem, 4vw, 3.5rem); }
+  .cats-top {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    padding-top: calc(76px + clamp(1.2rem, 3vw, 2rem)); padding-bottom: clamp(1.2rem, 3vw, 2rem);
   }
-  .cats { padding-top: clamp(1rem, 2vw, 1.5rem); padding-bottom: clamp(4rem, 8vw, 7rem); }
-  .back { display: inline-block; margin-bottom: clamp(1.5rem, 3vw, 2.4rem); font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-slate); }
-  .back:hover { color: var(--color-ink); }
+  .cats-back { font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(244,244,242,0.7); }
+  .cats-back:hover { color: var(--color-paper); }
+  .cats-kicker { font-size: 0.782rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(244,244,242,0.5); }
 
   .cgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: clamp(1rem, 1.8vw, 1.5rem);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: clamp(0.5rem, 1vw, 0.9rem);
+    padding-inline: clamp(0.5rem, 1vw, 0.9rem);
   }
 
-  .ccard {
-    display: flex; flex-direction: column; overflow: hidden;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0 14px 32px -20px rgba(11, 11, 10, 0.22);
-    transition: transform 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft);
+  .cpanel {
+    position: relative; overflow: hidden;
+    aspect-ratio: 3 / 4; min-height: 340px;
+    display: flex; align-items: flex-end;
+    color: var(--color-paper);
   }
-  .ccard:hover { transform: translateY(-6px); box-shadow: 0 30px 54px -26px rgba(11, 11, 10, 0.34); }
+  .cpanel-media { position: absolute; inset: 0; }
+  .cpanel-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease-soft); }
+  .cpanel-scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(11,11,10,0.86) 0%, rgba(11,11,10,0.35) 45%, rgba(11,11,10,0.28) 100%);
+    transition: background 0.5s var(--ease-soft);
+  }
+  .cpanel-inner {
+    position: relative; z-index: 2; width: 100%;
+    padding: clamp(1.4rem, 2.4vw, 2rem);
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .cpanel-eyebrow { font-size: 0.736rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244,244,242,0.72); }
+  .cpanel-name { color: var(--color-paper); font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.08; }
+  .cpanel-cta {
+    display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 0.4rem;
+    font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,244,242,0.85);
+    opacity: 0; transform: translateY(8px);
+    transition: opacity 0.4s var(--ease-soft), transform 0.4s var(--ease-soft);
+  }
+  .cpanel-cta svg { width: 16px; height: 16px; transition: transform 0.4s var(--ease-soft); }
 
-  .ccard-media {
-    aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; overflow: hidden;
-    background: linear-gradient(160deg, #ffffff, var(--color-mist));
-  }
-  .ccard-img { width: 100%; height: 100%; object-fit: contain; padding: 1.8rem; transition: transform 0.6s var(--ease-soft); }
-  .ccard:hover .ccard-img { transform: scale(1.06); }
+  .cpanel:hover .cpanel-img { transform: scale(1.06); }
+  .cpanel:hover .cpanel-scrim { background: linear-gradient(to top, rgba(11,11,10,0.82) 0%, rgba(11,11,10,0.2) 55%, rgba(11,11,10,0.18) 100%); }
+  .cpanel:hover .cpanel-cta { opacity: 1; transform: none; }
+  .cpanel:hover .cpanel-cta svg { transform: translateX(5px); }
 
-  .ccard-body {
-    padding: 1.3rem 1.4rem 1.5rem; border-top: 1px solid var(--color-line);
-    display: flex; flex-direction: column; gap: 0.5rem; flex: 1;
-  }
-  .ccard-eyebrow { font-size: 0.736rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-ash); }
-  .ccard-name { font-size: clamp(1.3rem, 1.8vw, 1.6rem); line-height: 1.15; color: var(--color-ink); }
-  .ccard-foot {
-    margin-top: auto; padding-top: 1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-    border-top: 1px solid var(--color-line);
-  }
-  .ccard-count { font-size: 0.85rem; color: var(--color-slate); }
-  .ccard-arr {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 38px; height: 38px; border-radius: 50%;
-    border: 1px solid var(--color-line); color: var(--color-ink);
-    transition: transform 0.4s var(--ease-soft), background 0.4s var(--ease-soft), color 0.4s var(--ease-soft);
-  }
-  .ccard-arr :global(svg) { width: 18px; height: 18px; }
-  .ccard:hover .ccard-arr { background: var(--color-ink); color: var(--color-paper); transform: translateX(4px); }
+  /* "Todos los productos" ocupa toda la fila y es más ancho/cinematográfico */
+  .cpanel--all { grid-column: 1 / -1; aspect-ratio: auto; min-height: clamp(220px, 34vh, 320px); }
 
-  /* La tarjeta de "Todos los productos" destaca en oscuro */
-  .ccard--all { background: var(--color-ink); border-color: var(--color-ink); }
-  .ccard--all .ccard-media { background: linear-gradient(160deg, #1a1917, #0f0e0d); }
-  .ccard--all .ccard-body { border-top-color: rgba(244, 244, 242, 0.14); }
-  .ccard--all .ccard-eyebrow { color: rgba(244, 244, 242, 0.55); }
-  .ccard--all .ccard-name { color: var(--color-paper); }
-  .ccard--all .ccard-foot { border-top-color: rgba(244, 244, 242, 0.14); }
-  .ccard--all .ccard-count { color: rgba(244, 244, 242, 0.7); }
-  .ccard--all .ccard-arr { border-color: rgba(244, 244, 242, 0.3); color: var(--color-paper); }
-  .ccard--all:hover .ccard-arr { background: var(--color-paper); color: var(--color-ink); }
-
+  @media (hover: none) { .cpanel-cta { opacity: 1; transform: none; } }
   @media (max-width: 560px) {
-    .cgrid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-    .ccard-body { padding: 1rem 1rem 1.1rem; }
-    .ccard-img { padding: 1.1rem; }
+    .cgrid { grid-template-columns: 1fr; }
+    .cpanel { aspect-ratio: 16 / 10; min-height: 240px; }
   }
 </style>
