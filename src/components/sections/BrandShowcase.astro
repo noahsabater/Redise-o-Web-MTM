@@ -77,7 +77,7 @@ const totalProducts = products.filter((p) => p.brand === brand.slug).length;
         {gamas.map((g, i) => (
           <a
             class="gama-card reveal"
-            href={`/productos/${brand.slug}?gama=${g.slug}`}
+            href={`/productos/${brand.slug}/${g.slug}`}
             style={`--reveal-delay: ${i * 55}ms`}
             aria-label={`Ver ${g.count} productos de ${g.name}`}
           >
