@@ -5,26 +5,85 @@ import LegalLayout from '../components/layout/LegalLayout.astro';
 <LegalLayout title="Política de" accent="cookies">
   <h2>¿Qué son las cookies?</h2>
   <p>
-    Una cookie es un pequeño fichero de texto que se almacena en tu navegador cuando visitas nuestro sitio web.
-    Sirve para que la web recuerde tus preferencias y para obtener información estadística sobre la navegación.
+    Una cookie es un pequeño fichero de texto que un sitio web almacena en tu navegador cuando lo visitas.
+    Sirve para que la web funcione correctamente, recordar tus preferencias y obtener información estadística
+    sobre la navegación.
   </p>
 
   <h2>Tipos de cookies que utilizamos</h2>
   <ul>
-    <li><strong>Técnicas:</strong> necesarias para el funcionamiento del sitio y la navegación.</li>
-    <li><strong>Analíticas:</strong> nos permiten medir y analizar el uso de la web para mejorarla.</li>
-    <li><strong>De preferencias:</strong> recuerdan opciones que personalizan tu experiencia.</li>
+    <li>
+      <strong>Técnicas (necesarias):</strong> imprescindibles para el funcionamiento del sitio y para recordar
+      tu elección sobre las cookies. No requieren consentimiento.
+    </li>
+    <li>
+      <strong>Analíticas:</strong> nos permiten medir y analizar de forma estadística el uso de la web para
+      mejorarla. Solo se activan <strong>si las aceptas</strong> en el aviso de cookies.
+    </li>
+    <li>
+      <strong>De terceros:</strong> las cookies analíticas las gestiona <strong>Google Analytics</strong>
+      (Google Ireland Ltd.), que trata la información de navegación de forma agregada.
+    </li>
   </ul>
 
-  <h2>Gestión de cookies</h2>
-  <p>
-    Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo configurando las opciones del
-    navegador. Ten en cuenta que la desactivación de algunas cookies puede afectar al funcionamiento del sitio.
-  </p>
+  <h2>Cookies que se utilizan</h2>
+  <table class="cookie-table">
+    <thead>
+      <tr><th>Cookie</th><th>Tipo / Titular</th><th>Finalidad</th><th>Duración</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>mtm_consent</td><td>Técnica · MTM</td><td>Recordar tu decisión sobre las cookies</td><td>1 año</td></tr>
+      <tr><td>_ga</td><td>Analítica · Google</td><td>Distinguir usuarios</td><td>13 meses</td></tr>
+      <tr><td>_ga_*</td><td>Analítica · Google</td><td>Mantener el estado de la sesión</td><td>13 meses</td></tr>
+      <tr><td>_gid</td><td>Analítica · Google</td><td>Distinguir usuarios</td><td>24 horas</td></tr>
+    </tbody>
+  </table>
 
   <h2>Consentimiento</h2>
   <p>
-    Al continuar navegando por este sitio web, aceptas el uso de cookies conforme a lo descrito en esta política.
-    Para cualquier duda, escríbenos a <a href="mailto:hola@materialesmodernos.com">hola@materialesmodernos.com</a>.
+    Al entrar en la web te mostramos un aviso de cookies. Las cookies analíticas <strong>solo se instalan si
+    pulsas «Aceptar»</strong>. Si pulsas «Rechazar», únicamente se usa la cookie técnica necesaria para recordar
+    esa elección. Puedes cambiar tu decisión en cualquier momento borrando las cookies de tu navegador.
+  </p>
+
+  <h2>Gestión y desactivación</h2>
+  <p>
+    Además del aviso de cookies, puedes permitir, bloquear o eliminar las cookies instaladas configurando las
+    opciones de tu navegador (Chrome, Firefox, Safari, Edge). Ten en cuenta que desactivar algunas cookies puede
+    afectar al funcionamiento del sitio.
+  </p>
+
+  <h2>Contacto</h2>
+  <p>
+    Para cualquier duda sobre esta política, escríbenos a
+    <a href="mailto:mtm@mtm-murcia.com">mtm@mtm-murcia.com</a>.
   </p>
 </LegalLayout>
+
+<style>
+  .cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.95rem;
+  }
+  .cookie-table th,
+  .cookie-table td {
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--color-line);
+    vertical-align: top;
+  }
+  .cookie-table thead th {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-slate);
+    border-bottom: 1px solid var(--color-ink);
+  }
+  .cookie-table td:first-child { font-family: var(--font-sans); color: var(--color-ink); white-space: nowrap; }
+  @media (max-width: 620px) {
+    .cookie-table { font-size: 0.85rem; }
+    .cookie-table th, .cookie-table td { padding: 0.55rem 0.5rem; }
+  }
+</style>

@@ -10,9 +10,13 @@ export const site = {
     'Materiales premium para reformas y decoración de alto standing: revestimientos naturales, cal, microcementos, Tixol Nature y soluciones para humedades e interiores.',
   url: 'https://materialesmodernos.com',
   founded: 1994,
+  // Datos fiscales (LSSI / Aviso legal)
+  cif: 'A30234801',
+  // Google Analytics 4 — pega el ID de medición (G-XXXXXXXXXX). Vacío = sin analítica.
+  gaId: '',
   contact: {
     address: 'P.I. Torre Alcayna · C/ San Pancracio 2 y 4, 30110 Churra, Murcia',
-    email: 'hola@materialesmodernos.com',
+    email: 'mtm@mtm-murcia.com',
     phone: '+34 968 306 060',
     phoneTech: '+34 611 819 441',
     emailTech: 'tecnico@mtm-murcia.com',

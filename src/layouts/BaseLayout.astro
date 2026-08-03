@@ -28,6 +28,7 @@ const {
 
 const pageTitle = title ? `${title} · ${site.shortName}` : `${site.name} · Materiales premium`;
 const canonical = new URL(Astro.url.pathname, site.url).href;
+const gaId = site.gaId;
 ---
 
 <!doctype html>
@@ -83,6 +84,53 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
 
     <!-- Barrido negro para la transición entre páginas -->
     <div class="page-sweep" data-sweep aria-hidden="true"></div>
+
+    <!-- Aviso de cookies (solo aparece si hay Google Analytics configurado) -->
+    <div class="cookie-banner" data-cookie-banner hidden aria-live="polite">
+      <p class="cookie-txt">
+        Usamos cookies analíticas (Google Analytics) para entender cómo se usa la web y mejorarla. Puedes
+        aceptarlas o rechazarlas. Más información en la <a href="/politica-de-cookies">Política de cookies</a>.
+      </p>
+      <div class="cookie-btns">
+        <button type="button" class="cookie-btn cookie-reject" data-cookie-reject>Rechazar</button>
+        <button type="button" class="cookie-btn cookie-accept" data-cookie-accept>Aceptar</button>
+      </div>
+    </div>
+
+    <script is:inline define:vars={{ gaId }}>
+      (function () {
+        var banner = document.querySelector('[data-cookie-banner]');
+        function getConsent() { var m = document.cookie.match(/(?:^|; )mtm_consent=([^;]*)/); return m ? m[1] : null; }
+        function setConsent(v) { document.cookie = 'mtm_consent=' + v + ';path=/;max-age=31536000;samesite=lax'; }
+        function loadGA() {
+          if (!gaId) return;
+          var s = document.createElement('script');
+          s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+          document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', gaId, { anonymize_ip: true });
+        }
+        var consent = getConsent();
+        if (consent === 'accepted') { loadGA(); }
+        else if (gaId && !consent && banner) {
+          banner.hidden = false;
+          requestAnimationFrame(function () { banner.classList.add('is-in'); });
+        }
+        if (banner) {
+          banner.querySelector('[data-cookie-accept]').addEventListener('click', function () {
+            setConsent('accepted'); loadGA(); banner.classList.remove('is-in');
+            setTimeout(function () { banner.hidden = true; }, 350);
+          });
+          banner.querySelector('[data-cookie-reject]').addEventListener('click', function () {
+            setConsent('rejected'); banner.classList.remove('is-in');
+            setTimeout(function () { banner.hidden = true; }, 350);
+          });
+        }
+      })();
+    </script>
 
     <!-- Revelado sutil al hacer scroll (respeta prefers-reduced-motion) -->
     <script>
@@ -205,6 +253,36 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
       }
       .skip-link:focus {
         left: 0;
+      }
+
+      /* Aviso de cookies */
+      .cookie-banner {
+        position: fixed; left: 50%; bottom: clamp(1rem, 3vw, 1.6rem); z-index: 200;
+        transform: translateX(-50%) translateY(130%); opacity: 0;
+        width: min(680px, calc(100% - 2rem));
+        display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.4rem;
+        padding: 1.1rem 1.3rem; border-radius: 16px;
+        background: var(--color-ink); color: var(--color-paper);
+        box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+        transition: transform 0.4s var(--ease-soft), opacity 0.4s var(--ease-soft);
+      }
+      .cookie-banner.is-in { transform: translateX(-50%) translateY(0); opacity: 1; }
+      .cookie-txt { flex: 1 1 300px; margin: 0; font-size: 0.9rem; line-height: 1.5; color: rgba(244, 244, 242, 0.86); }
+      .cookie-txt a { color: var(--color-paper); text-decoration: underline; text-underline-offset: 3px; }
+      .cookie-btns { display: flex; gap: 0.6rem; flex: 0 0 auto; }
+      .cookie-btn {
+        font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+        padding: 0.62rem 1.15rem; border-radius: 10px; cursor: pointer; border: 1px solid transparent;
+        transition: background 0.2s var(--ease-soft), color 0.2s var(--ease-soft), border-color 0.2s var(--ease-soft);
+      }
+      .cookie-reject { background: transparent; color: rgba(244, 244, 242, 0.8); border-color: rgba(244, 244, 242, 0.3); }
+      .cookie-reject:hover { color: var(--color-paper); border-color: var(--color-paper); }
+      .cookie-accept { background: var(--color-paper); color: var(--color-ink); }
+      .cookie-accept:hover { background: #fff; }
+      @media (max-width: 520px) {
+        .cookie-banner { flex-direction: column; align-items: stretch; }
+        .cookie-btns { justify-content: stretch; }
+        .cookie-btn { flex: 1; text-align: center; }
       }
     </style>
   </body>
