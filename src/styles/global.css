@@ -40,6 +40,8 @@
   --color-slate: #6c6a66; /* texto secundario (AA)      */
   --color-ink: #121110; /* texto principal / negro    */
   --color-carbon: #0b0b0a; /* fondo oscuro profundo      */
+  --color-mtm-red: #d8232a; /* rojo del logo (ajústalo al hex exacto de marca) */
+  --color-mtm-red-dark: #b41c22; /* rojo hover                */
 
   /* ---- Tipografía (misma familia y grosor que la referencia) ---- */
   --font-display: 'Nats', system-ui, -apple-system, sans-serif;
@@ -216,6 +218,9 @@
   .btn--light:hover { background: var(--color-ink); color: var(--color-paper); }
   .btn--ink { background: var(--color-ink); color: var(--color-paper); }
   .btn--ink:hover { background: var(--color-carbon); }
+  /* Rojo de marca MTM (para descargas de catálogo) */
+  .btn--red { background: var(--color-mtm-red); color: #fff; }
+  .btn--red:hover { background: var(--color-mtm-red-dark); }
   .btn--ghost { background: transparent; color: var(--color-paper); border-color: rgba(244, 244, 242, 0.4); }
   .btn--ghost:hover { border-color: var(--color-paper); background: rgba(244, 244, 242, 0.07); }
   .btn--ghost-ink { background: transparent; color: var(--color-ink); border-color: rgba(18, 17, 16, 0.25); }
