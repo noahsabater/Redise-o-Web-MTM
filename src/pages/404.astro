@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Página no encontrada"
+  description="La página que buscas no existe o ha cambiado de dirección."
+  transparentHeader={true}
+  darkHeader={true}
+>
+  <section class="nf">
+    <div class="container-mtm nf-inner">
+      <span class="nf-code">404</span>
+      <h1 class="nf-title">Esta página <span class="serif-italic">no existe</span></h1>
+      <p class="nf-text">
+        Puede que el enlace esté roto o que la página haya cambiado de sitio. No te preocupes: sigue explorando MTM.
+      </p>
+      <div class="nf-btns">
+        <a class="btn btn--light" href="/">
+          Volver al inicio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+        <a class="btn btn--ghost" href="/productos">Ver productos</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    background: var(--color-carbon);
+    color: var(--color-paper);
+    position: relative;
+    overflow: hidden;
+  }
+  .nf::before {
+    content: '';
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(60% 50% at 80% 10%, rgba(224, 165, 106, 0.08), transparent 60%),
+      radial-gradient(50% 45% at 8% 95%, rgba(70, 120, 160, 0.08), transparent 60%);
+  }
+  .nf-inner { position: relative; z-index: 1; padding-block: clamp(6rem, 14vh, 9rem); max-width: 46rem; }
+  .nf-code {
+    font-family: var(--font-display);
+    font-size: clamp(5rem, 16vw, 11rem);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: rgba(244, 244, 242, 0.14);
+    display: block;
+  }
+  .nf-title {
+    color: var(--color-paper);
+    font-size: var(--text-display);
+    line-height: 1.05;
+    margin: 0.4rem 0 1.2rem;
+  }
+  .nf-text {
+    color: rgba(244, 244, 242, 0.72);
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    line-height: 1.6;
+    max-width: 42ch;
+    margin-bottom: 2.4rem;
+  }
+  .nf-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+</style>

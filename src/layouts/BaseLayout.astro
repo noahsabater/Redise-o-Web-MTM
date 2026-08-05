@@ -29,6 +29,28 @@ const {
 const pageTitle = title ? `${title} · ${site.shortName}` : `${site.name} · Materiales premium`;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const gaId = site.gaId;
+
+// Datos estructurados de la empresa (JSON-LD) — en todas las páginas
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: site.legalName,
+  alternateName: site.shortName,
+  url: site.url,
+  logo: new URL('/mtm-logo-white.png', site.url).href,
+  image: new URL('/og-default.jpg', site.url).href,
+  email: site.contact.email,
+  telephone: site.contact.phone,
+  foundingDate: String(site.founded),
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'C/ San Pancracio 2 y 4 · P.I. Torre Alcayna',
+    addressLocality: 'Churra, Murcia',
+    postalCode: '30110',
+    addressCountry: 'ES',
+  },
+  sameAs: [site.social.instagram, site.social.facebook, site.social.linkedin, site.social.youtube],
+};
 ---
 
 <!doctype html>
@@ -56,6 +78,9 @@ const gaId = site.gaId;
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Datos estructurados de la empresa -->
+    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 
     <!-- Datos estructurados / metadatos específicos de cada página (JSON-LD) -->
     <slot name="head" />

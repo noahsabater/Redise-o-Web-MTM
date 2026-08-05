@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import products from '../../data/products.json';
+import { site } from '../../data/site';
 
 export function getStaticPaths() {
   return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
@@ -11,9 +12,25 @@ const related = products
   .filter((p) => p.slug !== product.slug && p.gamaMain && p.gamaMain === product.gamaMain)
   .slice(0, 4);
 const brandHref = `/productos/${product.brand}`;
+
+const descText =
+  product.short ||
+  (Array.isArray(product.description) ? product.description[0] : product.description) ||
+  product.name;
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  ...(product.image ? { image: new URL(product.image, site.url).href } : {}),
+  description: descText,
+  brand: { '@type': 'Brand', name: product.brandName },
+  ...(product.gamaMain ? { category: product.gamaMain } : {}),
+  manufacturer: { '@type': 'Organization', name: site.legalName },
+};
 ---
 
 <BaseLayout title={`${product.name} · ${product.brandName}`} description={product.short || product.name}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(productSchema)} />
   <div class="wrap">
     <!-- Migas -->
     <nav class="crumbs container-mtm" aria-label="Miga de pan">
