@@ -24,19 +24,31 @@ const brandName = meta[brand].name;
 const amb: Record<string, any> = { tixol: ambTixol, scalp: ambScalp, supertape: ambSupertape };
 const ambImg = amb[brand];
 
+// Imagen propia de cada categoría (src/assets/marcas/categorias/<slug>.jpg)
+const catImgs = import.meta.glob('../../assets/marcas/categorias/*.jpg', { eager: true, import: 'default' });
+const catImgBySlug: Record<string, any> = {};
+for (const path in catImgs) {
+  const s = path.split('/').pop()!.replace(/\.\w+$/, '');
+  catImgBySlug[s] = catImgs[path];
+}
+
 // Categorías (gamas) reales con recuento
 const allGamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
 const gamas = allGamas
   .map((g) => ({ ...g, count: items.filter((p) => p.gamas.some((x) => x.slug === g.slug)).length }))
   .filter((g) => g.count > 0);
 
-// Distintos encuadres para que cada panel de la misma foto se vea diferente
-const positions = ['center', 'left top', 'right center', 'center bottom', '30% 30%', 'right top', 'left bottom', '70% 40%'];
-
-// Panel de "Todos los productos" + una por categoría
+// Panel "Todos los productos" + una por categoría (cada una con su imagen; si falta, la de la marca)
 const panels = [
-  { href: `/productos/${brand}/todo`, eyebrow: 'Catálogo completo', name: 'Todos los productos', count: items.length, all: true },
-  ...gamas.map((g, i) => ({ href: `/productos/${brand}/${g.slug}`, eyebrow: `N.º ${String(i + 1).padStart(2, '0')}`, name: g.name, count: g.count, all: false })),
+  { href: `/productos/${brand}/todo`, eyebrow: 'Catálogo completo', name: 'Todos los productos', count: items.length, all: true, img: ambImg },
+  ...gamas.map((g, i) => ({
+    href: `/productos/${brand}/${g.slug}`,
+    eyebrow: `N.º ${String(i + 1).padStart(2, '0')}`,
+    name: g.name,
+    count: g.count,
+    all: false,
+    img: catImgBySlug[g.slug] ?? ambImg,
+  })),
 ];
 ---
 
@@ -56,7 +68,7 @@ const panels = [
       {panels.map((p, i) => (
         <a class={`cpanel${p.all ? ' cpanel--all' : ''}`} href={p.href}>
           <div class="cpanel-media">
-            <Image src={ambImg} alt="" widths={[500, 800, 1100]} sizes="(max-width: 860px) 100vw, 33vw" class="cpanel-img" style={`object-position:${positions[i % positions.length]}`} loading={i < 3 ? 'eager' : 'lazy'} />
+            <Image src={p.img} alt="" widths={[500, 800, 1100]} sizes="(max-width: 860px) 100vw, 33vw" class="cpanel-img" loading={i < 3 ? 'eager' : 'lazy'} />
           </div>
           <div class="cpanel-scrim"></div>
           <div class="cpanel-inner">
