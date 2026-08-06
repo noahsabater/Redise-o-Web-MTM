@@ -884,3 +884,16 @@
 /etiqueta-producto/toners-de-color-para-tixol-nature-floor /productos/ 301
 /etiqueta-producto/tratamiento-humedades/ /productos/ 301
 /etiqueta-producto/tratamiento-humedades /productos/ 301
+
+# --- Catch-alls de seguridad: rutas intermedias antiguas no mapeadas -> destino razonable (nunca 404). Van al final: las reglas especificas de arriba tienen prioridad. ---
+/producto/tixol         /productos/tixol/ 301
+/producto/tixol/*       /productos/tixol/ 301
+/producto/scalp         /productos/scalp/ 301
+/producto/scalp/*       /productos/scalp/ 301
+/producto/supertape     /productos/supertape/ 301
+/producto/supertape/*   /productos/supertape/ 301
+/producto/*             /productos/ 301
+/categoria-producto/tixol/*     /productos/tixol/ 301
+/categoria-producto/scalp/*     /productos/scalp/ 301
+/categoria-producto/supertape/* /productos/supertape/ 301
+/categoria-producto/*   /productos/ 301
