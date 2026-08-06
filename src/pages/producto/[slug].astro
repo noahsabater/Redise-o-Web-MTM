@@ -8,6 +8,7 @@ export function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+const datasheet = (product as any).datasheet as string | undefined;
 const related = products
   .filter((p) => p.slug !== product.slug && p.gamaMain && p.gamaMain === product.gamaMain)
   .slice(0, 4);
@@ -98,6 +99,12 @@ const breadcrumbSchema = {
             Solicitar información
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
           </a>
+          {datasheet && (
+            <a class="btn btn--ghost-ink" href={datasheet} target="_blank" rel="noopener" aria-label={`Ver ficha técnica de ${product.name} (PDF)`}>
+              Ver ficha técnica (PDF)
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v13M7 12l5 5 5-5M5 21h14"></path></svg>
+            </a>
+          )}
           <a class="btn btn--ghost-ink" href="/productos">Volver al catálogo</a>
         </div>
       </div>
