@@ -892,7 +892,6 @@
 /producto/scalp/*       /productos/scalp/ 301
 /producto/supertape     /productos/supertape/ 301
 /producto/supertape/*   /productos/supertape/ 301
-/producto/*             /productos/ 301
 /categoria-producto/tixol/*     /productos/tixol/ 301
 /categoria-producto/scalp/*     /productos/scalp/ 301
 /categoria-producto/supertape/* /productos/supertape/ 301
