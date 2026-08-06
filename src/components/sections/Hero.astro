@@ -88,6 +88,8 @@ import heroImg from '../../assets/hero/hero-villa.jpg';
   .hero-inner {
     position: relative;
     z-index: 2;
+    max-width: none;
+    padding-inline: clamp(1.25rem, 2.5vw, 2.5rem);
     padding-bottom: clamp(2.5rem, 5vw, 4rem);
   }
 
@@ -95,11 +97,11 @@ import heroImg from '../../assets/hero/hero-villa.jpg';
 
   .hero-title {
     color: var(--color-paper);
-    font-size: clamp(3rem, 13.5vw, 13rem);
-    line-height: 0.92;
+    font-size: var(--text-hero);
+    line-height: 0.96;
     font-weight: 400;
-    letter-spacing: -0.015em;
-    max-width: none;
+    letter-spacing: 0em;
+    max-width: 16ch;
   }
   /* El acento serif (Bodoni cursiva) pide algo más de aire óptico */
   .hero-title .serif-italic {
