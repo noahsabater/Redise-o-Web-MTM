@@ -12,7 +12,7 @@ const datasheet = (product as any).datasheet as string | undefined;
 const related = products
   .filter((p) => p.slug !== product.slug && p.gamaMain && p.gamaMain === product.gamaMain)
   .slice(0, 4);
-const brandHref = `/productos/${product.brand}`;
+const brandHref = `/productos/${product.brand}/`;
 
 // ---- SEO on-page ----
 const gamaSlug = product.gamas.find((g) => g.name === product.gamaMain)?.slug;
@@ -31,17 +31,9 @@ const seoTitle = product.name.startsWith(product.brandName)
   ? product.name
   : `${product.name} · ${product.brandName}`;
 
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: product.name,
-  ...(product.image ? { image: new URL(product.image, site.url).href } : {}),
-  description: rawDesc,
-  brand: { '@type': 'Brand', name: product.brandName },
-  ...(product.gamaMain ? { category: product.gamaMain } : {}),
-  manufacturer: { '@type': 'Organization', name: site.legalName },
-  url: canonical,
-};
+// Nota: no emitimos datos estructurados de tipo "Product" porque Google exige
+// offers/review/aggregateRating para validarlo, y la web no muestra precios ni
+// reseñas. Mantenemos solo BreadcrumbList (válido y útil para las migas).
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -57,12 +49,11 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout title={seoTitle} description={metaDesc} ogImage={product.image ?? undefined}>
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(productSchema)} />
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbSchema)} />
   <div class="wrap">
     <!-- Migas -->
     <nav class="crumbs container-mtm" aria-label="Miga de pan">
-      <a href="/productos">Productos</a>
+      <a href="/productos/">Productos</a>
       <span>/</span>
       <a href={brandHref}>{product.brandName}</a>
       {product.gamaMain && (<><span>/</span><span class="crumb-cur">{product.gamaMain}</span></>)}
@@ -89,13 +80,13 @@ const breadcrumbSchema = {
           <div class="detail-cats">
             <span class="dc-k">Gama</span>
             <div class="dc-list">
-              {product.gamas.map((g) => <a class="dc-pill" href={`/productos/${product.brand}/${g.slug}`}>{g.name}</a>)}
+              {product.gamas.map((g) => <a class="dc-pill" href={`/productos/${product.brand}/${g.slug}/`}>{g.name}</a>)}
             </div>
           </div>
         )}
 
         <div class="detail-cta">
-          <a class="btn btn--ink" href="/contacto">
+          <a class="btn btn--ink" href="/contacto/">
             Solicitar información
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
           </a>
@@ -105,7 +96,7 @@ const breadcrumbSchema = {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v13M7 12l5 5 5-5M5 21h14"></path></svg>
             </a>
           )}
-          <a class="btn btn--ghost-ink" href="/productos">Volver al catálogo</a>
+          <a class="btn btn--ghost-ink" href="/productos/">Volver al catálogo</a>
         </div>
       </div>
     </section>
@@ -129,7 +120,7 @@ const breadcrumbSchema = {
         </div>
         <div class="related-grid">
           {related.map((r) => (
-            <a class="rcard" href={`/producto/${r.slug}`}>
+            <a class="rcard" href={`/producto/${r.slug}/`}>
               <div class="rcard-media">
                 {r.image && <img src={r.image} alt={r.imageAlt} loading="lazy" class="rcard-img" />}
               </div>

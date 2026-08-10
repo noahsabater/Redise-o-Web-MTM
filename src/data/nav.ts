@@ -9,16 +9,16 @@ export interface NavItem {
 
 export const navLeft: NavItem[] = [
   { label: 'Inicio', href: '/' },
-  { label: 'Marcas', href: '/marcas' },
-  { label: 'Productos', href: '/productos' },
-  { label: 'Formación', href: '/formacion' },
+  { label: 'Marcas', href: '/marcas/' },
+  { label: 'Productos', href: '/productos/' },
+  { label: 'Formación', href: '/formacion/' },
 ];
 
 export const navRight: NavItem[] = [
-  { label: 'Aplicaciones', href: '/aplicaciones' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Nosotros', href: '/nosotros' },
-  { label: 'Contacto', href: '/contacto' },
+  { label: 'Aplicaciones', href: '/aplicaciones/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'Nosotros', href: '/nosotros/' },
+  { label: 'Contacto', href: '/contacto/' },
 ];
 
 // Lista completa (para el menú móvil).

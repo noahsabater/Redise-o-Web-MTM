@@ -22,7 +22,7 @@ export const featuredPosts: FeaturedPost[] = [
     date: '12 enero, 2026',
     excerpt:
       '¿Sabías que tus paredes pueden mejorar tu bienestar? Descubre por qué la pintura de cal es la alternativa más saludable.',
-    href: '/blog/paredes-que-cuidan-de-ti-el-poder-de-la-pintura-de-cal',
+    href: '/blog/paredes-que-cuidan-de-ti-el-poder-de-la-pintura-de-cal/',
     image: cal,
   },
   {
@@ -32,7 +32,7 @@ export const featuredPosts: FeaturedPost[] = [
     date: '15 diciembre, 2025',
     excerpt:
       'Un hogar mal aislado puede perder hasta el 40% de su energía. Te contamos cómo evitarlo sin reformas ni perder metros.',
-    href: '/blog/aislar-tu-casa-sin-obras-es-posible-descubre-como-ahorrar-energia-sin-perder-espacio',
+    href: '/blog/aislar-tu-casa-sin-obras-es-posible-descubre-como-ahorrar-energia-sin-perder-espacio/',
     image: aislar,
   },
   {
@@ -42,7 +42,7 @@ export const featuredPosts: FeaturedPost[] = [
     date: '17 noviembre, 2025',
     excerpt:
       'La humedad por capilaridad es uno de los problemas más frecuentes —y a menudo más infravalorados— en viviendas y locales.',
-    href: '/blog/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan',
+    href: '/blog/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan/',
     image: humedad,
   },
 ];

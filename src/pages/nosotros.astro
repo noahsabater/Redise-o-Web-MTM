@@ -1,10 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHeader from '../components/layout/PageHeader.astro';
 import Newsletter from '../components/sections/Newsletter.astro';
-import { Image } from 'astro:assets';
-import n1 from '../assets/nosotros/nosotros-1.webp';
-import n2 from '../assets/nosotros/nosotros-2.webp';
+
+// Vídeo del recorrido por la nave. Placeholder: el vídeo del hero.
+// Cuando tengas el del dron, súbelo a public/video/ y cambia esta ruta.
+const journeyVideo = '/video/hero-mtm.mp4';
+
+// Capítulos del recorrido. `at` = punto del vídeo (0 a 1) donde ocurre.
+// Edítalos para que coincidan con los momentos reales del vídeo del dron.
+const chapters = [
+  { at: 0.02, nav: 'La nave',        kicker: '01 · La nave',            title: 'Donde nace cada producto', text: 'Más de 30 años fabricando en España. Bienvenido a MTM — Materiales Modernos.' },
+  { at: 0.28, nav: 'Fabricación',    kicker: '02 · Fabricación',        title: 'Materiales que resuelven', text: 'Pinturas aislantes, morteros de cal natural, epoxi 3D y revestimientos de fibras naturales, desarrollados aquí con obsesión por el detalle.' },
+  { at: 0.52, nav: 'Cal natural',    kicker: '03 · Innovación',         title: 'Tecnología y tradición',   text: 'Combinamos la tecnología más innovadora con materiales nobles como la cal, para acabados sanos, transpirables y atemporales.' },
+  { at: 0.76, nav: 'Calidad',        kicker: '04 · Control de calidad', title: 'Nada sale sin revisarse',  text: 'Cada lote pasa un control exhaustivo para garantizar el mismo resultado, una y otra vez.' },
+  { at: 0.95, nav: 'El equipo',      kicker: '05 · El equipo',          title: 'Una empresa familiar',     text: 'Detrás de cada bote hay un equipo que cuida lo que hace. Ese es el compromiso de MTM.' },
+];
 
 const stats = [
   { n: '+30', label: 'Años de experiencia' },
@@ -16,37 +26,69 @@ const stats = [
 
 <BaseLayout
   title="Sobre MTM · Nosotros"
-  description="MTM es una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora."
+  description="MTM es una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora. Recorre nuestra nave."
+  darkHeader
 >
-  <PageHeader
-    eyebrow="Sobre MTM"
-    title="Fabricamos"
-    accent="con intención"
-    intro="Una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora."
-  />
+  <!-- ===== Intro ===== -->
+  <section class="nos-intro">
+    <span class="label label--tick nos-eyebrow">Sobre MTM</span>
+    <h1 class="nos-title">Fabricamos <span class="serif-italic">con intención</span></h1>
+    <p class="nos-lead">
+      Una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la
+      tecnología más innovadora. Baja y recorre nuestra nave.
+    </p>
+    <span class="nos-scroll" aria-hidden="true">
+      Desliza para recorrer
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </span>
+  </section>
 
-  <section class="section">
-    <div class="container-mtm about-grid">
-      <div class="about-media reveal">
-        <Image src={n1} alt="Instalaciones de MTM Materiales Modernos" widths={[560, 900]} sizes="(max-width: 900px) 100vw, 48vw" class="about-img" />
+  <!-- ===== Recorrido por la nave (vídeo por scroll) ===== -->
+  <section class="journey" data-journey>
+    <div class="journey-sticky">
+      <video
+        class="journey-video" data-journey-video
+        muted playsinline preload="auto" poster="/favicon.webp"
+        aria-label="Recorrido en dron por la nave de MTM"
+      >
+        <source src={journeyVideo} type="video/mp4" />
+      </video>
+      <div class="journey-scrim"></div>
+
+      <!-- Textos superpuestos por tramo -->
+      <div class="journey-caps">
+        {chapters.map((c, i) => (
+          <div class="cap" data-cap={i}>
+            <span class="cap-kicker">{c.kicker}</span>
+            <h2 class="cap-title">{c.title}</h2>
+            <p class="cap-text">{c.text}</p>
+          </div>
+        ))}
       </div>
-      <div class="about-text reveal" style="--reveal-delay: 120ms">
-        <h2 class="about-h">Materiales que resuelven, acabados que emocionan</h2>
-        <p>
-          Nuestra gama abarca desde revestimientos de protección hasta soluciones decorativas
-          y aplicaciones artísticas: pinturas aislantes, morteros de cal natural, epoxi 3D,
-          papel de protección y revestimientos de fibras naturales.
-        </p>
-        <p>
-          Trabajamos con un firme compromiso con la innovación, desarrollando productos
-          ecológicos y especializados, adaptados a las necesidades de los profesionales de la
-          pintura, la construcción y el bricolaje.
-        </p>
+
+      <!-- Índice de capítulos -->
+      <nav class="journey-index" aria-label="Capítulos del recorrido">
+        {chapters.map((c, i) => (
+          <button class="jx" type="button" data-goto={i}>
+            <span class="jx-dot"></span>
+            <span class="jx-label">{c.nav}</span>
+          </button>
+        ))}
+      </nav>
+
+      <!-- Barra de progreso / deslizador -->
+      <div class="journey-barwrap" data-bar-wrap>
+        <div class="journey-bar">
+          <div class="journey-bar-fill" data-bar-fill></div>
+          {chapters.map((c) => <span class="journey-tick" style={`left:${c.at * 100}%`}></span>)}
+          <span class="journey-knob" data-bar-knob></span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="stats-band">
+  <!-- ===== Datos ===== -->
+  <section class="nos-stats">
     <div class="container-mtm stats-grid">
       {stats.map((s) => (
         <div class="stat reveal">
@@ -57,8 +99,9 @@ const stats = [
     </div>
   </section>
 
-  <section class="section quote-sec">
-    <div class="container-mtm quote-grid">
+  <!-- ===== Cita ===== -->
+  <section class="nos-quote">
+    <div class="container-mtm">
       <blockquote class="quote reveal">
         <p class="quote-mark serif-italic">“</p>
         <p class="quote-text">
@@ -71,9 +114,6 @@ const stats = [
           <span class="quote-role">CEO · MTM Materiales Modernos</span>
         </footer>
       </blockquote>
-      <div class="quote-media reveal" style="--reveal-delay: 120ms">
-        <Image src={n2} alt="Detalle de acabado natural MTM" widths={[480, 800]} sizes="(max-width: 900px) 100vw, 40vw" class="about-img" />
-      </div>
     </div>
   </section>
 
@@ -81,28 +121,221 @@ const stats = [
 </BaseLayout>
 
 <style>
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
-  .about-img { width: 100%; height: clamp(360px, 46vw, 580px); object-fit: cover; display: block; }
-  .about-h { font-size: var(--text-title); line-height: 1.15; margin-bottom: 1.6rem; max-width: 20ch; }
-  .about-text p { color: var(--color-slate); line-height: 1.7; margin-bottom: 1.1rem; max-width: 46ch; }
+  /* La página entera en oscuro */
+  :global(body:has(.journey)) { background: var(--color-carbon); }
 
-  .stats-band { background: var(--color-mist); padding-block: clamp(2.8rem, 6vw, 4.5rem); }
+  /* ===== Intro ===== */
+  .nos-intro {
+    background: var(--color-carbon);
+    color: var(--color-paper);
+    min-height: 92vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: clamp(6rem, 12vw, 9rem) clamp(1.25rem, 5vw, 5rem) clamp(3rem, 6vw, 5rem);
+    max-width: 92rem; margin-inline: auto;
+  }
+  .nos-eyebrow { color: rgba(244,244,242,0.7); margin-bottom: 1.6rem; }
+  .nos-title {
+    color: var(--color-paper);
+    font-size: clamp(2.8rem, 9vw, 7rem); line-height: 0.98; letter-spacing: -0.01em;
+    margin-bottom: 1.8rem; max-width: 16ch;
+  }
+  .nos-lead { color: rgba(244,244,242,0.78); font-size: clamp(1.1rem, 1.6vw, 1.4rem); line-height: 1.6; max-width: 46ch; }
+  .nos-scroll {
+    margin-top: clamp(2.5rem, 6vw, 4rem);
+    display: inline-flex; align-items: center; gap: 0.7rem;
+    font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(244,244,242,0.6);
+  }
+  .nos-scroll svg { width: 18px; height: 18px; animation: bob 1.8s var(--ease-soft) infinite; }
+  @keyframes bob { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(5px); } }
+
+  /* ===== Recorrido ===== */
+  .journey { position: relative; height: 560vh; background: var(--color-carbon); }
+  .journey-sticky { position: sticky; top: 0; height: 100vh; overflow: hidden; background: #000; }
+  .journey-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .journey-scrim {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0) 55%),
+      linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0) 75%);
+  }
+
+  /* Textos superpuestos */
+  .journey-caps { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+  .cap {
+    position: absolute; left: clamp(1.5rem, 6vw, 6rem); bottom: clamp(6rem, 14vh, 10rem);
+    max-width: 40ch; color: var(--color-paper);
+    opacity: 0; visibility: hidden; transform: translateY(20px);
+    transition: opacity 0.35s var(--ease-soft), transform 0.45s var(--ease-soft), visibility 0.35s;
+  }
+  .cap.is-active { opacity: 1; visibility: visible; transform: none; }
+  .cap-kicker { display: inline-block; font-size: 0.8rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244,244,242,0.75); margin-bottom: 1rem; }
+  .cap-title { color: var(--color-paper); font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.02; margin-bottom: 1.1rem; }
+  .cap-text { color: rgba(244,244,242,0.9); font-size: clamp(1.05rem, 1.5vw, 1.3rem); line-height: 1.55; }
+
+  /* Índice de capítulos (derecha) */
+  .journey-index {
+    position: absolute; right: clamp(1.2rem, 3vw, 2.6rem); top: 50%; transform: translateY(-50%); z-index: 4;
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .jx {
+    display: flex; align-items: center; gap: 0.7rem; justify-content: flex-end;
+    background: none; border: 0; cursor: pointer; padding: 0.35rem 0;
+    color: rgba(244,244,242,0.55); font-family: var(--font-sans); font-size: 0.8rem;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    transition: color 0.3s var(--ease-soft);
+  }
+  .jx-label { opacity: 0; transform: translateX(6px); transition: opacity 0.3s var(--ease-soft), transform 0.3s var(--ease-soft); }
+  .jx:hover .jx-label, .jx.is-active .jx-label { opacity: 1; transform: none; }
+  .jx-dot { width: 9px; height: 9px; border-radius: 50%; border: 1px solid rgba(244,244,242,0.5); flex: 0 0 auto; transition: background 0.3s, border-color 0.3s, transform 0.3s; }
+  .jx:hover { color: var(--color-paper); }
+  .jx.is-active { color: var(--color-paper); }
+  .jx.is-active .jx-dot { background: var(--color-paper); border-color: var(--color-paper); transform: scale(1.25); }
+
+  /* Barra de progreso / deslizador (abajo) */
+  .journey-barwrap { position: absolute; left: 0; right: 0; bottom: clamp(1.4rem, 4vh, 2.6rem); z-index: 4; padding-inline: clamp(1.5rem, 6vw, 6rem); }
+  .journey-bar { position: relative; height: 3px; border-radius: 3px; background: rgba(244,244,242,0.22); cursor: pointer; }
+  .journey-bar-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: var(--color-paper); border-radius: 3px; }
+  .journey-tick { position: absolute; top: 50%; width: 2px; height: 10px; background: rgba(244,244,242,0.4); transform: translate(-50%, -50%); }
+  .journey-knob { position: absolute; top: 50%; left: 0%; width: 15px; height: 15px; border-radius: 50%; background: var(--color-paper); transform: translate(-50%, -50%); box-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none; }
+
+  /* ===== Datos ===== */
+  .nos-stats { background: var(--color-carbon); color: var(--color-paper); padding-block: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid rgba(244,244,242,0.1); }
   .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
   .stat { display: flex; flex-direction: column; gap: 0.5rem; }
-  .stat-n { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 400; line-height: 1; letter-spacing: -0.01em; }
-  .stat-l { font-size: 0.897rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-slate); }
+  .stat-n { color: var(--color-paper); font-family: var(--font-display); font-size: clamp(2.6rem, 5vw, 4rem); line-height: 1; letter-spacing: -0.01em; }
+  .stat-l { font-size: 0.897rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,244,242,0.6); }
 
-  .quote-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
-  .quote { margin: 0; }
-  .quote-mark { font-size: 4rem; line-height: 0.4; color: var(--color-ash); display: block; }
-  .quote-text { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; margin: 1.2rem 0 2rem; }
+  /* ===== Cita ===== */
+  .nos-quote { background: var(--color-carbon); color: var(--color-paper); padding-block: clamp(3rem, 7vw, 6rem) clamp(4rem, 9vw, 7rem); }
+  .quote { margin: 0; max-width: 60rem; }
+  .quote-mark { font-size: 4rem; line-height: 0.4; color: rgba(244,244,242,0.4); display: block; }
+  .quote-text { color: var(--color-paper); font-family: var(--font-serif); font-style: italic; font-size: clamp(1.6rem, 3.4vw, 2.6rem); line-height: 1.3; margin: 1.4rem 0 2rem; }
   .quote-by { display: flex; flex-direction: column; gap: 0.2rem; }
-  .quote-name { font-size: 1.15rem; }
-  .quote-role { font-size: 0.851rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }
+  .quote-name { color: var(--color-paper); font-size: 1.15rem; }
+  .quote-role { font-size: 0.851rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,244,242,0.6); }
 
+  /* ===== Responsive ===== */
   @media (max-width: 880px) {
-    .about-grid, .quote-grid { grid-template-columns: 1fr; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.6rem 1rem; }
-    .quote-media { order: -1; }
+    .journey { height: 460vh; }
+    .journey-index { display: none; }
+    .cap { left: clamp(1.25rem, 6vw, 2rem); right: clamp(1.25rem, 6vw, 2rem); bottom: clamp(7rem, 18vh, 11rem); max-width: none; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nos-scroll svg { animation: none; }
+    .cap { transition: opacity 0.3s linear; }
   }
 </style>
+
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const journey = document.querySelector<HTMLElement>('[data-journey]');
+  const video = document.querySelector<HTMLVideoElement>('[data-journey-video]');
+  const caps = Array.from(document.querySelectorAll<HTMLElement>('[data-cap]'));
+  const jxs = Array.from(document.querySelectorAll<HTMLElement>('[data-goto]'));
+  const barWrap = document.querySelector<HTMLElement>('[data-bar-wrap]');
+  const barFill = document.querySelector<HTMLElement>('[data-bar-fill]');
+  const barKnob = document.querySelector<HTMLElement>('[data-bar-knob]');
+  const bar = barWrap?.querySelector<HTMLElement>('.journey-bar');
+
+  // Puntos de cada capítulo (data-cap corresponde al orden de `chapters`)
+  const ats = jxs.map((b) => {
+    const i = parseInt(b.dataset.goto || '0', 10);
+    return i;
+  });
+  // Los `at` reales los leemos de las marcas de la barra
+  const tickEls = Array.from(document.querySelectorAll<HTMLElement>('.journey-tick'));
+  const chapterAt = tickEls.map((t) => parseFloat(t.style.left) / 100);
+
+  if (journey && video) {
+    const isTouch = window.matchMedia('(max-width: 880px)').matches || window.matchMedia('(pointer: coarse)').matches;
+
+    // En móvil/táctil el scrubbing por currentTime es poco fiable:
+    // el vídeo se reproduce en bucle y solo los textos/índice responden al scroll.
+    if (isTouch || reduce) {
+      video.loop = true;
+      const tryPlay = () => { const p = video.play(); if (p && p.catch) p.catch(() => {}); };
+      video.addEventListener('canplay', tryPlay, { once: true });
+      tryPlay();
+    } else {
+      video.pause();
+    }
+
+    let duration = 0;
+    video.addEventListener('loadedmetadata', () => { duration = video.duration || 0; });
+
+    const clamp = (v: number, a = 0, b = 1) => Math.min(Math.max(v, a), b);
+    const segmentIndex = (p: number) => {
+      let idx = 0;
+      for (let i = 0; i < chapterAt.length; i++) if (p >= chapterAt[i] - 0.001) idx = i;
+      return idx;
+    };
+
+    let progress = 0;      // 0..1 dentro del recorrido
+    let curTime = 0;
+
+    const computeProgress = () => {
+      const total = journey.offsetHeight - window.innerHeight;
+      const scrolled = -journey.getBoundingClientRect().top;
+      return clamp(total > 0 ? scrolled / total : 0);
+    };
+
+    const paint = () => {
+      // Vídeo (solo scrubbing en escritorio)
+      if (!isTouch && !reduce && duration > 0) {
+        const target = progress * duration;
+        curTime += (target - curTime) * 0.12;           // suavizado
+        if (video.readyState >= 2 && Math.abs(target - curTime) > 0.015) {
+          try { video.currentTime = curTime; } catch (e) {}
+        }
+      }
+      // Barra
+      const pct = (progress * 100).toFixed(2) + '%';
+      if (barFill) barFill.style.width = pct;
+      if (barKnob) barKnob.style.left = pct;
+      // Capítulo activo
+      const active = segmentIndex(progress);
+      caps.forEach((c, i) => c.classList.toggle('is-active', i === active));
+      jxs.forEach((b, i) => b.classList.toggle('is-active', i === active));
+    };
+
+    let ticking = false;
+    const loop = () => {
+      progress = computeProgress();
+      paint();
+      ticking = false;
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(loop); } };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    loop();
+
+    // Ir a un capítulo (índice) o a una posición (barra)
+    const scrollToProgress = (p: number) => {
+      const total = journey.offsetHeight - window.innerHeight;
+      const y = journey.offsetTop + clamp(p) * total;
+      const lenis = (window as any).__lenis;
+      if (lenis) lenis.scrollTo(y, { duration: 1.1 }); else window.scrollTo({ top: y, behavior: 'smooth' });
+    };
+    jxs.forEach((b) => b.addEventListener('click', () => {
+      const i = parseInt(b.dataset.goto || '0', 10);
+      scrollToProgress(chapterAt[i]);
+    }));
+
+    // Deslizador: arrastrar la barra para navegar
+    if (bar) {
+      const fromX = (clientX: number) => {
+        const r = bar.getBoundingClientRect();
+        return clamp((clientX - r.left) / r.width);
+      };
+      let dragging = false;
+      const jump = (x: number) => scrollToProgress(fromX(x));
+      bar.addEventListener('pointerdown', (e) => { dragging = true; bar.setPointerCapture(e.pointerId); jump(e.clientX); });
+      bar.addEventListener('pointermove', (e) => { if (dragging) jump(e.clientX); });
+      const end = (e: PointerEvent) => { dragging = false; try { bar.releasePointerCapture(e.pointerId); } catch {} };
+      bar.addEventListener('pointerup', end);
+      bar.addEventListener('pointercancel', end);
+    }
+  }
+</script>

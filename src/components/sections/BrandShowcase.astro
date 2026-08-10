@@ -77,7 +77,7 @@ const totalProducts = products.filter((p) => p.brand === brand.slug).length;
         {gamas.map((g, i) => (
           <a
             class="gama-card reveal"
-            href={`/productos/${brand.slug}/${g.slug}`}
+            href={`/productos/${brand.slug}/${g.slug}/`}
             style={`--reveal-delay: ${i * 55}ms`}
             aria-label={`Ver ${g.count} productos de ${g.name}`}
           >
@@ -112,10 +112,10 @@ const totalProducts = products.filter((p) => p.brand === brand.slug).length;
     <div class="container-mtm brand-cta-inner reveal">
       <h2 class="brand-cta-h">¿Listo para trabajar con {brand.name}?</h2>
       <div class="brand-cta-btns">
-        <a class="btn btn--light" href="/aplicaciones">Ver aplicaciones
+        <a class="btn btn--light" href="/aplicaciones/">Ver aplicaciones
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
         </a>
-        <a class="btn btn--ghost" href="/contacto">Hablar con MTM</a>
+        <a class="btn btn--ghost" href="/contacto/">Hablar con MTM</a>
       </div>
     </div>
   </section>

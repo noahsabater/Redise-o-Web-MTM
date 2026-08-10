@@ -36,3 +36,9 @@ Imagenes productos web/
 
 # Salidas de mejora IA de producto
 Imagenes productos web/mejoradas/
+
+# Informes generados (documentos, no forman parte de la web)
+Informes MTM/
+/Videos/
+/IMG/
+/CatalogoMTM*.pdf

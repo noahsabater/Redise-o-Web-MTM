@@ -72,7 +72,7 @@ const PAGE_SIZE = 12;
     <!-- Filtros -->
     <aside class="side" data-filters data-page-size={PAGE_SIZE}>
       <div class="side-inner">
-        <a class="side-back" href={`/productos/${brand}`}>← Categorías de {brandName}</a>
+        <a class="side-back" href={`/productos/${brand}/`}>← Categorías de {brandName}</a>
 
         <div class="fblock">
           <label class="fsearch">
@@ -132,7 +132,7 @@ const PAGE_SIZE = 12;
             data-tone={p.tone ?? ''}
             data-name={p.name.toLowerCase()}
           >
-            <a href={`/producto/${p.slug}`}>
+            <a href={`/producto/${p.slug}/`}>
               <div class="pcard-media">
                 {p.image && <img src={p.image} alt={p.imageAlt} loading="lazy" class="pcard-img" />}
               </div>

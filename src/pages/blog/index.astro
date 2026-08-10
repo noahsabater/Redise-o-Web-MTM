@@ -47,7 +47,7 @@ const cats = [...counts.entries()]
       {lead && (
         <a
           class:list={['lead reveal', { 'lead--nocover': !lead.data.cover }]}
-          href={`/blog/${lead.id}`}
+          href={`/blog/${lead.id}/`}
           data-lead
           data-cat={lead.data.category}
         >
@@ -72,7 +72,7 @@ const cats = [...counts.entries()]
           {rest.map((post, i) => (
             <a
               class:list={['card reveal', { 'card--nocover': !post.data.cover }]}
-              href={`/blog/${post.id}`}
+              href={`/blog/${post.id}/`}
               data-cat={post.data.category}
               style={`--reveal-delay: ${(i % 3) * 90}ms`}
             >

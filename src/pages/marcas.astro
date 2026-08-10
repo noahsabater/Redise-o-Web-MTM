@@ -56,7 +56,7 @@ const count = (slug: string) => products.filter((p) => p.brand === slug).length;
                 Descubrir {b.name}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
               </a>
-              <a class="btn btn--ghost" href={`/productos/${b.slug}`}>Ver catálogo ({count(b.slug)})</a>
+              <a class="btn btn--ghost" href={`/productos/${b.slug}/`}>Ver catálogo ({count(b.slug)})</a>
             </div>
           </div>
         </div>

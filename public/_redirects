@@ -898,3 +898,6 @@
 /categoria-producto/*   /productos/ 301
 /author/*   /blog/ 301
 /author     /blog/ 301
+/tixol/tixol-*         /productos/tixol/ 301
+/scalp/scalp-*         /productos/scalp/ 301
+/supertape/supertape-* /productos/supertape/ 301
