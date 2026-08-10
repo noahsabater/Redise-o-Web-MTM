@@ -9,23 +9,26 @@ export function getStaticPaths() {
   const paths: any[] = [];
   for (const slug of brands) {
     const brandItems = products.filter((p) => p.brand === slug);
-    const allGamas = catalog.find((c) => c.slug === slug)?.gamas ?? [];
-    const gamas = allGamas
-      .map((g) => ({ ...g, count: brandItems.filter((p) => p.gamas.some((x) => x.slug === g.slug)).length }))
-      .filter((g) => g.count > 0);
     // Catálogo completo de la marca
     paths.push({
       params: { brand: slug, gama: 'todo' },
       props: { brand: slug, gamaName: 'Todos los productos', items: brandItems, isAll: true },
     });
-    // Una página por categoría
-    for (const g of gamas) {
+    // Una página por CADA gama referenciada por los productos (incluye subcategorías),
+    // para que ningún enlace interno (pastillas de gama, selector) quede roto → sin 404.
+    const gamaMap = new Map<string, string>();
+    for (const p of brandItems) {
+      for (const g of p.gamas) {
+        if (!gamaMap.has(g.slug)) gamaMap.set(g.slug, g.name);
+      }
+    }
+    for (const [gSlug, gName] of gamaMap) {
       paths.push({
-        params: { brand: slug, gama: g.slug },
+        params: { brand: slug, gama: gSlug },
         props: {
           brand: slug,
-          gamaName: g.name,
-          items: brandItems.filter((p) => p.gamas.some((x) => x.slug === g.slug)),
+          gamaName: gName,
+          items: brandItems.filter((p) => p.gamas.some((x) => x.slug === gSlug)),
           isAll: false,
         },
       });

@@ -896,3 +896,5 @@
 /categoria-producto/scalp/*     /productos/scalp/ 301
 /categoria-producto/supertape/* /productos/supertape/ 301
 /categoria-producto/*   /productos/ 301
+/author/*   /blog/ 301
+/author     /blog/ 301
