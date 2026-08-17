@@ -119,6 +119,11 @@ const PAGE_SIZE = 12;
           <span class="fcount"><span data-count>{items.length}</span> productos</span>
           <button class="freset" type="button" data-reset>Limpiar</button>
         </div>
+
+        <a class="btn btn--red side-dl" href="/catalogo-mtm.pdf" download>
+          Descargar catálogo (PDF)
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v13M7 12l5 5 5-5M5 21h14"></path></svg>
+        </a>
       </div>
     </aside>
 
@@ -244,6 +249,8 @@ const PAGE_SIZE = 12;
   .fcount span { color: var(--color-ink); }
   .freset { font-size: 0.782rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); background: none; border: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
   .freset:hover { color: var(--color-ink); }
+  .side-dl { width: 100%; justify-content: center; margin-top: 1.1rem; padding: 0.85rem 1rem; font-size: 0.78rem; }
+  .side-dl svg { width: 15px; height: 15px; }
 
   .pgrid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 1.8vw, 1.5rem); }
   .pcard {

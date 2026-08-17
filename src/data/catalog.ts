@@ -1,5 +1,6 @@
-// Árbol de categorías del catálogo — estructura real de la web de referencia
-// (marca → gama → subcategorías). Base para poblar las fichas de producto.
+// Árbol de categorías del catálogo — estructura y ORDEN según el índice del
+// catálogo MTM 2026 (pág. 2): marca → gama → subcategorías.
+// Orden de marcas y gamas replicado del índice para que la web coincida.
 
 export interface Gama {
   name: string;
@@ -22,17 +23,48 @@ export const catalog: BrandCatalog[] = [
         name: 'Soluciones',
         slug: 'soluciones',
         sub: [
-          { name: 'Acabados interior/exterior', slug: 'acabados-interior-exterior' },
-          { name: 'Aislamiento eléctrico', slug: 'aislamiento-electrico' },
           { name: 'Antimanchas', slug: 'antimanchas' },
+          { name: 'Renovación falsos techos', slug: 'renovacion-falsos-techos' },
+          { name: 'Imprimaciones especiales', slug: 'imprimaciones-especiales' },
+          { name: 'Impermeabilizantes', slug: 'impermeabilizantes' },
           { name: 'Hidrofugantes', slug: 'hidrofugantes' },
           { name: 'Humedades', slug: 'humedades' },
-          { name: 'Impermeabilizantes', slug: 'impermeabilizantes' },
-          { name: 'Imprimaciones especiales', slug: 'imprimaciones-especiales' },
-          { name: 'Renovación falsos techos', slug: 'renovacion-falsos-techos' },
           { name: 'Thermo-aislantes', slug: 'thermo-aislantes' },
+          { name: 'Acabados interior/exterior', slug: 'acabados-interior-exterior' },
+          { name: 'Aislamiento eléctrico', slug: 'aislamiento-electrico' },
         ],
       },
+      {
+        name: 'Nature',
+        slug: 'nature',
+        sub: [
+          { name: 'Tixol Nature', slug: 'nature' },
+          { name: 'Sistema Nature Floor', slug: 'sistema-nature-floor' },
+          { name: 'Sistema Nature Wall', slug: 'sistema-nature-wall' },
+          { name: 'Nature Arcilla', slug: 'nature-arcilla' },
+          { name: 'Cal aérea natural', slug: 'cal-aerea-natural' },
+          { name: 'Cal hidráulica natural', slug: 'cal-hidraulica-natural' },
+        ],
+      },
+      {
+        name: 'Oxitec',
+        slug: 'oxitec',
+        sub: [
+          { name: 'Revestimientos acabado óxido', slug: 'revestimientos-acabado-oxido' },
+          { name: 'Revestimiento metales pulidos', slug: 'revestimiento-metales-pulidos' },
+          { name: 'Complementos Oxitec', slug: 'complementos-oxitec' },
+        ],
+      },
+      {
+        name: 'Wood',
+        slug: 'wood',
+        sub: [
+          { name: 'Barnices', slug: 'barnices' },
+          { name: 'Lasur', slug: 'lasur' },
+          { name: 'Aceites', slug: 'aceites' },
+        ],
+      },
+      { name: 'Marine', slug: 'marine' },
       {
         name: 'Decoración de Pavimentos',
         slug: 'decoracion-de-pavimentos',
@@ -42,37 +74,18 @@ export const catalog: BrandCatalog[] = [
           { name: 'Renovación de pavimentos', slug: 'renovacion-de-pavimentos' },
         ],
       },
-      {
-        name: 'Nature',
-        slug: 'nature',
-        sub: [
-          { name: 'Cal aérea natural', slug: 'cal-aerea-natural' },
-          { name: 'Cal hidráulica natural', slug: 'cal-hidraulica-natural' },
-          { name: 'Nature Arcilla', slug: 'nature-arcilla' },
-          { name: 'Sistema Nature Floor', slug: 'sistema-nature-floor' },
-          { name: 'Sistema Nature Wall', slug: 'sistema-nature-wall' },
-        ],
-      },
-      {
-        name: 'Oxitec',
-        slug: 'oxitec',
-        sub: [
-          { name: 'Complementos Oxitec', slug: 'complementos-oxitec' },
-          { name: 'Revestimientos acabado óxido', slug: 'revestimientos-acabado-oxido' },
-          { name: 'Revestimiento metales pulidos', slug: 'revestimiento-metales-pulidos' },
-        ],
-      },
-      { name: 'Marine', slug: 'marine' },
-      {
-        name: 'Wood',
-        slug: 'wood',
-        sub: [
-          { name: 'Aceites', slug: 'aceites' },
-          { name: 'Barnices', slug: 'barnices' },
-          { name: 'Lasur', slug: 'lasur' },
-        ],
-      },
       { name: 'Microcemento a rodillo', slug: 'microcemento-a-rodillo' },
+    ],
+  },
+  {
+    slug: 'supertape',
+    name: 'Supertape',
+    gamas: [
+      { name: 'Protección Plus', slug: 'proteccion-plus' },
+      { name: 'Papel Kraft + Antideslizante', slug: 'proteccion-papel-kraft-plastico-antideslizante' },
+      { name: 'Suelos Kraft', slug: 'proteccion-suelos-kraft' },
+      { name: 'Protección Plástico', slug: 'proteccion-plastico' },
+      { name: 'Protección Paredes', slug: 'proteccion-paredes' },
     ],
   },
   {
@@ -84,18 +97,8 @@ export const catalog: BrandCatalog[] = [
         slug: 'limpiadores',
         sub: [
           { name: 'Limpieza', slug: 'limpieza' },
-          { name: 'Desincrustantes de fachadas', slug: 'desincrustantes-de-fachadas' },
           { name: 'Sistemas antihongos', slug: 'sistemas-antihongos' },
-        ],
-      },
-      {
-        name: 'Antigraffitis',
-        slug: 'antigraffitis',
-        sub: [
-          { name: 'Limpiadores de graffiti', slug: 'limpiadores-de-graffiti' },
-          { name: 'Protección permanente', slug: 'proteccion-permanente' },
-          { name: 'Quita sombras', slug: 'quita-sombras' },
-          { name: 'Un solo uso', slug: 'un-solo-uso' },
+          { name: 'Desincrustantes de fachadas', slug: 'desincrustantes-de-fachadas' },
         ],
       },
       { name: 'Complementos', slug: 'complementos' },
@@ -113,21 +116,20 @@ export const catalog: BrandCatalog[] = [
         name: 'Preparación de fondos',
         slug: 'preparacion-de-fondos',
         sub: [
-          { name: 'Fijadores', slug: 'fijadores' },
           { name: 'Mineralizantes / consolidantes', slug: 'mineralizantes-consolidantes' },
+          { name: 'Fijadores', slug: 'fijadores' },
         ],
       },
-    ],
-  },
-  {
-    slug: 'supertape',
-    name: 'Supertape',
-    gamas: [
-      { name: 'Protección Plus', slug: 'proteccion-plus' },
-      { name: 'Papel Kraft + Antideslizante', slug: 'proteccion-papel-kraft-plastico-antideslizante' },
-      { name: 'Suelos Kraft', slug: 'proteccion-suelos-kraft' },
-      { name: 'Protección Plástico', slug: 'proteccion-plastico' },
-      { name: 'Protección Paredes', slug: 'proteccion-paredes' },
+      {
+        name: 'Antigraffitis',
+        slug: 'antigraffitis',
+        sub: [
+          { name: 'Protección permanente', slug: 'proteccion-permanente' },
+          { name: 'Un solo uso', slug: 'un-solo-uso' },
+          { name: 'Limpiadores de graffiti', slug: 'limpiadores-de-graffiti' },
+          { name: 'Quita sombras', slug: 'quita-sombras' },
+        ],
+      },
     ],
   },
 ];

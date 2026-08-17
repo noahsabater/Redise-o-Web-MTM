@@ -61,7 +61,10 @@ const panels = [
   <section class="cats">
     <div class="cats-top container-mtm">
       <a class="cats-back" href="/productos/">← Todas las marcas</a>
-      <span class="cats-kicker">{brandName} · Categorías</span>
+      <a class="btn btn--red cats-dl" href="/catalogo-mtm.pdf" download>
+        Descargar catálogo (PDF)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v13M7 12l5 5 5-5M5 21h14"></path></svg>
+      </a>
     </div>
 
     <div class="cgrid">
@@ -94,6 +97,9 @@ const panels = [
   .cats-back { font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(244,244,242,0.7); }
   .cats-back:hover { color: var(--color-paper); }
   .cats-kicker { font-size: 0.782rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(244,244,242,0.5); }
+  .cats-dl { padding: 0.72rem 1.25rem; font-size: 0.76rem; }
+  .cats-dl svg { width: 15px; height: 15px; }
+  @media (max-width: 560px) { .cats-dl { font-size: 0.7rem; padding: 0.6rem 0.9rem; } }
 
   .cgrid {
     display: grid;
