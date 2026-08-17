@@ -14,7 +14,7 @@ export const reps: Rep[] = [
   { region: 'Aragón', name: 'José Ángel Fernández', phone: '660 420 886', email: 'joseangelagentelibre@gmail.com' },
   { region: 'Madrid', name: 'José Antonio Tiemblo', phone: '629 925 574', email: 'representadostiemblo@gmail.com' },
   { region: 'Catalunya', name: 'Xavier Lozano', phone: '669 771 997', email: 'xlozano@dropin.net' },
-  { region: 'Zona Levante', name: 'Rubén Sabater', phone: '629 833 546', email: 'rubensabater@mtm-murcia.com' },
+  { region: 'Zona Levante', name: 'Javier Vázquez', phone: '622 493 366', email: 'fjvmazurco@gmail.com' },
   { region: 'C. Valenciana', name: 'Roberto Ivorra', phone: '667 565 472', email: 'robertoivorra@gmail.com' },
   { region: 'Andalucía Oriental', name: 'Ignacio García Villalba', phone: '633 781 306', email: 'rpignaciogarcia@gmail.com' },
   { region: 'Andalucía Occidental', name: 'Rafael Giraldo', phone: '691 580 447', email: 'rafagiraldo@manchavaro.es' },
