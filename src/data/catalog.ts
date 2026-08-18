@@ -29,9 +29,15 @@ export const catalog: BrandCatalog[] = [
           { name: 'Impermeabilizantes', slug: 'impermeabilizantes' },
           { name: 'Hidrofugantes', slug: 'hidrofugantes' },
           { name: 'Humedades', slug: 'humedades' },
-          { name: 'Thermo-aislantes', slug: 'thermo-aislantes' },
-          { name: 'Acabados interior/exterior', slug: 'acabados-interior-exterior' },
           { name: 'Aislamiento eléctrico', slug: 'aislamiento-electrico' },
+        ],
+      },
+      {
+        name: 'Thermoaislantes',
+        slug: 'thermo-aislantes',
+        sub: [
+          { name: 'Thermo Aislantes', slug: 'thermo-aislantes' },
+          { name: 'Acabados interior/exterior', slug: 'acabados-interior-exterior' },
         ],
       },
       {

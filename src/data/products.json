@@ -2581,12 +2581,12 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Acabados Int/Ext",
-        "slug": "acabados-interior-exterior"
+        "name": "Thermoaislantes",
+        "slug": "thermo-aislantes"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
+        "name": "Acabados Int/Ext",
+        "slug": "acabados-interior-exterior"
       }
     ],
     "gamaMain": "Acabados Int/Ext",
@@ -2608,12 +2608,12 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Acabados Int/Ext",
-        "slug": "acabados-interior-exterior"
+        "name": "Thermoaislantes",
+        "slug": "thermo-aislantes"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
+        "name": "Acabados Int/Ext",
+        "slug": "acabados-interior-exterior"
       }
     ],
     "gamaMain": "Acabados Int/Ext",
@@ -2959,12 +2959,12 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Acabados Int/Ext",
-        "slug": "acabados-interior-exterior"
+        "name": "Thermoaislantes",
+        "slug": "thermo-aislantes"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
+        "name": "Acabados Int/Ext",
+        "slug": "acabados-interior-exterior"
       }
     ],
     "gamaMain": "Acabados Int/Ext",
@@ -3302,12 +3302,12 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Acabados Int/Ext",
-        "slug": "acabados-interior-exterior"
+        "name": "Thermoaislantes",
+        "slug": "thermo-aislantes"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
+        "name": "Acabados Int/Ext",
+        "slug": "acabados-interior-exterior"
       }
     ],
     "gamaMain": "Acabados Int/Ext",
@@ -3328,12 +3328,12 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Acabados Int/Ext",
-        "slug": "acabados-interior-exterior"
+        "name": "Thermoaislantes",
+        "slug": "thermo-aislantes"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
+        "name": "Acabados Int/Ext",
+        "slug": "acabados-interior-exterior"
       }
     ],
     "gamaMain": "Acabados Int/Ext",
@@ -3359,11 +3359,7 @@
         "slug": "microesferas-huecas"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -3386,19 +3382,15 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
         "name": "Térmicos reflexivos",
         "slug": "termicos-reflexivos"
       },
       {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
-    "gamaMain": "Soluciones",
+    "gamaMain": "Thermoaislantes",
     "tone": null,
     "short": "El revestimiento térmico reflexivo, es una familia de productos con alta eficiencia energética, capaz de reflectar el 97% de la radiación solar, diseñados para su uso en diferentes fases constructivas. Su composición confiere a los productos una muy baja conductividad de la energía, mejorando así la eficiencia y aislamiento de las estructuras tratadas. En toda la familia utilizamos una nueva tecnología , en desarrollo conjunto con el CSIC (Centro Superior de Investigaciones Científicas de España). Dicha tecnología nos permite cambiar de manera radical el concepto de eficiencia energética en los productos resinosos. La tecnología anterior, basada en microesferas de vidrio o cerámica, tienen una efectividad limitada, por su concepto de producto.",
     "description": [
@@ -4399,19 +4391,15 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
         "name": "Térmicos reflexivos",
         "slug": "termicos-reflexivos"
       },
       {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
-    "gamaMain": "Soluciones",
+    "gamaMain": "Thermoaislantes",
     "tone": null,
     "short": "Los productos de esta gama han sido diseñados para reflejar un 90% de la radiación solar, esto se consigue por una combinación de pigmentos especiales y aditivos que hacen posible esta extraordinaria capacidad de reflexión.",
     "description": [
@@ -4433,11 +4421,7 @@
         "slug": "microesferas-huecas"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -4749,19 +4733,15 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
         "name": "Térmicos reflexivos",
         "slug": "termicos-reflexivos"
       },
       {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
-    "gamaMain": "Soluciones",
+    "gamaMain": "Thermoaislantes",
     "tone": null,
     "short": "Tixol Revestimiento Elástico reflexivo, es una familia de productos con alta eficiencia energética, capaz de reflectar el 97% de la radiación solar, diseñados para su uso en diferentes fases constructivas. Su composición confiere a los productos una muy baja conductividad de la energía, mejorando así la eficiencia y aislamiento de las estructuras tratadas. En toda la familia utilizamos una nueva tecnología , en desarrollo conjunto con el CSIC (Centro Superior de Investigaciones Científicas de España). Dicha tecnología nos permite cambiar de manera radical el concepto de eficiencia energética en los productos resinosos. La tecnología anterior, basada en microesferas de vidrio o cerámica, tienen una efectividad limitada, por su concepto de producto.",
     "description": [
@@ -4781,19 +4761,15 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
         "name": "Térmicos reflexivos",
         "slug": "termicos-reflexivos"
       },
       {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
-    "gamaMain": "Soluciones",
+    "gamaMain": "Thermoaislantes",
     "tone": null,
     "short": "Los productos de esta gama han sido diseñados para reflejar un 90% de la radiación solar, esto se consigue por una combinación de pigmentos especiales y aditivos que hacen posible esta extraordinaria capacidad de reflexión.",
     "description": [
@@ -4812,12 +4788,12 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Acabados Int/Ext",
-        "slug": "acabados-interior-exterior"
+        "name": "Thermoaislantes",
+        "slug": "thermo-aislantes"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
+        "name": "Acabados Int/Ext",
+        "slug": "acabados-interior-exterior"
       }
     ],
     "gamaMain": "Acabados Int/Ext",
@@ -4953,11 +4929,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -4983,11 +4955,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5014,11 +4982,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5045,11 +5009,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5076,11 +5036,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5106,11 +5062,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5136,11 +5088,7 @@
         "slug": "microesferas-huecas"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5166,11 +5114,7 @@
         "slug": "microesferas-huecas"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5196,11 +5140,7 @@
         "slug": "microesferas-huecas"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
@@ -5282,11 +5222,7 @@
         "slug": "corcho-proyectado"
       },
       {
-        "name": "Soluciones",
-        "slug": "soluciones"
-      },
-      {
-        "name": "Thermo Aislantes",
+        "name": "Thermoaislantes",
         "slug": "thermo-aislantes"
       }
     ],
