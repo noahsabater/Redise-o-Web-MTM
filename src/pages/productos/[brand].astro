@@ -32,15 +32,24 @@ for (const path in catImgs) {
   catImgBySlug[s] = catImgs[path];
 }
 
-// Categorías (gamas) reales con recuento
+const countBySlug = (slug: string) => items.filter((p) => p.gamas.some((x) => x.slug === slug)).length;
+
+// Categorías (gamas) reales con recuento + subcategorías (del índice del catálogo) con producto
 const allGamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
 const gamas = allGamas
-  .map((g) => ({ ...g, count: items.filter((p) => p.gamas.some((x) => x.slug === g.slug)).length }))
+  .map((g) => ({
+    ...g,
+    count: countBySlug(g.slug),
+    subs: (g.sub ?? [])
+      .filter((s) => s.slug !== g.slug) // evita la subcategoría idéntica a la propia gama
+      .map((s) => ({ ...s, count: countBySlug(s.slug) }))
+      .filter((s) => s.count > 0),
+  }))
   .filter((g) => g.count > 0);
 
-// Panel "Todos los productos" + una por categoría (cada una con su imagen; si falta, la de la marca)
+// Panel "Todos los productos" + una por categoría (con sus subcategorías desplegables)
 const panels = [
-  { href: `/productos/${brand}/todo/`, eyebrow: 'Catálogo completo', name: 'Todos los productos', count: items.length, all: true, img: ambImg },
+  { href: `/productos/${brand}/todo/`, eyebrow: 'Catálogo completo', name: 'Todos los productos', count: items.length, all: true, img: ambImg, subs: [] as { name: string; slug: string; count: number }[] },
   ...gamas.map((g, i) => ({
     href: `/productos/${brand}/${g.slug}/`,
     eyebrow: `N.º ${String(i + 1).padStart(2, '0')}`,
@@ -48,6 +57,7 @@ const panels = [
     count: g.count,
     all: false,
     img: catImgBySlug[g.slug] ?? ambImg,
+    subs: g.subs,
   })),
 ];
 ---
@@ -69,20 +79,38 @@ const panels = [
 
     <div class="cgrid">
       {panels.map((p, i) => (
-        <a class={`cpanel${p.all ? ' cpanel--all' : ''}`} href={p.href}>
-          <div class="cpanel-media">
-            <Image src={p.img} alt="" widths={[500, 800, 1100]} sizes="(max-width: 860px) 100vw, 33vw" class="cpanel-img" loading={i < 3 ? 'eager' : 'lazy'} />
-          </div>
-          <div class="cpanel-scrim"></div>
+        <article class={`cpanel${p.all ? ' cpanel--all' : ''}${p.subs.length ? ' has-subs' : ''}`}>
+          <a class="cpanel-cover" href={p.href} aria-label={`Ver ${p.name}`}>
+            <div class="cpanel-media">
+              <Image src={p.img} alt="" widths={[500, 800, 1100]} sizes="(max-width: 860px) 100vw, 33vw" class="cpanel-img" loading={i < 3 ? 'eager' : 'lazy'} />
+            </div>
+            <div class="cpanel-scrim"></div>
+          </a>
           <div class="cpanel-inner">
             <span class="cpanel-eyebrow">{p.eyebrow}</span>
-            <h2 class="cpanel-name">{p.name}</h2>
-            <span class="cpanel-cta">
-              {p.count} productos
+            <a class="cpanel-name-link" href={p.href}><h2 class="cpanel-name">{p.name}</h2></a>
+
+            {p.subs.length > 0 && (
+              <div class="cpanel-subs">
+                <ul class="cpanel-subs-list">
+                  {p.subs.map((s) => (
+                    <li>
+                      <a href={`/productos/${brand}/${s.slug}/`}>
+                        <span class="sn">{s.name}</span>
+                        <span class="sc">{s.count}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <a class="cpanel-cta" href={p.href}>
+              {p.subs.length ? 'Ver toda la categoría' : `${p.count} productos`}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-            </span>
+            </a>
           </div>
-        </a>
+        </article>
       ))}
     </div>
   </section>
@@ -96,7 +124,6 @@ const panels = [
   }
   .cats-back { font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(244,244,242,0.7); }
   .cats-back:hover { color: var(--color-paper); }
-  .cats-kicker { font-size: 0.782rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(244,244,242,0.5); }
   .cats-dl { padding: 0.72rem 1.25rem; font-size: 0.76rem; }
   .cats-dl svg { width: 15px; height: 15px; }
   @media (max-width: 560px) { .cats-dl { font-size: 0.7rem; padding: 0.6rem 0.9rem; } }
@@ -106,28 +133,54 @@ const panels = [
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: clamp(0.5rem, 1vw, 0.9rem);
     padding-inline: clamp(0.5rem, 1vw, 0.9rem);
+    align-items: start;
   }
 
   .cpanel {
-    position: relative; overflow: hidden;
+    position: relative;
     aspect-ratio: 3 / 4; min-height: 340px;
     display: flex; align-items: flex-end;
     color: var(--color-paper);
   }
-  .cpanel-media { position: absolute; inset: 0; }
+  /* Enlace que cubre la imagen (lleva a la categoría completa) */
+  .cpanel-cover { position: absolute; inset: 0; z-index: 1; display: block; }
+  .cpanel-media { position: absolute; inset: 0; overflow: hidden; }
   .cpanel-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease-soft); }
   .cpanel-scrim {
     position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(11,11,10,0.86) 0%, rgba(11,11,10,0.35) 45%, rgba(11,11,10,0.28) 100%);
+    background: linear-gradient(to top, rgba(11,11,10,0.88) 0%, rgba(11,11,10,0.4) 45%, rgba(11,11,10,0.3) 100%);
     transition: background 0.5s var(--ease-soft);
   }
   .cpanel-inner {
     position: relative; z-index: 2; width: 100%;
     padding: clamp(1.4rem, 2.4vw, 2rem);
     display: flex; flex-direction: column; gap: 0.5rem;
+    pointer-events: none; /* solo los enlaces internos capturan el clic */
   }
+  .cpanel-inner a { pointer-events: auto; }
   .cpanel-eyebrow { font-size: 0.736rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244,244,242,0.72); }
+  .cpanel-name-link { color: var(--color-paper); }
   .cpanel-name { color: var(--color-paper); font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.08; }
+
+  /* Desplegable de subcategorías al pasar el ratón */
+  .cpanel-subs {
+    display: grid; grid-template-rows: 0fr; opacity: 0;
+    transition: grid-template-rows 0.45s var(--ease-soft), opacity 0.3s var(--ease-soft), margin 0.4s var(--ease-soft);
+    margin-top: 0;
+  }
+  .cpanel-subs-list { overflow: hidden; min-height: 0; list-style: none; margin: 0; padding: 0; }
+  .cpanel-subs-list a {
+    display: flex; align-items: center; justify-content: space-between; gap: 0.7rem;
+    padding: 0.42rem 0; font-size: 0.94rem; line-height: 1.2;
+    color: rgba(244,244,242,0.82);
+    border-top: 1px solid rgba(244,244,242,0.16);
+    transition: color 0.2s var(--ease-soft), padding-left 0.2s var(--ease-soft);
+  }
+  .cpanel-subs-list li:last-child a { border-bottom: 1px solid rgba(244,244,242,0.16); }
+  .cpanel-subs-list a:hover { color: var(--color-paper); padding-left: 0.3rem; }
+  .cpanel-subs-list .sc { color: rgba(244,244,242,0.45); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+  .cpanel:hover .cpanel-subs { grid-template-rows: 1fr; opacity: 1; margin-top: 0.4rem; }
+
   .cpanel-cta {
     display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 0.4rem;
     font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,244,242,0.85);
@@ -137,14 +190,16 @@ const panels = [
   .cpanel-cta svg { width: 16px; height: 16px; transition: transform 0.4s var(--ease-soft); }
 
   .cpanel:hover .cpanel-img { transform: scale(1.06); }
-  .cpanel:hover .cpanel-scrim { background: linear-gradient(to top, rgba(11,11,10,0.82) 0%, rgba(11,11,10,0.2) 55%, rgba(11,11,10,0.18) 100%); }
+  .cpanel:hover .cpanel-scrim { background: linear-gradient(to top, rgba(11,11,10,0.92) 0%, rgba(11,11,10,0.55) 55%, rgba(11,11,10,0.4) 100%); }
   .cpanel:hover .cpanel-cta { opacity: 1; transform: none; }
   .cpanel:hover .cpanel-cta svg { transform: translateX(5px); }
 
   /* "Todos los productos" ocupa toda la fila y es más ancho/cinematográfico */
   .cpanel--all { grid-column: 1 / -1; aspect-ratio: auto; min-height: clamp(220px, 34vh, 320px); }
 
-  @media (hover: none) { .cpanel-cta { opacity: 1; transform: none; } }
+  @media (hover: none) {
+    .cpanel-cta { opacity: 1; transform: none; }
+  }
   @media (max-width: 560px) {
     .cgrid { grid-template-columns: 1fr; }
     .cpanel { aspect-ratio: 16 / 10; min-height: 240px; }
