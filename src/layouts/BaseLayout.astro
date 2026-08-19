@@ -60,6 +60,12 @@ const orgSchema = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/webp" href="/favicon.webp" />
     <link rel="canonical" href={canonical} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${site.name} · Blog`}
+      href={new URL('/rss.xml', site.url).href}
+    />
 
     <!-- Precarga de la tipografía crítica del hero (NATS) -->
     <link rel="preload" href="/fonts/NATS-Regular.woff2" as="font" type="font/woff2" crossorigin />
