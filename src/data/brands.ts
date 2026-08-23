@@ -61,7 +61,7 @@ export const brands: Brand[] = [
     tagline:
       'Ofrece una amplia gama de productos para la protección de superficies en reformas, como paredes y suelos.',
     description:
-      'Supertape es una marca española de cintas adhesivas de alta calidad y resistencia. Ofrece cintas, papeles de protección, cintas de doble cara y cinta de pintor, con un firme compromiso medioambiental empleando materiales reciclados y biodegradables.',
+      'Supertape es una marca española fabricada por Materiales Modernos que ofrece una gama completa de productos de alta calidad para la protección de superficies. Papel Kraft de alta calidad con o sin encolado para protección de suelos, cintas krepp y plásticos reciclados para el pintor. Toda la gama se ha desarrollado con firme compromiso medioambiental empleando materiales reciclados, reciclables y biodegradables.',
     categories: [
       'Protección Plus',
       'Papel Kraft + Antideslizante',
