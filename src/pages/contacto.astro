@@ -35,21 +35,23 @@ import { site } from '../data/site';
           </div>
         </div>
 
-        <form class="c-form reveal" name="contacto" method="post" style="--reveal-delay: 120ms">
+        <form class="c-form reveal" id="contactForm" name="contacto" novalidate style="--reveal-delay: 120ms">
           <div class="c-row">
             <label class="field">
               <span>Nombre</span>
-              <input type="text" name="nombre" required />
+              <input type="text" name="nombre" autocomplete="name" required />
+              <em class="field-err" data-error-for="nombre"></em>
             </label>
             <label class="field">
               <span>Email</span>
-              <input type="email" name="email" required />
+              <input type="email" name="email" autocomplete="email" required />
+              <em class="field-err" data-error-for="email"></em>
             </label>
           </div>
           <div class="c-row">
             <label class="field">
               <span>Teléfono</span>
-              <input type="tel" name="telefono" />
+              <input type="tel" name="telefono" autocomplete="tel" />
             </label>
             <label class="field">
               <span>Asunto</span>
@@ -59,15 +61,26 @@ import { site } from '../data/site';
           <label class="field">
             <span>Mensaje</span>
             <textarea name="mensaje" rows="5" required></textarea>
+            <em class="field-err" data-error-for="mensaje"></em>
           </label>
           <label class="c-check">
             <input type="checkbox" name="privacy" required />
             <span>Al enviar este formulario, acepto la <a href="/politica-de-privacidad/">Política de Privacidad</a>.</span>
           </label>
+          <em class="field-err" data-error-for="privacy"></em>
+
+          <!-- Trampa antispam: invisible para las personas, los bots la rellenan. -->
+          <div class="c-hp" aria-hidden="true">
+            <label>No rellenes este campo
+              <input type="text" name="website" tabindex="-1" autocomplete="off" />
+            </label>
+          </div>
+
           <button class="btn btn--ink" type="submit">
             Enviar mensaje
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
           </button>
+          <p class="c-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
 
@@ -139,6 +152,20 @@ import { site } from '../data/site';
   .c-check a { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
   .c-form .btn { align-self: flex-start; margin-top: 0.6rem; }
 
+  /* Formulario: errores, trampa antispam y mensaje de estado */
+  .c-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .field-err {
+    display: none; font-style: normal; font-size: 0.85rem; line-height: 1.4;
+    color: var(--color-mtm-red); letter-spacing: 0.01em;
+  }
+  .field-err.is-on { display: block; }
+  .field.has-error input, .field.has-error textarea { border-bottom-color: var(--color-mtm-red); }
+  .c-status { margin-top: 0.2rem; font-size: 0.95rem; line-height: 1.55; color: var(--color-slate); }
+  .c-status.is-ok { color: var(--color-ink); }
+  .c-status.is-error { color: var(--color-mtm-red); }
+  .c-status a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .c-form button[disabled] { opacity: 0.5; pointer-events: none; }
+
   .c-tech { background: var(--color-mist); padding: clamp(1.8rem, 3vw, 2.4rem); display: flex; flex-direction: column; gap: 1.3rem; }
   .c-tech-lead { color: var(--color-slate); line-height: 1.6; font-size: 1.092rem; }
 
@@ -167,3 +194,125 @@ import { site } from '../data/site';
     .reps-email { grid-column: 1 / -1; }
   }
 </style>
+
+<script>
+  // Envio del formulario de contacto al flujo de n8n (AvantiFlow).
+  const ENDPOINT = 'https://n8n.avantiflow.com/webhook/mtm-formulario-web';
+  const EMAIL_FALLBACK = 'mtm@mtm-murcia.com';
+
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+
+  if (form && status) {
+    const validadores = {
+      nombre: (v) => (v.trim().length >= 2 ? '' : 'Escribe tu nombre.'),
+      email: (v) => (/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? '' : 'Introduce un email valido.'),
+      mensaje: (v) => (v.trim().length >= 10 ? '' : 'Cuentanos un poco mas (minimo 10 caracteres).'),
+      privacy: (_v, campo) => (campo.checked ? '' : 'Debes aceptar la politica de privacidad.'),
+    };
+
+    const marcarError = (campo, mensaje) => {
+      const aviso = form.querySelector('[data-error-for="' + campo.name + '"]');
+      const caja = campo.closest('.field');
+      if (caja) caja.classList.toggle('has-error', Boolean(mensaje));
+      if (aviso) {
+        aviso.textContent = mensaje;
+        aviso.classList.toggle('is-on', Boolean(mensaje));
+      }
+      return !mensaje;
+    };
+
+    const validar = (campo) => {
+      const fn = validadores[campo.name];
+      return fn ? marcarError(campo, fn(campo.value, campo)) : true;
+    };
+
+    const decir = (texto, clase) => {
+      status.innerHTML = texto;
+      status.className = 'c-status' + (clase ? ' ' + clase : '');
+    };
+
+    // UTMs y referrer: se guardan en la sesion para no perderlos al navegar.
+    const guardarOrigen = () => {
+      const params = new URLSearchParams(window.location.search);
+      const origen = {};
+      ['utm_source', 'utm_medium', 'utm_campaign'].forEach((k) => {
+        const v = params.get(k);
+        if (v) origen[k] = v;
+      });
+      if (document.referrer && !document.referrer.includes(window.location.host)) {
+        origen.referrer = document.referrer;
+      }
+      if (Object.keys(origen).length) {
+        try { sessionStorage.setItem('mtm_origen', JSON.stringify(origen)); } catch (e) {}
+      }
+    };
+
+    const leerOrigen = () => {
+      try { return JSON.parse(sessionStorage.getItem('mtm_origen') || '{}'); } catch (e) { return {}; }
+    };
+
+    guardarOrigen();
+
+    form.querySelectorAll('input, textarea').forEach((campo) => {
+      campo.addEventListener('blur', () => validar(campo));
+      campo.addEventListener('input', () => {
+        const caja = campo.closest('.field');
+        if ((caja && caja.classList.contains('has-error')) || campo.name === 'privacy') validar(campo);
+      });
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const campos = Array.from(form.querySelectorAll('input, textarea')).filter((c) => validadores[c.name]);
+      if (!campos.map(validar).every(Boolean)) {
+        decir('Revisa los campos marcados antes de enviar.', 'is-error');
+        const primero = form.querySelector('.field.has-error input, .field.has-error textarea');
+        if (primero) primero.focus();
+        return;
+      }
+
+      const datos = Object.fromEntries(new FormData(form).entries());
+      // La trampa no viaja: si venia rellena, es un bot y cortamos sin avisarle.
+      if (datos.website) {
+        form.reset();
+        decir('Gracias. Te responderemos en menos de 24 horas laborables.', 'is-ok');
+        return;
+      }
+      delete datos.website;
+
+      const payload = Object.assign({}, datos, leerOrigen(), {
+        privacidad: form.privacy.checked,
+        enviado_en: new Date().toISOString(),
+        pagina: window.location.href,
+      });
+
+      const boton = form.querySelector('button[type="submit"]');
+      if (boton) boton.disabled = true;
+      decir('Enviando\u2026');
+
+      try {
+        const respuesta = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (!respuesta.ok) throw new Error('HTTP ' + respuesta.status);
+        form.reset();
+        form.querySelectorAll('.field-err').forEach((el) => el.classList.remove('is-on'));
+        form.querySelectorAll('.field').forEach((el) => el.classList.remove('has-error'));
+        decir('Gracias. Hemos recibido tu mensaje y te responderemos en menos de 24 horas laborables.', 'is-ok');
+      } catch (error) {
+        console.error('MTM - error al enviar el formulario:', error);
+        decir(
+          'No hemos podido enviar el mensaje. Escribenos a ' +
+            '<a href="mailto:' + EMAIL_FALLBACK + '">' + EMAIL_FALLBACK + '</a> o llamanos al 968 306 060.',
+          'is-error'
+        );
+      } finally {
+        if (boton) boton.disabled = false;
+      }
+    });
+  }
+</script>
