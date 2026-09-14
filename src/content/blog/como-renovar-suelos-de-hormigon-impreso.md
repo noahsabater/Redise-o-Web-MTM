@@ -18,7 +18,7 @@ El hormigón impreso también destaca por su durabilidad y resistencia, lo que l
 
 ## ¿Qué mantenimiento necesita el hormigón impreso?
 
-Para conservar el suelo de hormigón impreso y conseguir que nos dure mucho tiempo con buen aspecto, es fundamental cuidar de nuestros suelos mediante un mantenimiento regular. Una de las principales tareas de mantenimiento consiste en limpiar el pavimento de forma periódica, utilizando productos suaves y no abrasivos para evitar dañar la superficie. Asimismo, es importante proteger los suelos de hormigón impreso de manchas y derrames, aplicando selladores o recubrimientos especiales como nuestro Hidrofugante Invisible que actúen como barrera protectora. Además, es recomendable inspeccionar regularmente el pavimento en busca de posibles grietas o daños, ya que una reparación oportuna evitará que los problemas se agraven y afecten la integridad del suelo.
+Para conservar el suelo de hormigón impreso y conseguir que nos dure mucho tiempo con buen aspecto, es fundamental cuidar de nuestros suelos mediante un mantenimiento regular. Una de las principales tareas de mantenimiento consiste en limpiar el pavimento de forma periódica, utilizando productos suaves y no abrasivos para evitar dañar la superficie. Asimismo, es importante proteger los suelos de hormigón impreso de manchas y derrames, aplicando selladores o recubrimientos especiales como nuestro [Hidrofugante Invisible](/producto/hidrofugante-invisible/) que actúen como barrera protectora. Además, es recomendable inspeccionar regularmente el pavimento en busca de posibles grietas o daños, ya que una reparación oportuna evitará que los problemas se agraven y afecten la integridad del suelo.
 
 ## Técnicas para renovar el hormigón impreso
 

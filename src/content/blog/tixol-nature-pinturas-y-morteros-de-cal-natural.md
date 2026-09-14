@@ -30,7 +30,7 @@ La gama Tixol Nature es nuestra gama más natural, formulada a base de elementos
 
 **– Pinturas de Cal**. Dos pinturas distintas, una para exterior y otra para interior. Ambas formuladas para su aplicación en museos, patrimonio histórico, hospitales, guarderías, así como en viviendas, donde se requiera un acabado natural, ecológico y libre de _COVs_ (compuestos orgánicos volátiles).
 
-**– Mortero de Cal de Agarre**. Este mortero está diseñado para la renovación sobre azulejos, cemento, pintura, gotelé, paneles de cartón yeso… Gracias a su gran capacidad de adhesión puede utilizarse como puente de unión o como adhesivo de azulejos, piedra natural y paneles SATE.
+**– [Mortero de Cal de Agarre](/producto/mortero-de-cal-de-agarre/)**. Este mortero está diseñado para la renovación sobre azulejos, cemento, pintura, gotelé, paneles de cartón yeso… Gracias a su gran capacidad de adhesión puede utilizarse como puente de unión o como adhesivo de azulejos, piedra natural y paneles SATE.
 
 Mortero de Cal a espátula
 
@@ -40,7 +40,7 @@ Mortero de Cal a espátula
 
 **– Mortero de Cal Antihumedad “Drenante”.** Mortero de Cal Hidráulica formulado para aplicar sobre superficies con problemas de humedad capilar permitiendo que la humedad transpire a través del mortero sin que este se degrade.
 
-Estos dos últimos morteros, el mortero de cal antihumedad “base” y el “drenante” pertenecen a nuestro nuevo **Sistema Antihumedad Tixol Nature**. Siendo el paso 1 y el paso 2 respectivamente de este nuevo tratamiento, el cual se completaría utilizando nuestra Pintura de Cal (paso 3), ya presentada anteriormente.
+Estos dos últimos morteros, el mortero de cal antihumedad “base” y el “drenante” pertenecen a nuestro nuevo **Sistema Antihumedad Tixol Nature**. Siendo el paso 1 y el paso 2 respectivamente de este nuevo tratamiento, el cual se completaría utilizando nuestra [Pintura de Cal](/producto/pintura-de-cal/) (paso 3), ya presentada anteriormente.
 
 Sistema Antihumedad de Cal natural de Tixol Nature
 

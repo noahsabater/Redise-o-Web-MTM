@@ -20,7 +20,7 @@ Estas pinturas no solo se ven bien, sino que también protegen las superficies c
 Dentro de loa beneficios de usar pinturas de calidad, está la originalidad de los proyectos. Si buscas darle un toque original a tu reforma, nuestras soluciones decorativas de Tixol son todo lo que necesitas.
 
 -   **Tixol Oxitec**: Un revestimiento con cargas metálicas que crea efectos únicos. Perfecto para quienes buscan un acabado industrial, moderno y lleno de carácter.
--   **Tixol Epoxi 3D**: Imagina suelos tridimensionales, mesas con efecto río «_River table_” o combinaciones de colores que transforman cualquier espacio en una obra de arte.
+-   **[Tixol Epoxi 3D](/producto/epoxi-3d/)**: Imagina suelos tridimensionales, mesas con efecto río «_River table_” o combinaciones de colores que transforman cualquier espacio en una obra de arte.
 -   **Tixol Cement Floor**: Nuestro sistema de microcemento a rodillo es ideal para acabados ultrarrápidos y modernos. Un sueño para los profesionales que quieren combinar eficiencia y estética.
 
 Con estas opciones, cada reforma se convierte en una oportunidad de crear algo único y sorprendente.

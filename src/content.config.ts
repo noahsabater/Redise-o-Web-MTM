@@ -12,6 +12,13 @@ const blog = defineCollection({
       category: z.string(),
       excerpt: z.string(),
       cover: image().optional(),
+      // Fecha de la última revisión de fondo del artículo. Se emite como
+      // dateModified: sin ella, para Google un post de 2018 lleva ocho años
+      // sin tocarse aunque se haya reescrito entero.
+      updated: z.coerce.date().optional(),
+      // Preguntas frecuentes. Se pintan al final y se emiten como FAQPage,
+      // que es lo que Google puede mostrar desplegado en los resultados.
+      faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     }),
 });
 

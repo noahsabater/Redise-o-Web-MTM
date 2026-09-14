@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Newsletter from '../../components/sections/Newsletter.astro';
+import ProductosDelArticulo from '../../components/sections/ProductosDelArticulo.astro';
 import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
 import { site } from '../../data/site';
+import { slugCategoria } from '../../lib/categorias';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,6 +14,11 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Texto sobre el que se buscan productos. El título va dos veces a propósito:
+// es la señal más fiable de sobre qué trata el artículo, y sin repetirlo el
+// cuerpo (2.000 palabras) lo diluye.
+const textoParaProductos = `${post.data.title} ${post.data.title} ${post.data.excerpt} ${post.body ?? ''}`;
 const fmt = (d: Date) =>
   d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -38,6 +45,7 @@ if (related.length < 3) {
 const url = new URL(`/blog/${post.id}`, site.url).href;
 const coverUrl = post.data.cover ? new URL(post.data.cover.src, site.url).href : undefined;
 const iso = post.data.date.toISOString();
+const isoActualizado = (post.data.updated ?? post.data.date).toISOString();
 
 const articleLd = {
   '@context': 'https://schema.org',
@@ -45,7 +53,7 @@ const articleLd = {
   headline: post.data.title,
   description: post.data.excerpt,
   datePublished: iso,
-  dateModified: iso,
+  dateModified: isoActualizado,
   ...(coverUrl ? { image: [coverUrl] } : {}),
   articleSection: post.data.category,
   author: { '@type': 'Organization', name: site.name, url: site.url },
@@ -57,13 +65,32 @@ const articleLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 };
 
+// Google sólo puede mostrar el desplegable de preguntas si van marcadas así.
+const faqLd = post.data.faq?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: post.data.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Inicio', item: site.url },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog', site.url).href },
-    { '@type': 'ListItem', position: 3, name: post.data.title, item: url },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog/', site.url).href },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: post.data.category,
+      item: new URL(`/blog/categoria/${slugCategoria(post.data.category)}/`, site.url).href,
+    },
+    { '@type': 'ListItem', position: 4, name: post.data.title, item: url },
   ],
 };
 ---
@@ -71,6 +98,7 @@ const breadcrumbLd = {
 <BaseLayout title={post.data.title} description={post.data.excerpt} ogType="article" ogImage={post.data.cover?.src}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleLd)} />
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbLd)} />
+  {faqLd && <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd)} />}
 
   <div class="reading-bar" data-reading-bar aria-hidden="true"></div>
 
@@ -80,15 +108,21 @@ const breadcrumbLd = {
         <nav class="crumbs" aria-label="Ruta de navegación">
           <a href="/">Inicio</a><span aria-hidden="true">/</span>
           <a href="/blog/">Blog</a><span aria-hidden="true">/</span>
-          <span class="crumb-current">{post.data.category}</span>
+          <a class="crumb-current" href={`/blog/categoria/${slugCategoria(post.data.category)}/`}>{post.data.category}</a>
         </nav>
 
         <div class="post-meta">
-          <span class="cat">{post.data.category}</span>
+          <a class="cat" href={`/blog/categoria/${slugCategoria(post.data.category)}/`}>{post.data.category}</a>
           <span class="dot" aria-hidden="true"></span>
           <span class="date">{fmt(post.data.date)}</span>
           <span class="dot" aria-hidden="true"></span>
           <span class="rtime">{readingMin} min de lectura</span>
+          {post.data.updated && (
+            <>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="upd">Actualizado el {fmt(post.data.updated)}</span>
+            </>
+          )}
         </div>
         <h1 class="post-title">{post.data.title}</h1>
         <p class="post-lead">{post.data.excerpt}</p>
@@ -105,10 +139,26 @@ const breadcrumbLd = {
       <Content />
     </div>
 
+    {post.data.faq && post.data.faq.length > 0 && (
+      <section class="faq container-narrow">
+        <h2 class="faq-h">Preguntas frecuentes</h2>
+        <dl class="faq-list">
+          {post.data.faq.map((f) => (
+            <div class="faq-item">
+              <dt>{f.q}</dt>
+              <dd set:html={f.a} />
+            </div>
+          ))}
+        </dl>
+      </section>
+    )}
+
     <footer class="post-foot container-narrow">
       <a class="back" href="/blog/">← Volver al blog</a>
     </footer>
   </article>
+
+  <ProductosDelArticulo texto={textoParaProductos} />
 
   {related.length > 0 && (
     <section class="related section">
@@ -180,6 +230,15 @@ const breadcrumbLd = {
     border-left: 3px solid var(--color-ink); color: var(--color-slate); font-style: italic;
   }
   .post-body :global(img) { width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; }
+
+  /* Preguntas frecuentes */
+  .faq { padding-block: clamp(2rem, 4vw, 3rem); border-top: 1px solid var(--color-line); }
+  .faq-h { font-size: clamp(1.4rem, 2.4vw, 1.85rem); margin-bottom: 1.6rem; }
+  .faq-list { margin: 0; }
+  .faq-item + .faq-item { margin-top: 1.4rem; padding-top: 1.4rem; border-top: 1px solid var(--color-line); }
+  .faq-item dt { font-weight: 500; font-size: 1.06rem; color: var(--color-ink); margin-bottom: 0.5rem; }
+  .faq-item dd { margin: 0; color: var(--color-slate); line-height: 1.7; }
+  .upd { font-size: 0.8rem; color: var(--color-ash); }
 
   .post-foot { padding-bottom: clamp(2.5rem, 6vw, 4rem); }
   .back { font-size: 0.828rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-slate); }

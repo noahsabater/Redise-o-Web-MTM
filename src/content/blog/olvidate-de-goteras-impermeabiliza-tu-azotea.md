@@ -1,7 +1,7 @@
 ---
 title: '¡Olvídate de goteras! Impermeabiliza tu azotea'
 date: 2018-09-25
-category: 'Mantenimiento'
+category: 'Impermeabilización'
 excerpt: 'Ya ha llegado el otoño y con él, la temporada de lluvias. Es el momento, por tanto, de preparar tus superficies más expuestas al desgaste. Las terrazas y las azoteas, suelen ser una…'
 ---
 

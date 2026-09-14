@@ -18,7 +18,7 @@ Esta nueva gama es muy fácil de utilizar y está compuesta por cuatro productos
 
 ### 1\. Termo Aislantes formulados con corcho natural:
 
-**Tixol Thermo Corcho Proyectado:** Este producto es un revestimiento de base acuosa, formulado con corcho natural y resinas acrílicas. Con él, se puede conseguir espesores de hasta 2-3mm de aislamiento . Entre sus propiedades destacan: su elasticidad, impermeabilidad y aislamiento (térmico y acústico). Además, cuenta con más de 20 colores disponibles para poder usarlo como acabado decorativo.
+**[Tixol Thermo Corcho Proyectado](/producto/thermo-corcho-proyectado/):** Este producto es un revestimiento de base acuosa, formulado con corcho natural y resinas acrílicas. Con él, se puede conseguir espesores de hasta 2-3mm de aislamiento . Entre sus propiedades destacan: su elasticidad, impermeabilidad y aislamiento (térmico y acústico). Además, cuenta con más de 20 colores disponibles para poder usarlo como acabado decorativo.
 
 **Tixol Thermo Mortero:** Es un mortero en seco formulado a partir de cemento, cal hidráulica natural, corcho natural triturado y áridos calcáreos selectos, con el que podremos conseguir espesores de hasta 1 cm de aislamiento. Este mortero está destinado para los revocos aislantes, que aporta una mejora acústica y térmica frente a los convencionales de cal y arena. Además, es apto para paredes y techos en interior o exterior. Por último, cuenta con propiedades fisicoquímicas y mecánicas, de permeabilidad al vapor, transpirabilidad y mayor durabilidad, verificadas con las pruebas realizadas por el **CTCON**.
 

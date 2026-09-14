@@ -17,7 +17,7 @@ Oficinas centrales de Angulas Aguinaga con paredes de Epoxi 3D
 
 Bodega con suelo Epoxi 3D
 
-Para que el diseño de tu estancia sea único y perfecto es necesario que el suelo donde vayas a realizar la obra sea totalmente liso. Nuestro producto **Tixol Epoxi 3D** es un autonivelante de resina. Específico para aplicar después de la colocación de los vinilos con el diseño que hayas escogido para decorar tu estancia.
+Para que el diseño de tu estancia sea único y perfecto es necesario que el suelo donde vayas a realizar la obra sea totalmente liso. Nuestro producto **[Tixol Epoxi 3D](/producto/epoxi-3d/)** es un autonivelante de resina. Específico para aplicar después de la colocación de los vinilos con el diseño que hayas escogido para decorar tu estancia.
 
 Una vez terminada la aplicación del producto se deja secar, y después, ¡listo para disfrutar tu espacio único con tu suelo 3D!
 

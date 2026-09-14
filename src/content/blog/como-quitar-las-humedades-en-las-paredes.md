@@ -1,7 +1,7 @@
 ---
 title: '¿Cómo quitar las humedades en las paredes?'
 date: 2018-05-31
-category: 'Mantenimiento'
+category: 'Humedades'
 excerpt: 'En MTM – Materiales Modernos sabemos que cuando llega el verano, estáis deseando pasar las vacaciones en la casa de la playa. Pero es posible que al llegar nos encontremos con alguna…'
 ---
 

@@ -28,7 +28,7 @@ Para aplicar correctamente el sistema de microcemento a rodillo, sigue estos pas
 
 El primer paso es aplicar **Tixol Cement Floor Acryl**, una pintura especialmente diseñada para suelos que se aplica con rodillo. Está disponible en 5 tonos que se adaptan a diferentes estilos decorativos, pero como hemos dicho anteriormente se puede personalizar con el color que vaya con tu estilo.
 
-– **Aplicación**: Usa un buen rodillo para extender la pintura de manera uniforme sobre la superficie previamente preparada, totalmente lisa y sin desperfectos. Si la superficie no está totalmente lisa es necesario aplicar un autonivelante como Tixol Top Level para preparar la superficie.
+– **Aplicación**: Usa un buen rodillo para extender la pintura de manera uniforme sobre la superficie previamente preparada, totalmente lisa y sin desperfectos. Si la superficie no está totalmente lisa es necesario aplicar un autonivelante como [Tixol Top Level](/producto/tixol-top-level/) para preparar la superficie.
 
 – **Secado**: Deja secar entre 4 y 6 horas antes de proceder al siguiente paso.
 

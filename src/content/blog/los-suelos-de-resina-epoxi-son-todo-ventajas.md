@@ -1,47 +1,74 @@
 ---
-title: 'Los suelos de Resina Epoxi son todo ventajas'
+title: 'Suelos de resina epoxi: ventajas, tipos y cómo se instalan'
 date: 2021-11-24
+updated: 2026-09-08
 category: 'Decoración'
-excerpt: 'Seguramente ya conocerás lo que es la Resina Epoxi, pero si no conoces este material, tranquilx, te contamos todo sobre él y las ventajas de utilizar la resina epoxi en tus suelos. Este…'
+excerpt: 'Un pavimento continuo, sin juntas y que se coloca sobre el suelo que ya tienes, sin obra. Qué es la resina epoxi, qué acabados permite, cuánto tarda en curar y cómo se mantiene.'
 cover: '../../assets/blog/los-suelos-de-resina-epoxi-son-todo-ventajas.webp'
+faq:
+  - q: '¿Cuánto tarda en secar la resina epoxi?'
+    a: 'Depende mucho de la temperatura del local. Como referencia, el curado completo puede llegar a las 72 horas. Durante ese tiempo es importante que no haya corrientes de aire y proteger la zona del polvo: cualquier partícula que caiga se queda dentro para siempre.'
+  - q: '¿Hay que levantar el suelo antiguo?'
+    a: 'No en la mayoría de casos. La resina epoxi se aplica sobre soportes existentes —hormigón, terrazo, azulejo en buen estado— siempre que estén limpios, sanos y sin humedad. Eso es justo lo que la hace tan interesante en reforma.'
+  - q: '¿Se puede poner resina epoxi sobre un suelo con humedad?'
+    a: 'No directamente. Si la solera tiene humedad hay que cortarla antes con una barrera de vapor como el Tixol F Barrier; si no, la humedad termina levantando el pavimento. Es el error más caro y más frecuente en este tipo de instalación.'
+  - q: '¿Con qué se limpia un suelo de resina epoxi?'
+    a: 'Con jabón neutro y una fregona o paño que no deje residuos. Hay que evitar productos abrasivos, detergentes concentrados y disolventes: dañan la resina y le hacen perder tono. Para las herramientas, durante el trabajo, se usa disolvente universal.'
+  - q: '¿Son suelos resbaladizos?'
+    a: 'Pueden serlo si se rematan con un acabado muy brillante. Cuando el uso lo requiere —industria, zonas húmedas, pistas deportivas— se termina con un barniz antideslizante, que da el agarre necesario sin perder la continuidad del pavimento.'
 ---
 
-Seguramente ya conocerás lo que es la Resina Epoxi, pero si no conoces este material, tranquilx, te contamos todo sobre él y las ventajas de utilizar la resina epoxi en tus suelos.
+La resina epoxi lleva años saliendo en fotos de mesas con «ríos» de color y de piezas de joyería, pero su uso más interesante es bastante menos vistoso y mucho más práctico: **el suelo**. El resultado es un pavimento continuo, sin juntas, que se puede aplicar sobre el suelo que ya tienes y que aguanta lo que le eches.
 
-Este material está muy en tendencia tanto en joyería o pequeñas creaciones como en muebles (las famosas “River Tables”). ¿Pero, por qué no aplicarlo en el suelo? El resultado de utilizar resina epoxi en tus suelos es un pavimento continuo y sin juntas con innumerables beneficios, entre ellos su fácil y rápida aplicación. Además, como ya comentábamos en otro de nuestros post las posibilidades estéticas y decorativas de la resina epoxi son infinitas. Podemos utilizarla en un solo color, mezclar varios tonos para conseguir un efecto degradado e incluso aplicar su versión transparente con un vinilo, para conseguir un espectacular suelo en 3D.
+En esta guía repasamos qué es exactamente este material, qué ventajas tiene como pavimento, qué acabados permite y cómo se instala y se mantiene.
 
-Los suelos de resina epoxi se caracterizan por ser muy duros y resistentes, pero tiene muchas otras ventajas. ¡Te las contamos!
+## Qué es la resina epoxi
 
-### Ventajas de los suelos con resina Epoxi
+Es un polímero termoestable. Traducido: un producto de dos componentes que, al mezclarse con su endurecedor, arranca una reacción química y endurece por sí solo, sin necesidad de aire. De ahí vienen sus tres características más útiles —resistencia, durabilidad y acabado transparente— y de ahí también la exigencia de respetar las proporciones y los tiempos de mezcla.
 
-Utilizar la resina epoxi en nuestros suelos tiene multitud de ventajas, es por eso por lo que este material se suele utilizar en zonas de industria. En estas zonas, se necesitan materiales duraderos y resistentes, pero, además, la resina epoxi destaca por ser:
+Esa misma base sirve para cosas muy distintas: desde un [suelo 3D](/producto/epoxi-3d/) hasta el relleno en capa gruesa de una mesa, pasando por revestimientos industriales y protección de embarcaciones.
 
--   Resistentes: Son suelos muy resistentes al rayado, a la corrosión y a los agentes químicos. Además, tienen una gran capacidad de soporte sin que el suelo sufra ningún daño.
--   𝐒𝐢𝐧 𝐨𝐛𝐫𝐚𝐬: Se puede aplicar sobre una gran variedad de materiales, por lo que podemos aplicarlo sobre una gran variedad de suelos ya existentes, sin necesidad de realizar obras.
--   𝐅𝐚́𝐜𝐢𝐥 𝐥𝐢𝐦𝐩𝐢𝐞𝐳𝐚: La limpieza de un suelo sin juntas, continuo y liso es más fácil e higiénico que si tuviese relieves. Además, al no tener una superficie porosa, repelen los líquidos, grasas y residuos.
--   𝐆𝐫𝐚𝐧 𝐯𝐚𝐫𝐢𝐞𝐝𝐚𝐝 𝐝𝐞 𝐚𝐜𝐚𝐛𝐚𝐝𝐨𝐬 𝐲 𝐜𝐨𝐥𝐨𝐫𝐞𝐬: Como puedes ver en nuestra web, con la resina epoxi puedes conseguir acabados muy originales, mezclando colores y texturas
--   Por último, destacamos el hecho que son suelos **antideslizantes**. Es por esto por lo que se suele utilizar en instalaciones donde se manipulan mercancías con las que se puedan arrojar líquidos al piso (barnices, aceites, agua…) durante su transporte, los trabajadores puedan realizar su actividad libre de riesgos de resbalones. Estos suelos, también son muy utilizados en pistas deportivas, proporcionando un mayor agarre a los jugadores y evitando así posibles lesiones.
+## Ventajas de un suelo de resina epoxi
 
-Este tipo de pavimentos continuos y sin juntas son válidos para cualquier estancia, negocio e industria ya que son suelos muy fáciles de instalar y mantener. Pero eso no es todo…
+**Resistencia.** Aguanta el rayado, la corrosión y los agentes químicos, y soporta cargas altas sin dañarse. Por eso es el pavimento habitual en industria, parkings y talleres antes de llegar a las viviendas.
 
-### Fácil instalación
+**Sin obra.** Se aplica sobre buena parte de los suelos existentes, así que no hay que picar ni retirar el pavimento anterior. En una reforma esto se traduce en menos días, menos ruido y menos escombro.
 
-Como veíamos una de las ventajas de este tipo de suelos es su fácil instalación. Por lo que, si quieres cambiar tus suelos, con la resina Epoxi olvídate de obras costosas y ruidosas, ya que no es preciso retirar el antiguo suelo.
+**Limpieza fácil.** Al ser continuo, liso y no poroso, no tiene juntas donde acumular suciedad y repele líquidos, grasas y residuos. Es un factor decisivo en cocinas industriales y espacios sanitarios.
 
-Su instalación es tan simple como limpiar la superficie para eliminar cualquier suciedad o resto de grasa. Seguidamente se aplica sobre el suelo la imprimación de Epoxi previamente mezclada con un líquido catalizador para así endurecer la resina.
+**Acabados muy variados.** Se puede aplicar en un color plano, mezclar tonos para lograr degradados o usar la versión transparente sobre un vinilo impreso para conseguir un suelo con efecto tridimensional.
 
-La imprimación Epoxi es autonivelante por lo que al ir extendiéndola uniformemente con una llana el suelo queda totalmente liso. El resultado final es un suelo con aspecto liso y continuo, muy funcional y elegante para cualquier espacio.
+**Antideslizante cuando hace falta.** Rematado con un [barniz antideslizante](/producto/tixol-barniz-poliuretano-anti-slip/) da agarre en instalaciones donde se manipulan líquidos o en pistas deportivas, reduciendo el riesgo de resbalones.
 
-Además de su fácil instalación otra de sus ventajas es su fácil mantenimiento.
+## Qué sistema elegir según el acabado
 
-### ¡Mantén tus suelos brillantes!
+No hay una única «resina epoxi»: el producto cambia según lo que quieras conseguir.
 
-El mantenimiento de los suelos con resina Epoxi es muy fácil y cómodo. Pero hay que diferenciar dependiendo del espacio donde esté instalado.
+- **Color liso y uniforme:** [Tixol Epoxi Standard Colors](/producto/epoxi-standard-colors/), la opción más directa para vivienda, local o industria.
+- **Efectos metálicos y degradados:** [Tixol Epoxi Metal Colors](/producto/epoxi-metal-colors/), que juega con pigmentos metalizados para acabados sin dos metros iguales.
+- **Suelos 3D:** [Tixol Epoxi 3D](/producto/epoxi-3d/) sobre vinilo impreso, y [Epoxi 3D UV Protect](/producto/tixol-epoxi-3d-uv-protect/) cuando el suelo va a recibir luz solar directa.
+- **Rellenos de gran espesor** (encimeras, mesas, piezas): [Tixol Epoxi Capa Gruesa](/producto/epoxi-capa-gruesa/).
+- **Áridos vistos:** si buscas un pavimento drenante y decorativo, [Tixol Stone Carpet](/producto/tixol-stone-carpet/) resuelve terrazas y exteriores con otro lenguaje.
 
-Si el suelo a limpiar pertenece a un negocio o industria se suelen utilizar máquinas específicas como fregadoras y aspiradoras de agua. Son válidas para este tipo de suelos, pero eso sí, es importante que se realice un buen aclarado y secado final.
+Toda la gama está en [decoración de pavimentos](/productos/tixol/decoracion-de-pavimentos/) y [resinas epoxi](/productos/tixol/resinas-epoxi/).
 
-Para espacios pequeños como un hogar u oficina, el mantenimiento es aún más fácil. Basta con utilizar fregonas manuales o paños de hilo que no dejen residuos en el suelo.
+## Cómo se instala
 
-Es importante **no utilizar productos abrasivos** para su limpieza como detergentes concentrados o disolventes. Recomendamos el uso de jabones neutros para evitar daños en la resina o pérdida de la tonalidad del suelo. En el caso de manchas difíciles puedes utilizar detergentes, siempre siguiendo las instrucciones del fabricante para no dañar el suelo.
+1. **Prepara el soporte.** Limpieza a fondo para eliminar suciedad, polvo y cualquier resto de grasa. El soporte tiene que estar sano: la resina copia los defectos que haya debajo.
+2. **Comprueba la humedad.** Este paso se salta a menudo y es el que arruina instalaciones. Si la solera tiene humedad, hay que cortarla antes con [Tixol F Barrier](/producto/f-barrier/), una barrera de vapor que trata soleras con hasta un 30 % de humedad. Sin eso, el pavimento acaba levantándose.
+3. **Aplica la imprimación.** La [imprimación epoxi](/producto/tixol-epoxi-floor-primer/) se mezcla con su catalizador y se extiende con llana. Es autonivelante, así que al repartirla uniformemente el suelo queda liso.
+4. **Extiende el color o el sistema decorativo** que corresponda al acabado elegido. Si aparecen burbujas, [Tixol Antiburbujas](/producto/antiburbujas/) las elimina antes de que curen dentro.
+5. **Remata con el barniz.** Un [PU Finish antirayado](/producto/barniz-acrilico-pu-finish-antirayado/) protege el acabado y define el brillo final; si necesitas agarre, el [antideslizante](/producto/tixol-barniz-poliuretano-anti-slip/).
+6. **Respeta el curado.** Hasta 72 horas para el curado completo, sin corrientes y protegiendo del polvo.
 
-Ya conoces más sobre el uso de la resina Epoxi, ahora falta que decidas en qué espacio lo quieres instalar. Sea donde sea, ¡el resultado será fantástico y duradero!
+## Mantenimiento
+
+En negocio o industria se limpia con fregadoras y aspiradoras de agua, cuidando el aclarado y el secado final. En vivienda u oficina basta con fregona o paño de hilo que no deje residuos.
+
+La única regla importante: **nada de productos abrasivos**. Ni detergentes concentrados ni disolventes, porque dañan la resina y le hacen perder tono. Jabón neutro y poco más. Para manchas difíciles, un detergente siguiendo siempre las indicaciones del fabricante.
+
+## Más allá del suelo
+
+El mismo material da mucho juego fuera del pavimento. La versión en [capa gruesa](/producto/epoxi-capa-gruesa/) es la que permite los rellenos de las mesas de río y las piezas de gran espesor, y en manualidades y joyería se aprovecha su acabado transparente. Si te interesa esa vertiente, la tratamos aparte en [restaura muebles con resina epoxi](/blog/restaura-muebles-con-resina-epoxi/).
+
+¿Tienes un proyecto concreto y no sabes qué sistema encaja? [Escríbenos](/contacto/) y lo vemos, o echa un vistazo al resto de artículos de [decoración](/blog/categoria/decoracion/).

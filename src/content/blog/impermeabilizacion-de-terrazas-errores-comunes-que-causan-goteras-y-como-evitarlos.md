@@ -1,7 +1,7 @@
 ---
 title: 'Impermeabilización de terrazas: errores comunes que causan goteras y cómo evitarlos'
 date: 2026-06-22
-category: 'Construcción'
+category: 'Impermeabilización'
 excerpt: '¿Problemas de filtraciones o humedades? Te contamos los errores críticos al realizar la impermeabilización de terrazas y cómo solucionarlos.'
 cover: '../../assets/blog/impermeabilizacion-de-terrazas-errores-comunes-que-causan-goteras-y-como-evitarlos.jpg'
 ---

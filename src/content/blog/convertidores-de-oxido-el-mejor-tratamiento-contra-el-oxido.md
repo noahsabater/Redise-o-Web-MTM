@@ -18,7 +18,7 @@ Los convertidores de óxido son productos químicos que reaccionan con el óxido
 
 Los convertidores de óxido se aplican sobre la superficie oxidada con una brocha, un rodillo o un aerosol. Es importante limpiar previamente el polvo y la suciedad, así como eliminar la cascarilla o partes sueltas mediante cepillo de alambre.
 
-Al aplicar el producto, en unos minutos se puede apreciar cómo se forma una película negra azulada que indica que el óxido ha sido neutralizado. Al pasar las horas que indique el fabricante, en el caso de Tixol Convertidor de óxido son 24 horas, ya se podría repintar o barnizar el objeto tratado.
+Al aplicar el producto, en unos minutos se puede apreciar cómo se forma una película negra azulada que indica que el óxido ha sido neutralizado. Al pasar las horas que indique el fabricante, en el caso de [Tixol Convertidor de óxido](/producto/convertidor-de-oxido/) son 24 horas, ya se podría repintar o barnizar el objeto tratado.
 
 ### ¿Cuándo podemos usar un convertidor de óxido?
 

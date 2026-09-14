@@ -27,7 +27,7 @@ Las puertas también hay que tenerlas en cuenta a la hora de ser más eficientes
 
 Pero, el aislamiento de nuestra vivienda no solo se basa en puertas y ventanas. Si tu vivienda es antigua seguramente, tanto paredes como techos no estén bien aislados y esto solo se soluciona haciendo reformas. Un mal aislamiento en techos, paredes y suelos puede suponer la pérdida de un 30% de energía.
 
-Fachada aislada con Tixol Thermo Corcho Proyectado.
+Fachada aislada con [Tixol Thermo Corcho Proyectado](/producto/thermo-corcho-proyectado/).
 
 El aislamiento puede realizarse tanto interna, como externamente. Por esto, en el  mercado existen un sinfín de productos y métodos para realizar un aislamiento óptimo de nuestra vivienda. Desde MTM queremos presentaros nuestras novedades en Thermo Aislantes, válidas para diferentes necesidades.
 
@@ -41,9 +41,9 @@ Los integrantes de esta gama de productos termoaislantes son:
 
 – Thermo Corcho Proyectado: Consiste en un revestimiento acrílico impermeable con propiedades acústicas y termoaislantes.
 
-– Thermo Mortero G: Se trata de un mortero en seco específicamente desarrollado para el aislamiento térmico, en base cemento. Es apto para paredes y techos interiores o exteriores.
+– [Thermo Mortero G](/producto/thermo-mortero-g/): Se trata de un mortero en seco específicamente desarrollado para el aislamiento térmico, en base cemento. Es apto para paredes y techos interiores o exteriores.
 
-– Thermo Masilla F: Masilla al uso, formulada a base de copolímeros acrílicos, gránulos de perlita y micro-esferas de vidrio huecas. Estas proporcionan un aislamiento térmico complementario, tanto para el frío como para el calor.
+– [Thermo Masilla F](/producto/thermo-masilla-f/): Masilla al uso, formulada a base de copolímeros acrílicos, gránulos de perlita y micro-esferas de vidrio huecas. Estas proporcionan un aislamiento térmico complementario, tanto para el frío como para el calor.
 
 – Thermo Pintura: Forma una membrana impermeable de aislamiento térmico y acústico, a base de resinas de estileno acrílicas en emulsión.
 

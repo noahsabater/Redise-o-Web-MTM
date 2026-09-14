@@ -1,7 +1,7 @@
 ---
 title: 'Descubre los beneficios de la impermeabilización'
 date: 2023-08-21
-category: 'Mantenimiento'
+category: 'Impermeabilización'
 excerpt: 'Con la llegada del otoño y la temporada de lluvia, es importante proteger nuestras superficies de la humedad y el frío. La impermeabilización es un proceso que consiste en aplicar una…'
 cover: '../../assets/blog/descubre-los-beneficios-de-la-impermeabilizacion.png'
 ---
@@ -22,7 +22,7 @@ Existen diferentes formas de impermeabilizar una superficie, dependiendo del tip
 
 ### ¿Qué producto uso para impermeabilizar una superficie?
 
-En Materiales Modernos, tenemos una amplia gama de productos de impermeabilización para todo tipo de superficies y necesidades. Entre ellos, destacamos nuestra pintura acrílica Tixol Acryflex Acrílico y nuestra membrana de poliuretano Tixol Acryflex PU.
+En Materiales Modernos, tenemos una amplia gama de productos de impermeabilización para todo tipo de superficies y necesidades. Entre ellos, destacamos nuestra pintura acrílica [Tixol Acryflex Acrílico](/producto/tixol-acryflex-acrilico/) y nuestra membrana de poliuretano [Tixol Acryflex PU](/producto/acryflex-pu/).
 
 **Tixol Acryflex Acrílico** es un producto a base de resinas acrílicas que una vez aplicado y seco, forma un revestimiento continuo de capa gruesa, que evita las filtraciones de agua en superficies tanto horizontales como verticales. Es ideal para impermeabilizar terrazas, tejados, fachadas y muros exteriores, ya que cuenta con una gran resistencia a los rayos UV, al envejecimiento y a los cambios de temperatura.
 

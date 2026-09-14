@@ -1,7 +1,7 @@
 ---
 title: 'Pinturas Antimanchas: Innovación contra las manchas'
 date: 2021-08-10
-category: 'Interiorismo'
+category: 'Decoración'
 excerpt: 'A todos nos gusta estrenar una estancia limpia y recién pintada, ya sea en nuestra casa, una oficina o nuestro negocio. Pero con el paso del tiempo y a medida que vamos «viviendo» la…'
 cover: '../../assets/blog/pinturas-antimanchas-innovacion-contra-las-manchas.webp'
 ---

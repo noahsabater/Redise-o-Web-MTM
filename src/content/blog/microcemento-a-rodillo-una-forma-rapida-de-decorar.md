@@ -20,11 +20,11 @@ El sistema consiste en tres productos que, según su aplicación, es necesario a
 
 -   ### **Sistema Nivelador Top Level.**
     
-    Como su propio nombre indica, Top level es un mortero de nivelación formulado para la aplicación directa sobre pavimentos minerales porosos y sobre cerámicas no porosas. En caso de aplicación sobre superficies cerámicas no porosas, sería necesaria una previa imprimación epoxi Floor Primer. Su aplicación es rápida y sencilla y después de 3h trás su aplicación ya se podría transitar quedando listo para recubrir con sistema Tixol Cement-Floor Acryl o Crema Pu transcurridas 24 horas. Además, cuenta con una alta capacidad de relleno de 5 a 15 mm.
+    Como su propio nombre indica, Top level es un mortero de nivelación formulado para la aplicación directa sobre pavimentos minerales porosos y sobre cerámicas no porosas. En caso de aplicación sobre superficies cerámicas no porosas, sería necesaria una previa imprimación [epoxi Floor Primer](/producto/tixol-epoxi-floor-primer/). Su aplicación es rápida y sencilla y después de 3h trás su aplicación ya se podría transitar quedando listo para recubrir con sistema Tixol Cement-Floor Acryl o Crema Pu transcurridas 24 horas. Además, cuenta con una alta capacidad de relleno de 5 a 15 mm.
     
 -   ### **Tixol Cement Floor Acryl.**
     
-    Uno de los productos del sistema de microcemento a rodillo para pavimentos, es un sellador acrílico de alta dureza formulado para colorear y sellar la absorción sobre el soporte nivelado previamente con Tixol Top Level. Cement Floor Acryl es una capa intermedia del sistema microcemento que con una o dos manos de aplicación a rodillo, queda el soporte listo para terminar con Tixol Crema de Poliuretano bicomponente.
+    Uno de los productos del sistema de microcemento a rodillo para pavimentos, es un sellador acrílico de alta dureza formulado para colorear y sellar la absorción sobre el soporte nivelado previamente con [Tixol Top Level](/producto/tixol-top-level/). Cement Floor Acryl es una capa intermedia del sistema microcemento que con una o dos manos de aplicación a rodillo, queda el soporte listo para terminar con Tixol Crema de Poliuretano bicomponente.
     
 -   ### **Tixol Crema de Poliuretano Bicomponente.**
     

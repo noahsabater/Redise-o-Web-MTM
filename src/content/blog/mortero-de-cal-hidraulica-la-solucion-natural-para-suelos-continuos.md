@@ -8,7 +8,7 @@ cover: '../../assets/blog/mortero-de-cal-hidraulica-la-solucion-natural-para-sue
 
 Cuando buscamos crear espacios con un _toque natural y elegante_, el **mortero de cal hidráulica** destaca como una opción ideal. Esta mezcla versátil y ecológica es perfecta para quienes desean un pavimento continuo sin juntas, que combine estética y durabilidad. En MTM Materiales Modernos, nos apasiona ofrecer soluciones innovadoras para los profesionales que quieren destacar en sus proyectos y el sistema **Tixol Nature Floor** es un ejemplo de cómo la tecnología y la naturaleza pueden unirse para crear suelos únicos y sostenibles.
 
-Si quieres conocer más sobre los morteros de cal hidráulica, nuestro sistema Nature Floor, sus beneficios y por qué son una excelente opción para tus suelos, ya sean interiores o exteriores…¡Quédate y sigue leyendo!
+Si quieres conocer más sobre los morteros de cal hidráulica, nuestro [sistema Nature Floor](/producto/sistema-nature-floor/), sus beneficios y por qué son una excelente opción para tus suelos, ya sean interiores o exteriores…¡Quédate y sigue leyendo!
 
 ## ¿Qué es un Mortero de Cal Hidráulica?
 

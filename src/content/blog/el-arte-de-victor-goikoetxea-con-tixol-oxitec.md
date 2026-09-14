@@ -8,7 +8,7 @@ cover: '../../assets/blog/el-arte-de-victor-goikoetxea-con-tixol-oxitec.jpg'
 
 El pasado mes de Julio, el gran escultor Víctor Goikoetxea volvió a confiar en nuestros productos para una de sus obras de arte en Jávea. Un espectacular mural realizado con Tixol Oxitec, nuestra gama de revestimientos con cargas metálicas.
 
-No es la primera vez que Víctor confía en nuestros productos. Ya lo hizo anteriormente cuando utilizó nuestra resina Epoxi 3D para realizar un gran mural en las oficinas centrales de La Gula del Norte (Gipuzkua) o este otro mural en el salón de plenos del ayuntamiento de Hernani (Gipuzkua).
+No es la primera vez que Víctor confía en nuestros productos. Ya lo hizo anteriormente cuando utilizó nuestra resina [Epoxi 3D](/producto/epoxi-3d/) para realizar un gran mural en las oficinas centrales de La Gula del Norte (Gipuzkua) o este otro mural en el salón de plenos del ayuntamiento de Hernani (Gipuzkua).
 
 Mural realizado en ayuntamiento de Hernani
 

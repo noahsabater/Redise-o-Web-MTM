@@ -20,7 +20,7 @@ Además, si lo que buscamos es comodidad existen papeles protectores y plástico
 Para que el trabajo de proteger nuestras superficies sea una tarea fácil, lo mejor es seguir siempre los mismos pasos para que no se nos pase nada por alto.
 
 -   Primero sacaremos los muebles más pequeños de la habitación para tener más espacio a la hora de pintar. Los muebles más grandes que no podamos sacar de la habitación podemos agruparlos en el centro de la misma y protegerlos con plásticos protectores. Puedes conseguirlos en cualquier tienda especializada.
--   Proteger ventanas, puertas, enchufes e interruptores con Cinta Krepp**.** Este punto es imprescindible antes de pintar para facilitarnos el trabajo cuando pasemos la brocha o el rodillo por estos puntos. Además de proteger los perfiles de las ventanas y las puertas debemos taparlas completamente con papel protector o plástico film, para evitar que les caiga pintura.
+-   Proteger ventanas, puertas, enchufes e interruptores con [Cinta Krepp](/producto/cinta-krepp/)**.** Este punto es imprescindible antes de pintar para facilitarnos el trabajo cuando pasemos la brocha o el rodillo por estos puntos. Además de proteger los perfiles de las ventanas y las puertas debemos taparlas completamente con papel protector o plástico film, para evitar que les caiga pintura.
 
 papel protector para rodapiés
 

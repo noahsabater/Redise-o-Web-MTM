@@ -14,11 +14,11 @@ En **MTM – Materiales Modernos S.A.** siempre estamos buscando formas de mejor
 
 Uno de los lanzamientos que más ilusión nos hace presentar es la **nueva línea** de productos de la gama **Tixol Nature**, que incluye productos pensados para las **reformas y rehabilitaciones** de espacios, con especial énfasis en las soluciones naturales y sostenibles. Entre estos, encontramos:
 
-**Tixol Nature Arcilla**: Una pintura ecológica ideal para interiores, fácil de aplicar con brocha o paletina. Este producto se ofrece en **18 colores** y **tres tipos de texturas** que permiten personalizar cualquier superficie.
+**[Tixol Nature Arcilla](/producto/tixol-nature-arcilla/)**: Una pintura ecológica ideal para interiores, fácil de aplicar con brocha o paletina. Este producto se ofrece en **18 colores** y **tres tipos de texturas** que permiten personalizar cualquier superficie.
 
-**Tixol Nature Protect**: Un sellador hidrofugante que protegerá tus morteros de cal y pinturas de arcilla sin alterar su aspecto natural, manteniendo la transpirabilidad de las superficies.
+**[Tixol Nature Protect](/producto/tixol-nature-protect/)**: Un sellador hidrofugante que protegerá tus morteros de cal y pinturas de arcilla sin alterar su aspecto natural, manteniendo la transpirabilidad de las superficies.
 
-Además, la línea **Renovación de Pavimentos** de nuestras gama **Decoración de Pavimentos,** también ha recibido mejoras importantes, como el **Renovador de Pavimentos Extreme** y el **Cement-Extreme**, productos diseñados para renovar y proteger superficies de hormigón impreso o cualquier tipo de pavimento poroso. Estos productos ofrecen una durabilidad y flexibilidad excepcionales, incluso en exteriores.
+Además, la línea **Renovación de Pavimentos** de nuestras gama **Decoración de Pavimentos,** también ha recibido mejoras importantes, como el **[Renovador de Pavimentos Extreme](/producto/tixol-renovador-de-pavimentos-extreme/)** y el **Cement-Extreme**, productos diseñados para renovar y proteger superficies de hormigón impreso o cualquier tipo de pavimento poroso. Estos productos ofrecen una durabilidad y flexibilidad excepcionales, incluso en exteriores.
 
 ### **Pintura de Cal Anti-Humedad: Solución avanzada para problemas de humedad**
 
@@ -30,7 +30,7 @@ En **MTM** somos distribuidores exclusivos a nivel nacional de esta gran marca f
 
 ## Productos revolucionarios para protección y acabados
 
-No podemos dejar de mencionar nuestros nuevos productos diseñados para ofrecer una **protección superior** en superficies porosas. El **Barniz PU Finish Extreme 100% sólidos** es un producto revolucionario que proporciona una **resistencia al rayado y al impacto** mucho más alta que cualquier otro barniz en el mercado. Ideal para proteger microcementos, madera y hormigón, este barniz se aplica en una sola mano, lo que lo hace más **económico** a largo plazo gracias a su rendimiento superior.
+No podemos dejar de mencionar nuestros nuevos productos diseñados para ofrecer una **protección superior** en superficies porosas. El **Barniz [PU Finish Extreme](/producto/tixol-pu-finish-extreme/) 100% sólidos** es un producto revolucionario que proporciona una **resistencia al rayado y al impacto** mucho más alta que cualquier otro barniz en el mercado. Ideal para proteger microcementos, madera y hormigón, este barniz se aplica en una sola mano, lo que lo hace más **económico** a largo plazo gracias a su rendimiento superior.
 
 Otro producto destacado es el **Barniz Hidro Finish PU Natur 1C** de **Tixol**, un barniz al agua especialmente formulado para proteger acabados metálicos de nuestra gama **Tixol Oxitec**, sin desnaturalizar el acabado . Este barniz es perfecto para superficies como **microcementos, madera** o **metales**.
 

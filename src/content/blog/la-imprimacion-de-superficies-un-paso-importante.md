@@ -32,7 +32,7 @@ Este proceso previo a la pintura se puede aplicar en cualquier superficie debido
 -   Imprimación en **madera**: Debido a la porosidad de estas superficies es aconsejable imprimarlas previamente a la pintura de acabado. De esta manera, sellaremos los poros y ayudaremos a controlar la absorción de la pintura final. Así, podremos ahorrar en la cantidad de pintura usada.
 -   Imprimación en **paredes**: Al realizar una imprimación en paredes conseguimos un acabado más vivo y bonito de la pintura final. En el caso de una pared que ya este pintada, con la imprimación podemos tapar el color antiguo de la misma. Además de conseguir igualar desperfectos como grietas, desconchados, moho o manchas difíciles de quitar.
 
-Primera mano y acabado de aplicación Tixol Primer Universal.
+Primera mano y acabado de aplicación [Tixol Primer Universal](/producto/primer-universal/).
 
 -   Imprimación en **superficies metálicas**: Cuando imprimamos superficies metálicas estamos también protegiéndola de la corrosión y de la aparición de óxido en la misma. Para esta opción tenemos el Tixol Primer Universal, que también se puede utilizar como pintura final.
 -   Imprimación para **placas de cartón yeso**: Al instalar placas de cartón yeso es necesario imprimarlas y nivelarlas. A través de este proceso evitaremos que se aprecien las juntas de las mismas y controlaremos la absorción de pintura. Podéis ver cómo se imprima y nivela una superficie de este tipo en el siguiente vídeo.
@@ -41,7 +41,7 @@ Primera mano y acabado de aplicación Tixol Primer Universal.
 
 Es aconsejable que las fachadas también pasen por el proceso de imprimación. Este tipo de superficies actúa como un repelente de humedades, de esta manera además de prepararla para pintar también la proteges.
 
-Si la fachada que vamos a pintar es poco consistente y corremos el riesgo de que se disgregue, podemos protegerla con un Endurecedor de Fondos. De esta manera la fijamos y consolidamos para que el pintado o revestimiento posterior quede perfecto.
+Si la fachada que vamos a pintar es poco consistente y corremos el riesgo de que se disgregue, podemos protegerla con un [Endurecedor de Fondos](/producto/endurecedor-de-fondos/). De esta manera la fijamos y consolidamos para que el pintado o revestimiento posterior quede perfecto.
 
 Cuando utilizamos un impermeabilizante acrílico para nuestra fachada, es importante que la superficie tenga buena adherencia. De esta manera conseguiremos que el producto impermeable haga bien su función.
 

@@ -11,7 +11,7 @@ Para empezar, hay que tener en cuenta que sea la superficie que sea, es necesari
 
 ### **La solución para el acabado perfecto**
 
-Cuando se trata de pintar sobre paredes de yeso o placas de cartón-yeso (el famoso Pladur), y quieres que juntas, reparaciones y texturas del cartón desaparezcan, existe una opción que te puede resultar muy interesante como es el **[Top Nivelador de Tixol](http://tixol.es/imprimaciones.html)**. Con este producto puedes obtener un fondo totalmente liso y sin imperfecciones. Esto le dará un aspecto uniforme y limpio a tus paredes. Pero vayamos por partes, ¿qué es el Tixol Top Nivelador?!tixol top nivelador mtm materiales modernos
+Cuando se trata de pintar sobre paredes de yeso o placas de cartón-yeso (el famoso Pladur), y quieres que juntas, reparaciones y texturas del cartón desaparezcan, existe una opción que te puede resultar muy interesante como es el **[Top Nivelador de Tixol](http://tixol.es/imprimaciones.html)**. Con este producto puedes obtener un fondo totalmente liso y sin imperfecciones. Esto le dará un aspecto uniforme y limpio a tus paredes. Pero vayamos por partes, ¿qué es el [Tixol Top Nivelador](/producto/top-nivelador/)?!tixol top nivelador mtm materiales modernos
 
 Se trata de una imprimación al agua que nivela y homogeneiza las placas. Se puede utilizar independientemente de la causa, ya que puede ser por problemas de textura o por envejecimiento. Es un fondo único que rellena hasta 1 mm de espesor para que, una vez seco, sea recubierto con pintura de acabado. De esta forma se evita que se aprecien empalmes de placas, diferencias de absorción de pequeñas reparaciones, etc. En el siguiente vídeo puedes ver la aplicación del producto y su resultado. Seguro que te sorprende.
 

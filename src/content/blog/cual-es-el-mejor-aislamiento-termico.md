@@ -10,7 +10,7 @@ Si estás pensando en aislar térmicamente tu hogar, existen una gran variedad d
 
 ## ¿Cuál es el mejor sistema de aislamiento térmico?
 
-Seguro que te estás haciendo esta pregunta si necesitas aislar tu hogar. Nuestra gama Tixol Thermo Aislantes es una buena opción porque es fácil de utilizar y está formada por cuatro productos que, utilizados combinados o individualmente, sirven para el aislamiento térmico de paredes, cubiertas, tejados, fachadas y para resolver problemas de condensaciones. Lo peculiar de esta gama es que se basa en productos elaborados a partir de corcho. El corcho es un material natural,  biodegradable y tiene propiedades de aislamiento únicas. Estos beneficios del corcho como aislante los podemos encontrar en dos de los productos de nuestra gama,  Tixol Thermo Corcho Proyectado y Tixol Mortero G, ambos formulados a partir de corcho.
+Seguro que te estás haciendo esta pregunta si necesitas aislar tu hogar. Nuestra gama Tixol Thermo Aislantes es una buena opción porque es fácil de utilizar y está formada por cuatro productos que, utilizados combinados o individualmente, sirven para el aislamiento térmico de paredes, cubiertas, tejados, fachadas y para resolver problemas de condensaciones. Lo peculiar de esta gama es que se basa en productos elaborados a partir de corcho. El corcho es un material natural,  biodegradable y tiene propiedades de aislamiento únicas. Estos beneficios del corcho como aislante los podemos encontrar en dos de los productos de nuestra gama,  [Tixol Thermo Corcho Proyectado](/producto/thermo-corcho-proyectado/) y Tixol Mortero G, ambos formulados a partir de corcho.
 
 Corcho natural de primera calidad producido en España.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Soluciones para la impermeabilización de superficies'
 date: 2020-12-11
-category: 'Construcción'
+category: 'Impermeabilización'
 excerpt: 'Con el otoño y el invierno llegan los cambios de temperatura y las lluvias, estas producen consecuencias en nuestros hogares si no están bien preparadas. Recientemente ciertas zonas de…'
 cover: '../../assets/blog/soluciones-para-la-impermeabilizacion-de-superficies.jpg'
 ---
@@ -54,7 +54,7 @@ Existen diferentes tipos de materiales para la impermeabilización de superficie
 
 – **Impermeabilizantes acrílicos**: Estos impermeabilizantes son líquidos, similares a una pintura. Pueden estar formados por resinas sintéticas y fibras de vidrio. Pero también pueden estar formados por resinas acrílicas como es el caso de Tixol Acryflex.
 
-– **Impermeabilizante cementoso**: Son altamente resistentes a la intemperie por lo que son ideales para cualquier clima. En MTM contamos con Tixol Flexistop, una membrana sanitaria impermeable y flexible de dos componentes: polvo de cemento y resina en emulsión. Además, cuenta con certificado de potabilidad por lo que esta membrana es especial para suelos y muros con problemas de filtraciones o humedades. Se puede aplicar en cisternas subterráneas, depósitos de agua, tejados invertidos o superficies en cuartos de baño que van a ser recubiertas con azulejos. La impermeabilización con Tixol FlexiStop tiene una vida útil de 10 años como mínimo.
+– **Impermeabilizante cementoso**: Son altamente resistentes a la intemperie por lo que son ideales para cualquier clima. En MTM contamos con [Tixol Flexistop](/producto/flexistop/), una membrana sanitaria impermeable y flexible de dos componentes: polvo de cemento y resina en emulsión. Además, cuenta con certificado de potabilidad por lo que esta membrana es especial para suelos y muros con problemas de filtraciones o humedades. Se puede aplicar en cisternas subterráneas, depósitos de agua, tejados invertidos o superficies en cuartos de baño que van a ser recubiertas con azulejos. La impermeabilización con Tixol FlexiStop tiene una vida útil de 10 años como mínimo.
 
 – **Membranas de poliuretano**: Si la zona que queremos impermeabilizar es una superficie altamente transitable como puede ser una terraza o un balcón, la mejor opción es el poliuretano. Este tipo de membranas son altamente resistentes y muy duraderos, como nuestro Tixol Acruflex PU, que podemos usar tanto en superficies horizontales como verticales.
 

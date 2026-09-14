@@ -28,7 +28,7 @@ Una vez finalizada la calima, tenemos que utilizar productos específicos para c
 
 ### Limpiador para eliminar la contaminación atmosférica de las fachadas
 
-Es posible que, si la superficie no es porosa, simplemente con agua a presión se pueda eliminar la calima de cualquier fachada. Pero, ¿cómo eliminamos la calima de superficies porosas de manera efectiva? Para esto recomendamos limpiadores específicos que desincrusten la suciedad fácilmente, como Scalp Pierre Aqua 89.
+Es posible que, si la superficie no es porosa, simplemente con agua a presión se pueda eliminar la calima de cualquier fachada. Pero, ¿cómo eliminamos la calima de superficies porosas de manera efectiva? Para esto recomendamos limpiadores específicos que desincrusten la suciedad fácilmente, como [Scalp Pierre Aqua 89](/producto/pierre-aqua-89/).
 
 Este limpiador desincrustante en base acuosa, está formulado para eliminar la contaminación atmosférica localizada. A la hora de aplicarlo, os recomendamos hacerlo en sentido ascendente en capas gruesas y abundantes sobre la superficie afectada. Es importante respetar el tiempo de actuación y dejarlo actuar entre 1 y 4 horas o aplicarlo por la noche y aclarar por la mañana si la suciedad está muy incrustada. Una vez actuado el producto, aclarar con agua a presión en sentido ascendente.
 

@@ -6,14 +6,14 @@ excerpt: 'En este artículo, vamos a explorar una alternativa de pintura que no 
 cover: '../../assets/blog/como-pintar-con-pintura-de-cal.png'
 ---
 
-En este artículo, vamos a explorar una alternativa de pintura que no solo hace tus estancias más bonitas, sino que también respeta el medio ambiente: ¡la pintura de cal! Si estás buscando una forma natural y ecológica de renovar tus paredes, estás en el lugar correcto. Hoy te contamos cómo pintar con cal y disfrutar de sus ventajas. Sois muchos los que nos preguntáis sobre cómo aplicarla de forma correcta así que… ¡Allá vamos!
+En este artículo, vamos a explorar una alternativa de pintura que no solo hace tus estancias más bonitas, sino que también respeta el medio ambiente: ¡la [pintura de cal](/producto/pintura-de-cal/)! Si estás buscando una forma natural y ecológica de renovar tus paredes, estás en el lugar correcto. Hoy te contamos cómo pintar con cal y disfrutar de sus ventajas. Sois muchos los que nos preguntáis sobre cómo aplicarla de forma correcta así que… ¡Allá vamos!
 
 ## ¿Cómo pintar con cal y que no se caiga?
 
 Pintar con cal puede ser una excelente opción para renovar tus espacios de manera ecológica y saludable. Sin embargo, es importante seguir ciertos pasos para asegurarte de que la pintura de cal se adhiere correctamente y que no se caiga con el tiempo. Estos puntos son clave:
 
 1.  Preparación de la superficie: Antes de aplicar la pintura de cal, es fundamental asegurarte de que la superficie esté limpia y libre de polvo, grasa u otras impurezas. Es recomendable limpiar la pared con agua y jabón suave, y si es necesario, utiliza una espátula para eliminar restos de pintura plástica o papel pintado. Aunque nuestra pintura de cal se puede aplicar sobre pintura plástica, no es la mejor opción si quieres pintar con cal. Principalmente, porque alguna de las propiedades de este tipo de pintura dejarían de tener efecto debido a la cubierta plástica de la pintura sintética.
-2.  Fija la superficie: Además de eliminar la pintura en mal estado o las partes mal adheridas, es importante que la superficie esté bien fijada. Por eso, si es necesario recomendamos aplicar un endurecedor de fondos para que la pintura tenga un buen anclaje.
+2.  Fija la superficie: Además de eliminar la pintura en mal estado o las partes mal adheridas, es importante que la superficie esté bien fijada. Por eso, si es necesario recomendamos aplicar un [endurecedor de fondos](/producto/endurecedor-de-fondos/) para que la pintura tenga un buen anclaje.
 3.  Aplica sin sobrecargar: Nuestra pintura se puede aplicar mediante brocha, rodillo o pistola, pero es muy importante que no sobrecarguemos durante la aplicación. Recomendamos aplicar capas finas, dejar secar y volver a aplicar las sucesivas capas (por lo general con 2-3 capas son suficientes). Además, esta pintura está lista al uso y no es necesario diluirla, pero si necesitas diluirla porque tu superficie es muy porosa puedes hacerlo con un 5% de agua.
 4.  Respeta el tiempo de secado: La pintura de cal de Tixol es 100% natural y libre de titanios, por esto su blancura va a apareciendo conforme se va secando la misma. Siempre recomendamos dejarla secar unas 6 horas para ver la blancura que hemos obtenido y reaplicar, si es necesario, otra capa.
 

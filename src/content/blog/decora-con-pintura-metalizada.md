@@ -32,7 +32,7 @@ Foto original Archiexpo.
 
 **Acabado Hierro**
 
-Aplicación Tixol Oxitec Hierro en bar.
+Aplicación [Tixol Oxitec Hierro](/producto/tixol-oxitec-hierro/) en bar.
 
   **Acabado Inox**   
 
@@ -40,14 +40,14 @@ Aplicación Tixol Oxitec Inox.
 
  **Acabado Inox Fine**   
 
-Aplicación Tixol Oxitec Inox Fine en bar.
+Aplicación [Tixol Oxitec Inox Fine](/producto/inox-fine/) en bar.
 
  **Acabado Oro**
 
-Simulación Tixol Oxitec Oro
+Simulación [Tixol Oxitec Oro](/producto/oro/)
 
 **Acabado Bronce**
 
-Aplicación Tixol Oxitec Bronce en fachada
+Aplicación [Tixol Oxitec Bronce](/producto/bronce/) en fachada
 
 Cada acabado es especial y hace que cada decoración sea única, sinceramente, ¡no sabríamos con cual quedarnos! Y tú ¿con cuál te quedarías? ¿Dónde lo utilizarías? Compártelo con nosotros en nuestras redes sociales.

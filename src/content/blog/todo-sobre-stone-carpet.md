@@ -8,7 +8,7 @@ cover: '../../assets/blog/todo-sobre-stone-carpet.webp'
 
 ¿Te has fijado en esos suelos de piedra natural que parecen una alfombra continua y elegante? Seguramente te habrás preguntado cómo se consiguen. Ese pavimento se llama **Stone Carpet** (o moqueta de piedra) y en 2026 se ha convertido en la solución preferida para quienes buscan diseño sin renunciar a la funcionalidad.
 
-Vamos a conocer por qué el nuevo **Tixol Stone Carpet** es el aliado que necesitas para tus proyectos de exterior e interior.
+Vamos a conocer por qué el nuevo **[Tixol Stone Carpet](/producto/tixol-stone-carpet/)** es el aliado que necesitas para tus proyectos de exterior e interior.
 
 ## ¿Qué es el Stone Carpet?
 

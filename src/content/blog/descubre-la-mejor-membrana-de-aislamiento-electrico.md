@@ -20,7 +20,7 @@ Tixol Membrana de Aislamiento Eléctrico destaca por ser una solución eficaz y 
 
 Este producto está disponible en formatos de 15 litros y se aplica mediante proyectado, lo que facilita cubrir grandes áreas de manera uniforme. Y, por supuesto, cumple con la **norma ASTM D5162-15** para aislamientos de baja tensión (hasta 450/750 V), lo que garantiza una protección óptima para tus proyectos eléctricos.
 
-Esta Membrana Aislante Eléctrica no solo ofrece protección, sino que también resiste los efectos de la radiación UV y la saponificación, asegurando su durabilidad y buen aspecto en el tiempo. Además, si necesitas aplicar una capa adicional, podrás hacerlo en un plazo de 12 a 24 horas, ya que su secado al tacto toma entre 2 y 6 horas.
+Esta [Membrana Aislante Eléctrica](/producto/tixol-membrana-aislante-electrica/) no solo ofrece protección, sino que también resiste los efectos de la radiación UV y la saponificación, asegurando su durabilidad y buen aspecto en el tiempo. Además, si necesitas aplicar una capa adicional, podrás hacerlo en un plazo de 12 a 24 horas, ya que su secado al tacto toma entre 2 y 6 horas.
 
 ### **Uso versátil para cualquier proyecto**
 

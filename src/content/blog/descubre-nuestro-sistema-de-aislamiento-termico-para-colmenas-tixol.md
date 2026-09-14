@@ -25,7 +25,7 @@ Escuchar estas historias nos conmovió profundamente. Para nosotros no era solo 
 Conscientes de este problema, desde nuestros **laboratorios Tixol,** hemos desarrollado un sencillo sistema para conseguir una reducción significativa de la temperatura de la colmena, pensado específicamente para los apicultores. Se compone de dos productos diseñados para ser aplicados de forma manual para que así sea más sencillo:
 
 1.  **Tixol Corcho proyectado a rodillo:** Una membrana elástica de **corcho natural** para aplicar sobre los tejados de chapa de las colmenas. Su efecto es inmediato: reduce la temperatura superficial hasta **35 ºC**.
-2.  **Tixol Pintura de Cal Eco:** Una pintura de **cal 100% natural** con una excelente transpirabilidad y muy buena adherencia, que aporta un aislamiento adicional de hasta **20 ºC** en las superficies de madera del cuerpo de las colmenas.
+2.  **[Tixol Pintura de Cal](/producto/pintura-de-cal/) Eco:** Una pintura de **cal 100% natural** con una excelente transpirabilidad y muy buena adherencia, que aporta un aislamiento adicional de hasta **20 ºC** en las superficies de madera del cuerpo de las colmenas.
 
 El resultado: colmenas más frescas, abejas más productivas y panales protegidos frente a los efectos del calor extremo.
 
@@ -35,7 +35,7 @@ A diferencia de métodos improvisados como lonas o aislantes artificiales, el si
 
 ### ¿Es fácil de aplicar en las colmenas?
 
-Sí. Tanto el **Tixol Corcho proyectado a rodillo** como la **Tixol Pintura de Cal Eco** han sido pensados para que cualquier apicultor pueda aplicarlos manualmente sin necesidad de herramientas profesionales.
+Sí. Tanto el **Tixol Corcho proyectado a rodillo** como la **[Tixol Pintura de Cal Eco](/producto/tixol-pintura-de-cal-eco/)** han sido pensados para que cualquier apicultor pueda aplicarlos manualmente sin necesidad de herramientas profesionales.
 
 ### ¿Dónde puedo adquirir estos productos?
 

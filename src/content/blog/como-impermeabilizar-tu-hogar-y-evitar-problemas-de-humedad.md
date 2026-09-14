@@ -1,7 +1,7 @@
 ---
 title: '¿Cómo impermeabilizar tu hogar y evitar problemas de humedad?'
 date: 2024-03-22
-category: 'Impermeabilización'
+category: 'Humedades'
 excerpt: 'Con la llegada de las lluvias y el frío, la impermeabilización se convierte en un aspecto crucial para mantener nuestras casas protegidas. Las filtraciones de agua pueden causar desde…'
 cover: '../../assets/blog/como-impermeabilizar-tu-hogar-y-evitar-problemas-de-humedad.webp'
 ---

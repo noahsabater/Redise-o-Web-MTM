@@ -22,7 +22,7 @@ Las nuevas versiones **Fino y Extrafino** de [*Tixol Nature Wall*](https://mater
 
 ¿Quién dijo que la arcilla era solo para interiores? Gracias al nuevo [**Aditivo X**](https://materialesmodernos.com/producto/tixol/nature/nature-arcilla/tixol-aditivo-x-arcilla-exterior/), la *Pintura de Arcilla Natural* de Tixol ahora resiste la intemperie en sus 18 colores disponibles.
 
-Para proteger estos acabados, nace **Nature Protect Arcilla**, un sellador exclusivo que evita manchas en zonas de mucho tránsito sin alterar la estética natural del soporte. Y si buscas rapidez, el [**Mortero de Arcilla Interior**](https://materialesmodernos.com/producto/tixol/nature/nature-arcilla/tixol-mortero-de-arcilla/) permite una aplicación directa sobre pladur o fondos minerales sin capas intermedias. *¡Productividad pura!*
+Para proteger estos acabados, nace **[Nature Protect Arcilla](/producto/tixol-nature-protect-arcilla/)**, un sellador exclusivo que evita manchas en zonas de mucho tránsito sin alterar la estética natural del soporte. Y si buscas rapidez, el [**Mortero de Arcilla Interior**](https://materialesmodernos.com/producto/tixol/nature/nature-arcilla/tixol-mortero-de-arcilla/) permite una aplicación directa sobre pladur o fondos minerales sin capas intermedias. *¡Productividad pura!*
 
 ![Novedades Tixol-nature-arcilla](/blog-img/0-Tixol-natura-arcilla-1024x684.jpg)
 
@@ -60,9 +60,9 @@ No todo es pintar; también hay que limpiar y proteger. La marca **Scalp** nos t
 
 - **[Scalp Solnet](https://materialesmodernos.com/producto/scalp/limpiadores/limpieza/solnet/):** El terror de los restos de cemento y lechada en suelos cerámicos.
 
-- **Scalp Pronet:** Un [super desengrasante](https://materialesmodernos.com/producto/scalp/limpiadores/limpieza/scalp-pronet/) alcalino (pH 14) que limpia fachadas y pavimentos sin despeinarse.
+- **[Scalp Pronet](/producto/scalp-pronet/):** Un [super desengrasante](https://materialesmodernos.com/producto/scalp/limpiadores/limpieza/scalp-pronet/) alcalino (pH 14) que limpia fachadas y pavimentos sin despeinarse.
 
-- **Scalp Teja Clean:** ¡Imprescindible! Un [potente limpiador](https://materialesmodernos.com/producto/scalp/limpiadores/sistemas-antihongos/scalp-teja-clean/) para tejados y todo tipo de materiales de construcción. Lo mejor es que puedes usarlo puro o diluirlo con agua hasta el 50% según la suciedad. *¡Tus tejas parecerán recién salidas de fábrica!*
+- **[Scalp Teja Clean](/producto/scalp-teja-clean/):** ¡Imprescindible! Un [potente limpiador](https://materialesmodernos.com/producto/scalp/limpiadores/sistemas-antihongos/scalp-teja-clean/) para tejados y todo tipo de materiales de construcción. Lo mejor es que puedes usarlo puro o diluirlo con agua hasta el 50% según la suciedad. *¡Tus tejas parecerán recién salidas de fábrica!*
 
 ![Novedades en Limpiadores de Scalp SAS](/blog-img/2-LIMPIADORES-SCALP-1024x684.jpg)
 

@@ -16,7 +16,7 @@ El ambiente marino es durísimo para las embarcaciones. El sol, el agua salada y
 
 Si tu embarcación tiene madera, es fundamental mantenerla en buen estado para evitar que se deteriore. El tratamiento de Tixol Marine es ideal  para este tipo de materiales. Aquí te contamos cómo puedes cuidar la madera de forma rápida y sin complicaciones:
 
--   **Tixol Aceite Saturador Oil 1**: Este aceite alquídico uretano es perfecto para hidratar la madera en profundidad. Penetra bien en las maderas duras y tropicales, y no deja película, lo que significa que la madera sigue respirando y que no se agrieta con el tiempo. Además, no cambia el color original de la madera, por lo que sigue luciendo genial. Ideal para darle un buen trato a la madera antes de aplicar el acabado final.
+-   **[Tixol Aceite Saturador Oil 1](/producto/aceite-saturador-oil-1/)**: Este aceite alquídico uretano es perfecto para hidratar la madera en profundidad. Penetra bien en las maderas duras y tropicales, y no deja película, lo que significa que la madera sigue respirando y que no se agrieta con el tiempo. Además, no cambia el color original de la madera, por lo que sigue luciendo genial. Ideal para darle un buen trato a la madera antes de aplicar el acabado final.
 -   **Tixol Aceite de Terminación Oil 2**: Este aceite de acabado le da un toque brillante a la madera, dejándola protegida contra el agua y la humedad. No se agrieta ni se pela, y su flexibilidad asegura que la madera no se dañe. Úsalo después del Aceite Saturador para un mantenimiento fácil y duradero.
 
 **Consejos rápidos:**
@@ -26,11 +26,11 @@ Si tu embarcación tiene madera, es fundamental mantenerla en buen estado para e
 
 ### 2\. Dale brillo con el barniz marino
 
-El **Tixol Barniz Marino** es ideal si quieres darle un toque brillante a la madera expuesta al sol y al agua salada. Este barniz tiene una gran resistencia a la humedad y a las condiciones extremas del mar, y lo mejor es que es flexible, por lo que no se agrieta ni se pela. Es perfecto para las partes de tu barco que están más expuestas, como el casco o las cubiertas.
+El **[Tixol Barniz Marino](/producto/barniz-marino/)** es ideal si quieres darle un toque brillante a la madera expuesta al sol y al agua salada. Este barniz tiene una gran resistencia a la humedad y a las condiciones extremas del mar, y lo mejor es que es flexible, por lo que no se agrieta ni se pela. Es perfecto para las partes de tu barco que están más expuestas, como el casco o las cubiertas.
 
 ### 3\. ¿Metales oxidados en tu barco? Necesitas un convertidor de óxido
 
-Si tienes partes de metal oxidadas en tu barco, el **Tixol Convertidor de Óxido** es tu aliado. Este producto **neutraliza el óxido** y está diseñado para ser aplicado sobre superficies de hierro o acero oxidado, creando una capa inerte que sella y detiene la oxidación de forma definitiva.
+Si tienes partes de metal oxidadas en tu barco, el **[Tixol Convertidor de Óxido](/producto/convertidor-de-oxido/)** es tu aliado. Este producto **neutraliza el óxido** y está diseñado para ser aplicado sobre superficies de hierro o acero oxidado, creando una capa inerte que sella y detiene la oxidación de forma definitiva.
 
 El proceso es simple: tras lijar la superficie, aplicas el producto y **el óxido se transforma en una capa negra inerte**, asegurando que la oxidación no continúe. Es un paso previo esencial antes de volver a pintar las partes metálicas.
 
@@ -41,7 +41,7 @@ El proceso es simple: tras lijar la superficie, aplicas el producto y **el óxid
 
 ### 4\. Aceite de Tung: Protección natural para la madera
 
-Si prefieres un tratamiento más natural, **Tixol Aceite de Tung** es una excelente opción. Este aceite de origen natural hidrata y protege las maderas como la teca, sin alterar su apariencia. Es perfecto para aquellos que buscan una solución ecológica para cuidar sus embarcaciones.
+Si prefieres un tratamiento más natural, **[Tixol Aceite de Tung](/producto/tixol-aceite-de-tung/)** es una excelente opción. Este aceite de origen natural hidrata y protege las maderas como la teca, sin alterar su apariencia. Es perfecto para aquellos que buscan una solución ecológica para cuidar sus embarcaciones.
 
 ## Consejos finales para preparar tu embarcación para el verano
 

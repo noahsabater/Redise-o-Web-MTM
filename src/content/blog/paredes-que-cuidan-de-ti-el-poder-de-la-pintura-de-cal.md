@@ -35,7 +35,7 @@ Nuestra gama de morteros y pinturas de cal de **Tixol Nature** son:
     
 -   **Ecológicos de verdad:** Desde su fabricación hasta que se aplican, su impacto ambiental es mínimo.
 
-Casa Indiana pintada con Pintura de Cal Tixol
+Casa Indiana pintada con [Pintura de Cal](/producto/pintura-de-cal/) Tixol
 
 ## Tixol Nature: La cal de hoy, inspirada en el ayer
 
@@ -45,7 +45,7 @@ En **MTM** hemos evolucionado este material milenario para adaptarlo a las casas
 
 -   **Tixol Nature 100% natural:** Pinturas y morteros de cal con acabados suaves y mates que nada tienen que envidiar a la pintura plástica más moderna.
     
--   **Tixol Nature Wall:** Es nuestro «todoterreno». Si tu casa ya está pintada con pintura sintética, no te preocupes. Este mortero de cal se puede aplicar sobre superficies ya pintadas, permitiéndote disfrutar de los beneficios de la cal sin tener que picar toda la pared.
+-   **[Tixol Nature Wall](/producto/tixol-nature-wall/):** Es nuestro «todoterreno». Si tu casa ya está pintada con pintura sintética, no te preocupes. Este mortero de cal se puede aplicar sobre superficies ya pintadas, permitiéndote disfrutar de los beneficios de la cal sin tener que picar toda la pared.
     
 -   **Tixol Nature Floor**: Nuestro mortero de cal hidráulica ideal para crear pavimentos continuos con un acabado sofisticado y natural.
 

@@ -25,20 +25,20 @@ El aislamiento tradicional suele implicar la pérdida de espacio interior (trasd
 
 ### 1\. Corcho Proyectado: La piel inteligente de tu edificio
 
-**Tixol Thermo Corcho Proyectado** es uno de nuestros productos estrella. Se aplica mediante proyección o rodillo y es ideal para fachadas y tejados.
+**[Tixol Thermo Corcho Proyectado](/producto/thermo-corcho-proyectado/)** es uno de nuestros productos estrella. Se aplica mediante proyección o rodillo y es ideal para fachadas y tejados.
 
 -   **Multifunción:** Aísla térmicamente y, además, es capaz de **encapsular el amianto**, una solución segura y normativa para naves o edificios antiguos.
     
--   **Acabado estético:** Si buscas una terminación más fina, puedes combinarlo con la **Tixol Thermo Masilla F**, una masilla lista al uso con microesferas huecas que potencia el aislamiento.
+-   **Acabado estético:** Si buscas una terminación más fina, puedes combinarlo con la **[Tixol Thermo Masilla F](/producto/thermo-masilla-f/)**, una masilla lista al uso con microesferas huecas que potencia el aislamiento.
     
 
 ### 2\. Rotura de puente térmico con espesor reducido
 
-Si necesitas trabajar sobre superficies que requieren un extra de cuerpo pero sin renunciar a la transpirabilidad, el **Tixol Thermo Mortero G** es la elección profesional. Formulado con cal hidráulica NHL-5 y granza de corcho natural, permite capas de hasta 2 cm ideales para eliminar puentes térmicos en puntos críticos.
+Si necesitas trabajar sobre superficies que requieren un extra de cuerpo pero sin renunciar a la transpirabilidad, el **[Tixol Thermo Mortero G](/producto/thermo-mortero-g/)** es la elección profesional. Formulado con cal hidráulica NHL-5 y granza de corcho natural, permite capas de hasta 2 cm ideales para eliminar puentes térmicos en puntos críticos.
 
 ### 3\. Pinturas Térmicas: Tecnología cerámica en tus paredes
 
-¿Aislar con solo pintar? Sí. Nuestra **Pintura térmica y anticondensación** utiliza microesferas cerámicas huecas que crean una barrera física. Es la solución perfecta para evitar las manchas de humedad por condensación y mejorar la sensación térmica al tacto.
+¿Aislar con solo pintar? Sí. Nuestra **[Pintura térmica y anticondensación](/producto/tixol-pintura-termica-y-anticondensacion/)** utiliza microesferas cerámicas huecas que crean una barrera física. Es la solución perfecta para evitar las manchas de humedad por condensación y mejorar la sensación térmica al tacto.
 
 ## La Revolución de los Termoreflexivos
 

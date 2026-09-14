@@ -4,6 +4,7 @@ import PageHeader from '../../components/layout/PageHeader.astro';
 import Newsletter from '../../components/sections/Newsletter.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import { slugCategoria } from '../../lib/categorias';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -90,6 +91,19 @@ const cats = [...counts.entries()]
       )}
 
       <p class="empty" data-empty hidden>No hay artículos en esta categoría.</p>
+
+      <!-- Enlaces reales a las páginas de categoría. Los chips de arriba filtran
+           con JavaScript y para Google no existen; esto sí se rastrea. -->
+      <nav class="cats-links" aria-label="Categorías del blog">
+        <h2 class="cats-links-h">Explora por categoría</h2>
+        <ul>
+          {cats.map(([name, n]) => (
+            <li>
+              <a href={`/blog/categoria/${slugCategoria(name)}/`}>{name}<span>{n}</span></a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   </section>
 
@@ -97,6 +111,18 @@ const cats = [...counts.entries()]
 </BaseLayout>
 
 <style>
+  .cats-links { margin-top: clamp(3rem, 6vw, 5rem); padding-top: clamp(2rem, 4vw, 3rem); border-top: 1px solid var(--color-line); }
+  .cats-links-h { font-size: clamp(1.1rem, 1.6vw, 1.3rem); margin-bottom: 1.2rem; }
+  .cats-links ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.55rem; padding: 0; margin: 0; }
+  .cats-links a {
+    display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.92rem; color: var(--color-slate);
+    padding: 0.5rem 1rem; border: 1px solid var(--color-line); border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    transition: color 0.2s var(--ease-soft), border-color 0.2s var(--ease-soft);
+  }
+  .cats-links a:hover { color: var(--color-ink); border-color: var(--color-ash); }
+  .cats-links a span { font-size: 0.72rem; color: var(--color-ash); }
+
   /* Fondo decorativo difuminado: da el ambiente "glass" sin blur por tarjeta */
   .blog-bg {
     position: fixed; inset: 0; z-index: -1; pointer-events: none;

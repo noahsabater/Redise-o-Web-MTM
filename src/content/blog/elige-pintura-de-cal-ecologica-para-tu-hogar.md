@@ -36,6 +36,6 @@ Como decíamos existen muchas ventajas y beneficios de pintar con pintura de cal
 -   Ahorro Energético en climatización: La estructura cristalina de la cal permite una gran refracción de los rayos UV, manteniendo la vivienda a una temperatura más fresca en verano y más cálida en invierno. En condiciones normales, la diferencia térmica entre una vivienda pintada con nuestra pintura de cal y una pintada con pintura plástica convencional varía entre 7ºC – 9ºC.
 -   Absorbe CO2: Durante el proceso de transformación de la cal se absorbe CO2 limpiando el aire y beneficiando al medio ambiente.
 
-Estancia pintada con Tixol Nature – Pintura de Cal
+Estancia pintada con Tixol Nature – [Pintura de Cal](/producto/pintura-de-cal/)
 
 Conociendo todas estas propiedades y beneficios, ¿te animas a pintar tu hogar con nuestra pintura de cal? ¡Escríbenos a través de nuestras redes sociales si necesitas más información!

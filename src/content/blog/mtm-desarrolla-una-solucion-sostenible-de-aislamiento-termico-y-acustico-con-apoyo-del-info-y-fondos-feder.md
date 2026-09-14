@@ -1,7 +1,7 @@
 ---
 title: 'MTM desarrolla una solución sostenible de aislamiento térmico y acústico con apoyo del INFO y fondos FEDER'
 date: 2025-10-20
-category: 'BLOG'
+category: 'Aislamiento Térmico'
 excerpt: 'Materiales Modernos S.A. (MTM) ha puesto en marcha un innovador proyecto orientado al desarrollo de una solución sostenible de aislamiento térmico y acústico para paramentos interiores,…'
 cover: '../../assets/blog/mtm-desarrolla-una-solucion-sostenible-de-aislamiento-termico-y-acustico-con-apoyo-del-info-y-fondos-feder.jpg'
 ---

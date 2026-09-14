@@ -28,7 +28,7 @@ Seguramente habrás escuchado hablar sobre barnices especiales para proteger las
 
 Por eso, queremos presentaros el sistema de protección de Tixol Nature, compuesto por aceites especiales para este tipo de ambientes marinos y sobreexpuestos al sol. Este sistema está formado por:
 
--   Tixol Aceite saturador Oil 1: Este aceite hidratante penetra muy bien sobre las maderas más duras. Además, es ideal para barcos, ya que se puede utilizar incluso bajo la línea de flotación. Este es el paso previo al Aceite Oil 2.
+-   [Tixol Aceite saturador Oil 1](/producto/aceite-saturador-oil-1/): Este aceite hidratante penetra muy bien sobre las maderas más duras. Además, es ideal para barcos, ya que se puede utilizar incluso bajo la línea de flotación. Este es el paso previo al Aceite Oil 2.
 -   Tixol Aceite de terminación Oil 2: El paso final de este tratamiento de protección. Este aceite también hidrata en profundidad, sin crear películas, pero tiene un acabado brillo muy bonito. Con este último paso conseguimos una doble protección y un acabado brillante ideal para presumir de nuestros barcos o de maderas expuestas a condiciones extremas.
 
 El hecho de que estos aceites penetren en la madera sin crear películas, nos facilitará a la hora de renovar la protección. De esta manera, no hará falta lijado ni, decapado previo. ¡Una vez protegidas nuestras maderas, solo nos queda salir a disfrutar y presumir de ellas! ¿Te animas a probarlos?

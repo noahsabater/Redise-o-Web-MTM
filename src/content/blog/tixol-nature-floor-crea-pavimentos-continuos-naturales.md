@@ -33,7 +33,7 @@ La aplicación de Tixol Nature Floor se realiza en varios pasos esenciales para 
 
 Para garantizar una correcta adherencia, se realiza una limpieza y nivelación de la superficie. Este paso es fundamental para evitar imperfecciones y asegurar que el pavimento continuo tenga un acabado uniforme y duradero.
 
-Sobre pavimentos cerámicos o superficies sin absorción, es necesario aplicar Tixol Nature Floor Roc Primer, una imprimación de agarre que actúa como capa puente. Imprescindible para un buen resultado, dejar secar mínimo 6 horas antes de aplicar el mortero de cal hidráulico.
+Sobre pavimentos cerámicos o superficies sin absorción, es necesario aplicar [Tixol Nature Floor Roc Primer](/producto/nature-floor-roc-primer/), una imprimación de agarre que actúa como capa puente. Imprescindible para un buen resultado, dejar secar mínimo 6 horas antes de aplicar el mortero de cal hidráulico.
 
 ### Aplicación del mortero de cal hidráulica y la resina
 
