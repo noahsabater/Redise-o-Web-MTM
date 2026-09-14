@@ -42,3 +42,6 @@ Informes MTM/
 /Videos/
 /IMG/
 /CatalogoMTM*.pdf
+
+# Export de Google Search Console: datos de negocio, no hacen falta en el repo
+gsc-export-*/

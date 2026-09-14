@@ -7,17 +7,7 @@
       "permanent": true
     },
     {
-      "source": "/declaracion-accesibilidad",
-      "destination": "/aviso-legal/",
-      "permanent": true
-    },
-    {
       "source": "/tienda/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/tienda",
       "destination": "/productos/",
       "permanent": true
     },
@@ -27,17 +17,7 @@
       "permanent": true
     },
     {
-      "source": "/innovacion-construccion-reformas",
-      "destination": "/blog/innovacion-construccion-reformas/",
-      "permanent": true
-    },
-    {
       "source": "/como-preparar-paredes-carton-yeso-pintar/",
-      "destination": "/blog/como-preparar-paredes-carton-yeso-pintar/",
-      "permanent": true
-    },
-    {
-      "source": "/como-preparar-paredes-carton-yeso-pintar",
       "destination": "/blog/como-preparar-paredes-carton-yeso-pintar/",
       "permanent": true
     },
@@ -47,17 +27,7 @@
       "permanent": true
     },
     {
-      "source": "/crea-espacios-unicos-en-tu-hogar-con-epoxi-3d",
-      "destination": "/blog/crea-espacios-unicos-en-tu-hogar-con-epoxi-3d/",
-      "permanent": true
-    },
-    {
       "source": "/pintura-antimanchas-ultra-rapida-de-tixol/",
-      "destination": "/blog/pintura-antimanchas-ultra-rapida-de-tixol/",
-      "permanent": true
-    },
-    {
-      "source": "/pintura-antimanchas-ultra-rapida-de-tixol",
       "destination": "/blog/pintura-antimanchas-ultra-rapida-de-tixol/",
       "permanent": true
     },
@@ -67,17 +37,7 @@
       "permanent": true
     },
     {
-      "source": "/pintura-satinada-la-mejor-opcion-renovar-hogar",
-      "destination": "/blog/pintura-satinada-la-mejor-opcion-renovar-hogar/",
-      "permanent": true
-    },
-    {
       "source": "/pintura-antimanchas-para-la-industria-allimentaria/",
-      "destination": "/blog/pintura-antimanchas-para-la-industria-allimentaria/",
-      "permanent": true
-    },
-    {
-      "source": "/pintura-antimanchas-para-la-industria-allimentaria",
       "destination": "/blog/pintura-antimanchas-para-la-industria-allimentaria/",
       "permanent": true
     },
@@ -87,17 +47,7 @@
       "permanent": true
     },
     {
-      "source": "/estilo-industrial-buscas-tus-superficies",
-      "destination": "/blog/estilo-industrial-buscas-tus-superficies/",
-      "permanent": true
-    },
-    {
       "source": "/pinturas-especiales-para-el-sector-industrial/",
-      "destination": "/blog/pinturas-especiales-para-el-sector-industrial/",
-      "permanent": true
-    },
-    {
-      "source": "/pinturas-especiales-para-el-sector-industrial",
       "destination": "/blog/pinturas-especiales-para-el-sector-industrial/",
       "permanent": true
     },
@@ -107,17 +57,7 @@
       "permanent": true
     },
     {
-      "source": "/manten-tus-falsos-techos-como-nuevos",
-      "destination": "/blog/manten-tus-falsos-techos-como-nuevos/",
-      "permanent": true
-    },
-    {
       "source": "/puesta-a-punto-de-tu-terraza-de-madera-en-4-pasos/",
-      "destination": "/blog/puesta-a-punto-de-tu-terraza-de-madera-en-4-pasos/",
-      "permanent": true
-    },
-    {
-      "source": "/puesta-a-punto-de-tu-terraza-de-madera-en-4-pasos",
       "destination": "/blog/puesta-a-punto-de-tu-terraza-de-madera-en-4-pasos/",
       "permanent": true
     },
@@ -127,17 +67,7 @@
       "permanent": true
     },
     {
-      "source": "/como-quitar-las-humedades-en-las-paredes",
-      "destination": "/blog/como-quitar-las-humedades-en-las-paredes/",
-      "permanent": true
-    },
-    {
       "source": "/el-estilo-nordico-que-buscas-para-tu-terraza/",
-      "destination": "/blog/el-estilo-nordico-que-buscas-para-tu-terraza/",
-      "permanent": true
-    },
-    {
-      "source": "/el-estilo-nordico-que-buscas-para-tu-terraza",
       "destination": "/blog/el-estilo-nordico-que-buscas-para-tu-terraza/",
       "permanent": true
     },
@@ -147,37 +77,17 @@
       "permanent": true
     },
     {
-      "source": "/paneles-decorativos-3d-para-tus-estancias",
-      "destination": "/blog/paneles-decorativos-3d-para-tus-estancias/",
-      "permanent": true
-    },
-    {
       "source": "/olvidate-de-goteras-impermeabiliza-tu-azotea/",
       "destination": "/blog/olvidate-de-goteras-impermeabiliza-tu-azotea/",
       "permanent": true
     },
     {
-      "source": "/olvidate-de-goteras-impermeabiliza-tu-azotea",
-      "destination": "/blog/olvidate-de-goteras-impermeabiliza-tu-azotea/",
-      "permanent": true
-    },
-    {
       "source": "/resina-epoxi-un-elemento-decorativo/",
-      "destination": "/blog/resina-epoxi-un-elemento-decorativo/",
-      "permanent": true
-    },
-    {
-      "source": "/resina-epoxi-un-elemento-decorativo",
-      "destination": "/blog/resina-epoxi-un-elemento-decorativo/",
+      "destination": "/blog/los-suelos-de-resina-epoxi-son-todo-ventajas/",
       "permanent": true
     },
     {
       "source": "/que-tendencia-en-colores-nos-trae-el-2019/",
-      "destination": "/blog/que-tendencia-en-colores-nos-trae-el-2019/",
-      "permanent": true
-    },
-    {
-      "source": "/que-tendencia-en-colores-nos-trae-el-2019",
       "destination": "/blog/que-tendencia-en-colores-nos-trae-el-2019/",
       "permanent": true
     },
@@ -187,17 +97,7 @@
       "permanent": true
     },
     {
-      "source": "/la-importancia-de-un-buen-aislamiento-termico-en-tu-hogar",
-      "destination": "/blog/la-importancia-de-un-buen-aislamiento-termico-en-tu-hogar/",
-      "permanent": true
-    },
-    {
       "source": "/nuevas-aplicaciones-para-epoxi-3d/",
-      "destination": "/blog/nuevas-aplicaciones-para-epoxi-3d/",
-      "permanent": true
-    },
-    {
-      "source": "/nuevas-aplicaciones-para-epoxi-3d",
       "destination": "/blog/nuevas-aplicaciones-para-epoxi-3d/",
       "permanent": true
     },
@@ -207,17 +107,7 @@
       "permanent": true
     },
     {
-      "source": "/decora-con-pintura-metalizada",
-      "destination": "/blog/decora-con-pintura-metalizada/",
-      "permanent": true
-    },
-    {
       "source": "/la-importancia-de-proteger-antes-de-pintar/",
-      "destination": "/blog/la-importancia-de-proteger-antes-de-pintar/",
-      "permanent": true
-    },
-    {
-      "source": "/la-importancia-de-proteger-antes-de-pintar",
       "destination": "/blog/la-importancia-de-proteger-antes-de-pintar/",
       "permanent": true
     },
@@ -227,17 +117,7 @@
       "permanent": true
     },
     {
-      "source": "/la-imprimacion-de-superficies-un-paso-importante",
-      "destination": "/blog/la-imprimacion-de-superficies-un-paso-importante/",
-      "permanent": true
-    },
-    {
       "source": "/colores-en-tendencia-para-decorar-tu-hogar-este-2023/",
-      "destination": "/blog/colores-en-tendencia-para-decorar-tu-hogar-este-2023/",
-      "permanent": true
-    },
-    {
-      "source": "/colores-en-tendencia-para-decorar-tu-hogar-este-2023",
       "destination": "/blog/colores-en-tendencia-para-decorar-tu-hogar-este-2023/",
       "permanent": true
     },
@@ -247,17 +127,7 @@
       "permanent": true
     },
     {
-      "source": "/cual-es-el-mejor-aislamiento-termico",
-      "destination": "/blog/cual-es-el-mejor-aislamiento-termico/",
-      "permanent": true
-    },
-    {
       "source": "/pinturas-y-morteros-de-cal-usos/",
-      "destination": "/blog/pinturas-y-morteros-de-cal-usos/",
-      "permanent": true
-    },
-    {
-      "source": "/pinturas-y-morteros-de-cal-usos",
       "destination": "/blog/pinturas-y-morteros-de-cal-usos/",
       "permanent": true
     },
@@ -267,17 +137,7 @@
       "permanent": true
     },
     {
-      "source": "/como-aislar-termicamente-tu-hogar",
-      "destination": "/blog/como-aislar-termicamente-tu-hogar/",
-      "permanent": true
-    },
-    {
       "source": "/microcemento-a-rodillo-una-forma-rapida-de-decorar/",
-      "destination": "/blog/microcemento-a-rodillo-una-forma-rapida-de-decorar/",
-      "permanent": true
-    },
-    {
-      "source": "/microcemento-a-rodillo-una-forma-rapida-de-decorar",
       "destination": "/blog/microcemento-a-rodillo-una-forma-rapida-de-decorar/",
       "permanent": true
     },
@@ -287,17 +147,7 @@
       "permanent": true
     },
     {
-      "source": "/elige-pintura-de-cal-ecologica-para-tu-hogar",
-      "destination": "/blog/elige-pintura-de-cal-ecologica-para-tu-hogar/",
-      "permanent": true
-    },
-    {
       "source": "/los-suelos-de-resina-epoxi-son-todo-ventajas/",
-      "destination": "/blog/los-suelos-de-resina-epoxi-son-todo-ventajas/",
-      "permanent": true
-    },
-    {
-      "source": "/los-suelos-de-resina-epoxi-son-todo-ventajas",
       "destination": "/blog/los-suelos-de-resina-epoxi-son-todo-ventajas/",
       "permanent": true
     },
@@ -307,17 +157,7 @@
       "permanent": true
     },
     {
-      "source": "/pinturas-antimanchas-innovacion-contra-las-manchas",
-      "destination": "/blog/pinturas-antimanchas-innovacion-contra-las-manchas/",
-      "permanent": true
-    },
-    {
       "source": "/tixol-marine-aceites-protectores-para-maderas-en-los-ambientes-mas-extremos/",
-      "destination": "/blog/tixol-marine-aceites-protectores-para-maderas-en-los-ambientes-mas-extremos/",
-      "permanent": true
-    },
-    {
-      "source": "/tixol-marine-aceites-protectores-para-maderas-en-los-ambientes-mas-extremos",
       "destination": "/blog/tixol-marine-aceites-protectores-para-maderas-en-los-ambientes-mas-extremos/",
       "permanent": true
     },
@@ -327,27 +167,12 @@
       "permanent": true
     },
     {
-      "source": "/como-tratar-mis-suelos-de-barro",
-      "destination": "/blog/como-tratar-mis-suelos-de-barro/",
-      "permanent": true
-    },
-    {
       "source": "/tratamiento-ecologico-para-problemas-de-humedad-por-capilaridad/",
-      "destination": "/blog/tratamiento-ecologico-para-problemas-de-humedad-por-capilaridad/",
-      "permanent": true
-    },
-    {
-      "source": "/tratamiento-ecologico-para-problemas-de-humedad-por-capilaridad",
-      "destination": "/blog/tratamiento-ecologico-para-problemas-de-humedad-por-capilaridad/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
       "permanent": true
     },
     {
       "source": "/soluciones-para-la-impermeabilizacion-de-superficies/",
-      "destination": "/blog/soluciones-para-la-impermeabilizacion-de-superficies/",
-      "permanent": true
-    },
-    {
-      "source": "/soluciones-para-la-impermeabilizacion-de-superficies",
       "destination": "/blog/soluciones-para-la-impermeabilizacion-de-superficies/",
       "permanent": true
     },
@@ -357,17 +182,7 @@
       "permanent": true
     },
     {
-      "source": "/construccion-de-un-aljibe-con-acabado-de-mortero-de-cal",
-      "destination": "/blog/construccion-de-un-aljibe-con-acabado-de-mortero-de-cal/",
-      "permanent": true
-    },
-    {
       "source": "/el-arte-de-victor-goikoetxea-con-tixol-oxitec/",
-      "destination": "/blog/el-arte-de-victor-goikoetxea-con-tixol-oxitec/",
-      "permanent": true
-    },
-    {
-      "source": "/el-arte-de-victor-goikoetxea-con-tixol-oxitec",
       "destination": "/blog/el-arte-de-victor-goikoetxea-con-tixol-oxitec/",
       "permanent": true
     },
@@ -377,17 +192,7 @@
       "permanent": true
     },
     {
-      "source": "/la-importancia-de-la-limpieza-de-fachadas",
-      "destination": "/blog/la-importancia-de-la-limpieza-de-fachadas/",
-      "permanent": true
-    },
-    {
       "source": "/paneles-decorativos-3d/",
-      "destination": "/blog/paneles-decorativos-3d/",
-      "permanent": true
-    },
-    {
-      "source": "/paneles-decorativos-3d",
       "destination": "/blog/paneles-decorativos-3d/",
       "permanent": true
     },
@@ -397,17 +202,7 @@
       "permanent": true
     },
     {
-      "source": "/mtm-materiales-modernos-apostando-por-la-innovacion",
-      "destination": "/blog/mtm-materiales-modernos-apostando-por-la-innovacion/",
-      "permanent": true
-    },
-    {
       "source": "/tixol-nature-pinturas-y-morteros-de-cal-natural/",
-      "destination": "/blog/tixol-nature-pinturas-y-morteros-de-cal-natural/",
-      "permanent": true
-    },
-    {
-      "source": "/tixol-nature-pinturas-y-morteros-de-cal-natural",
       "destination": "/blog/tixol-nature-pinturas-y-morteros-de-cal-natural/",
       "permanent": true
     },
@@ -417,17 +212,7 @@
       "permanent": true
     },
     {
-      "source": "/colores-tendencia-para-2020",
-      "destination": "/blog/colores-tendencia-para-2020/",
-      "permanent": true
-    },
-    {
       "source": "/os-presentamos-las-novedades-2023-de-mtm/",
-      "destination": "/blog/os-presentamos-las-novedades-2023-de-mtm/",
-      "permanent": true
-    },
-    {
-      "source": "/os-presentamos-las-novedades-2023-de-mtm",
       "destination": "/blog/os-presentamos-las-novedades-2023-de-mtm/",
       "permanent": true
     },
@@ -437,37 +222,17 @@
       "permanent": true
     },
     {
-      "source": "/convertidores-de-oxido-el-mejor-tratamiento-contra-el-oxido",
-      "destination": "/blog/convertidores-de-oxido-el-mejor-tratamiento-contra-el-oxido/",
-      "permanent": true
-    },
-    {
       "source": "/como-eliminar-la-calima-de-tu-fachada-facilmente/",
       "destination": "/blog/como-eliminar-la-calima-de-tu-fachada-facilmente/",
       "permanent": true
     },
     {
-      "source": "/como-eliminar-la-calima-de-tu-fachada-facilmente",
-      "destination": "/blog/como-eliminar-la-calima-de-tu-fachada-facilmente/",
-      "permanent": true
-    },
-    {
       "source": "/por-que-tengo-humedades-en-mis-paredes/",
-      "destination": "/blog/por-que-tengo-humedades-en-mis-paredes/",
-      "permanent": true
-    },
-    {
-      "source": "/por-que-tengo-humedades-en-mis-paredes",
-      "destination": "/blog/por-que-tengo-humedades-en-mis-paredes/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
       "permanent": true
     },
     {
       "source": "/como-renovar-suelos-de-hormigon-impreso/",
-      "destination": "/blog/como-renovar-suelos-de-hormigon-impreso/",
-      "permanent": true
-    },
-    {
-      "source": "/como-renovar-suelos-de-hormigon-impreso",
       "destination": "/blog/como-renovar-suelos-de-hormigon-impreso/",
       "permanent": true
     },
@@ -477,17 +242,7 @@
       "permanent": true
     },
     {
-      "source": "/restaura-muebles-con-resina-epoxi",
-      "destination": "/blog/restaura-muebles-con-resina-epoxi/",
-      "permanent": true
-    },
-    {
       "source": "/como-pintar-con-pintura-de-cal/",
-      "destination": "/blog/como-pintar-con-pintura-de-cal/",
-      "permanent": true
-    },
-    {
-      "source": "/como-pintar-con-pintura-de-cal",
       "destination": "/blog/como-pintar-con-pintura-de-cal/",
       "permanent": true
     },
@@ -497,37 +252,17 @@
       "permanent": true
     },
     {
-      "source": "/descubre-los-beneficios-de-la-impermeabilizacion",
-      "destination": "/blog/descubre-los-beneficios-de-la-impermeabilizacion/",
-      "permanent": true
-    },
-    {
       "source": "/microcemento-a-rodillo-una-revolucion-en-decoracion/",
       "destination": "/blog/microcemento-a-rodillo-una-revolucion-en-decoracion/",
       "permanent": true
     },
     {
-      "source": "/microcemento-a-rodillo-una-revolucion-en-decoracion",
-      "destination": "/blog/microcemento-a-rodillo-una-revolucion-en-decoracion/",
-      "permanent": true
-    },
-    {
       "source": "/acaba-con-la-humedad-por-capilaridad/",
-      "destination": "/blog/acaba-con-la-humedad-por-capilaridad/",
-      "permanent": true
-    },
-    {
-      "source": "/acaba-con-la-humedad-por-capilaridad",
-      "destination": "/blog/acaba-con-la-humedad-por-capilaridad/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
       "permanent": true
     },
     {
       "source": "/cuales-son-los-beneficios-de-usar-pinturas-y-morteros-de-cal/",
-      "destination": "/blog/cuales-son-los-beneficios-de-usar-pinturas-y-morteros-de-cal/",
-      "permanent": true
-    },
-    {
-      "source": "/cuales-son-los-beneficios-de-usar-pinturas-y-morteros-de-cal",
       "destination": "/blog/cuales-son-los-beneficios-de-usar-pinturas-y-morteros-de-cal/",
       "permanent": true
     },
@@ -537,27 +272,12 @@
       "permanent": true
     },
     {
-      "source": "/corcho-proyectado-una-solucion-para-aislamiento-termico",
-      "destination": "/blog/corcho-proyectado-una-solucion-para-aislamiento-termico/",
-      "permanent": true
-    },
-    {
       "source": "/el-asombroso-mundo-de-la-resina-epoxi-usos-y-consejos-practicos/",
-      "destination": "/blog/el-asombroso-mundo-de-la-resina-epoxi-usos-y-consejos-practicos/",
-      "permanent": true
-    },
-    {
-      "source": "/el-asombroso-mundo-de-la-resina-epoxi-usos-y-consejos-practicos",
-      "destination": "/blog/el-asombroso-mundo-de-la-resina-epoxi-usos-y-consejos-practicos/",
+      "destination": "/blog/los-suelos-de-resina-epoxi-son-todo-ventajas/",
       "permanent": true
     },
     {
       "source": "/descubre-la-mejor-membrana-de-aislamiento-electrico/",
-      "destination": "/blog/descubre-la-mejor-membrana-de-aislamiento-electrico/",
-      "permanent": true
-    },
-    {
-      "source": "/descubre-la-mejor-membrana-de-aislamiento-electrico",
       "destination": "/blog/descubre-la-mejor-membrana-de-aislamiento-electrico/",
       "permanent": true
     },
@@ -567,17 +287,7 @@
       "permanent": true
     },
     {
-      "source": "/como-impermeabilizar-tu-hogar-y-evitar-problemas-de-humedad",
-      "destination": "/blog/como-impermeabilizar-tu-hogar-y-evitar-problemas-de-humedad/",
-      "permanent": true
-    },
-    {
       "source": "/guia-rapida-para-impermeabilizar-terrazas-y-techos/",
-      "destination": "/blog/guia-rapida-para-impermeabilizar-terrazas-y-techos/",
-      "permanent": true
-    },
-    {
-      "source": "/guia-rapida-para-impermeabilizar-terrazas-y-techos",
       "destination": "/blog/guia-rapida-para-impermeabilizar-terrazas-y-techos/",
       "permanent": true
     },
@@ -587,17 +297,7 @@
       "permanent": true
     },
     {
-      "source": "/mortero-de-cal-hidraulica-la-solucion-natural-para-suelos-continuos",
-      "destination": "/blog/mortero-de-cal-hidraulica-la-solucion-natural-para-suelos-continuos/",
-      "permanent": true
-    },
-    {
       "source": "/como-aplicar-el-sistema-microcemento-a-rodillo-de-tixol-en-suelos/",
-      "destination": "/blog/como-aplicar-el-sistema-microcemento-a-rodillo-de-tixol-en-suelos/",
-      "permanent": true
-    },
-    {
-      "source": "/como-aplicar-el-sistema-microcemento-a-rodillo-de-tixol-en-suelos",
       "destination": "/blog/como-aplicar-el-sistema-microcemento-a-rodillo-de-tixol-en-suelos/",
       "permanent": true
     },
@@ -607,17 +307,7 @@
       "permanent": true
     },
     {
-      "source": "/tixol-nature-floor-crea-pavimentos-continuos-naturales",
-      "destination": "/blog/tixol-nature-floor-crea-pavimentos-continuos-naturales/",
-      "permanent": true
-    },
-    {
       "source": "/beneficios-de-usar-pinturas-de-calidad-en-las-reformas-descubre-como-hacer-que-tus-proyectos-brillen/",
-      "destination": "/blog/beneficios-de-usar-pinturas-de-calidad-en-las-reformas-descubre-como-hacer-que-tus-proyectos-brillen/",
-      "permanent": true
-    },
-    {
-      "source": "/beneficios-de-usar-pinturas-de-calidad-en-las-reformas-descubre-como-hacer-que-tus-proyectos-brillen",
       "destination": "/blog/beneficios-de-usar-pinturas-de-calidad-en-las-reformas-descubre-como-hacer-que-tus-proyectos-brillen/",
       "permanent": true
     },
@@ -627,17 +317,7 @@
       "permanent": true
     },
     {
-      "source": "/tendencias-en-pinturas-y-soluciones-innovadoras-para-el-sector-de-la-construccion-en-2025",
-      "destination": "/blog/tendencias-en-pinturas-y-soluciones-innovadoras-para-el-sector-de-la-construccion-en-2025/",
-      "permanent": true
-    },
-    {
       "source": "/apuesta-por-las-pinturas-naturales-en-tus-proyectos/",
-      "destination": "/blog/apuesta-por-las-pinturas-naturales-en-tus-proyectos/",
-      "permanent": true
-    },
-    {
-      "source": "/apuesta-por-las-pinturas-naturales-en-tus-proyectos",
       "destination": "/blog/apuesta-por-las-pinturas-naturales-en-tus-proyectos/",
       "permanent": true
     },
@@ -647,17 +327,7 @@
       "permanent": true
     },
     {
-      "source": "/descubre-el-poder-del-aislamiento-termico-reflexivo",
-      "destination": "/blog/descubre-el-poder-del-aislamiento-termico-reflexivo/",
-      "permanent": true
-    },
-    {
       "source": "/descubre-las-novedades-mtm/",
-      "destination": "/blog/descubre-las-novedades-mtm/",
-      "permanent": true
-    },
-    {
-      "source": "/descubre-las-novedades-mtm",
       "destination": "/blog/descubre-las-novedades-mtm/",
       "permanent": true
     },
@@ -667,17 +337,7 @@
       "permanent": true
     },
     {
-      "source": "/protege-tu-embarcacion-y-preparate-para-navegar-este-verano",
-      "destination": "/blog/protege-tu-embarcacion-y-preparate-para-navegar-este-verano/",
-      "permanent": true
-    },
-    {
       "source": "/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
-      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
-      "permanent": true
-    },
-    {
-      "source": "/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad",
       "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
       "permanent": true
     },
@@ -687,17 +347,7 @@
       "permanent": true
     },
     {
-      "source": "/morteros-antihumedad-para-paredes-de-interior-y-exterior",
-      "destination": "/blog/morteros-antihumedad-para-paredes-de-interior-y-exterior/",
-      "permanent": true
-    },
-    {
       "source": "/beneficios-de-utilizar-morteros-de-cal-natural-en-la-construccion/",
-      "destination": "/blog/beneficios-de-utilizar-morteros-de-cal-natural-en-la-construccion/",
-      "permanent": true
-    },
-    {
-      "source": "/beneficios-de-utilizar-morteros-de-cal-natural-en-la-construccion",
       "destination": "/blog/beneficios-de-utilizar-morteros-de-cal-natural-en-la-construccion/",
       "permanent": true
     },
@@ -707,17 +357,7 @@
       "permanent": true
     },
     {
-      "source": "/pintura-de-arcilla-una-solucion-natural-para-transformar-tu-decoracion",
-      "destination": "/blog/pintura-de-arcilla-una-solucion-natural-para-transformar-tu-decoracion/",
-      "permanent": true
-    },
-    {
       "source": "/descubre-nuestro-sistema-de-aislamiento-termico-para-colmenas-tixol/",
-      "destination": "/blog/descubre-nuestro-sistema-de-aislamiento-termico-para-colmenas-tixol/",
-      "permanent": true
-    },
-    {
-      "source": "/descubre-nuestro-sistema-de-aislamiento-termico-para-colmenas-tixol",
       "destination": "/blog/descubre-nuestro-sistema-de-aislamiento-termico-para-colmenas-tixol/",
       "permanent": true
     },
@@ -727,27 +367,12 @@
       "permanent": true
     },
     {
-      "source": "/mtm-desarrolla-una-solucion-sostenible-de-aislamiento-termico-y-acustico-con-apoyo-del-info-y-fondos-feder",
-      "destination": "/blog/mtm-desarrolla-una-solucion-sostenible-de-aislamiento-termico-y-acustico-con-apoyo-del-info-y-fondos-feder/",
-      "permanent": true
-    },
-    {
       "source": "/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan/",
-      "destination": "/blog/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan/",
-      "permanent": true
-    },
-    {
-      "source": "/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan",
-      "destination": "/blog/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
       "permanent": true
     },
     {
       "source": "/aislar-tu-casa-sin-obras-es-posible-descubre-como-ahorrar-energia-sin-perder-espacio/",
-      "destination": "/blog/aislar-tu-casa-sin-obras-es-posible-descubre-como-ahorrar-energia-sin-perder-espacio/",
-      "permanent": true
-    },
-    {
-      "source": "/aislar-tu-casa-sin-obras-es-posible-descubre-como-ahorrar-energia-sin-perder-espacio",
       "destination": "/blog/aislar-tu-casa-sin-obras-es-posible-descubre-como-ahorrar-energia-sin-perder-espacio/",
       "permanent": true
     },
@@ -757,17 +382,7 @@
       "permanent": true
     },
     {
-      "source": "/paredes-que-cuidan-de-ti-el-poder-de-la-pintura-de-cal",
-      "destination": "/blog/paredes-que-cuidan-de-ti-el-poder-de-la-pintura-de-cal/",
-      "permanent": true
-    },
-    {
       "source": "/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando",
       "destination": "/blog/",
       "permanent": true
     },
@@ -777,17 +392,7 @@
       "permanent": true
     },
     {
-      "source": "/todo-sobre-stone-carpet",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/trabajo-de-limpieza-en-fachada-y-eficiencia-termica-caso-de-exito-en-una-nave-industrial/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/trabajo-de-limpieza-en-fachada-y-eficiencia-termica-caso-de-exito-en-una-nave-industrial",
       "destination": "/blog/",
       "permanent": true
     },
@@ -797,17 +402,7 @@
       "permanent": true
     },
     {
-      "source": "/impermeabilizacion-de-terrazas-errores-comunes-que-causan-goteras-y-como-evitarlos",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/renovacion-falsos-techos/tecnoplac/",
-      "destination": "/producto/tecnoplac/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/renovacion-falsos-techos/tecnoplac",
       "destination": "/producto/tecnoplac/",
       "permanent": true
     },
@@ -817,17 +412,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/marine/convertidor-de-oxido",
-      "destination": "/producto/convertidor-de-oxido/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/marine/barniz-marino/",
-      "destination": "/producto/barniz-marino/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/marine/barniz-marino",
       "destination": "/producto/barniz-marino/",
       "permanent": true
     },
@@ -837,17 +422,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/supertape/proteccion-plus/box-palet",
-      "destination": "/producto/box-palet/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/imprimaciones-especiales/top-nivelador/",
-      "destination": "/producto/top-nivelador/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/top-nivelador",
       "destination": "/producto/top-nivelador/",
       "permanent": true
     },
@@ -857,17 +432,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/complementos-epoxi/barniz-acrilico-pu-finish-antirayado",
-      "destination": "/producto/barniz-acrilico-pu-finish-antirayado/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-hidraulica-natural/mortero-de-cal-aislante-termico/",
-      "destination": "/producto/mortero-de-cal-aislante-termico/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-hidraulica-natural/mortero-de-cal-aislante-termico",
       "destination": "/producto/mortero-de-cal-aislante-termico/",
       "permanent": true
     },
@@ -877,17 +442,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/cal-aerea-natural/cal-en-pasta-envejecida-encalar",
-      "destination": "/producto/cal-en-pasta-envejecida-encalar/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-de-agarre/",
-      "destination": "/producto/mortero-de-cal-de-agarre/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-de-agarre",
       "destination": "/producto/mortero-de-cal-de-agarre/",
       "permanent": true
     },
@@ -897,17 +452,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-grueso",
-      "destination": "/producto/mortero-de-cal-grueso/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-fino/",
-      "destination": "/producto/mortero-de-cal-fino/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-fino",
       "destination": "/producto/mortero-de-cal-fino/",
       "permanent": true
     },
@@ -917,17 +462,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-extrafino",
-      "destination": "/producto/mortero-de-cal-extrafino/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/complementos-oxitec/oil/",
-      "destination": "/producto/oil/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/complementos-oxitec/oil",
       "destination": "/producto/oil/",
       "permanent": true
     },
@@ -937,17 +472,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/cal-hidraulica-natural/mortero-de-cal-romano-grueso",
-      "destination": "/producto/mortero-de-cal-romano-grueso/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/wood/barnices/barniz-exterior/",
-      "destination": "/producto/barniz-exterior/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/wood/barnices/barniz-exterior",
       "destination": "/producto/barniz-exterior/",
       "permanent": true
     },
@@ -957,17 +482,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/wood/barnices/barniz-terrazas-satinado",
-      "destination": "/producto/barniz-terrazas-satinado/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/wood/aceites/aceite-protector-antimanchas/",
-      "destination": "/producto/aceite-protector-antimanchas/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/wood/aceites/aceite-protector-antimanchas",
       "destination": "/producto/aceite-protector-antimanchas/",
       "permanent": true
     },
@@ -977,17 +492,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/marine/aceite-saturador-oil-1",
-      "destination": "/producto/aceite-saturador-oil-1/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/marine/aceite-de-acabado-oil-2/",
-      "destination": "/producto/aceite-de-acabado-oil-2/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/marine/aceite-de-acabado-oil-2",
       "destination": "/producto/aceite-de-acabado-oil-2/",
       "permanent": true
     },
@@ -997,17 +502,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/supertape/proteccion-plus/proteccion-con-adhesivo",
-      "destination": "/producto/proteccion-con-adhesivo/",
-      "permanent": true
-    },
-    {
       "source": "/producto/supertape/proteccion-papel-kraft-plastico-antideslizante/proteccion-especial-mas-plastico-antideslizante-2-capas/",
-      "destination": "/producto/proteccion-especial-mas-plastico-antideslizante-2-capas/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/supertape/proteccion-papel-kraft-plastico-antideslizante/proteccion-especial-mas-plastico-antideslizante-2-capas",
       "destination": "/producto/proteccion-especial-mas-plastico-antideslizante-2-capas/",
       "permanent": true
     },
@@ -1017,17 +512,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/supertape/proteccion-papel-kraft-plastico-antideslizante/proteccion-especial-mas-plastico-antideslizante-3-capas",
-      "destination": "/producto/proteccion-especial-mas-plastico-antideslizante-3-capas/",
-      "permanent": true
-    },
-    {
       "source": "/producto/supertape/proteccion-suelos-kraft/papel-hidrofugo/",
-      "destination": "/producto/papel-hidrofugo/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/supertape/proteccion-suelos-kraft/papel-hidrofugo",
       "destination": "/producto/papel-hidrofugo/",
       "permanent": true
     },
@@ -1037,17 +522,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/supertape/proteccion-plastico/plastico-con-cinta",
-      "destination": "/producto/plastico-con-cinta/",
-      "permanent": true
-    },
-    {
       "source": "/producto/supertape/proteccion-plastico/film-plastico-polyane/",
-      "destination": "/producto/film-plastico-polyane/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/supertape/proteccion-plastico/film-plastico-polyane",
       "destination": "/producto/film-plastico-polyane/",
       "permanent": true
     },
@@ -1057,17 +532,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/supertape/proteccion-paredes/cinta-krepp",
-      "destination": "/producto/cinta-krepp/",
-      "permanent": true
-    },
-    {
       "source": "/producto/supertape/proteccion-paredes/papel-cinta-adhesiva/",
-      "destination": "/producto/papel-cinta-adhesiva/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/supertape/proteccion-paredes/papel-cinta-adhesiva",
       "destination": "/producto/papel-cinta-adhesiva/",
       "permanent": true
     },
@@ -1077,17 +542,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/supertape/proteccion-paredes/papel-seco-prot-sin-adhesivo",
-      "destination": "/producto/papel-seco-prot-sin-adhesivo/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/naturline/",
-      "destination": "/producto/naturline/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/naturline",
       "destination": "/producto/naturline/",
       "permanent": true
     },
@@ -1097,17 +552,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/tixol-imprimacion-epoxi-100-solidos",
-      "destination": "/producto/tixol-imprimacion-epoxi-100-solidos/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-aerea-natural/tixol-toner-nature/",
-      "destination": "/producto/tixol-toner-nature/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-aerea-natural/tixol-toner-nature",
       "destination": "/producto/tixol-toner-nature/",
       "permanent": true
     },
@@ -1117,17 +562,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/hidrofugantes/hidrofugante-invisible",
-      "destination": "/producto/hidrofugante-invisible/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/imprimaciones-especiales/puente-de-union-taking/",
-      "destination": "/producto/puente-de-union-taking/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/puente-de-union-taking",
       "destination": "/producto/puente-de-union-taking/",
       "permanent": true
     },
@@ -1137,17 +572,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/esmaltes/poliuretano/tixol-esmalte-pu-finish",
-      "destination": "/producto/tixol-esmalte-pu-finish/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-aerea-natural/cal-en-pasta-envejecida-enlucir/",
-      "destination": "/producto/cal-en-pasta-envejecida-enlucir/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-aerea-natural/cal-en-pasta-envejecida-enlucir",
       "destination": "/producto/cal-en-pasta-envejecida-enlucir/",
       "permanent": true
     },
@@ -1157,17 +582,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-esmalte-acrilico-multisuperficie",
-      "destination": "/producto/tixol-esmalte-acrilico-multisuperficie/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/antimanchas/antimanchas-3f/agua-satinado-3f/",
-      "destination": "/producto/agua-satinado-3f/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-3f/agua-satinado-3f",
       "destination": "/producto/agua-satinado-3f/",
       "permanent": true
     },
@@ -1177,17 +592,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-3f/optima-3f",
-      "destination": "/producto/optima-3f/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/imprimaciones-especiales/protec-fer/",
-      "destination": "/producto/protec-fer/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/protec-fer",
       "destination": "/producto/protec-fer/",
       "permanent": true
     },
@@ -1197,17 +602,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-fachadas/scalp-scalpfuge-antimousse",
-      "destination": "/producto/scalp-scalpfuge-antimousse/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/humedades/tixol-w-barrier/",
-      "destination": "/producto/tixol-w-barrier/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/humedades/tixol-w-barrier",
       "destination": "/producto/tixol-w-barrier/",
       "permanent": true
     },
@@ -1217,17 +612,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/endurecedor-de-fondos",
-      "destination": "/producto/endurecedor-de-fondos/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/revestimiento-metales-pulidos/bronce/",
-      "destination": "/producto/bronce/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/revestimiento-metales-pulidos/bronce",
       "destination": "/producto/bronce/",
       "permanent": true
     },
@@ -1237,17 +622,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-satinee-lion",
-      "destination": "/producto/tixol-satinee-lion/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/complementos-epoxi/tixol-imprimacion-epoxi-al-agua-2-c/",
-      "destination": "/producto/tixol-imprimacion-epoxi-al-agua-2-c/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/complementos-epoxi/tixol-imprimacion-epoxi-al-agua-2-c",
       "destination": "/producto/tixol-imprimacion-epoxi-al-agua-2-c/",
       "permanent": true
     },
@@ -1257,17 +632,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/primer-universal",
-      "destination": "/producto/primer-universal/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/economic/",
-      "destination": "/producto/economic/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/economic",
       "destination": "/producto/economic/",
       "permanent": true
     },
@@ -1277,17 +642,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/disolvente",
-      "destination": "/producto/disolvente/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/aislaqua-2f/",
-      "destination": "/producto/aislaqua-2f/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/aislaqua-2f",
       "destination": "/producto/aislaqua-2f/",
       "permanent": true
     },
@@ -1297,17 +652,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/tisolver",
-      "destination": "/producto/tisolver/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/complementos-oxitec/hidrofinish/",
-      "destination": "/producto/hidrofinish/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/complementos-oxitec/hidrofinish",
       "destination": "/producto/hidrofinish/",
       "permanent": true
     },
@@ -1317,17 +662,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/spray-15-minutos",
-      "destination": "/producto/spray-15-minutos/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/wood/aceites/aceite-de-teca/",
-      "destination": "/producto/aceite-de-teca/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/wood/aceites/aceite-de-teca",
       "destination": "/producto/aceite-de-teca/",
       "permanent": true
     },
@@ -1337,17 +672,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/aquaprim",
-      "destination": "/producto/aquaprim/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/hidrofugantes/hidrofugante-efecto-mojado/",
-      "destination": "/producto/hidrofugante-efecto-mojado/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/hidrofugantes/hidrofugante-efecto-mojado",
       "destination": "/producto/hidrofugante-efecto-mojado/",
       "permanent": true
     },
@@ -1357,17 +682,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/marine/tixol-aceite-de-tung",
-      "destination": "/producto/tixol-aceite-de-tung/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/microcemento-a-rodillo/crema-de-poliuretano-floor/",
-      "destination": "/producto/crema-de-poliuretano-floor/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/microcemento-a-rodillo/crema-de-poliuretano-floor",
       "destination": "/producto/crema-de-poliuretano-floor/",
       "permanent": true
     },
@@ -1377,17 +692,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/microcemento-a-rodillo/pintura-cement-floor-acryl",
-      "destination": "/producto/pintura-cement-floor-acryl/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/express-20-minutos/",
-      "destination": "/producto/express-20-minutos/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-2f/express-20-minutos",
       "destination": "/producto/express-20-minutos/",
       "permanent": true
     },
@@ -1397,17 +702,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/tixol-flexistop-eco",
-      "destination": "/producto/tixol-flexistop-eco/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/impermeabilizantes/tixol-acryflex-acrilico/",
-      "destination": "/producto/tixol-acryflex-acrilico/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/tixol-acryflex-acrilico",
       "destination": "/producto/tixol-acryflex-acrilico/",
       "permanent": true
     },
@@ -1417,17 +712,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/acryflex-pu",
-      "destination": "/producto/acryflex-pu/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/impermeabilizantes/acryflex-pu-rugoso/",
-      "destination": "/producto/acryflex-pu-rugoso/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/acryflex-pu-rugoso",
       "destination": "/producto/acryflex-pu-rugoso/",
       "permanent": true
     },
@@ -1437,17 +722,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-hidromat-p900",
-      "destination": "/producto/tixol-hidromat-p900/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/wood/barnices/tixol-barniz-terrazas-anti-slip/",
-      "destination": "/producto/tixol-barniz-terrazas-anti-slip/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/wood/barnices/tixol-barniz-terrazas-anti-slip",
       "destination": "/producto/tixol-barniz-terrazas-anti-slip/",
       "permanent": true
     },
@@ -1457,17 +732,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/microcemento-a-rodillo/tixol-crema-de-poliuretano-floor-tex",
-      "destination": "/producto/tixol-crema-de-poliuretano-floor-tex/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/wood/barnices/barniz-parquet/",
-      "destination": "/producto/barniz-parquet/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/wood/barnices/barniz-parquet",
       "destination": "/producto/barniz-parquet/",
       "permanent": true
     },
@@ -1477,17 +742,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/pintura-termica-reflexiva-interior",
-      "destination": "/producto/pintura-termica-reflexiva-interior/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/corcho-cementoso/",
-      "destination": "/producto/corcho-cementoso/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/corcho-cementoso",
       "destination": "/producto/corcho-cementoso/",
       "permanent": true
     },
@@ -1497,17 +752,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/thermo-mortero-g-porex",
-      "destination": "/producto/thermo-mortero-g-porex/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/thermo-masilla-f/",
-      "destination": "/producto/thermo-masilla-f/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/thermo-masilla-f",
       "destination": "/producto/thermo-masilla-f/",
       "permanent": true
     },
@@ -1517,17 +762,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/thermo-mortero-g",
-      "destination": "/producto/thermo-mortero-g/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/thermo-corcho-a-rodillo/",
-      "destination": "/producto/thermo-corcho-a-rodillo/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/thermo-corcho-a-rodillo",
       "destination": "/producto/thermo-corcho-a-rodillo/",
       "permanent": true
     },
@@ -1537,17 +772,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/sistemas-antihumedad/scalp-waterproof-barrier",
-      "destination": "/producto/scalp-waterproof-barrier/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/corcho-natural-proyectado/",
-      "destination": "/producto/corcho-natural-proyectado/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/corcho-natural-proyectado",
       "destination": "/producto/corcho-natural-proyectado/",
       "permanent": true
     },
@@ -1557,17 +782,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/aislamiento-electrico/tixol-membrana-aislante-electrica",
-      "destination": "/producto/tixol-membrana-aislante-electrica/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-hidraulica-natural/cal-hidraulica-blanca/",
-      "destination": "/producto/cal-hidraulica-blanca/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-hidraulica-natural/cal-hidraulica-blanca",
       "destination": "/producto/cal-hidraulica-blanca/",
       "permanent": true
     },
@@ -1577,17 +792,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/imprimaciones-especiales/puente-union-rugoso",
-      "destination": "/producto/puente-union-rugoso/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-hidraulica-natural/mortero-de-cal-romano-fino/",
-      "destination": "/producto/mortero-de-cal-romano-fino/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-hidraulica-natural/mortero-de-cal-romano-fino",
       "destination": "/producto/mortero-de-cal-romano-fino/",
       "permanent": true
     },
@@ -1597,17 +802,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/cal-aerea-natural/pintura-de-cal",
-      "destination": "/producto/pintura-de-cal/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/renovador-de-pavimentos/",
-      "destination": "/producto/renovador-de-pavimentos/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/renovador-de-pavimentos",
       "destination": "/producto/renovador-de-pavimentos/",
       "permanent": true
     },
@@ -1617,17 +812,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/humedades/tixol-pintura-barrier-antihumedad",
-      "destination": "/producto/tixol-pintura-barrier-antihumedad/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/tixol-toners-thermo-corcho/",
-      "destination": "/producto/tixol-toners-thermo-corcho/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/tixol-toners-thermo-corcho",
       "destination": "/producto/tixol-toners-thermo-corcho/",
       "permanent": true
     },
@@ -1637,17 +822,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/sistema-nature-wall/tixol-nature-protect",
-      "destination": "/producto/tixol-nature-protect/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/complementos-oxitec/tixol-hidro-finish-pu-mate-y-satinado/",
-      "destination": "/producto/tixol-hidro-finish-pu-mate-y-satinado/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/complementos-oxitec/tixol-hidro-finish-pu-mate-y-satinado",
       "destination": "/producto/tixol-hidro-finish-pu-mate-y-satinado/",
       "permanent": true
     },
@@ -1657,17 +832,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/oxitec/complementos-oxitec/tixol-hidro-finish-pu-1c",
-      "destination": "/producto/tixol-hidro-finish-pu-1c/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-renovador-de-pavimentos-cement-extreme/",
-      "destination": "/producto/tixol-renovador-de-pavimentos-cement-extreme/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-renovador-de-pavimentos-cement-extreme",
       "destination": "/producto/tixol-renovador-de-pavimentos-cement-extreme/",
       "permanent": true
     },
@@ -1677,17 +842,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-pu-finish-extreme",
-      "destination": "/producto/tixol-pu-finish-extreme/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/tixol-epoxi-floor-primer/",
-      "destination": "/producto/tixol-epoxi-floor-primer/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/tixol-epoxi-floor-primer",
       "destination": "/producto/tixol-epoxi-floor-primer/",
       "permanent": true
     },
@@ -1697,17 +852,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente",
-      "destination": "/producto/barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-aerea-natural/tixol-pintura-de-cal-eco/",
-      "destination": "/producto/tixol-pintura-de-cal-eco/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-aerea-natural/tixol-pintura-de-cal-eco",
       "destination": "/producto/tixol-pintura-de-cal-eco/",
       "permanent": true
     },
@@ -1717,17 +862,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/thermo-corcho-proyectado",
-      "destination": "/producto/thermo-corcho-proyectado/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/tixol-impermeabilizante-termico/",
-      "destination": "/producto/tixol-impermeabilizante-termico/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/tixol-impermeabilizante-termico",
       "destination": "/producto/tixol-impermeabilizante-termico/",
       "permanent": true
     },
@@ -1737,17 +872,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/oxitec/revestimientos-acabado-oxido/tixol-oxitec-hierro",
-      "destination": "/producto/tixol-oxitec-hierro/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/complementos-oxitec/activador-gel/",
-      "destination": "/producto/activador-gel/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/complementos-oxitec/activador-gel",
       "destination": "/producto/activador-gel/",
       "permanent": true
     },
@@ -1757,17 +882,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/oxitec/complementos-oxitec/activador-liquido",
-      "destination": "/producto/activador-liquido/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-anti-humedad/",
-      "destination": "/producto/mortero-de-cal-anti-humedad/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/cal-aerea-natural/mortero-de-cal-anti-humedad",
       "destination": "/producto/mortero-de-cal-anti-humedad/",
       "permanent": true
     },
@@ -1777,17 +892,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/flexistop",
-      "destination": "/producto/flexistop/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/microcemento-a-rodillo/tixol-top-level/",
-      "destination": "/producto/tixol-top-level/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/microcemento-a-rodillo/tixol-top-level",
       "destination": "/producto/tixol-top-level/",
       "permanent": true
     },
@@ -1797,17 +902,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-hidromat-eco",
-      "destination": "/producto/tixol-hidromat-eco/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/antigraffitis/limpiadores-de-graffiti/scalp-primer-magic/",
-      "destination": "/producto/scalp-primer-magic/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/antigraffitis/limpiadores-de-graffiti/scalp-primer-magic",
       "destination": "/producto/scalp-primer-magic/",
       "permanent": true
     },
@@ -1817,17 +912,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/preparacion-de-fondos/fijadores/primafix",
-      "destination": "/producto/primafix/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/decapantes/scalpex-nw/",
-      "destination": "/producto/scalpex-nw/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/decapantes/scalpex-nw",
       "destination": "/producto/scalpex-nw/",
       "permanent": true
     },
@@ -1837,17 +922,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/limpieza/derox-320",
-      "destination": "/producto/derox-320/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/sistema-nature-floor/nature-floor-toner/",
-      "destination": "/producto/nature-floor-toner/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/sistema-nature-floor/nature-floor-toner",
       "destination": "/producto/nature-floor-toner/",
       "permanent": true
     },
@@ -1857,17 +932,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/tixol-promotor-adherencia-acryflex-pu",
-      "destination": "/producto/tixol-promotor-adherencia-acryflex-pu/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/tixol-thermo-corcho-proyectado-fino/",
-      "destination": "/producto/tixol-thermo-corcho-proyectado-fino/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/tixol-thermo-corcho-proyectado-fino",
       "destination": "/producto/tixol-thermo-corcho-proyectado-fino/",
       "permanent": true
     },
@@ -1877,17 +942,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/tixol-thermo-corcho-natural-proyectado-fino",
-      "destination": "/producto/tixol-thermo-corcho-natural-proyectado-fino/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/tixol-revestimiento-termico-reflexivo/",
-      "destination": "/producto/tixol-revestimiento-termico-reflexivo/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/tixol-revestimiento-termico-reflexivo",
       "destination": "/producto/tixol-revestimiento-termico-reflexivo/",
       "permanent": true
     },
@@ -1897,17 +952,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/tixol-revestimiento-elastico-reflexivo",
-      "destination": "/producto/tixol-revestimiento-elastico-reflexivo/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/tixol-impermeabilizante-termico-reflexivo/",
-      "destination": "/producto/tixol-impermeabilizante-termico-reflexivo/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/tixol-impermeabilizante-termico-reflexivo",
       "destination": "/producto/tixol-impermeabilizante-termico-reflexivo/",
       "permanent": true
     },
@@ -1917,17 +962,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-ecosil-fondo-al-silicato",
-      "destination": "/producto/tixol-ecosil-fondo-al-silicato/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-ecosil-pintura-al-silicato/",
-      "destination": "/producto/tixol-ecosil-pintura-al-silicato/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/acabados-interior-exterior/tixol-ecosil-pintura-al-silicato",
       "destination": "/producto/tixol-ecosil-pintura-al-silicato/",
       "permanent": true
     },
@@ -1937,17 +972,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/wood/barnices/tixol-endurecedor-parquet",
-      "destination": "/producto/tixol-endurecedor-parquet/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/complementos-epoxi/antiburbujas/",
-      "destination": "/producto/antiburbujas/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/complementos-epoxi/antiburbujas",
       "destination": "/producto/antiburbujas/",
       "permanent": true
     },
@@ -1957,17 +982,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/tixol-cera-desmoldeante",
-      "destination": "/producto/tixol-cera-desmoldeante/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/tixol-epoxi-3d-uv-protect/",
-      "destination": "/producto/tixol-epoxi-3d-uv-protect/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/tixol-epoxi-3d-uv-protect",
       "destination": "/producto/tixol-epoxi-3d-uv-protect/",
       "permanent": true
     },
@@ -1977,17 +992,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-esmalte-epoxi-agua",
-      "destination": "/producto/tixol-esmalte-epoxi-agua/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/decapantes/scalp-scalpex-aqua-15/",
-      "destination": "/producto/scalp-scalpex-aqua-15/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/decapantes/scalp-scalpex-aqua-15",
       "destination": "/producto/scalp-scalpex-aqua-15/",
       "permanent": true
     },
@@ -1997,17 +1002,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/un-solo-uso/scalp-protect-wa67",
-      "destination": "/producto/scalp-protect-wa67/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/sistema-nature-wall/tixol-nature-wall/",
-      "destination": "/producto/tixol-nature-wall/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/sistema-nature-wall/tixol-nature-wall",
       "destination": "/producto/tixol-nature-wall/",
       "permanent": true
     },
@@ -2017,17 +1012,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/sistema-nature-floor/sistema-nature-floor",
-      "destination": "/producto/sistema-nature-floor/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/humedades/f-barrier/",
-      "destination": "/producto/f-barrier/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/humedades/f-barrier",
       "destination": "/producto/f-barrier/",
       "permanent": true
     },
@@ -2037,17 +1022,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/epo-roc",
-      "destination": "/producto/epo-roc/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/revestimiento-metales-pulidos/inox-fine/",
-      "destination": "/producto/inox-fine/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/revestimiento-metales-pulidos/inox-fine",
       "destination": "/producto/inox-fine/",
       "permanent": true
     },
@@ -2057,17 +1032,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/oxitec/revestimiento-metales-pulidos/oro",
-      "destination": "/producto/oro/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/oxitec/revestimientos-acabado-oxido/cobre/",
-      "destination": "/producto/cobre/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/oxitec/revestimientos-acabado-oxido/cobre",
       "destination": "/producto/cobre/",
       "permanent": true
     },
@@ -2077,17 +1042,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/epoxi-standard-colors",
-      "destination": "/producto/epoxi-standard-colors/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/epoxi-metal-colors/",
-      "destination": "/producto/epoxi-metal-colors/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/epoxi-metal-colors",
       "destination": "/producto/epoxi-metal-colors/",
       "permanent": true
     },
@@ -2097,17 +1052,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-barniz-poliuretano-anti-slip",
-      "destination": "/producto/tixol-barniz-poliuretano-anti-slip/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-epo-roc-finish/",
-      "destination": "/producto/tixol-epo-roc-finish/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-epo-roc-finish",
       "destination": "/producto/tixol-epo-roc-finish/",
       "permanent": true
     },
@@ -2117,17 +1062,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/humedades/tixol-pintura-anticondensacion-interior",
-      "destination": "/producto/tixol-pintura-anticondensacion-interior/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/nature-arcilla/tixol-nature-protect-arcilla/",
-      "destination": "/producto/tixol-nature-protect-arcilla/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/nature-arcilla/tixol-nature-protect-arcilla",
       "destination": "/producto/tixol-nature-protect-arcilla/",
       "permanent": true
     },
@@ -2137,17 +1072,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/limpieza/scalp-batinet-3100",
-      "destination": "/producto/scalp-batinet-3100/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/complementos/scalp-peel-off/",
-      "destination": "/producto/scalp-peel-off/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/complementos/scalp-peel-off",
       "destination": "/producto/scalp-peel-off/",
       "permanent": true
     },
@@ -2157,17 +1082,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/limpieza/solnet",
-      "destination": "/producto/solnet/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/limpieza/scalp-pronet/",
-      "destination": "/producto/scalp-pronet/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/limpieza/scalp-pronet",
       "destination": "/producto/scalp-pronet/",
       "permanent": true
     },
@@ -2177,17 +1092,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/sistema-nature-floor/tixol-nature-floor-grueso",
-      "destination": "/producto/tixol-nature-floor-grueso/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/nature-arcilla/tixol-aditivo-x-arcilla-exterior/",
-      "destination": "/producto/tixol-aditivo-x-arcilla-exterior/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/nature-arcilla/tixol-aditivo-x-arcilla-exterior",
       "destination": "/producto/tixol-aditivo-x-arcilla-exterior/",
       "permanent": true
     },
@@ -2197,17 +1102,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/sistema-nature-wall/tixol-nature-wall-fino",
-      "destination": "/producto/tixol-nature-wall-fino/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-stone-carpet/",
-      "destination": "/producto/tixol-stone-carpet/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-stone-carpet",
       "destination": "/producto/tixol-stone-carpet/",
       "permanent": true
     },
@@ -2217,17 +1112,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-pu-finish-water-extreme-satinado",
-      "destination": "/producto/tixol-pu-finish-water-extreme-satinado/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-pu-finish-water-extreme-mate/",
-      "destination": "/producto/tixol-pu-finish-water-extreme-mate/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-pu-finish-water-extreme-mate",
       "destination": "/producto/tixol-pu-finish-water-extreme-mate/",
       "permanent": true
     },
@@ -2237,17 +1122,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/nature-arcilla/tixol-mortero-de-arcilla",
-      "destination": "/producto/tixol-mortero-de-arcilla/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/nature/sistema-nature-wall/tixol-nature-wall-extrafino/",
-      "destination": "/producto/tixol-nature-wall-extrafino/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/nature/sistema-nature-wall/tixol-nature-wall-extrafino",
       "destination": "/producto/tixol-nature-wall-extrafino/",
       "permanent": true
     },
@@ -2257,17 +1132,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/epoxi-capa-gruesa",
-      "destination": "/producto/epoxi-capa-gruesa/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/epoxi-3d/",
-      "destination": "/producto/epoxi-3d/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/epoxi-3d",
       "destination": "/producto/epoxi-3d/",
       "permanent": true
     },
@@ -2277,17 +1142,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/sistemas-antihongos/scalp-teja-clean",
-      "destination": "/producto/scalp-teja-clean/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/limpieza/scalp-aqua-08/",
-      "destination": "/producto/scalp-aqua-08/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/limpieza/scalp-aqua-08",
       "destination": "/producto/scalp-aqua-08/",
       "permanent": true
     },
@@ -2297,17 +1152,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-mineralizante-2016",
-      "destination": "/producto/scalp-mineralizante-2016/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-mineralizante-94/",
-      "destination": "/producto/scalp-mineralizante-94/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-mineralizante-94",
       "destination": "/producto/scalp-mineralizante-94/",
       "permanent": true
     },
@@ -2317,17 +1162,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/decapantes/scalp-scalpik-decapsec-nw",
-      "destination": "/producto/scalp-scalpik-decapsec-nw/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/sistemas-antihumedad/scalp-antisalitre/",
-      "destination": "/producto/scalp-antisalitre/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/sistemas-antihumedad/scalp-antisalitre",
       "destination": "/producto/scalp-antisalitre/",
       "permanent": true
     },
@@ -2337,17 +1172,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-suelos/scalp-anti-manchas-07-em",
-      "destination": "/producto/scalp-anti-manchas-07-em/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-mineralizante-95/",
-      "destination": "/producto/scalp-mineralizante-95/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-mineralizante-95",
       "destination": "/producto/scalp-mineralizante-95/",
       "permanent": true
     },
@@ -2357,17 +1182,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-suelos/anti-manchas-07",
-      "destination": "/producto/anti-manchas-07/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/limpieza/neutral-da-66/",
-      "destination": "/producto/neutral-da-66/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/limpieza/neutral-da-66",
       "destination": "/producto/neutral-da-66/",
       "permanent": true
     },
@@ -2377,17 +1192,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/proteccion-permanente/scalp-sto-graff",
-      "destination": "/producto/scalp-sto-graff/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/sistemas-antihumedad/scalpfuge-32/",
-      "destination": "/producto/scalpfuge-32/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/sistemas-antihumedad/scalpfuge-32",
       "destination": "/producto/scalpfuge-32/",
       "permanent": true
     },
@@ -2397,17 +1202,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-suelos/scalpfuge-color",
-      "destination": "/producto/scalpfuge-color/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/sistemas-antihumedad/scalpox-as-2/",
-      "destination": "/producto/scalpox-as-2/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/sistemas-antihumedad/scalpox-as-2",
       "destination": "/producto/scalpox-as-2/",
       "permanent": true
     },
@@ -2417,17 +1212,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-fachadas/scalpfuge-35",
-      "destination": "/producto/scalpfuge-35/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/complementos/scalp-non-slide/",
-      "destination": "/producto/scalp-non-slide/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/complementos/scalp-non-slide",
       "destination": "/producto/scalp-non-slide/",
       "permanent": true
     },
@@ -2437,17 +1222,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/complementos/scalpik-eliminador-de-adhesivos",
-      "destination": "/producto/scalpik-eliminador-de-adhesivos/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/hidrofugos/para-fachadas/scalp-aquafuge-pro/",
-      "destination": "/producto/scalp-aquafuge-pro/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/hidrofugos/para-fachadas/scalp-aquafuge-pro",
       "destination": "/producto/scalp-aquafuge-pro/",
       "permanent": true
     },
@@ -2457,17 +1232,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-fachadas/scalp-scalpfuge-pro",
-      "destination": "/producto/scalp-scalpfuge-pro/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/scalp-facanet-pae/",
-      "destination": "/producto/scalp-facanet-pae/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/scalp-facanet-pae",
       "destination": "/producto/scalp-facanet-pae/",
       "permanent": true
     },
@@ -2477,17 +1242,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/sistemas-antihongos/anti-m",
-      "destination": "/producto/anti-m/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/scalp-limpiador-fachadas-2/",
-      "destination": "/producto/scalp-limpiador-fachadas-2/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/scalp-limpiador-fachadas-2",
       "destination": "/producto/scalp-limpiador-fachadas-2/",
       "permanent": true
     },
@@ -2497,17 +1252,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/limpiadores-de-graffiti/antigraffiti-49",
-      "destination": "/producto/antigraffiti-49/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/hidrofugos/para-fachadas/aquafuge-18/",
-      "destination": "/producto/aquafuge-18/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/hidrofugos/para-fachadas/aquafuge-18",
       "destination": "/producto/aquafuge-18/",
       "permanent": true
     },
@@ -2517,17 +1262,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/limpieza/aqua-03",
-      "destination": "/producto/aqua-03/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/limpieza/aqua-04/",
-      "destination": "/producto/aqua-04/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/limpieza/aqua-04",
       "destination": "/producto/aqua-04/",
       "permanent": true
     },
@@ -2537,17 +1272,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/limpieza/scalp-aqua-05",
-      "destination": "/producto/scalp-aqua-05/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-consolidante-hidrofugante/",
-      "destination": "/producto/scalp-consolidante-hidrofugante/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes/scalp-consolidante-hidrofugante",
       "destination": "/producto/scalp-consolidante-hidrofugante/",
       "permanent": true
     },
@@ -2557,17 +1282,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/complementos/scalp-despega-moquetas",
-      "destination": "/producto/scalp-despega-moquetas/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/complementos/scalp-despega-papel/",
-      "destination": "/producto/scalp-despega-papel/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/complementos/scalp-despega-papel",
       "destination": "/producto/scalp-despega-papel/",
       "permanent": true
     },
@@ -2577,17 +1292,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/dmc-73",
-      "destination": "/producto/dmc-73/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/decapantes/decapantes-scalpex-ae-nw/",
-      "destination": "/producto/decapantes-scalpex-ae-nw/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/decapantes/decapantes-scalpex-ae-nw",
       "destination": "/producto/decapantes-scalpex-ae-nw/",
       "permanent": true
     },
@@ -2597,17 +1302,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/quita-sombras/scalp-scalpex-al23",
-      "destination": "/producto/scalp-scalpex-al23/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/decapantes/scalp-scalpex-sd/",
-      "destination": "/producto/scalp-scalpex-sd/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/decapantes/scalp-scalpex-sd",
       "destination": "/producto/scalp-scalpex-sd/",
       "permanent": true
     },
@@ -2617,17 +1312,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/hidrofugos/para-fachadas/scalpfuge-acryl",
-      "destination": "/producto/scalpfuge-acryl/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/limpieza/scalpinox-d/",
-      "destination": "/producto/scalpinox-d/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/limpieza/scalpinox-d",
       "destination": "/producto/scalpinox-d/",
       "permanent": true
     },
@@ -2637,17 +1322,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/nds-72",
-      "destination": "/producto/nds-72/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/scalpnet-aqua-37/",
-      "destination": "/producto/scalpnet-aqua-37/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/scalpnet-aqua-37",
       "destination": "/producto/scalpnet-aqua-37/",
       "permanent": true
     },
@@ -2657,17 +1332,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/limpiadores/desincrustantes-de-fachadas/pierre-aqua-89",
-      "destination": "/producto/pierre-aqua-89/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/limpiadores/sistemas-antihongos/renovexpress/",
-      "destination": "/producto/renovexpress/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/limpiadores/sistemas-antihongos/renovexpress",
       "destination": "/producto/renovexpress/",
       "permanent": true
     },
@@ -2677,17 +1342,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/un-solo-uso/vernacryl-30",
-      "destination": "/producto/vernacryl-30/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/antigraffitis/proteccion-permanente/verneau-pu16/",
-      "destination": "/producto/verneau-pu16/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/antigraffitis/proteccion-permanente/verneau-pu16",
       "destination": "/producto/verneau-pu16/",
       "permanent": true
     },
@@ -2697,17 +1352,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/proteccion-permanente/scalp-vernasol-pu31",
-      "destination": "/producto/scalp-vernasol-pu31/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/antigraffitis/limpiadores-de-graffiti/scalp-sensitive-limpiador-antigrafiti/",
-      "destination": "/producto/scalp-sensitive-limpiador-antigrafiti/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/antigraffitis/limpiadores-de-graffiti/scalp-sensitive-limpiador-antigrafiti",
       "destination": "/producto/scalp-sensitive-limpiador-antigrafiti/",
       "permanent": true
     },
@@ -2717,17 +1362,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/quita-sombras/scalp-scalpnet-edj28",
-      "destination": "/producto/scalp-scalpnet-edj28/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/antigraffitis/proteccion-permanente/scalp-protect-magic/",
-      "destination": "/producto/scalp-protect-magic/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/antigraffitis/proteccion-permanente/scalp-protect-magic",
       "destination": "/producto/scalp-protect-magic/",
       "permanent": true
     },
@@ -2737,17 +1372,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/scalp/antigraffitis/proteccion-permanente/primer-36",
-      "destination": "/producto/primer-36/",
-      "permanent": true
-    },
-    {
       "source": "/producto/scalp/antigraffitis/proteccion-permanente/scalp-ep-protect/",
-      "destination": "/producto/scalp-ep-protect/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/scalp/antigraffitis/proteccion-permanente/scalp-ep-protect",
       "destination": "/producto/scalp-ep-protect/",
       "permanent": true
     },
@@ -2757,17 +1382,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/humedades/tixol-eliminador-de-manchas-de-humedad",
-      "destination": "/producto/tixol-eliminador-de-manchas-de-humedad/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/tixol-pintura-termica-y-anticondensacion/",
-      "destination": "/producto/tixol-pintura-termica-y-anticondensacion/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/tixol-pintura-termica-y-anticondensacion",
       "destination": "/producto/tixol-pintura-termica-y-anticondensacion/",
       "permanent": true
     },
@@ -2777,17 +1392,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/soluciones/humedades/pintura-higienizante-ag",
-      "destination": "/producto/pintura-higienizante-ag/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/impermeabilizantes/tixol-fibra-elastic/",
-      "destination": "/producto/tixol-fibra-elastic/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/impermeabilizantes/tixol-fibra-elastic",
       "destination": "/producto/tixol-fibra-elastic/",
       "permanent": true
     },
@@ -2797,17 +1402,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/nature-arcilla/tixol-nature-arcilla",
-      "destination": "/producto/tixol-nature-arcilla/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/soluciones/antimanchas/antimanchas-3f/agua-mate-3f/",
-      "destination": "/producto/agua-mate-3f/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/soluciones/antimanchas/antimanchas-3f/agua-mate-3f",
       "destination": "/producto/agua-mate-3f/",
       "permanent": true
     },
@@ -2817,17 +1412,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/nature/sistema-nature-floor/nature-floor-roc-primer",
-      "destination": "/producto/nature-floor-roc-primer/",
-      "permanent": true
-    },
-    {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-renovador-de-pavimentos-extreme/",
-      "destination": "/producto/tixol-renovador-de-pavimentos-extreme/",
-      "permanent": true
-    },
-    {
-      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-renovador-de-pavimentos-extreme",
       "destination": "/producto/tixol-renovador-de-pavimentos-extreme/",
       "permanent": true
     },
@@ -2837,17 +1422,7 @@
       "permanent": true
     },
     {
-      "source": "/producto/tixol/wood/lasur/lasur-satinado",
-      "destination": "/producto/lasur-satinado/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/acabados-interior-exterior/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/acabados-interior-exterior",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -2857,17 +1432,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/wood/aceites",
-      "destination": "/productos/tixol/wood/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/aislamiento-electrico/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/aislamiento-electrico",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -2877,17 +1442,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/antigraffitis",
-      "destination": "/productos/scalp/antigraffitis/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/antimanchas/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/antimanchas",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -2897,17 +1452,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/soluciones/antimanchas/antimanchas-2f",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/antimanchas/antimanchas-3f/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/antimanchas/antimanchas-3f",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -2917,17 +1462,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/wood/barnices",
-      "destination": "/productos/tixol/wood/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/nature/cal-aerea-natural/",
-      "destination": "/productos/tixol/nature/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/nature/cal-aerea-natural",
       "destination": "/productos/tixol/nature/",
       "permanent": true
     },
@@ -2937,17 +1472,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/nature/cal-hidraulica-natural",
-      "destination": "/productos/tixol/nature/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/complementos/",
-      "destination": "/productos/scalp/complementos/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/complementos",
       "destination": "/productos/scalp/complementos/",
       "permanent": true
     },
@@ -2957,17 +1482,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos/epoxi-3d/complementos-epoxi",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/oxitec/complementos-oxitec/",
-      "destination": "/productos/tixol/oxitec/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/oxitec/complementos-oxitec",
       "destination": "/productos/tixol/oxitec/",
       "permanent": true
     },
@@ -2977,17 +1492,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/soluciones/thermo-aislantes/corcho-proyectado",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/decapantes/",
-      "destination": "/productos/scalp/decapantes/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/decapantes",
       "destination": "/productos/scalp/decapantes/",
       "permanent": true
     },
@@ -2997,17 +1502,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/limpiadores/desincrustantes-de-fachadas/",
-      "destination": "/productos/scalp/limpiadores/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/limpiadores/desincrustantes-de-fachadas",
       "destination": "/productos/scalp/limpiadores/",
       "permanent": true
     },
@@ -3017,17 +1512,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos/epoxi-3d",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/decoracion-de-pavimentos/esmaltes/",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos/esmaltes",
       "destination": "/productos/tixol/decoracion-de-pavimentos/",
       "permanent": true
     },
@@ -3037,17 +1522,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/preparacion-de-fondos/fijadores",
-      "destination": "/productos/scalp/preparacion-de-fondos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/hidrofugantes/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/hidrofugantes",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -3057,17 +1532,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/hidrofugos",
-      "destination": "/productos/scalp/hidrofugos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/humedades/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/humedades",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -3077,17 +1542,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/soluciones/impermeabilizantes",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/imprimaciones-especiales/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/imprimaciones-especiales",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -3097,17 +1552,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/wood/lasur",
-      "destination": "/productos/tixol/wood/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/limpiadores/",
-      "destination": "/productos/scalp/limpiadores/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/limpiadores",
       "destination": "/productos/scalp/limpiadores/",
       "permanent": true
     },
@@ -3117,17 +1562,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/antigraffitis/limpiadores-de-graffiti",
-      "destination": "/productos/scalp/antigraffitis/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/limpiadores/limpieza/",
-      "destination": "/productos/scalp/limpiadores/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/limpiadores/limpieza",
       "destination": "/productos/scalp/limpiadores/",
       "permanent": true
     },
@@ -3137,17 +1572,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/marine",
-      "destination": "/productos/tixol/marine/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/thermo-aislantes/microesferas-huecas/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/thermo-aislantes/microesferas-huecas",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -3157,17 +1582,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/preparacion-de-fondos/mineralizantes-consolidantes",
-      "destination": "/productos/scalp/preparacion-de-fondos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/nature/",
-      "destination": "/productos/tixol/nature/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/nature",
       "destination": "/productos/tixol/nature/",
       "permanent": true
     },
@@ -3177,17 +1592,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/nature/nature-arcilla",
-      "destination": "/productos/tixol/nature/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/oxitec/",
-      "destination": "/productos/tixol/oxitec/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/oxitec",
       "destination": "/productos/tixol/oxitec/",
       "permanent": true
     },
@@ -3197,17 +1602,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/supertape/proteccion-papel-kraft-plastico-antideslizante",
-      "destination": "/productos/supertape/proteccion-papel-kraft-plastico-antideslizante/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/hidrofugos/para-fachadas/",
-      "destination": "/productos/scalp/hidrofugos/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/hidrofugos/para-fachadas",
       "destination": "/productos/scalp/hidrofugos/",
       "permanent": true
     },
@@ -3217,17 +1612,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/hidrofugos/para-suelos",
-      "destination": "/productos/scalp/hidrofugos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/decoracion-de-pavimentos/esmaltes/poliuretano/",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos/esmaltes/poliuretano",
       "destination": "/productos/tixol/decoracion-de-pavimentos/",
       "permanent": true
     },
@@ -3237,17 +1622,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/preparacion-de-fondos",
-      "destination": "/productos/scalp/preparacion-de-fondos/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/supertape/proteccion-paredes/",
-      "destination": "/productos/supertape/proteccion-paredes/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/supertape/proteccion-paredes",
       "destination": "/productos/supertape/proteccion-paredes/",
       "permanent": true
     },
@@ -3257,17 +1632,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/antigraffitis/proteccion-permanente",
-      "destination": "/productos/scalp/antigraffitis/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/supertape/proteccion-plastico/",
-      "destination": "/productos/supertape/proteccion-plastico/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/supertape/proteccion-plastico",
       "destination": "/productos/supertape/proteccion-plastico/",
       "permanent": true
     },
@@ -3277,17 +1642,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/supertape/proteccion-plus",
-      "destination": "/productos/supertape/proteccion-plus/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/supertape/proteccion-suelos-kraft/",
-      "destination": "/productos/supertape/proteccion-suelos-kraft/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/supertape/proteccion-suelos-kraft",
       "destination": "/productos/supertape/proteccion-suelos-kraft/",
       "permanent": true
     },
@@ -3297,17 +1652,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/antigraffitis/quita-sombras",
-      "destination": "/productos/scalp/antigraffitis/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos",
       "destination": "/productos/tixol/decoracion-de-pavimentos/",
       "permanent": true
     },
@@ -3317,17 +1662,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/soluciones/renovacion-falsos-techos",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi/",
-      "destination": "/productos/tixol/decoracion-de-pavimentos/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/decoracion-de-pavimentos/epoxi-3d/resinas-epoxi",
       "destination": "/productos/tixol/decoracion-de-pavimentos/",
       "permanent": true
     },
@@ -3337,17 +1672,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/oxitec/revestimientos-acabado-oxido",
-      "destination": "/productos/tixol/oxitec/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/oxitec/revestimiento-metales-pulidos/",
-      "destination": "/productos/tixol/oxitec/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/oxitec/revestimiento-metales-pulidos",
       "destination": "/productos/tixol/oxitec/",
       "permanent": true
     },
@@ -3357,17 +1682,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp",
-      "destination": "/productos/scalp/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/microcemento-a-rodillo/",
-      "destination": "/productos/tixol/microcemento-a-rodillo/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/microcemento-a-rodillo",
       "destination": "/productos/tixol/microcemento-a-rodillo/",
       "permanent": true
     },
@@ -3377,17 +1692,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/nature/sistema-nature-floor",
-      "destination": "/productos/tixol/nature/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/nature/sistema-nature-wall/",
-      "destination": "/productos/tixol/nature/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/nature/sistema-nature-wall",
       "destination": "/productos/tixol/nature/",
       "permanent": true
     },
@@ -3397,17 +1702,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/scalp/limpiadores/sistemas-antihongos",
-      "destination": "/productos/scalp/limpiadores/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/sistemas-antihumedad/",
-      "destination": "/productos/scalp/sistemas-antihumedad/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/sistemas-antihumedad",
       "destination": "/productos/scalp/sistemas-antihumedad/",
       "permanent": true
     },
@@ -3417,17 +1712,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/soluciones",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/supertape/",
-      "destination": "/productos/supertape/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/supertape",
       "destination": "/productos/supertape/",
       "permanent": true
     },
@@ -3437,17 +1722,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/tixol/soluciones/thermo-aislantes/",
-      "destination": "/productos/tixol/soluciones/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/tixol/soluciones/thermo-aislantes",
       "destination": "/productos/tixol/soluciones/",
       "permanent": true
     },
@@ -3457,17 +1732,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol",
-      "destination": "/productos/tixol/",
-      "permanent": true
-    },
-    {
       "source": "/categoria-producto/scalp/antigraffitis/un-solo-uso/",
-      "destination": "/productos/scalp/antigraffitis/",
-      "permanent": true
-    },
-    {
-      "source": "/categoria-producto/scalp/antigraffitis/un-solo-uso",
       "destination": "/productos/scalp/antigraffitis/",
       "permanent": true
     },
@@ -3477,17 +1742,7 @@
       "permanent": true
     },
     {
-      "source": "/categoria-producto/tixol/wood",
-      "destination": "/productos/tixol/wood/",
-      "permanent": true
-    },
-    {
       "source": "/category/blog/aislamiento-termico/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/blog/aislamiento-termico",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3497,17 +1752,7 @@
       "permanent": true
     },
     {
-      "source": "/category/arte",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/category/blog/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/blog",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3517,17 +1762,7 @@
       "permanent": true
     },
     {
-      "source": "/category/blog/cal-natural",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/category/construccion/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/construccion",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3537,17 +1772,7 @@
       "permanent": true
     },
     {
-      "source": "/category/decoracion",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/category/blog/humedades/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/blog/humedades",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3557,17 +1782,7 @@
       "permanent": true
     },
     {
-      "source": "/category/blog/impermeabilizacion",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/category/interiorismo/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/interiorismo",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3577,17 +1792,7 @@
       "permanent": true
     },
     {
-      "source": "/category/mantenimiento",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/category/pintura-blog/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/pintura-blog",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3597,17 +1802,7 @@
       "permanent": true
     },
     {
-      "source": "/category/proteccion-blog",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/category/reformas-blog/",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/category/reformas-blog",
       "destination": "/blog/",
       "permanent": true
     },
@@ -3617,17 +1812,7 @@
       "permanent": true
     },
     {
-      "source": "/category/reparacion-blog",
-      "destination": "/blog/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/aditivo-para-pintura-de-arcilla/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/aditivo-para-pintura-de-arcilla",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3637,17 +1822,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/aislamiento-a-rodillo",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/aislamiento-acustico-y-termoaislante-con-corcho/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/aislamiento-acustico-y-termoaislante-con-corcho",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3657,17 +1832,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/aislamiento-con-corcho-natural",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/aislamiento-electrico-con-caucho-reciclado/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/aislamiento-electrico-con-caucho-reciclado",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3677,17 +1842,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/aislamiento-termico-y-acustico-con-masilla-termica",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/aislamiento-y-encapsulado-electrico/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/aislamiento-y-encapsulado-electrico",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3697,17 +1852,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/barniz-anti-slip",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/barniz-de-gran-resistencia/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/barniz-de-gran-resistencia",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3717,17 +1862,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/barniz-de-poliuretano-sin-disolvente",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/barniz-para-interior-y-exterior/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/barniz-para-interior-y-exterior",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3737,17 +1872,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/barniz-protector-microcemento",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/barniz-protector-sin-desnaturalizar/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/barniz-protector-sin-desnaturalizar",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3757,17 +1882,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/barniz-protector-superficies-decorativas",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/barrera-antihumedad/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/barrera-antihumedad",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3777,17 +1892,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/certificado-aislamiento-electrico-applus",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/certificado-de-aislamiento-electrico/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/certificado-de-aislamiento-electrico",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3797,17 +1902,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/epoxi-3d",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/humedades/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/humedades",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3817,17 +1912,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/imprimacion-epoxi-al-agua",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/imprimacion-para-esmaltes-epoxi-al-agua/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/imprimacion-para-esmaltes-epoxi-al-agua",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3837,17 +1922,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/masilla-elastomerica-fibrada",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/masilla-para-reparar-antes-de-impermeabilizar/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/masilla-para-reparar-antes-de-impermeabilizar",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3857,17 +1932,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/masilla-termica",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/masilla-termica-con-microesferas/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/masilla-termica-con-microesferas",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3877,17 +1942,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/membrana-aislante-electrica",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/membrana-aislante-electrica-con-resinas-acrilicas-y-caucho-reciclado/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/membrana-aislante-electrica-con-resinas-acrilicas-y-caucho-reciclado",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3897,17 +1952,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/mortero-de-cal-hidraulica-para-encalados-antiguos",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/mortero-de-cal-hidraulica-para-paredes/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/mortero-de-cal-hidraulica-para-paredes",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3917,17 +1962,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/mortero-de-cal-hidraulica-para-pavimentos-continuos",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/norma-astm-d5162-15/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/norma-astm-d5162-15",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3937,17 +1972,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-100-natural",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-aislante-de-manchas/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-aislante-de-manchas",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3957,17 +1982,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-al-agua",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-antihumedad/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-antihumedad",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3977,17 +1992,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-antimanchas-2f",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-antimanchas-secado-express/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-antimanchas-secado-express",
       "destination": "/productos/",
       "permanent": true
     },
@@ -3997,17 +2002,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-antimanchas-ultrarrapida",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-de-arcilla/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-de-arcilla",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4017,17 +2012,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-de-arcilla-para-personas-sensibles",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-interior/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-interior",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4037,17 +2022,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-mate-disolvente-de-interior",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-natural-de-arcilla/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-natural-de-arcilla",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4057,17 +2032,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/pintura-satinada",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/pintura-satinada-interior/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/pintura-satinada-interior",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4077,17 +2042,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/protector-arcilla",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/protector-cal/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/protector-cal",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4097,17 +2052,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/protector-superficies-con-cal-y-arcilla",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/renovador-de-pavimentos-en-exterior/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/renovador-de-pavimentos-en-exterior",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4117,17 +2062,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/renovador-de-pavimentos-sobre-superficies-absorbentes",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/sellador-hidrofugante/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/sellador-hidrofugante",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4137,17 +2072,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/sellador-natural-para-proteger-superficies",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/soluciones-humedades/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/soluciones-humedades",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4157,17 +2082,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-aislaqua-2f/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-aislaqua-2f",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4177,17 +2092,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-arcilla",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-barniz-pu-extreme/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-barniz-pu-extreme",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4197,17 +2102,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-barniz-terrazas-antislip",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-epoxi-3d/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-epoxi-3d",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4217,17 +2112,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-express-20-minutos",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-fibra-elastic/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-fibra-elastic",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4237,17 +2122,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-hidrofinish-pu-1c",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-impermeabilizantes/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-impermeabilizantes",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4257,17 +2132,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-membrana-aislante-electrica",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-nature-arcilla/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-nature-arcilla",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4277,17 +2142,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-nature-floor",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-nature-protect/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-nature-protect",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4297,17 +2152,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-nature-wall",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-pintura-antimanchas-2f/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-pintura-antimanchas-2f",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4317,17 +2162,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-pintura-barrier-antihumedad",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-renovador-de-pavimentos-cement-extreme/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-renovador-de-pavimentos-cement-extreme",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4337,17 +2172,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-satinee-lion",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-thermo-masilla-f/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-thermo-masilla-f",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4357,17 +2182,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-thermoaislantes",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-thermocorcho-a-rodillo/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-thermocorcho-a-rodillo",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4377,17 +2192,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/tixol-tisolver",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tixol-wood/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tixol-wood",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4397,17 +2202,7 @@
       "permanent": true
     },
     {
-      "source": "/etiqueta-producto/toners-de-color-para-tixol-nature-floor",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
       "source": "/etiqueta-producto/tratamiento-humedades/",
-      "destination": "/productos/",
-      "permanent": true
-    },
-    {
-      "source": "/etiqueta-producto/tratamiento-humedades",
       "destination": "/productos/",
       "permanent": true
     },
@@ -4484,6 +2279,986 @@
     {
       "source": "/supertape/supertape-(.*)",
       "destination": "/productos/supertape/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/11/Ficha-Aceite-de-Tung.pdf",
+      "destination": "/producto/tixol-aceite-de-tung/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/Ficha-Tecnica-Puente-de-Union-Rugoso.pdf",
+      "destination": "/producto/puente-union-rugoso/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/mortero-de-cal-aislante.pdf",
+      "destination": "/producto/mortero-de-cal-aislante-termico/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Tecnica-Tixol-Nature-Pintura-de-cal.pdf",
+      "destination": "/producto/pintura-de-cal/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/®Carta-de-Colores-Nature-Arcilla-TRZ-LW2.pdf",
+      "destination": "/producto/tixol-nature-arcilla/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/%C2%AECarta-de-Colores-Nature-Arcilla-TRZ-LW2.pdf",
+      "destination": "/producto/tixol-nature-arcilla/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Renovador-pav.-extrem.pdf",
+      "destination": "/producto/tixol-renovador-de-pavimentos-extreme/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/PROMOTOR-DE-ADHERENCIA-FICHA-TECNICA.pdf",
+      "destination": "/producto/tixol-promotor-adherencia-acryflex-pu/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixoepoxi3d-capa-gruesa.pdf",
+      "destination": "/producto/epoxi-capa-gruesa/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-mortero-de-cal-antihumedad-copia.pdf",
+      "destination": "/producto/mortero-de-cal-anti-humedad/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/Ficha-Stone-Carpet.pdf",
+      "destination": "/producto/tixol-stone-carpet/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Nature-Wall.pdf",
+      "destination": "/producto/tixol-nature-wall/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Tixol-Carta-colores-corcho-2024.pdf",
+      "destination": "/producto/tixol-toners-thermo-corcho/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-mortero-de-cal-extra-fino.pdf",
+      "destination": "/producto/mortero-de-cal-extrafino/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Tixol-Nature-Arcilla.pdf",
+      "destination": "/producto/tixol-nature-arcilla/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/f_tec_endurecedor.pdf",
+      "destination": "/productos/tixol/imprimaciones-especiales/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpStoGraff.pdf",
+      "destination": "/producto/scalp-sto-graff/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FICHA-TECNICA-NATUR-LINE-.pdf",
+      "destination": "/producto/naturline/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/F.T-TIXOL-THERMO-CORCHO-24.pdf",
+      "destination": "/productos/tixol/corcho-proyectado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Epoxi-capa-gruesa.pdf",
+      "destination": "/producto/epoxi-capa-gruesa/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixohidrofugante-efecto-mojado-copia.pdf",
+      "destination": "/producto/hidrofugante-efecto-mojado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/10/Ficha-Renovador-de-pavimentos.pdf",
+      "destination": "/producto/renovador-de-pavimentos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-barniz-exterior-2-bueno.pdf",
+      "destination": "/producto/barniz-exterior/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/Ficha-Tecnica-Nature-Floor-new.pdf",
+      "destination": "/producto/tixol-nature-floor-grueso/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpRenovExpress.pdf",
+      "destination": "/producto/renovexpress/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/tixol-hidro-finish-pu-v1-buena-4.pdf",
+      "destination": "/producto/tixol-hidro-finish-pu-1c/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Tecnica_TIXOepoxi-estandar-colorsESPmayo18-copia.pdf",
+      "destination": "/producto/epoxi-standard-colors/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-mortero-romano-fino.pdf",
+      "destination": "/producto/mortero-de-cal-romano-fino/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/Ficha-Tecnica-Tixol-Thermo-Pintura.pdf",
+      "destination": "/productos/tixol/termicos-reflexivos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-primer-antihumedad-copia.pdf",
+      "destination": "/productos/tixol/humedades/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/09/Ficha-Tecnica-Tixol-Nature-Eco-2.pdf",
+      "destination": "/productos/tixol/nature/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FICHA-TECNICA-FLEXISTOP.pdf",
+      "destination": "/producto/flexistop/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-IMPERMEABILIZANTE-TERMICO.pdf",
+      "destination": "/producto/tixol-impermeabilizante-termico/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Tecnica_TIXOL-BARNIZ-PU-Anti-Slip-copia.pdf",
+      "destination": "/producto/tixol-barniz-poliuretano-anti-slip/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-oxitec-oil-copia.pdf",
+      "destination": "/producto/oil/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Renovador-Pavimentos-Cement-extrem.pdf",
+      "destination": "/producto/tixol-renovador-de-pavimentos-cement-extreme/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol_acryflex-pu-copia.pdf",
+      "destination": "/producto/acryflex-pu/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Epoxi-capa-gruesa-1.pdf",
+      "destination": "/producto/epoxi-capa-gruesa/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/Ficha-Revestimiento-Elastico.pdf",
+      "destination": "/producto/tixol-revestimiento-elastico-reflexivo/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/®Carta-de-Colores-Nature-Wall-TRZ-LW2.pdf",
+      "destination": "/producto/tixol-nature-wall/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/%C2%AECarta-de-Colores-Nature-Wall-TRZ-LW2.pdf",
+      "destination": "/producto/tixol-nature-wall/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/05/Ficha-Tecnica-Membrana-Aislante-termica.pdf",
+      "destination": "/productos/tixol/aislamiento-electrico/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/ficha-tecnica_-Tixol-eliminador-de-manchas-humedad.pdf",
+      "destination": "/producto/tixol-eliminador-de-manchas-de-humedad/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-crema-de-poliuretano-2.pdf",
+      "destination": "/producto/crema-de-poliuretano-floor/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica-tixol-oxitec-activador-liquido-2020-tra-copia.pdf",
+      "destination": "/producto/activador-liquido/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-mortero-de-cal-arido-grueso.pdf",
+      "destination": "/producto/mortero-de-cal-grueso/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/FIcha-Nature-Protect.pdf",
+      "destination": "/producto/tixol-nature-protect/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/e_ficha_tecnica_tixol_aquaprim_29-07-13.pdf",
+      "destination": "/producto/aquaprim/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-mortero-romano-grueso.pdf",
+      "destination": "/producto/mortero-de-cal-romano-grueso/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Epoxi-3D-solidos.pdf",
+      "destination": "/producto/epoxi-3d/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/03/Ficha-Tecnica_TIXOL-BARNIZ-PU-FINISH-2C.pdf",
+      "destination": "/producto/barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/ficha-tecnica_tixol-thermo-mortero-g-copia-copia.pdf",
+      "destination": "/producto/thermo-mortero-g/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Aceite-de-Teca.pdf",
+      "destination": "/producto/aceite-de-teca/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/FT-ES_SCALP-WATERPROOF-BARRIER.pdf",
+      "destination": "/producto/scalp-waterproof-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpAqua03_030521_AP_compressed-1.pdf",
+      "destination": "/producto/aqua-03/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Tixol-Barrier-Antihumedad.pdf",
+      "destination": "/producto/tixol-pintura-barrier-antihumedad/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-cal-en-pasta-envejecida.pdf",
+      "destination": "/producto/cal-en-pasta-envejecida-encalar/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/Ficha-Tecnica-Tixol-Spray.pdf",
+      "destination": "/producto/spray-15-minutos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-cal-hidraulica-blanca-1.pdf",
+      "destination": "/producto/cal-hidraulica-blanca/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Acryflex-Pu-Rugoso.pdf",
+      "destination": "/producto/acryflex-pu-rugoso/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-W-Barrier.pdf",
+      "destination": "/producto/tixol-w-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FICHA-TECNICA-PRIMAFIX.pdf",
+      "destination": "/producto/primafix/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-tecnica-Tixol-Ecosil.pdf",
+      "destination": "/productos/tixol/acabados-interior-exterior/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha_tecnica_protector_suelos_2-03-10.pdf",
+      "destination": "/productos/tixol/aceites/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Pu-Finish-Extreme.pdf",
+      "destination": "/producto/tixol-pu-finish-extreme/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Tecnica_TIXOL-THERMO-CORCHO-RODILLO.pdf",
+      "destination": "/producto/thermo-corcho-a-rodillo/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/11/Ficha-Tecnica-Aquaprim.pdf",
+      "destination": "/producto/aquaprim/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-epo-roc-1.pdf",
+      "destination": "/producto/epo-roc/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/F.T-Barrier-3C-copia.pdf",
+      "destination": "/producto/f-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/FT-ES_BatiNetM3100.pdf",
+      "destination": "/producto/scalp-batinet-3100/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-mortero-de-cal-arido-fino.pdf",
+      "destination": "/producto/mortero-de-cal-fino/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-marine-aceite-de-terminacion-oil-1-copia.pdf",
+      "destination": "/producto/aceite-saturador-oil-1/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT-ES-Sensitive-Cleaner.pdf",
+      "destination": "/producto/scalp-sensitive-limpiador-antigrafiti/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/ficha-tecnica_tixol-thermo-masilla-f-copia.pdf",
+      "destination": "/producto/thermo-masilla-f/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpNeutralDA66.pdf",
+      "destination": "/producto/neutral-da-66/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/FIcha-Nature-Floor-Primer-Roc-24.pdf",
+      "destination": "/producto/nature-floor-roc-primer/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/10/FICHA-TECNICA-TIXOL-HIDRO-FINISH-2023.pdf",
+      "destination": "/producto/hidrofinish/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-auronivelante-top-level-nuevo.pdf",
+      "destination": "/producto/tixol-top-level/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpNonSlide.pdf",
+      "destination": "/producto/scalp-non-slide/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/tecnolap.pdf",
+      "destination": "/producto/tecnoplac/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/Ficha-Nature-Wall-Fino.pdf",
+      "destination": "/producto/tixol-nature-wall-fino/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/Ficha-Aditivo-X.pdf",
+      "destination": "/producto/tixol-aditivo-x-arcilla-exterior/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-imprimacion-epoxi-anti-polvo-copia.pdf",
+      "destination": "/productos/tixol/resinas-epoxi/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Epoxi-Floor-Primer.pdf",
+      "destination": "/producto/tixol-epoxi-floor-primer/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica-activador-oxitec-gel-2.pdf",
+      "destination": "/producto/activador-gel/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/11/Ficha-Crema-de-Poliuretano-Floor.pdf",
+      "destination": "/producto/crema-de-poliuretano-floor/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/11/Ficha-Cement-Floor-Acryl.pdf",
+      "destination": "/producto/pintura-cement-floor-acryl/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpfugeAcryl_070521_AP_compressed-3.pdf",
+      "destination": "/producto/scalpfuge-acryl/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/Ficha-Pu-Finish-Water-Extreme.pdf",
+      "destination": "/producto/tixol-pu-finish-water-extreme-mate/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpnetAqua37_060521_AP_compressed.pdf",
+      "destination": "/producto/scalpnet-aqua-37/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpexAL23.pdf",
+      "destination": "/producto/scalp-scalpex-al23/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpAntiTaches07.pdf",
+      "destination": "/producto/anti-manchas-07/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/ficha-protec-fer.pdf",
+      "destination": "/producto/protec-fer/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_TEJA-CLEAN.pdf",
+      "destination": "/producto/scalp-teja-clean/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica-tixol-cobre-oxitec-2020-tra-copia.pdf",
+      "destination": "/producto/cobre/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Mortero-Romano-Fino.pdf",
+      "destination": "/producto/mortero-de-cal-romano-fino/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-Higienizante-Ag-v1-1.pdf",
+      "destination": "/producto/pintura-higienizante-ag/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-nature-pintura-de-cal-exterior-interior.pdf",
+      "destination": "/producto/pintura-de-cal/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_Aquafuge18_070521_AP_compressed.pdf",
+      "destination": "/producto/aquafuge-18/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/04/Ficha-Tecnica_TIXOL-IMPERMEABILIZANTE-TERMICO-v1.pdf",
+      "destination": "/producto/tixol-impermeabilizante-termico/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT-FR_NEUTRALDA66_70720AS_compressed-1.pdf",
+      "destination": "/producto/neutral-da-66/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-flexistop__sin-bote-esp-copia-1.pdf",
+      "destination": "/producto/flexistop/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpAntiSalpetre.pdf",
+      "destination": "/producto/scalp-antisalitre/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_EliminodordeAdhesivos_GEL.pdf",
+      "destination": "/producto/scalpik-eliminador-de-adhesivos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Flexistop-Eco.pdf",
+      "destination": "/producto/tixol-flexistop-eco/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/Ficha-Termica-Reflexiva-Interior.pdf",
+      "destination": "/producto/pintura-termica-reflexiva-interior/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/ficha-tecnica_tixol_acryflex-copia.pdf",
+      "destination": "/productos/tixol/impermeabilizantes/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica-THERMO-MORTERO-G-POREX.pdf",
+      "destination": "/producto/thermo-mortero-g-porex/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-pu-finish-antirayadog-copia.pdf",
+      "destination": "/producto/barniz-acrilico-pu-finish-antirayado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/e_dptico_3capas.pdf",
+      "destination": "/productos/tixol/resinas-epoxi/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpFacanetPae.pdf",
+      "destination": "/producto/scalp-facanet-pae/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/FICHA-TECNICA-TIXOL-HIERRO-OXITEC-2020tra-copia.pdf",
+      "destination": "/producto/tixol-oxitec-hierro/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpPierreAqua89_030521_AP_compressed.pdf",
+      "destination": "/producto/pierre-aqua-89/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT-Autonivelante-Top-Level-25.pdf",
+      "destination": "/producto/tixol-top-level/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-esmalte-epoxi-80_-solidos.pdf",
+      "destination": "/productos/tixol/resinas-epoxi/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica-tixol-oxitec-metales-para-pulir-copia-3-buena.pdf",
+      "destination": "/productos/tixol/revestimiento-metales-pulidos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-barniz-parquet-3-bueno.pdf",
+      "destination": "/producto/barniz-parquet/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/ficha-tcnica-tixol-solvent-economiccopia.pdf",
+      "destination": "/producto/economic/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Hidro-Finish-Pu-Natur-1C.pdf",
+      "destination": "/producto/tixol-hidro-finish-pu-1c/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/07/FT_ES_ScalpDecolPapier_140521_AP.pdf",
+      "destination": "/producto/scalp-despega-papel/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-CORCHO-PROYECTADO-2024.pdf",
+      "destination": "/producto/thermo-corcho-proyectado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_-limpiador-de-moho-musgo-y-verdin-copia.pdf",
+      "destination": "/productos/scalp/sistemas-antihongos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Barniz-Parquet.pdf",
+      "destination": "/producto/barniz-parquet/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Epoxi-3D-solidos-1.pdf",
+      "destination": "/producto/epoxi-3d/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-lasur-satinado-4-buena.pdf",
+      "destination": "/producto/lasur-satinado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpAntiM.pdf",
+      "destination": "/producto/anti-m/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpfugeColor.pdf",
+      "destination": "/producto/scalpfuge-color/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpAqua05.pdf",
+      "destination": "/producto/scalp-aqua-05/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpMineralisant95.pdf",
+      "destination": "/producto/scalp-mineralizante-95/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/07/FT-ES_VernasolvPU31-1.pdf",
+      "destination": "/producto/scalp-vernasol-pu31/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Hidro-Finish-Pu.pdf",
+      "destination": "/producto/tixol-hidro-finish-pu-1c/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Antiburbujas.pdf",
+      "destination": "/producto/antiburbujas/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpfugePro.pdf",
+      "destination": "/producto/scalp-scalpfuge-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpNDS72.pdf",
+      "destination": "/producto/nds-72/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/02/Ficha-Renovador-pavimentos-extreme.pdf",
+      "destination": "/producto/tixol-renovador-de-pavimentos-extreme/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-barniz-pu-anti-slip-copia.pdf",
+      "destination": "/producto/tixol-barniz-poliuretano-anti-slip/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/®Carta-de-Colores-Nature-Floor-trz-LW2.pdf",
+      "destination": "/producto/nature-floor-toner/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/%C2%AECarta-de-Colores-Nature-Floor-trz-LW2.pdf",
+      "destination": "/producto/nature-floor-toner/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_Scalpfuge32.pdf",
+      "destination": "/producto/scalpfuge-32/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpAqua03.pdf",
+      "destination": "/producto/aqua-03/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/Ficha-Tecnica-Tixol-Primer-Universal.pdf",
+      "destination": "/producto/primer-universal/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/FT-ES_SCALP-PEEL-OFF.pdf",
+      "destination": "/producto/scalp-peel-off/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/07/FT_ES_ScalpDecolPapier.pdf",
+      "destination": "/producto/scalp-despega-papel/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_Vernacryl30_100521_AP_compressed.pdf",
+      "destination": "/producto/vernacryl-30/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpDMC73.pdf",
+      "destination": "/producto/dmc-73/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/ficha_tecnica_tixol_express-v.2018-1.pdf",
+      "destination": "/producto/express-20-minutos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpexAENWNG.pdf",
+      "destination": "/producto/decapantes-scalpex-ae-nw/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpAquanet08_030521_AP.pdf",
+      "destination": "/producto/scalp-aqua-08/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT-ES_ScalpEPProtect.pdf",
+      "destination": "/producto/scalp-ep-protect/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/ficha-tecnica-tisolver-correccion-copia.pdf",
+      "destination": "/producto/tisolver/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-cement-floor-acryl.pdf",
+      "destination": "/producto/pintura-cement-floor-acryl/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-aceite-protector-6-buena.pdf",
+      "destination": "/producto/aceite-protector-antimanchas/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpnetAqua37.pdf",
+      "destination": "/producto/scalpnet-aqua-37/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpfugeAcryl.pdf",
+      "destination": "/producto/scalpfuge-acryl/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/07/FT_ES_ScalpnetEDJ28_110521_AP.pdf",
+      "destination": "/producto/scalp-scalpnet-edj28/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/TIXOL-Hidro-Mat-P-900-enero2020-copia.pdf",
+      "destination": "/producto/tixol-hidromat-p900/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpAqua04.pdf",
+      "destination": "/producto/aqua-04/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/01/FT_ES_SCALP-PRONET.pdf",
+      "destination": "/producto/scalp-pronet/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/11/FICHA-TECNICA-SCALPEX-AQUA-15.pdf",
+      "destination": "/producto/scalp-scalpex-aqua-15/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ficha-tecnica-Tixol-Hidro-Mat-Eco.pdf",
+      "destination": "/producto/tixol-hidromat-eco/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-transformador-de-oxido-3.pdf",
+      "destination": "/producto/convertidor-de-oxido/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpoxAS2.pdf",
+      "destination": "/producto/scalpox-as-2/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpPrimer36.pdf",
+      "destination": "/producto/primer-36/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_AquafugePro.pdf",
+      "destination": "/producto/scalp-aquafuge-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_Aquafuge18.pdf",
+      "destination": "/producto/aquafuge-18/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/Ficha-Revestimeinto-Fachadas-24.pdf",
+      "destination": "/productos/scalp/para-fachadas/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/07/FICHA-TECNICA-PRIMER-MAGIC.pdf",
+      "destination": "/producto/scalp-primer-magic/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-PU-FINISH-standard-color-copia.pdf",
+      "destination": "/productos/tixol/decoracion-de-pavimentos/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-barniz-terrazas-1-bueno.pdf",
+      "destination": "/producto/barniz-terrazas-satinado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT_ES_ScalpAqua04_030521_AP_compressed.pdf",
+      "destination": "/producto/aqua-04/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT-FR_ScalpoxAS2_070720AS_compressed.pdf",
+      "destination": "/producto/scalpox-as-2/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpinoxD.pdf",
+      "destination": "/producto/scalpinox-d/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpexSD.pdf",
+      "destination": "/producto/scalp-scalpex-sd/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/02/FT_ES_ScalpConsolidantHydrofuge.pdf",
+      "destination": "/producto/scalp-consolidante-hidrofugante/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2024/02/FT-Nature-Floor-Primer-Roc.pdf",
+      "destination": "/producto/nature-floor-roc-primer/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-Tixol-Cera-Desmoldeante-copia.pdf",
+      "destination": "/producto/tixol-cera-desmoldeante/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-THERMO-PROYECTADO.pdf",
+      "destination": "/producto/thermo-corcho-proyectado/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tcnica-supertape-2-capas-mtm-materialesmodernos.pdf",
+      "destination": "/producto/proteccion-especial-mas-plastico-antideslizante-2-capas/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-mortero-romano-grueso.pdf",
+      "destination": "/producto/mortero-de-cal-romano-grueso/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/Ficha-Auronivelante-Top-Level24.pdf",
+      "destination": "/producto/tixol-top-level/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/f_tec_agua-mate_3f-correccion-copia.pdf",
+      "destination": "/producto/agua-mate-3f/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/04/e_ficha_tecnica_tixol_top_nivelador_8-01-14.pdf",
+      "destination": "/producto/top-nivelador/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOsatinadoLION.pdf",
+      "destination": "/producto/tixol-satinee-lion/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-Cal-en-pasta-envejecida-copia.pdf",
+      "destination": "/producto/cal-en-pasta-envejecida-encalar/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Tecnica_TIXOL-COLORANTE-CORCHO-copia.pdf",
+      "destination": "/producto/tixol-toners-thermo-corcho/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/06/Ficha-Hidro-Finish-Pu-1.pdf",
+      "destination": "/producto/tixol-hidro-finish-pu-1c/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/ficha-tecnica_tixol-marine-aceite-de-terminacion-oil-2-copia.-2pdf.pdf",
+      "destination": "/producto/aceite-de-acabado-oil-2/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT-Standard-color.pdf",
+      "destination": "/producto/epoxi-standard-colors/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/05/FT-Metal-color.pdf",
+      "destination": "/producto/epoxi-metal-colors/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/(.*)",
+      "destination": "/productos/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/acaba-con-la-humedad-por-capilaridad/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tratamiento-ecologico-para-problemas-de-humedad-por-capilaridad/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/por-que-tengo-humedades-en-mis-paredes/",
+      "destination": "/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/resina-epoxi-un-elemento-decorativo/",
+      "destination": "/blog/los-suelos-de-resina-epoxi-son-todo-ventajas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/el-asombroso-mundo-de-la-resina-epoxi-usos-y-consejos-practicos/",
+      "destination": "/blog/los-suelos-de-resina-epoxi-son-todo-ventajas/",
       "permanent": true
     }
   ]
