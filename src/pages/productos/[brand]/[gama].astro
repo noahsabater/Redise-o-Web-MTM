@@ -143,6 +143,7 @@ const PAGE_SIZE = 12;
               </div>
               <div class="pcard-body">
                 <h3 class="pcard-name">{p.name}</h3>
+                {p.uso && <span class="pcard-uso">{p.uso}</span>}
                 {p.gamaMain && <span class="pcard-gama">{p.gamaMain}</span>}
               </div>
             </a>
@@ -268,6 +269,11 @@ const PAGE_SIZE = 12;
   .pcard:hover .pcard-img { transform: scale(1.05); }
   .pcard-body { padding: 1rem 1.15rem 1.3rem; border-top: 1px solid var(--color-line); display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
   .pcard-name { font-size: 1.127rem; line-height: 1.25; color: var(--color-ink); }
+  .pcard-uso {
+    align-self: flex-start; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--color-slate); border: 1px solid var(--color-line); border-radius: 999px;
+    padding: 0.22rem 0.6rem; margin-bottom: 0.2rem;
+  }
   .pcard-gama { font-size: 0.736rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-ash); margin-top: auto; }
 
   .pempty { text-align: center; color: var(--color-slate); padding: 3rem 0; }

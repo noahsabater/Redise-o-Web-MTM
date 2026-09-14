@@ -17,6 +17,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALP ANTI-M es un producto anti-incrustaciones vegetales que combate y resguarda contra musgos, líquenes y microorganismos en cubiertas, fachadas, pisos y muros. Es un desinfectante y algicida curativo y preventivo a base de agua. Presenta una acción perdurable que asegura la limpieza a lo largo de numerosos años."
@@ -43,6 +44,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Scalp Anti-Manchas 07 es una protección hidrófuga y oleófuga incolora contra la penetración de líquidos (agua, vino, café, taninos, aceite, grasa, etc.), en suelos porosos, principalmente horizontales, como hormigón, mármol, piedra, etc.",
     "description": [
       "Scalp Antimanchas 07 está destinado a la protección de materiales porosos contra la penetración de aceites, grasas, lubricantes, vinos, cafés, tanino… sobre superficies principalmente horizontales como pavimentos de autobloqueo, baldosas con forma hexagonal, piedras reconstruidas, mármol, hormigón, cemento, piedras naturales. Ventajas del producto:",
@@ -78,6 +80,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Scalp Anti-Manchas 07 es una protección hidrófuga y oleófuga incolora contra la penetración de líquidos (agua, vino, café, taninos, aceite, grasa, etc.), en suelos porosos, principalmente horizontales, como hormigón, mármol, piedra, etc.",
     "description": [
       "Scalp Antimanchas 07 EM (Efecto Mojado) está destinado a la protección de materiales porosos contra la penetración de aceites, grasas, lubricantes, vinos, cafés, tanino… sobre superficies principalmente horizontales como pavimentos de autobloqueo, baldosas con forma hexagonal, piedras reconstruidas, mármol, hormigón, cemento, piedras naturales. Ventajas del producto:",
@@ -113,6 +116,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 3 formatos.",
     "description": [
       "SCALP ANTI-GRAFFITI 49 es un agente removedor de grafitis especialmente formulado para superficies delicadas. Elimina eficazmente todo tipo de grafitis de superficies protegidas con la protección permanente VERNAEAU PU 16, así como de superficies sensibles."
@@ -135,6 +139,7 @@
     ],
     "gamaMain": "Sistemas Antihumedad",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Modo operativo: − Preparar el soporte quitando de la superficie deteriorada los distintos revestimientos (pinturas, papeles pintados etc.) − Eliminar mediante cepillado las eflorescencias de salitre con NDS 72, restos de microorganismos con Renov Express, etc. − Homogeneizar bien el producto y luego aplicar por saturación de abajo hacia arriba, con dos capas separadas de 15 minutos, sobre el soporte para tratar.",
     "description": [
       "Scalp Antisalitre ideal para sanear superficies en las que había salitre antes de aplicar pintura o papel pintado. Permite proteger un soporte sano antes de aplicar pintura, colocar papel pintado o revestimientos murales. Los componentes activos del producto se difunden en el soporte a tratar y destruyen las bacterias nitrificantes responsables del salitre.",
@@ -165,6 +170,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Disponible en 4 formatos",
     "description": [
       "SCALP AQUA 03, un desengrasante universal sin necesidad de aclarado para todo tipo de superficies. Este producto es perfecto para limpiar una amplia gama de materiales sintéticos utilizados en la industria de la construcción, como revestimientos, PVC, superficies pintadas, aluminio, zinc, y más. Sin la presencia de amoniaco, ácido o cloro, este desengrasante es excepcional para eliminar manchas de pintura tanto en interiores como en exteriores."
@@ -191,6 +197,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALP AQUA 04, un potente limpiador desengrasante especialmente formulado para superficies en la industria alimentaria. Esta solución concentrada de detergente, desengrasante y limpiador es perfecta para mantener la higiene en entornos agroalimentarios. Su eficacia se destaca en la limpieza y desengrasado de pequeños utensilios, piezas de maquinaria y superficies que entran en contacto con productos alimentarios."
@@ -217,6 +224,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "",
     "description": [
       "SCALP AQUA 05, Desengrasante industrial concentrado para limpieza de todo tipo de superficies en fachadas. No genera espuma por tanto es especialmente recomendado para cualquier superficie donde se requiera muy poca agua para el aclarado.",
@@ -244,6 +252,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Apropiado perfectamente a la limpieza cotidiana de superficies minerales de embaldosado, gres cerámico. Puede emplearse en la limpieza industrial para las piezas mecánicas, motor de grupos electrógenos, etc",
     "description": [
       "SCALP AQUA 08, Alternativa para uso industrial al Aqua 03. Ideal como sustituto del disolvente de limpieza para desengrasados.",
@@ -273,6 +282,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Scalp Aquafuge 18 es un hidrofugante de silicona acuoso para tejados, paredes y fachadas, así como para todo tipo de materiales porosos como piedra calcárea, piedra azul, hormigón, cemento, fibrocemento y encalados.",
     "description": [
       "Scalp Aquafuge 18 es un hidrofugante al agua a base de siliconas, destinado a la protección de fachadas y muros, que impide la suciedad de los soportes y limita la formación de microorganismos. Es un producto de gama muy alta que no contiene disolventes y no modifica el aspecto del soporte, tiene un efecto perlado muy pronunciado.",
@@ -300,6 +310,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Mezclar bien el producto previamente y aplicar sobre el soporte que se desea tratar, en sentido ascendente hasta la saturación del soporte. Aplicar una o dos capas con 10 minutos de intervalo. Evitar sobrecargar de producto, ya que podrían crearse gotas que dejarían marcas en el soporte. Aplicar AQUAFUGE PRO en soportes limpios y preferentemente secos. Si el soporte se ha limpiado previamente, esperar como mínimo diez días antes de aplicar el AQUAFUGE PRO.",
     "description": [
       "Scalp Aquafuge Pro, es un hidrofugante invisible al agua a base de siliconas que, está destinado a la protección de fachadas y muros. De entre las propiedades de este producto destacan:",
@@ -334,6 +345,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para cubiertas",
     "short": "",
     "description": [
       "SCALP Batinet 3100, Eliminador concentrado de manchas de humedad que combina tes acciones en un solo producto. Biocida, limpiador e hidrofugante. Especialmente formulado para limpieza de tejados, fachadas y pavimentos. Además, contiene un potente detergente que también actúa sobre manchas negras de polución urbana. No requiere enjuague con agua, el producto se aplica pulverizado sobre las superficies y transcurridos 15-30 días el soporte queda totalmente limpio.",
@@ -361,6 +373,7 @@
     ],
     "gamaMain": "Mineralizantes - Consolidantes",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 3 formatos.",
     "description": [
       "El mineralizante consolidante e hidrófugo SCALP CONSOLIDANTE HIDROFUGANTE endurece, solidifica y protege eficazmente contra la penetración del agua en una única operación. Este consolidante se aplica en soportes como piedra natural, calcárea y de sílice, ladrillo, hormigón o incluso revestimientos minerales."
@@ -383,6 +396,7 @@
     ],
     "gamaMain": "Decapantes",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "SCALPEX AE NW también se utiliza para eliminar los grafitis y marcas en superficies brutas. Decapante de pintura en aerosol, SCALPEX AE NW es imprescindible para los accesos difíciles, gracias a su aerosol que permite un trabajo preciso.",
     "description": [
       "SCALPEX AE NW es un decapante de pintura y grafiti en aerosol destinado al decapado de una gran variedad de pinturas (acrílicas, glicéricas, pliolite, alquídicas, etc.) en numerosas superficies como madera, hierro, piedra, ladrillo, suelos, paredes, etc."
@@ -409,6 +423,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para metal",
     "short": "Disponible en 3 formatos",
     "description": [
       "DEROX 320 es un poderoso limpiador y desengrasante especializado en superficies metálicas. Este increíble producto de alta concentración se encarga de limpiar, desengrasar y eliminar residuos en aluminio, zinc y acero galvanizado. Además, prepara la superficie de manera óptima para la aplicación de pintura, eliminando cualquier escoria y evitando posibles problemas como desprendimientos, ampollas o desconchados."
@@ -431,6 +446,7 @@
     ],
     "gamaMain": "Complementos",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Producto eficaz para disolver todo tipo de adhesivos de moquetas y revestimientos textiles murales. • Rápido y eficaz. • No inflamable. • Producto de evaporación muy rápida. • No es necesario aclarar.",
     "description": [
       "SCALP DESPEGA MOQUETAS está destinado a la eliminación radical de revestimientos de suelos o murales pegados (alfombra, fieltro, fibras vegetales, moquetas, tejidos murales…).",
@@ -455,6 +471,7 @@
     ],
     "gamaMain": "Complementos",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Producto eficaz para disolver todo tipo de adhesivos de moquetas y revestimientos textiles murales. • Rápido y eficaz. • No inflamable. • Producto de evaporación muy rápida. • No es necesario aclarar.",
     "description": [
       "Scalp Despega Papel está destinado a la eliminación de todo tipo de papel pintado, pósteres y carteles publicitarios. Se trata de un producto muy concentrado que debe diluirse para eliminar de forma profesional papel pintado normal, especial, de vinilo o pintable. Disuelve fácilmente todas las colas que se utilizan habitualmente en el mercado. Se trata de una solución menos restrictiva y más económica que los quitapapeles. Es un producto sin peligro que puede utilizarse en todo tipo de lugares, incluso ocupados o en presencia de público.",
@@ -487,6 +504,7 @@
     ],
     "gamaMain": "Desincrustantes de Fachadas",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALP DMC 73 es un descalcificador y purificador de superficies de piedra y minerales que remueve y purifica las áreas de piedra y minerales, tales como mármol, recubrimientos hidráulicos, que se encuentran sucios debido a la polución urbana de origen atmosférico."
@@ -513,6 +531,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "El acabado no aporta brillos dejando el soporte natural.",
     "description": [
       "El SCALP EP Protect es un protector antigrafiti monocomponente destinada a superficies lisas y sin absorción tal como mármol pulido, pinturas y revestimientos sin poro. La protección impide el anclaje de pintadas y permite una fácil limpieza con los limpiadores Scalp Sensitive Cleaner o Anti grafiti 49."
@@ -539,6 +558,7 @@
     ],
     "gamaMain": "Desincrustantes de Fachadas",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Limpiador desincrustante de gran potencia con el que puedes limpiar todo tipo de suciedad. Es un producto sin cloro y sin necesidad de aclarado. Ideal para fachadas, tejados, paredes y suelos, tanto en interior como en exterior.",
     "description": [
       "Scalp Facanet Pae es un potente limpiador ph 7 neutro, sin cloro, sosa caustica ni potasio. Elimina manchas de polución atmosférica, calimas, polvo, hollín, manchas negras",
@@ -566,6 +586,7 @@
     ],
     "gamaMain": "Desincrustantes de Fachadas",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Extender homogéneamente el producto antes de su aplicación. Aplicar sobre la superficie y dejar actuar. Aclarar eficazmente de abajo hacia arriba con agua a presión. Repetir la operación si es necesario.",
     "description": [
       "Scalp Limpiador Fachadas 2 es un limpiador muy potente de acción rápida para materiales cargados de sílice.",
@@ -593,6 +614,7 @@
     ],
     "gamaMain": "Mineralizantes - Consolidantes",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "• Producto de gama alta • No desnaturaliza la superficie. • Gran facilidad de aplicación • Pulverizable • No modifica la permeabilidad con el vapor de agua • Compatible con los hidrófugos de Scalp.",
     "description": [
       "SCALP MINERALIZANTE 2016 Líquido de impregnación con silicato de etilo destinado a la consolidación por mineralización de superficies como: piedras calizas y silíceas, ladrillo, hormigón, enlucidos minerales. La polución atmosférica degrada las fachadas y provoca la eliminación de la argamasa natural de éstas. Por ello, conviene mineralizarlas."
@@ -619,6 +641,7 @@
     ],
     "gamaMain": "Mineralizantes - Consolidantes",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "• Producto de gama alta • No desnaturaliza la superficie. • Gran facilidad de aplicación • Pulverizable • No modifica la permeabilidad con el vapor de agua • Compatible con los hidrófugos de Scalp.",
     "description": [
       "SCALP MINERALIZANTE 94 Líquido de impregnación con silicato de etilo destinado a la consolidación por mineralización de superficies como: piedras calizas y silíceas, ladrillo, hormigón, enlucidos minerales. La polución atmosférica degrada las fachadas y provoca la eliminación de la argamasa natural de éstas. Por ello, conviene mineralizarlas."
@@ -645,6 +668,7 @@
     ],
     "gamaMain": "Mineralizantes - Consolidantes",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 3 formatos.",
     "description": [
       "SCALP MINERALIZANTE 95 es un mineralizante consolidante para interiores y exteriores. Consolida soportes como piedra natural calcárea y de sílice, ladrillo, hormigón y revestimientos minerales. Este consolidante de fachadas, paredes y suelos actúa contra la humedad y la contaminación atmosférica."
@@ -671,6 +695,7 @@
     ],
     "gamaMain": "Desincrustantes de Fachadas",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALP NDS 72 es un procedimiento antisolución salina por impregnación que posibilita eliminar completamente las sales de tonalidad blanca en cualquier tipo de superficies. Este producto también está diseñado para neutralizar los soportes limpiados o decapados con sustancias alcalinas."
@@ -697,6 +722,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para madera",
     "short": "Disponible en 3 formatos",
     "description": [
       "NEUTRAL DA 66, Este increíble producto está diseñado para neutralizar y aclarar la madera que ha perdido su color debido al paso del tiempo y las inclemencias del clima. Con su fórmula única de impregnación neutralizante y aclarante, el NEUTRAL DA 66 es la solución perfecta para renovar carpinterías, marcos de ventanas y muebles de jardín que han perdido su brillo original."
@@ -719,6 +745,7 @@
     ],
     "gamaMain": "Complementos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "SCALP NON-SLIDE es un producto de tratamiento inicial (preventivo) y el tratamiento debe renovarse en cuanto se aprecia que una zona vuelve ser deslizante.",
     "description": [
       "Scalp Non Slide es un tratamiento antideslizante para superficies deslizantes, como bañeras, suelos de baldosas, zonas peatonales… Es eficaz tanto en interior como en exterior sobre cualquier soporte silíceo: piedra natural, hormigón, caliza. Ventajas del producto:",
@@ -745,6 +772,7 @@
     ],
     "gamaMain": "Complementos",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "• Ahorra tiempo y mano de obra en comparación con las protecciones de plástico • Aplicación fácil y ultrarrápida • Multisustrato: paredes, suelos, objetos, etc. • Base acuosa fabricada a partir de materiales reciclados. • Seca entre 4 y 6 horas a temperatura ambiente • Sin COV • Muy resistente a la abrasión • No amarillea el sustrato tras su eliminación • Producto pulverizable • Reduce los residuos (clasificación de residuos: DIB)",
     "description": [
       "Scalp Peel Off. Protección liquida formulada para la protección de todo tipo de superficies en interior. Su aplicación se realiza mediante pulverización airless o con brocha. Crea una capa protectora que puede permanecer hasta 6 meses. Su retirada se realiza fácilmente, tirando de la capa elástica de Peel Off, como una piel y sin dejar residuos. Ahorra tiempo y mano de obra en la",
@@ -772,6 +800,7 @@
     ],
     "gamaMain": "Desincrustantes de Fachadas",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 2 formatos",
     "description": [
       "SCALP PIERRE AQUA 89 es un limpiador de fachadas de piedra que realiza una limpieza veloz y efectiva. Permite eliminar la polución atmosférica focalizada y otras impurezas en una amplia gama de superficies, como piedra, mármol, hormigón, enlucidos, grava lavada, superficies pintadas, revestimientos orgánicos, recubrimientos plásticos de grosor, revestimientos semi gruesos, y mucho más."
@@ -798,6 +827,7 @@
     ],
     "gamaMain": "Fijadores",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Disponible en 2 formatos",
     "description": [
       "SCALP PRIMAFIX es un consolidante fijador previo a la pintura diseñado para su uso en superficies porosas y frágiles, como paneles de yeso o cartón-yeso. Este producto de imprimación universal mejora la adherencia y fortalece los sustratos suaves, polvorientos y frágiles antes de aplicar la pintura, papel tapiz o cualquier revestimiento decorativo. Proporciona una mayor dureza a la superficie del soporte y regula su capacidad de absorción."
@@ -824,6 +854,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 2 formatos",
     "description": [
       "SCALP PRIMER 36 es un sellador aislante de base acuosa que previene el efecto de «aspecto mojado». Forma una capa aislante entre la superficie y la pintura o barniz. Esta imprimación evita la decoloración y el paso de grafitis a través del sustrato."
@@ -850,6 +881,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "De acabado transparente evita efecto mojado sobre superficies porosas.",
     "description": [
       "El SCALP Primer Magic es una imprimación especial para la protección antigrafiti Protec Magic. Fija y sella el soporte para posterior aplicación de la protección."
@@ -876,6 +908,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "• Exterior • Muy rápido • Potente y eficaz • Muy polivalente • Concentrado • Olor ligero • Producto de alta gama • Bajo contenido en COV (32g/L) • Fácilmente biodegradable según los criterios de la OCDE (301F)",
     "description": [
       "SCALP PRONET. Super desengrasante desincrustante multiusos alcalino (ph14) formulado para la limpieza de fachadas y pavimentos.",
@@ -903,6 +936,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "El acabado es transparente y de acabado semi mate. Su terminación es ligeramente gomosa.",
     "description": [
       "El SCALP Protect Magic es una protección anti grafiti de un solo componente, elaborada con resina siliconada. Sirve para proteger superficies de diferentes materiales, como hormigón, cemento, piedra o mármol (entre otros). Evita que las pintadas se adhieran y facilita su limpieza con los productos Scalp Sensitive Cleaner o Anti grafiti 49. En superficies porosas, se debe aplicar antes el Scalp Primer 36 Magic para sellar la absorción y prevenir el efecto mojado del acabado. Este producto puede resistir hasta 30 o 50 limpiezas."
@@ -929,6 +963,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "▪ Gran facilidad de aplicación ▪ Producto ecológico ▪ Polivalente (gran variedad de superficies) ▪ Biodegradable ▪ Producto microporoso e hidrófugo ▪ Sin disolventes ▪ Eficaz tanto en el interior como en el exterior ▪ No inflamable ▪ No se pone amarillo. ▪ Sin olores ▪ Película invisible (según la superficie) ▪ Resistente a los rayos ultravioleta. ▪ Eliminación de graffiti con agua caliente (90º) y bajo presión ▪ Pulverizable",
     "description": [
       "Scalp Protect WA67 Está destinado a la protección antigraffiti de todas las superficies, con excepción de las superficies metálicas anticorrosión no tratadas.",
@@ -955,6 +990,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALP RENOV’EXPRESS revitaliza y purifica techos, fachadas, pisos y muros. Su objetivo es eliminar la suciedad y la polución ambiental en una amplia variedad de superficies, tales como envolturas exteriores, paredes, suelos y cubiertas. Este producto de limpieza especializado se utiliza en capas plásticas gruesas y semigruesas de cualquier composición (orgánica, mineral, hidráulica o blanqueada)."
@@ -981,6 +1017,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Único y excepcional para el silicato y el plomo (no genera polvo). Gran facilidad de aplicación gracias a su viscosidad. Puede decapar varias capas de pintura en una sola pasada. Se adhiere perfectamente a las superficies verticales. Sin olor, sin disolvente, SCALPEX AL 23 es de base acuosa.",
     "description": [
       "El SCALP Scalpex AL23 es un producto que elimina las pinturas con plomo y otros revestimientos dañinos de las superficies. Su forma de gel facilita su aplicación y evita que se esparza el polvo tóxico. Es perfecto para limpiar las paredes interiores de cualquier espacio, como pasillos, habitaciones, cocinas, etc."
@@ -1003,6 +1040,7 @@
     ],
     "gamaMain": "Decapantes",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "• Biodegradable • Eficaz y rápido en su categoría • Sin parafina y sin aclarado • Viscosidad ideal, adaptado a las superficies verticales • No se derrama, (consumo reducido) • No etiquetable según la normativa vigente, en la utilización y en los transportes.",
     "description": [
       "Scalp Scalpex Aqua 15 Este producto está destinado al decapado de pinturas de edificios, ITE, RPE, RSE, colas, tintas, barnices, graffiti, sobre superficies de yeso hormigón, piedras, ladrillos, pasta de vidrio, madera, enlucidos minerales, siendo especial para decapar gotelé."
@@ -1025,6 +1063,7 @@
     ],
     "gamaMain": "Decapantes",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Asimismo, este producto puede utilizarse para eliminar grafitis de superficies rugosas. Decapante de pintura en gel, se puede utilizar tanto en interiores como en exteriores. Gracias a su viscosidad ideal, es perfectamente adecuado para decapar superficies verticales.",
     "description": [
       "SCALPEX NW es un decapante universal de pintura en gel destinado al decapado de lasures, pinturas y barnices en soportes como madera, carpintería, hierro, zinc, galvanizados, piedra y hormigón. Rápido y eficaz, SCALPEX NW es ideal para la renovación de carpinterías de madera y hierro."
@@ -1046,6 +1085,7 @@
     ],
     "gamaMain": "Decapantes",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Reemplaza sin problema a los decapantes con Cloruro. Este producto está destinado a decapar impermeabilizantes, RPE, pinturas delgadas, colas, tintas, barnices, graffitis,… sobre soportes como yeso, hormigón, piedras, ladrillos, pasta de vidrio, madera y revestimientos minerales",
     "description": [
       "Scalp Scalpex SD+ DECAPANTE DE FACHADAS RÁPIDO SIN NMP.",
@@ -1077,6 +1117,7 @@
     ],
     "gamaMain": "Sistemas Antihumedad",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Este hidrófugo con color está perfectamente adaptado para proteger las superficies tratadas de las filtraciones de agua y las manchas. Mineralizante y consolidante, SCALPFUGE 32 impregna la superficie al tiempo que respeta su aspecto mineral.",
     "description": [
       "SCALPFUGE 32 es un hidrofugante de inyección en base agua destinado a la protección de muros y paredes de las subidas de humedad por capilaridad. Tiene doble efecto: secante y preventivo. Es un producto de gama muy alta, sin disolventes."
@@ -1103,6 +1144,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 2 formatos",
     "description": [
       "SCALPFUGE 35 es un impermeabilizante de impregnación con efecto de repelencia al agua, perfecto para aplicar en acabados o renovaciones de fachadas, muros y cubiertas. Este producto transparente de impregnación no forma película. Este impermeabilizante es especialmente adecuado para proteger superficies como piedra, ladrillo, hormigón, revestimientos blancos."
@@ -1129,6 +1171,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Scalp Scalpfuge Antimousse es un hidrofugante de nueva generación con refuerzo antihongos. Está destinado al tratamiento preventivo con doble acción: hidrofugante y antimusgo.",
     "description": [
       "Scalp Scalpfuge Antimousse es un hidrofugante de nueva generación con refuerzo antihongos. Está destinado al tratamiento preventivo con doble acción: hidrofugante y antimusgo.",
@@ -1160,6 +1203,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Este hidrófugo con color está perfectamente adaptado para proteger las superficies tratadas de las filtraciones de agua y las manchas. Mineralizante y consolidante, SCALPFUGE COLOR impregna la superficie al tiempo que respeta su aspecto mineral.",
     "description": [
       "SCALPFUGE COLOR es un renovador hidrofugante, mineralizante y antimanchas con color para tejados, fachadas y paredes. Disponible en 11 colores, impregna la superficie, le da color y la consolida para un soporte reforzado."
@@ -1186,6 +1230,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Scalpfuge pro es n hidrofugante acuoso de gama muy alta, no filmógeno, formulado a base de resina de polisiloxano y de silano. Está destinado a la hidrofugación de RPE (revestimiento plástico denso), revestimientos hidráulicos, piedras, ladrillos, mármoles, hormigón, tejas, pizarra, fibrocemento, piedra azul, enlucido con cal.",
     "description": [
       "Scalp Scalpfuge Pro, está destinado a la hidrofugación de RPE (revestimiento plástico denso), revestimientos hidráulicos, piedras, ladrillos, mármoles, hormigón, tejas, pizarra, fibrocemento, piedra azul, enlucido con cal. Ventajas del producto:",
@@ -1218,6 +1263,7 @@
     ],
     "gamaMain": "Decapantes",
     "tone": null,
+    "uso": "Para madera",
     "short": "• Sin aclarado. • Residuos secos, especialmente indicado para madera. • Eficaz y rápido. • Las superficies decapadas pueden ser repintadas inmediatamente tras su uso. • No ennegrece la madera. • Pulverizable. • Producto de nueva generación",
     "description": [
       "Scalp Scalpik Décap’Sec NW Decapante líquido, sin cloruro de metileno, para pinturas, lasures y barnices. Forma residuos secos; producto sin aclarado. Especialmente indicado para madera.",
@@ -1245,6 +1291,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para metal",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALPINOX D es un destacado agente de limpieza y desengrasante que posee propiedades pasivas y antioxidantes, las cuales son útiles en el proceso de fosfatado del aluminio. Asimismo, este producto es efectivo en la eliminación de manchas de óxido y promueve una excelente adherencia previa a la aplicación de pinturas. SCALPINOX D es altamente recomendado para la limpieza y mantenimiento de carpintería y marcos de ventanas de aluminio anodizado."
@@ -1271,6 +1318,7 @@
     ],
     "gamaMain": "Desincrustantes de Fachadas",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 3 formatos",
     "description": [
       "SCALPNET AQUA 37 es un limpiador de fachadas y superficies de piedra natural y artificial. Se puede aplicar con rodillo, brocha, pulverizador sin aire o con pulverizador."
@@ -1297,6 +1345,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Eficacia radical. Adaptado a las superficies verticales. Permite decolorar los espectros persistentes.",
     "description": [
       "El SCALP Scalpnet EDJ28 es un producto que elimina las sombras de graffitis que quedan en las superficies después de quitar la pintura. Su fórmula es eficaz y segura para el medio ambiente."
@@ -1319,6 +1368,7 @@
     ],
     "gamaMain": "Sistemas Antihumedad",
     "tone": null,
+    "uso": "Para paredes",
     "short": "SCALPOX AS 2 está destinado al tratamiento preventivo contra el salitre. Forma una barrera impermeable e impide el paso de la humedad, las eflorescencias y el salitre por paredes y techos. SCALPOX AS 2 es una respuesta a los problemas ocasionados por las sales higroscóspicas",
     "description": [
       "SCALPOX AS 2 es un tratamiento preventivo contra el salitre que forma una barrera impermeable e impide el paso de la humedad, las eflorescencias y el salitre por paredes y techos. Es una respuesta a los problemas ocasionados por las sales higroscópicas (nitratos, sulfatos, cloruros, etc.)"
@@ -1345,6 +1395,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "También sobre superficies no tratadas o superficies delicadas donde se busque una limpieza superficial sin dañar el fondo.",
     "description": [
       "El SCALP Sensitive Limpiador Antigrafiti es un limpiador de grafitis al disolvente, de aspecto líquido y fácil de aplicar. Se puede usar en superficies con protección Scalp o sin ella. Para uso profesional y doméstico. Elimina los grafitis de forma rápida y eficaz, sin dañar la superficie."
@@ -1371,6 +1422,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "• Rápido y muy eficaz • Muy polivalente • Concentrado • Olor suave • Muy bajo contenido en COV (1,2g/L)",
     "description": [
       "SCALP SOLNET es un limpiador profesional concentrado, especialmente diseñado para eliminar películas de cemento, lechadas, eflorescencias y marcas de fin de obra en una amplia gama de superficies. Ideal para la limpieza después del alicatado, actúa eficazmente sobre residuos de cemento, yeso, cal y salitre.",
@@ -1401,6 +1453,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Base acuosa. Puede ofrecer hasta 10 – 12 limpiezas antes de renovar. No altera ni el aspecto ni la porosidad de la superficie. No blanquea la superficie.",
     "description": [
       "El SCALP Sto-Graff es una solución nanotecnológica de base agua que protege las superficies minerales no pintadas de los graffitis. Su fórmula monocomponente facilita su aplicación y ofrece una protección duradera y eficaz."
@@ -1427,6 +1480,7 @@
     ],
     "gamaMain": "Limpiadores",
     "tone": null,
+    "uso": "Para cubiertas",
     "short": "",
     "description": [
       "SCALP TEJA CLEAN. Potente limpiador para tejados y materiales de construcción. Elimina algas, líquenes y depósitos verdosos.",
@@ -1454,6 +1508,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 2 formatos",
     "description": [
       "VERNACRYL 30 es un recubrimiento protector semipermanente e hidrofugante que forma una película sobre la superficie para combatir los grafitis. Esta protección antigrafitis es renovable y está diseñada para proteger superficies porosas en estado natural (como piedra, ladrillo, hormigón, cemento, madera, etc.) contra todo tipo de grafitis (pintura, rotulador, tinta, etc.)."
@@ -1480,6 +1535,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "En superficies porosas se recomienda una capa previa de Scalp Primer 36 para sellar absorción. La protección impide el anclaje de pintadas y permite una fácil limpieza con los limpiadores Scalp Sensitive Cleaner o Anti grafiti 49, hasta 30 o 50 limpiezas. El acabado es transparente y de acabado semimate.",
     "description": [
       "El SCALP Vernasol PU31 Es una protección antigrafiti bicomponente a base de resina de poliuretano al disolvente para la protección de superficies porosas y no porosas como hormigón, cemento, piedra, mármol, ladrillo, pinturas, revestimientos y metales."
@@ -1506,6 +1562,7 @@
     ],
     "gamaMain": "Antigraffitis",
     "tone": null,
+    "uso": "Para fachadas",
     "short": "Disponible en 1 formato",
     "description": [
       "VERNAEAU PU 16 es una solución de protección contra grafitis y suciedad que ofrece una durabilidad a largo plazo. Es un sistema de protección de dos componentes (endurecedor y resina) disponible en acabado mate o brillante. Se puede aplicar en una amplia variedad de superficies, como piedra, ladrillo, cemento, hormigón, madera e incluso revestimientos hidráulicos."
@@ -1528,6 +1585,7 @@
     ],
     "gamaMain": "Sistemas Antihumedad",
     "tone": null,
+    "uso": "Para cubiertas",
     "short": "Esta membrana impermeabilizante, enriquecida con fibras, es ideal para la reparación de goteras, así como el refuerzo de juntas y fisuras de hasta 3mm de espesor. Apta para una amplia variedad de superficies como tejados, canalones, terrazas, piedra, ladrillo, tejas, cemento, PVC, aluminio y panel sándwich, su extraordinaria adherencia garantiza un sellado eficaz incluso en superficies húmedas.",
     "description": [
       "Scalp WaterProof Barrier es una solución avanzada para la impermeabilización, diseñada para ofrecer una protección excepcional contra el agua. Esta membrana impermeabilizante, enriquecida con fibras, es ideal para la reparación de goteras, así como el refuerzo de juntas y fisuras de hasta 3mm de espesor. Apta para una amplia variedad de superficies como tejados, canalones, terrazas, piedra, ladrillo, tejas, cemento, PVC, aluminio y panel sándwich, su extraordinaria adherencia garantiza un sellado eficaz incluso en superficies húmedas. Resistente al agua en apenas 6 horas tras su aplicación, su gran elasticidad permite adaptarse a los movimientos estructurales sin fisurarse, asegurando una protección duradera y fiable."
@@ -1554,6 +1612,7 @@
     ],
     "gamaMain": "Hidrófugos",
     "tone": null,
+    "uso": "Para cubiertas",
     "short": "Es un hidrófugo filmógeno especial para tejados que efectivamente protege contra la entrada de agua de lluvia a través de una amplia gama de superficies de techo (tejas, pizarras, cementos, tejas asfálticas, tejas, fibrocementos, etc.)",
     "description": [
       "SCALPFUGE ACRYL es un hidrófugo renovador filmógeno especial para tejados. Este hidrófugo filmógeno renueva y restaura los tejados (aspecto satinado duradero). SCALPFUGE ACRYL endurece y forma una película protectora hidrófuga microporosa."
@@ -1576,6 +1635,7 @@
     ],
     "gamaMain": "Complementos",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "• Disolvente orgánico muy enérgico para la eliminación de adhesivos, siliconas, tintas, grasas, chicles y sustancias gomosas. • Disponible en versión Gel y Líquido. • Funciona por penetración, facilitando la descomposición de las sustancias. • El producto no pierde eficacia y puede ser reutilizado varias veces.",
     "description": [
       "Scalpik Eliminador de Adhesivos es un disolvente orgánico muy enérgico para la eliminación de adhesivos, siliconas, tintas, grasas, chicles y sustancias gomosas. Está disponible en versión Gel y Líquido. Funciona por penetración, facilitando la descomposición de las sustancias. El producto no pierde eficacia y puede ser reutilizado varias veces."
@@ -1598,6 +1658,7 @@
     ],
     "gamaMain": "Protección Plus",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Presentación box palet para Adhesivos gama Plus.",
     "description": [
       "SupertapeBox Palet es un papel de protección adhesivo ecológico de 100 gramos con dos bandas adhesivas: una banda central y otra lateral. Este producto aporta la máxima protección a tus trabajos."
@@ -1619,6 +1680,7 @@
     ],
     "gamaMain": "Protección Paredes",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Cinta KREPP de 60º.",
     "description": [
       "La cinta Krepp de Supertape es una cinta adhesiva de calidad profesional que se utiliza para proteger superficies durante trabajos de bricolaje, pintura o decoración. Esta cinta es fácil de aplicar y se adhiere bien a la superficie. Además, la cinta Krepp de Supertape es resistente al agua y a la humedad."
@@ -1640,6 +1702,7 @@
     ],
     "gamaMain": "Protección Paredes",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Ahorra cinta en tus trabajos. Más económica, fácil y rápida de instalar. Proporciona la máxima seguridad gracias a su gran resistencia. Fabricada con papel reciclado y reciclable.",
     "description": [
       "La cinta adhesiva Supertape es un producto que se utiliza para proteger las paredes durante la construcción o renovación de un espacio. Esta cinta es fácil de aplicar y se adhiere bien a la superficie"
@@ -1661,6 +1724,7 @@
     ],
     "gamaMain": "Protección Paredes",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Papel seco sin adhesivo para paredes y suelos.",
     "description": [
       "El papel seco de Supertape es un producto que se utiliza para proteger las paredes durante la construcción o renovación de un espacio. Este papel es resistente al agua y a la humedad, lo que lo hace ideal para su uso en baños y cocinas. Además, el papel seco es fácil de aplicar y se adhiere bien a la superficie"
@@ -1682,6 +1746,7 @@
     ],
     "gamaMain": "Protección Plástico",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Plástico con carga elestroestática, corte manual recto y cinta Krepp de 80ºC.",
     "description": [
       "El plástico protector con Cinta es un producto que se utiliza para proteger las paredes o el suelo al pintar o reformar algún espacio. Se caracteriza por su composición y textura muy mate, retiene las salpicaduras de pintura y seca antes que otros plásticos protectores"
@@ -1703,6 +1768,7 @@
     ],
     "gamaMain": "Protección Plus",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "3 Referencias Disponibles: Banda Adhesiva Central, Banda Adhesiva Central y Lateral, Banda Adhesiva Lateral.",
     "description": [
       "Protección con adhesivo es una solución de protección temporal que se utiliza para proteger superficies delicadas durante el transporte, almacenamiento o instalación. El adhesivo es fácil de aplicar y retirar sin dejar residuos."
@@ -1724,6 +1790,7 @@
     ],
     "gamaMain": "Protección Plástico",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Por su composición y textura muy mate, retiene las salpicaduras de pintura y secan antes. Desliza menos que un polietileno. Sin carga electrostática. No pega sobre si mismo. Se deforma pero es resistente a la rotura. Utilización horizontal y vertical. 100% reciclable. En 150 y 300 galgas..",
     "description": [
       "El film de protección Supertape es un producto que se utiliza para proteger superficies como paredes, suelos o ventanas durante la construcción o renovación de un espacio. Este film es fácil de aplicar y retirar, y no deja residuos pegajosos. Además, el film de protección Supertape es resistente a la humedad y a los rayos UV."
@@ -1745,6 +1812,7 @@
     ],
     "gamaMain": "Protección Suelos Kraft",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Ahora puedes imprimir tu logo sobre esta gama de papel hidrófugo (Consulta condiciones aquí). Tres gamas: Papel Hidrófugo, Papel Hidrófugo Economic y Cartoncillo Hidrófugo",
     "description": [
       "El papel hidrófugo Supertape es un producto que se utiliza para proteger los suelos durante la construcción o renovación de un espacio. Este papel es antideslizante y tiene un tratamiento WS (resistente al agua) que frena el traspaso de líquidos"
@@ -1766,6 +1834,7 @@
     ],
     "gamaMain": "Papel Kraft Plástico Antideslizante",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Papel con plastificado antideslizante. Absorbente y sin resbalones. No traspasa. Fabricado con papel reciclado. Dos gamas: Basic y Plus. Mismas características, distintos gramajes.",
     "description": [
       "Protección Especial + Plástico Antideslizante 2 Capas es una solución de protección para superficies que se pueden dañar fácilmente. La capa superior es antideslizante y la capa inferior es resistente al agua y al desgaste. Esta solución es fácil de instalar y se puede cortar a medida para adaptarse a cualquier superficie."
@@ -1788,6 +1857,7 @@
     ],
     "gamaMain": "Papel Kraft Plástico Antideslizante",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Máxima protección para trabajos de albañilería o para la proteger suelos valiosos. Acolchado, absorbe sin romper y atenúa los golpes. Bases estructural sólida. Con film barrera antideslizante. De secado rápido y realizado en papel reciclado. Medidas",
     "description": [
       "Protección Especial + Plástico Antideslizante 3 Capas es un producto que se utiliza para proteger superficies de diferentes tipos de daños. La capa superior es antideslizante y evita que las personas se resbalen en superficies mojadas o resbaladizas. La capa intermedia es una capa de protección que protege la superficie de los arañazos y otros daños. La capa inferior es una capa adhesiva que se adhiere a la superficie y evita que el producto se deslice o se mueva"
@@ -1813,6 +1883,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Barniz de poliuretano Alifático inalterable.",
     "description": [
       "Barniz de Poliuretano Alifatico Pu Finish 2 C Base disolvente es un barniz de poliuretano alifático de dos componentes que tiene acabado en brillo, satinado, mate o ultramate. Es inalterable e incoloro y tiene una capa de acabado de alta resistencia mecánica y química."
@@ -1835,6 +1906,7 @@
     ],
     "gamaMain": "Sistema de Microcemento a Rodillo",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Cement-Floor Acryl Tixol es un sellador acrílico de alta dureza formulado para colorear y sellar absorción sobre el soporte nivelado previamente con Tixol Top Level. Este sellador, es una capa intermedia del sistema microcemento que con una o dos manos de aplicación a rodillo deja el soporte listo para terminar con Tixol Crema de Poliuretano bicomponente. Disponible en 5 colores y una base neutra para teñir.",
     "description": [
       "Tixol Pintura Cement-Floor Acryl es una pintura acrílica monocomponente selladora de alta dureza. Está formulada para colorear y sellar la absorción sobre el soporte nivelado previamente con Tixol Top Level."
@@ -1857,6 +1929,7 @@
     ],
     "gamaMain": "Marine",
     "tone": null,
+    "uso": "Para madera",
     "short": "Aceite de terminación de acabado brillo, formulado con resinas alquídico uretano que confieren máxima protección y resistencia en maderas expuestas en ambiente marino. No se agrieta ni se pela. Alto poder de penetración sobre maderas duras, tropicales o difíciles de hidratar. Totalmente transparente, no altera tonalidad original. Ideal para el mantenimiento sin previo lijado ni decapado en sector náutico. Tratamiento final previa aplicación con Tixol Marine Aceite Saturador Oil 1.",
     "description": [
       "Tixol Marine Aceite de Acabado Oil 2 es un aceite que está formulado con resinas alquídico uretano que aporta una máxima protección y resistencia en maderas expuestas en ambiente marino."
@@ -1879,6 +1952,7 @@
     ],
     "gamaMain": "Marine",
     "tone": null,
+    "uso": "Para madera",
     "short": "Tixol Aceite de Tung es un tratamiento protector para teca y todo tipo de maderas. Hidrata las superficies y las protege contra agentes atmosféricos sin desnaturalizar la madera. Formulado con aceite de tung de máxima calidad.",
     "description": [
       "Tixol Aceite de Tung es un tratamiento protector ideal para conseguir un resplandor natural para tus superficies de madera de teca y para todo tipo de maderas. Este producto de alta calidad ofrece una protección duradera y un brillo natural incomparable, dejando tus superficies con un acabado impecable.",
@@ -1902,6 +1976,7 @@
     ],
     "gamaMain": "Marine",
     "tone": null,
+    "uso": "Para madera",
     "short": "Aceite saturador alquídico uretano formulado para hidratar Teca y maderas tropicales en ambiente marino. Hidrata en profundidad y protege devolviendo el aspecto original de la madera, aporta una excelente protección contra la humedad sin formar película. Alto poder de penetración sobre maderas duras, tropicales o difíciles de hidratar. Totalmente transparente, no altera tonalidad original. Ideal para el mantenimiento en sector náutico sin lijar ni decapar. Tratamiento previo para acabado con Aceite de terminación Oil 2.",
     "description": [
       "Tixol Aceite Saturador Oil 1 es un aceite que está formulado con resinas alquídico uretano que aporta una máxima protección y resistencia en maderas expuestas en ambiente marino."
@@ -1928,6 +2003,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Para cubiertas",
     "short": "Tixol Acryflex Acrílico es un revestimiento impermeabilizante no bitu-minoso que una vez seco forma un film continuo grueso que, impide la filtración del agua tanto en superficies horizontales como verticales. Este revestimiento es elástico y resistente, se adapta a las irregularidades del soporte sin romper por los movimientos de dilatación y contracción de la superficie tratada. Terrazas, tejados, tejas, balcones, muros…",
     "description": [
       "Tixol Acryflex Acrílico, un revestimiento impermeable de alto rendimiento. Diseñado para resistir las inclemencias del tiempo y brindar una barrera efectiva contra las filtraciones, este producto te ofrece una protección duradera y efectiva.",
@@ -1955,6 +2031,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Para cubiertas",
     "short": "Tixol Acryflex PU es una membrana elástica y elongable que se adhiere perfectamente al soporte, resistiendo el movimiento estructural e impidiendo el paso del agua. Soporta el tránsito y es ideal para aplicar en terrazas, cuartos de baño o superficies que lo requieran antes de enlosar.",
     "description": [
       "Tixol Acryflex PU es un revestimiento impermeabilizante de poliuretano no bituminoso que se utiliza para evitar la filtración del agua en superficies horizontales y verticales. Es elástico y resistente, lo que le permite adaptarse a las irregularidades del soporte sin romperse por los movimientos de dilatación y contracción. Una vez seco, forma un film continuo grueso que impide la filtración del agua."
@@ -1981,6 +2058,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Membrana de Poliuretano Tixol Acryflex rugoso con granza de caucho para impermeabilización de soleras que tengan que ser enlosadas posteriormente. Su rugosidad permite enlucidos con cemento cola para colocación de soleras en terrazas, cuartos de baño y cualquier superficie que requiera de impermeabilización antes de enlosar. También como impermeabilizante transitable antideslizante.",
     "description": [
       "Tixol Acryflex PU Rugoso es una membrana de poliuretano impermeable que se utiliza para impermeabilizar soleras que tengan que ser enlosadas posteriormente. La rugosidad de la membrana permite enlucidos con cemento cola para colocación de soleras en terrazas, cuartos de baño y cualquier superficie que requiera de impermeabilización antes de enlosar."
@@ -2007,6 +2085,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Complemento",
     "short": "Aditivo X (Arcilla Exterior)",
     "description": [
       "Tixol Aditivo X (Arcilla Exterior) Aditivo que refuerza la resistencia a la humedad y al frote de la pintura de arcilla permitiendo realizar aplicaciones en exterior o en zonas húmedas sin alterar su aspecto natural ni la forma de aplicación.",
@@ -2039,6 +2118,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura aislante de manchas al agua con propiedades de anclaje sobre azulejos, galvanizados, pvc y superficies sin poro. Certificado para pintar en industria alimentaria. Sin olor. Acabado Extra Mate",
     "description": [
       "Tixol Agua Mate 3F es una pintura tixotrópica con gran resistencia mecánica y buena lavabilidad. Su olor casi inapreciable y su secado rápido la hacen perfecta para cualquier proyecto de pintura. Además, cuenta con certificado alimentario para su uso en la industria alimentaria"
@@ -2069,6 +2149,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura aislante de manchas al agua con propiedades de anclaje y acabado. Su acabado sedoso le confiere mayor resistencia mecánica y lavabilidad en cámaras frigoríficas y zonas de paso. Sin olor. Interior / Exterior",
     "description": [
       "Tixol Agua Satinado 3F es una pintura de alta calidad que ofrece una excelente resistencia a manchas y una gran adherencia en superficies sin poro como azulejo, galvanizado, poliestireno, pinturas al horno y cerámica. Además, su acabado satinado suave le da un toque elegante y moderno a cualquier espacio interior o exterior."
@@ -2099,6 +2180,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura aislante de manchas en base agua de acabado muy mate. Muy cubriente, incluso sobre hollín, nicotina y manchas secas de humedad. El soporte debe estar seco. Interior",
     "description": [
       "Tixol Aislaqua 2F es una pintura al agua que actúa como aislante de manchas y de acabado muy mate. Tixol Aislaqua 2F tiene un olor casi inapreciable y secado rápido. Además, su blancura, textura y aspecto mate total es ideal en superficies que exijan el mejor acabado, disimulando las posibles imperfecciones del soporte."
@@ -2129,6 +2211,7 @@
     ],
     "gamaMain": "Complementos Epoxi",
     "tone": null,
+    "uso": "Complemento",
     "short": "Alcohol isopropílico especial para la eliminación de burbujas superficiales sobre sistemas Epoxi 100% solidos.",
     "description": [
       "Tixol AntiBurbujas es un aditivo que se utiliza para evitar la formación de burbujas en la aplicación de resinas epoxi y poliuretano."
@@ -2159,6 +2242,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura antimanchas disolvente competitiva. Sella la mancha en 2 manos, excelente blancura y nivelado. Acabado mate. Interior",
     "description": [
       "Tixol Antimanchas Economic es una pintura de interior ideal para superficies que requieran el acabado más exigente. Esta pintura disolvente es una pintura de secado rápido que, en tan sólo dos manos sella las manchas y las aísla. Además, la podemos utilizar como dos funciones: aislante de manchas y pintura de acabado."
@@ -2185,6 +2269,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Primer al agua de altísima cubrición, se aplica directo sobre yeso, yeso proyectado y placas de cartón-yeso. El soporte queda muy blanco y totalmente cubierto. Regula la absorción del soporte proporcionando un excelente fondo para recubrir posteriormente con pinturas de terminación. Interior",
     "description": [
       "Tixol Aquaprim es una pintura de imprimación opacificante y reguladora de absorción, para aplicar antes de enmasillado o acabado de pinturas, papeles pintados, revestimientos murales. Una imprimación de techos y paredes, se puede aplicar sobre todos los fondos más habituales en edificios (yeso y derivados, antiguas pinturas, madera, incluso sobre soportes alcalinos)."
@@ -2215,6 +2300,7 @@
     ],
     "gamaMain": "Complementos Epoxi",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Barniz acrílico alifático al disolvente de 2 componentes de acabado alto brillo que confiere una extrema resistencia y protección anti rayado sobre sistemas Epoxi 3D, epoxi alto sólidos, esmaltes de poliuretano, pavimentos decorativos continuos, mobiliario, barras de bar, metales y sistemas bicapa en sector de carrocería. De uso interior y exterior, muy resistente en ambientes marinos.",
     "description": [
       "Tixol Barniz Acrílico PU Finish Antirayado es un barniz acrílico alifático al disolvente de 2 componentes de acabado alto brillo que confiere una extrema resistencia y protección anti rayado sobre sistemas Epoxi 3D, epoxi alto sólidos, esmaltes de poliuretano, pavimentos decorativos continuos, mobiliario, barras de bar, metales y sistemas bicapa en sector de carrocería."
@@ -2241,6 +2327,7 @@
     ],
     "gamaMain": "Barnices",
     "tone": null,
+    "uso": "Para madera",
     "short": "Barniz Acrílico-Pu especial para protección de madera en exterior. Acabados Mate, Satinado y Brillo.",
     "description": [
       "Barniz Exterior Tixol Wood es un producto acrílico incoloro al agua. Ideal para la protección y decoración de madera tanto exterior como interior. Su alta resistencia a la intemperie permite que los muebles del jardín estén cuidados y el paso del tiempo o la acción de agentes externos no logre estropearlos."
@@ -2263,6 +2350,7 @@
     ],
     "gamaMain": "Marine",
     "tone": null,
+    "uso": "Para madera",
     "short": "Barniz Marino de acabado brillo, formulado con resinas alquídicas uretanadas que confieren máxima protección y resistencia en maderas expuestas en ambiente marino. Flexible, no se agrieta ni se pela. Alto poder de penetración sobre maderas duras, tropicales o difíciles de hidratar. Totalmente transparente, no altera tonalidad original. Ideal para el mantenimiento en sector náutico.",
     "description": [
       "Tixol Barniz Marino es un barniz de acabado brillante que está especialmente formulado para ambientes marinos y que proporciona una máxima protección y resistencia en maderas expuestas en ambiente marino."
@@ -2289,6 +2377,7 @@
     ],
     "gamaMain": "Barnices",
     "tone": null,
+    "uso": "Para madera",
     "short": "Barniz acrílico de poliuretano de altísima resistencia al impacto y al rayado para el tratamiento de suelos de madera en interior. Protege y embellece madera sin desnaturalizar su aspecto natural. Disponible catalizador especial para suelos industriales o de alto tránsito.",
     "description": [
       "Tixol Wood Barniz para Parquet es un producto acrílico incoloro al agua. Ideal para la protección y decoración de suelos de parquet sin desnaturalizar el aspecto de la madera. Su alta resistencia al impacto y al rayado permite que los suelos de parquet estén cuidados y que con el paso del tiempo no se estropeen."
@@ -2315,6 +2404,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Mezcla de áridos de tamaño medio con ligante epoxi/poliamida y pigmentos alcali-resistentes. Recubrimiento de suelos de hormigón o conglomerado asfáltico. Renovado de pavimentos en general. (Losa, terrazo, madera, etc.)",
     "description": [
       "Tixol Barniz PU Anti-Slip es un barniz de poliuretano antideslizante que se utiliza para proteger y decorar superficies de hormigón, ladrillo, piedra y otros materiales. Este producto es resistente a la intemperie y a los rayos UV, lo que lo hace ideal para su uso en exteriores. Además, Tixol Barniz PU Anti-Slip tiene una textura antideslizante que lo hace ideal para su uso en áreas donde se requiere una mayor seguridad."
@@ -2341,6 +2431,7 @@
     ],
     "gamaMain": "Barnices",
     "tone": null,
+    "uso": "Para madera",
     "short": "Barniz Acrílico-Pu especial para suelos de madera en exterior con microesferas para evitar deslizamiento. Certificado C3.",
     "description": [
       "Tixol Wood Barniz Terrazas Anti Slip es un barniz acrílico-PU de alta calidad, diseñado específicamente para proteger y embellecer suelos de madera en exteriores. Incorpora microesferas innovadoras que mejoran la tracción, previniendo el deslizamiento y consiguiendo una mayor seguridad. Este producto cuenta con la certificación C3, garantizando su efectividad y durabilidad en condiciones exteriores adversas."
@@ -2366,6 +2457,7 @@
     ],
     "gamaMain": "Barnices",
     "tone": null,
+    "uso": "Para madera",
     "short": "Barniz Acrílico-Pu especial para suelos de madera en exterior. Muy resistente al rayado, protege la madera sin desnaturalizarla.",
     "description": [
       "Tixol Wood Barniz Terrazas Satinado es un barniz para proteger suelos de madera, muebles de exterior e interior. Debido a su gran resistencia a la intemperie y su excelente adherencia, este producto de Tixol es ideal para el cuidado de pequeñas y grandes superficies de madera con prolongada exposición al sol."
@@ -2392,6 +2484,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Cal aérea en pasta envejecida durante mas de 6 meses para saneamiento de superficies con encalado tradicional. Natural y biodegradable, aporta blancura y transpirabilidad a las superficies donde se aplica obteniendo un ambiente limpio y libre de problemas relacionados con la humedad.",
     "description": [
       "La pintura de cal natural ecológica Tixol es una pintura de cal 100% ecológica que se puede usar para interior y exterior y tiene un aspecto mineral mate. Está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal, para aumentar flexibilidad, resistencia y adherencia sobre superficies pintadas."
@@ -2418,6 +2511,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Cal aérea en pasta producida mediante la hidratación de Cal Viva reposada durante más de 4 años.",
     "description": [
       "Tixol Cal en pasta envejecida-Enlucir es una pintura de cal natural 100% ecológica que se puede usar tanto para interior como para exterior. Tiene un aspecto mineral mate y está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal. Esta composición le permite aumentar la flexibilidad, resistencia y adherencia sobre superficies pintadas."
@@ -2444,6 +2538,7 @@
     ],
     "gamaMain": "Cal Hidráulica Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Cal Natural hidráulica blanca NHL 3,5 de gran pureza, sin aditivos químicos. Obtenido del apagado de la cal que ofrece unas propiedades excelentes en la restauración de patrimonio histórico.",
     "description": [
       "Tixol cal hidráulica blanca es un producto natural que se obtiene de la cocción de piedras calcáreas específicas y sin ningún tipo de aditivo químico. Es muy adecuada para trabajos de revocos (o encalados) sobre soportes que son “poco resistentes”."
@@ -2470,6 +2565,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Complemento",
     "short": "Cera especial para desmoldeado de coladas con epoxi 3D.",
     "description": [
       "Tixol Cera desmoldeante es una cera acuosa formulada para el desmoldeado de piezas que van a ser recubiertas con epoxi 100 % solidos o epoxis 3D. Gran poder antiadherente sobre superficies no absorbentes. Sobre madera, formica, metal, pvc y materiales no absorbentes"
@@ -2492,6 +2588,7 @@
     ],
     "gamaMain": "Marine",
     "tone": "Óxido",
+    "uso": "Para metal",
     "short": "Transformador de oxido Tixol Marine es un polímero sintético quelante diluible en agua de gran eficacia. Formulado para formar una capa inerte sobre superficies de hierro y acero oxidado previo lijado. El tratamiento neutraliza totalmente el óxido y la superficie queda de color negro y totalmente sellada evitando que la oxidación continúe.",
     "description": [
       "Tixol Marine Convertidor de Óxido es un producto especialmente formulado para ambientes marinos que neutraliza totalmente el óxido. Este transformador de óxido forma una capa inerte sobre las superficies de hierro y acero oxidado y sella la superficie evitando que la oxidación continúe."
@@ -2514,6 +2611,7 @@
     ],
     "gamaMain": "Sistema de Microcemento a Rodillo",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Crema de poliuretano Tixol bicomponente al agua para aplicación a llana sobre Pintura Cement-Floor Acryl o fondos minerales previamente imprimados. Ideal para la creación de acabados tipo micro cemento de una forma rápida y muy resistente. Se presenta en base para teñir con 5 colores estándar y una veladura blanca para crear contrastes tipo microcemento.",
     "description": [
       "Tixol Crema de Poliuretano Floor, está indicada para la protección y decoración de pavimentos continuos y superficies verticales. Ofrece un acabado satinado suave tipo microcemento de muy alta resistencia al roce y a agentes químicos."
@@ -2536,6 +2634,7 @@
     ],
     "gamaMain": "Sistema de Microcemento a Rodillo",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Crema de poliuretano Tixol bicomponente al agua para aplicación a llana sobre Pintura Cement-Floor Acryl o fondos minerales previamente imprimados. Ideal para la creación de acabados tipo micro cemento de una forma rápida y muy resistente. Se presenta en base para teñir con 5 colores estándar y una veladura blanca para crear contrastes tipo microcemento.",
     "description": [
       "Tixol Crema de Poliuretano Floor Tex, está indicada para la protección y decoración de pavimentos continuos y superficies verticales. Esta nueva fórmula permite conseguir un acabado texturado que imita la terminación de un microcemento grano medio de una forma rápida y sencilla."
@@ -2566,6 +2665,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Complemento",
     "short": "Disolvente universal isoparafínico. Sin olor.",
     "description": [
       "Tixol Disolvente es la solución definitiva para eliminar manchas y residuos difíciles. Con su fórmula avanzada, este innovador disolvente penetra profundamente en cualquier superficie, disolviendo incluso las manchas más persistentes. Sin olor."
@@ -2591,6 +2691,7 @@
     ],
     "gamaMain": "Acabados Int/Ext",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Ecosil es una pintura mineral a base de silicato potásico y pigmentos inorgánicos destinado a la decoración sobre superficies minerales, tanto en interior como en exterior. Cuenta con un excelente acabado mineral para la decoración sobre fachadas, restauración de patrimonio histórico y donde se busque una máxima transpirabilidad y duración en el tiempo.",
     "description": [
       "Tixol Ecosil, fondo al silicato de alta calidad, que ofrece un acabado mineral para tus superficies. Con esta pintura obtendrás resultados sorprendentes gracias a su fórmula única que combina silicato de potasio y pigmentos inorgánicos. Esta combinación proporciona una adherencia superior y una resistencia excepcional a la intemperie, garantizando que tus paredes se mantengan bellas y protegidas por mucho tiempo.",
@@ -2618,6 +2719,7 @@
     ],
     "gamaMain": "Acabados Int/Ext",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Ecosil es una pintura mineral a base de silicato potásico y pigmentos inorgánicos destinado a la decoración sobre superficies minerales, tanto en interior como en exterior. Cuenta con un excelente acabado mineral para la decoración sobre fachadas, restauración de patrimonio histórico y donde se busque una máxima transpirabilidad y duración en el tiempo.",
     "description": [
       "Tixol Ecosil, pintura al silicato de alta calidad, que ofrece un acabado mineral para tus superficies. Con esta pintura obtendrás resultados sorprendentes gracias a su fórmula única que combina silicato de potasio y pigmentos inorgánicos. Esta combinación proporciona una adherencia superior y una resistencia excepcional a la intemperie, garantizando que tus paredes se mantengan bellas y protegidas por mucho tiempo.",
@@ -2663,6 +2765,7 @@
     ],
     "gamaMain": "Humedades",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Limpiador de manchas de humedad de amplio espectro. De acción muy eficaz y duradera sobre soportes contaminados como ladrillo, cemento, hormigón yeso, madera, piedra, muros, terrazas…",
     "description": [
       "Tixol Eliminador de manchas de humedad es un limpiador de manchas de humedad de amplio espectro para superficies de piedra natural, hormigón, terrazo y baldosas porosas."
@@ -2689,6 +2792,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Su tecnología nanopartícula le confiere un gran poder de penetración en soportes difíciles como yesos proyectados brillantes. Fija y endurece fondos degradados y faltos de cohesión que se disgregan, como morteros y yesos. Rebajado hasta con un 30% de agua se puede utilizar para proteger ladrillo y obra vista. Interior / Exterior",
     "description": [
       "Tixol Endurecedor de Fondos es un producto de alta calidad que tiene un gran poder de penetración en soportes difíciles como yesos proyectados. Es capaz de fijar y endurecer fondos degradados y faltos de cohesión que se disgregan, como morteros y yesos."
@@ -2715,6 +2819,7 @@
     ],
     "gamaMain": "Barnices",
     "tone": null,
+    "uso": "Para madera",
     "short": "",
     "description": [
       "Tixol Wood Endurecedor para Parquet.",
@@ -2742,6 +2847,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Mortero Epo-Roc Tixol bicomponente de reparación de agujeros formulado a base de resina epoxi 100% sólidos y áridos seleccionado para la reparación de agujeros en pavimentos. Sin limite de espesor, sin retracción. Extremadamente duro y transitable. Ideal para terminar con sistemas epoxi, poliuretano o revestimientos decorativos tipo microcemento.",
     "description": [
       "Tixol Epo Roc es un mortero epoxi de dos componentes que se utiliza para la reparación y protección de superficies de hormigón y otros materiales. Es resistente a la abrasión, al impacto y a los productos químicos. Además, es fácil de aplicar y tiene un acabado liso y brillante."
@@ -2768,6 +2874,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "",
     "description": [
       "Tixol Epo Roc Finish, Mortero bicomponente para la reparación de desconchados y pequeñas reparaciones en pavimentos.",
@@ -2799,6 +2906,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Autonivelante. Resina Epoxi / 100% Sólidos. Formulado para la decoración de suelos, permite elegir entre diferentes paisajes, dibujo o motivo decorativo. Una vez colocado sobre el suelo, protegerlo con una capa de Tixol Epoxi 3D, consiguiendo así crear los ambientes más fantásticos con las ventajas de un revestimiento continuo, sin juntas, aislante, resistente a los productos químicos, anti bactericida y muy fácil de limpiar. Aplicación a Llana o Rodillo.",
     "description": [
       "Tixol Epoxi 3D es una resina epóxica de dos componentes 100% sólidos que se utiliza como protector y acabado transparente sobre panorámicas y diseños decorativos previos. Es ideal para la creación de originales suelos epoxi con efecto 3D. También permite elegir entre diferentes paisajes, dibujos o motivos decorativos para suelos y superficies."
@@ -2825,6 +2933,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "",
     "description": [
       "Tixol Epoxi 3D UV Protect"
@@ -2854,6 +2963,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Resina Epoxi de dos componentes 100% sólidos, versión transparente y versión pigmentada. Mezcla de resinas Epoxi con amina ciclo alifática. Aspecto pigmentado: con pigmentos orgánicos e inorgánicos de alta resistencia.",
     "description": [
       "Tixol Epoxi Capa Gruesa es una resina autonivelante de dos componentes 100% sólidos que permite crear rellenos de hasta 5 cm de espesor. Esta resina es muy resistente y tiene infinitas opciones decorativas. Especialmente diseñada para la fabricación de mesas epoxi 3D, esta resina tiene posibilidades estéticas y decorativas infinitas en suelos domésticos, de oficinas y exposiciones."
@@ -2880,6 +2990,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Tixol Epoxi Floor Primer es una resina epoxi 100% sólidos, de viscosidad muy fluida, que actúa como puente de unión sobre pavimentos cerámicos no porosos. Destaca por: • Gran poder de anclaje sobre superficies sin poro • Fácil aplicación, a rodillo.",
     "description": [
       "Tixol Epoxi Floor Primer es una resina epoxi 100% sólidos, de viscosidad muy fluida, que actúa como puente de unión sobre pavimentos cerámicos no porosos. Su aplicación es a rodillo, muy fácil de aplicar.",
@@ -2913,6 +3024,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": "Metálico",
+    "uso": "Para suelos",
     "short": "Pigmentos Metalizados 100% Sólidos. Descubre una nueva forma de decorar suelos, con nuestra gama de pigmentos metalizados. Tres de colores directos: Gold, Metal y Copper. Aplicación a Llana.",
     "description": [
       "Tixol Epoxi Epoxi Metal Colors Resina epoxi de dos componentes 100% sólidos, versión transparente y versión pigmentada. Mezcla de resinas epoxi con amina ciclo alifática. Aspecto pigmentado: con pigmentos orgánicos e inorgánicos de alta resistencia."
@@ -2943,6 +3055,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Autonivelante. Resina Epoxi – 100% Sólidos Elige cualquier color de la carta RAL y te lo hacemos a medida. Aplicación a Llana o Rodillo.",
     "description": [
       "Tixol Epoxi Standard Colors es una resina de dos componentes 100% sólidos que se presenta en varios colores como rojo, verde, gris y negro. Esta resina es pigmentada con pigmentos orgánicos e inorgánicos de alta resistencia y tiene un brillo de 70-80 a 60º"
@@ -2969,6 +3082,7 @@
     ],
     "gamaMain": "Acabados Int/Ext",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Esmalte al agua multiuso. Adherencia excepcional sobre cualquier superficie sin poro. Recomendado para la renovación de cocinas, adhiere sobre azulejos, formica, contrachapado y en general sobre superficies sin porosidad. Disponible en bases BL y TR y acabados Mate y Satinado.Tixol Esmalte multisuperficie es un esmalte acrílico PU de nueva generación. En base agua y sin disolvente, fondo y acabado de gran adherencia sobre cualquier soporte: sobre madera, cemento, metal no ferroso, aluminio, galvanizado, cerámica , con elevada resistencia químicas y mecánica, fácil aplicación, buen tacto y belleza de acabado. En interior y exterior.",
     "description": [
       "Tixol Esmalte multisuperficie es un esmalte acrílico PU de nueva generación. En base agua y sin disolvente. Se puede aplicar como fondo y acabado de gran adherencia sobre cualquier soporte: sobre madera, cemento, metal no ferroso, aluminio, galvanizado, cerámica , con elevada resistencia químicas y mecánica, fácil aplicación, buen tacto y belleza de acabado. Además, es ideal para aplicar en interior y exterior."
@@ -2995,6 +3109,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "",
     "description": [
       "Tixol Esmalte Epoxi Agua. De gran resistencia para pintado de suelos, metales y madera.",
@@ -3025,6 +3140,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Capa de acabado de alta resistencia mecánica y química.",
     "description": [
       "Tixol Esmalte pu Finish Combina calidad excepcional y belleza duradera en un solo producto. Con su fórmula de poliuretano de alto rendimiento, ofrece un acabado impecable y resistente al desgaste que se mantendrá impecable a lo largo del tiempo."
@@ -3055,6 +3171,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Express 20 minutos es una pintura en base disolvente sin olor para aislar manchas de forma Ultra-Rápida. Sella la mancha en una sola pasada y permite repintado con cualquier producto en tan solo 20 minutos.",
     "description": [
       "Tixol Express 20 minutos es una pintura selladora de manchas, formulada en base disolvente de alta calidad que ofrece una fijación rápida y segura en tan solo 20 minutos. Su fórmula de secado rápido permite un proceso de aplicación más eficiente, lo que reduce el tiempo de espera y aumenta la productividad. Puede utilizarse como fondo y acabado en interior y exterior, pero también como fondo de anclaje sobre superficies lisas como cerámica, polietileno, galvanizado y metales no ferrosos."
@@ -3081,6 +3198,7 @@
     ],
     "gamaMain": "Humedades",
     "tone": null,
+    "uso": "Para suelos",
     "short": "• Excelente adherencia sobre azulejos, hormigón y materiales de construcción. • Extrema dureza y resistencia al impacto. • Aplicación sobre soportes con un máximo de humedad del 30%. • Resistencia a la presión negativa de hasta 2,5 bares.",
     "description": [
       "Tixol F Barrier es una barrera de vapor epoxidica de 3 componentes para tratar pavimentos con problemas de humedad capilar con una tasa máxima de humedad del 30%. Alta resistencia a la presión en negativo. También puede utilizarse como membrana impermeabilizante en pavimentos de alto transito."
@@ -3103,6 +3221,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Complemento",
     "short": "Uso Interior y Exterior Seco total: 12h Seco al tacto: 4h Repintado Limpieza: Agua",
     "description": [
       "Tixol Fibra Elastic. Masilla elastomérica fibrada para la reparación de medias cañas, juntas de dilatación y sellado de huecos con un máximo de 5 mm, previa a la",
@@ -3130,6 +3249,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Membrana cementosa flexible bi-componente color blanco para la impermeabilización de piscinas antes de cubrir con pintura o azulejos. Impermeabilizante con certificado de potabilidad para depósitos de agua, terrazas que van a ser enlosadas, muros enterrados, sótanos, fuentes, jardineras y cualquier soporte mineral que requiera de una impermeabilización completa.",
     "description": [
       "Tixol Flexistop es una membrana sanitaria impermeable especial para suelos y muros con problemas importantes de filtraciones o humedades. Es una membrana cementosa flexible e impermeable con certificado de potabilidad. Este producto es un kit que contiene dos componentes formulados en base cemento, de fraguado rápido y emulsión impermeabilizante."
@@ -3156,6 +3276,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Especialmente formulado para la impermeabilización de muros enterrados, terrazas, reparación e impermeabilización de piscinas, depósitos de agua potable y baños antes de embaldosado. Soporta presión negativa.",
     "description": [
       "Tixol Flexistop Eco es un mortero hidráulico de reparación y membrana impermeabilizante a base de cemento blanco con resinas especiales, fibras y aditivos."
@@ -3182,6 +3303,7 @@
     ],
     "gamaMain": "Complementos Oxitec",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Barniz al agua monocomponente, no desnaturaliza las superficies donde se aplica. Además, tiene una excelente adherencia sobre todo tipo de superficies porosas, con una alta penetración y alta resistencia al rayado.",
     "description": [
       "Tixol Hidro Finish Pu 1C . Barniz de poliuretano alifático al agua monocomponente para pavimentos y paramentos verticales. Especialmente formulado para proteger sin desnaturalizar los soportes donde es aplicado. Proporciona una protección excelente, resistente a los rayos U.V, no amarillea. Disponible en acabados mate y satinado"
@@ -3208,6 +3330,7 @@
     ],
     "gamaMain": "Complementos Oxitec",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Barniz de acabado a base de resinas de poliuretano alifático indicado para donde se requiera unas prestaciones especiales con un acabado natural. Alta resistencia química. Interiores y exteriores.",
     "description": [
       "Barniz de Poliuretano Alifático al agua dos componentes para la protección de acabados Oxitec en exterior o interior previamente sellados con Hidro finish. Disponible en acabados mate y"
@@ -3234,6 +3357,7 @@
     ],
     "gamaMain": "Complementos Oxitec",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Barniz a base de resina de Poliuretano alifático al agua. Indicado como capa de sellado y acabado en sistemas revestimientos decorativos Oxitec Hierro, Oxitec Cobre y mircrocementos.",
     "description": [
       "Tixol Hidrofinish emulsión acuosa para el sellado o paralización de la oxidación una vez conseguido el acabado deseado. En interior sirve como protección final del acabado."
@@ -3260,6 +3384,7 @@
     ],
     "gamaMain": "Hidrofugantes Suelos y Paredes",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "En interior y exterior como barniz hidrofugante decorativo con efecto mojado, para proteger e hidrofugar soportes. Realza su color y proporciona un aspecto mojado. Protección y consolidación de soleras de hormigón. Renovación y protección de obra en ambiente muy húmedo, protección de viejos materiales de renovación. Muy resistente y de secado rápido.",
     "description": [
       "Tixol Hidrofugante Efecto Mojado es un barniz hidrofugante decorativo que se utiliza en interiores y exteriores para proteger e hidrofugar soportes. Proporciona un efecto mojado permanente y realza el color de las superficies tratadas. También protege contra todo tipo de manchas domésticas."
@@ -3286,6 +3411,7 @@
     ],
     "gamaMain": "Hidrofugantes Suelos y Paredes",
     "tone": null,
+    "uso": "Para suelos y paredes",
     "short": "Protector invisible para suelos y paredes de barro y piedra natural. Tratamiento de larga duración, muy transpirable, impide la penetración del agua, café, vino, aceite… Facilita la limpieza. Interior / Exterior",
     "description": [
       "El Protector de Suelo En un producto formulado para proteger suelos de barro cocido, terracota, piedra natural, hormigón, terrazo o similar. El tratamiento impide notablemente la penetración de agua, aceite, grasa, vino, café y otros líquidos en la superficie evitando que se manche y sin alterar su aspecto natural."
@@ -3312,6 +3438,7 @@
     ],
     "gamaMain": "Acabados Int/Ext",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol HidroMat Eco es una pintura mate para interior, formulada a base de copolímeros acrílicos. Está indicada para la decoración de paredes y techos en interior y, se puede aplicar sobre todo tipo de materiales de albañilería previamente imprimados. Esta pintura mate cuenta con una altísima cubrición, además de buen tacto y lavabilidad. Su color es blanco nieve y no amarillea.",
     "description": [
       "Tixol HidroMat Eco es una pintura mate de alto rendimiento ideal para embellecer tus espacios con un acabado excepcional y conseguir resultados profesionales. Su fácil aplicación y secado rápido te permitirá obtener un acabado mate uniforme y de larga duración. Elige Tixol HidroMat Eco y marca la diferencia en tus proyectos de pintura combinando calidad, estilo y profesionalidad."
@@ -3338,6 +3465,7 @@
     ],
     "gamaMain": "Acabados Int/Ext",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol HidroMat P900 es una pintura mate seda a base de copolímeros vinilicos para la decoración de superficies murales. Se aplica sobre todo tipo de materiales de albañilería previamente imprimados. Cuenta con una excelente nivelación, su color es blanco nieve y no amarillea. Además, es muy lavable y se puede aplicar en interior y exterior.",
     "description": [
       "Descubre el poder de la pintura Tixol HidroMat P900 y transforma tus espacios con un plus de profesionalidad. Esta pintura mate sedosa de alta calidad, ofrece un acabado mate excepcional y una durabilidad incomparable, brindándote resultados profesionales en cada aplicación.",
@@ -3365,6 +3493,7 @@
     ],
     "gamaMain": "Microesferas huecas",
     "tone": null,
+    "uso": "Para fachadas y cubiertas",
     "short": "Tixol Impermeabilizante Térmico, comparado con otros productos de mercado, destaca por su elasticidad, elevada resistencia a los agentes atmosféricos y buena adherencia a soportes como: galvanizado, aluminio, hormigón, yeso, cemento, ladrillo, etc., incluyendo soportes húmedos. Libre de compuestos orgánicos volátiles según normativa. Acabado liso o texturado.",
     "description": [
       "Tixol Impermeabilizante térmico es una membrana impermeable, aislante térmico y acústico a base de resinas acrílicas en emulsión acuosa y micro esferas de vidrio. Se puede aplicar en interior y exterior.",
@@ -3392,6 +3521,7 @@
     ],
     "gamaMain": "Thermoaislantes",
     "tone": null,
+    "uso": "Para fachadas y cubiertas",
     "short": "El revestimiento térmico reflexivo, es una familia de productos con alta eficiencia energética, capaz de reflectar el 97% de la radiación solar, diseñados para su uso en diferentes fases constructivas. Su composición confiere a los productos una muy baja conductividad de la energía, mejorando así la eficiencia y aislamiento de las estructuras tratadas. En toda la familia utilizamos una nueva tecnología , en desarrollo conjunto con el CSIC (Centro Superior de Investigaciones Científicas de España). Dicha tecnología nos permite cambiar de manera radical el concepto de eficiencia energética en los productos resinosos. La tecnología anterior, basada en microesferas de vidrio o cerámica, tienen una efectividad limitada, por su concepto de producto.",
     "description": [
       "Tixol Impermeabilizante Térmico Reflexivo. Actúa como sus versiones anteriores y su aplicación esta pensada como revestimiento impermeable de fachadas, cubiertas y terrazas con elasticidad suficiente para seguir movimientos de obra y evitar micro fisuras.",
@@ -3419,6 +3549,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Imprimación epoxi 100% solidos disponible en transparente y colores blanco y negro",
     "description": [
       "Tixol Imprimación Epoxi 100% solidos es un producto de secado rápido que está formado a base de resinas epoxi y pigmentos inhibidores de la corrosión. Es una imprimación que se puede usar como capa de fondo gracias a su buena adherencia."
@@ -3445,6 +3576,7 @@
     ],
     "gamaMain": "Complementos Epoxi",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Directo sobre superficies minerales o azulejos previo lijado. Imprimacion para esmaltes epoxi agua.",
     "description": [
       "Tixol Imprimacion epoxi al agua 2 C se puede aplicar directamente sobre superficies minerales o azulejos previo lijado.",
@@ -3472,6 +3604,7 @@
     ],
     "gamaMain": "Aislamiento Eléctrico",
     "tone": null,
+    "uso": "Para metal",
     "short": "Nuestra membrana aislante eléctrica combina resinas acrílicas bi-componentes al agua con caucho reciclado para un aislamiento eléctrico superior en superficies metálicas. Además, cumple con la norma ASTM D5162-15 para aislamientos de baja tensión. Nuestra membrana aislante eléctrica es la mejor opción para una protección duradera y eficiente en tus proyectos.",
     "description": [
       "Tixol Membrana Aislante Eléctrica está formulada a base de resinas acrílicas bi-componentes al agua y caucho reciclado, proporcionando una solución innovadora para el aislamiento y encapsulado eléctrico de superficies metálicas. Esta membrana se puede aplicar en interiores y exteriores, ya que tiene una gran resistencia a los rayos UV, humedad y agentes químicos. Su textura y partículas sólidas aseguran un espesor uniforme de 3 mm, garantizando una aplicación correcta. Por su gran elasticidad, la película seca ofrece una gran resistencia a los cambios de temperatura y a los agentes atmosféricos. Además, cumple con la norma ASTM D5162-15 para aislamientos de baja tensión en recubrimientos. Mejora la durabilidad y seguridad de tus proyectos con nuestra membrana aislante eléctrica de alta calidad."
@@ -3498,6 +3631,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de arcilla natural y aditivos especiales para aplicarlo directamente sobre superficies pintadas, yeso, cartón yeso o superficies minerales",
     "description": [
       "Tixol Mortero de Arcilla. Mortero de arcilla natural y aditivos especiales para aplicarlo directamente sobre superficies pintadas, yeso, cartón yeso o superficies minerales. Formulada para la decoración de muros en interior, permite obtener acabados planchados muy finos o texturas rústicas de hasta 5mm de espesor por capa. Disponible carta en 11 colores naturales y la posibilidad de añadir agregados de paja, cáscara de arroz o cristal reciclado para la obtención de texturas y terminaciones únicas.",
@@ -3525,6 +3659,7 @@
     ],
     "gamaMain": "Cal Hidráulica Natural",
     "tone": "Natural",
+    "uso": "Para fachadas",
     "short": "Mortero de Cal hidráulica Natural, carbonatos cálcicos y corcho natural triturado. Formulado para el aislamiento térmico de fachadas o superficies que requieran una mejora térmica. Producto óptimo para rotura del puente térmico o eliminación de problemas de condensaciones. Permite realizar rellenos de hasta 1 cm de espesor por capa tanto en interior como en exterior.",
     "description": [
       "Mortero de Cal Aislante Térmico es un mortero destinado para los revocos aislantes, con una mejora acústico-térmica frente a los convencionales de cal y arena. Es apto para paredes y techos interiores o exteriores."
@@ -3551,6 +3686,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "• 100 % Natural. • Absorbe CO2 durante su proceso de endurecimiento. • Muy transpirable, permite evaporación de humedades. • Su elevada alcalinidad proporciona supercies libres de mohos y microorganismos. • Permeable al vapor de agua. • Gran resistencia mecánica. • Resistente al fuego. • Gran flexibilidad • No contiene sales solubles. • Producción sostenible con el uso de biomasa en el horneado de la cal. • Posibilidad de proyección con maquina de tornillo.",
     "description": [
       "Tixol Mortero de Cal Antihumedad, es un mortero de cal aérea de gran pureza, superior al 95% en CaO. Formulado con cal en pasta envejecida durante más de 6 meses. Producto 100% natural, obtenido del apagado de la cal que ofrece unas propiedades excelentes para la reparación de paramentos con problemas de humedad capilar. Muy transpirable, poroso y permeable.",
@@ -3580,6 +3716,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de Cal de agarre para la renovación sobre superficies minerales, superficies pintadas, placas de cartón yeso, yesos proyectados o cualquier soporte no mineral que requiera ser imprimado para acabar con morteros de Cal Nature en espesores máximos de 5 mm por capa.",
     "description": [
       "Tixol Mortero de Cal Agarre es un mortero ecológico formulado a partir de una mezcla de cal aérea, obtenida del proceso de cocción de la piedra caliza con áridos calizos triturados de cantera, áridos silíceos, fibra celulósica, cola y aditivos naturales."
@@ -3606,6 +3743,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de Cal extrafino. Excelente microporosidad, formulado con cal en pasta envejecida para la realización de acabados bruñidos y estucos de alta finura en espesor máximo de 1mm. Natural, muy transpirable, fungicida y bactericida, Absorbe CO2 durante su proceso de endurecimiento.",
     "description": [
       "Tixol Mortero de Cal Extra Fino es un producto 100% natural obtenido del apagado de la cal que ofrece unas propiedades excelentes como capa de acabado en enlucidos sobre morteros de Cal con posibilidad de rellenos de hasta 1 mm por capa."
@@ -3632,6 +3770,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de Cal aérea de gran pureza > 95% Cal CL-90. Excelente microporosidad, formulado con cal en pasta envejecida para la realización de acabados bruñidos y estuco de alta finura en espesor máximo de 1mm.",
     "description": [
       "Tixol Mortero de Cal Árido Fino es un mortero de Cal aérea de gran pureza, superior al 95% en CaO, normativa Cal CL-90 según norma UNE_EN 45/1. Está formulado con cal en pasta envejecida durante más de 6 meses y es un producto 100% natural, obtenido del apagado de la cal que ofrece unas propiedades excelentes para el enlucido de paramentos con posibilidad de rellenos de hasta 1 cm por capa. Es muy transpirable, poroso y permeable."
@@ -3658,6 +3797,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de Cal aérea de gran pureza > 95% Cal CL-90. Para la reparación en espesores de hasta 1 cm por capa. Natural, muy transpirable, fungicida y bactericida, Absorbe CO2 durante su proceso de endurecimiento.",
     "description": [
       "La pintura de cal natural ecológica Tixol es una pintura de cal 100% ecológica que se puede usar para interior y exterior y tiene un aspecto mineral mate. Está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal, para aumentar flexibilidad, resistencia y adherencia sobre superficies pintadas."
@@ -3684,6 +3824,7 @@
     ],
     "gamaMain": "Cal Hidráulica Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de Cal Natural hidráulica Romano Fino NHL 3,5 con puzolanas y áridos seleccionados de gran pureza, sin aditivos químicos. Obtenido del apagado de la cal que ofrece unas propiedades excelentes en la restauración de patrimonio histórico, enlucido de muros, reparación de humedades con problemas de salitres. Además, es óptimo para enlucidos sobre soportes minerales con necesidad de un acabado estético duradero, muy transpirable y sostenible.",
     "description": [
       "La pintura de cal natural ecológica Tixol es una pintura de cal 100% ecológica que se puede usar para interior y exterior y tiene un aspecto mineral mate. Está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal, para aumentar flexibilidad, resistencia y adherencia sobre superficies pintadas."
@@ -3710,6 +3851,7 @@
     ],
     "gamaMain": "Cal Hidráulica Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Mortero de Cal Natural hidráulica Romano grueso NHL 5 con puzolanas y áridos seleccionados de gran pureza. Sin aditivos químicos y con capacidad de relleno de hasta 1 cm por capa. Ofrece unas propiedades excelentes para la restauración de patrimonio histórico, reparación de muros, rejuntado de mampostería de piedra natural, ladrillo visto, bioconstrucción y reparación de humedades con problemas de salitres.",
     "description": [
       "El Mortero de Cal Romano Grueso es un mortero de cal natural hidráulica NHL 5 con puzolanas y áridos seleccionados de gran pureza. Es un mortero de cal de revestimiento mixto, mezcla de mortero de estuco auténtico y mortero de cal simple, que admite grandes gruesos en revestimientos. Además, es muy plástico, altamente transpirable y de gran belleza."
@@ -3736,6 +3878,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Proporciona acabados naturales, disponible carta con 12 colores y tres texturas, fina, media y rugosa. Uso recomendado para personas con sensibilidad química. Libre de metales pesados, disolventes y sustancias toxicas. Cov 0%, libre de formaldehido. Cumple normativa europea de revestimientos minerales continuos DIN 18.363.",
     "description": [
       "Tixol Nature Arcilla. Pintura de arcilla 100% natural, formulada con ligantes vegetales y tierras naturales para revestir techos y paredes en interior. Especialmente",
@@ -3766,6 +3909,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para suelos",
     "short": "Tixol Nature Floor Grueso, para preparación de fondos imperfectos o recrecidos para terminación con Grano medio o Grano fino sobre cristales.",
     "description": [
       "Tixol Nature Floor Grueso, Mortero de cal hidráulica natural NHL-5, áridos seleccionados y resinas base agua para la",
@@ -3801,6 +3945,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para suelos",
     "short": "Tixol nature floor roc primer está formulada como primera capa del sistema decorativo de cal natural Tixol Nature Floor.",
     "description": [
       "Tixol Nature Floor Roc Primer es una imprimación de agarre texturada, para la creación de una capa puente sobre pavimentos cerámicos o superficies sin absorción.",
@@ -3828,6 +3973,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Complemento",
     "short": "Carta de colores con 13 colores y 3 acabados con cristal reciclado. Tonos: Natural, Greda, Ceniza, Terracota, Laguena, Arcilla, Arena, Blanco, Greda Intenso, Ceniza Intenso, Laguena Intenso, Arcilla Intenso, Arena Intenso, Cristal verde botella, Cristal Azul, Cristal multicolor.",
     "description": [
       "Tixol Toner Nature Floor son pigmentos naturales especiales para teñir los productos de nuestra gama Tixol Nature Floor y Wall. Contamos con 12 pigmentos distintos para conseguir un acabado espectacular, sin renunciar a las excelentes propiedades de las pinturas y morteros de cal."
@@ -3854,6 +4000,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Nature Protect es un sellador-hidrofugo formulado para la protección de acabados Tixol Nature Wall y Nature Arcilla. Tambien puede ser utilizado sobre cualquier superficie porosa que requiera de una protección natural. No crea película y deja transpirar superficie.",
     "description": [
       "Tixol Nature Protect es un sellador hidrofugante acrílico polisiloxano invisible, para la protección de acabados Nature Wall y Nature Arcilla. Formulado para proteger sin desnaturalizar terminaciones de cal y arcilla. Repele el agua y evita el manchado superficial tanto en interior como en exterior. Muy transpirable."
@@ -3880,6 +4027,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Nature Protect es un sellador-hidrofugo formulado para la protección de acabados Tixol Nature Wall y Nature Arcilla. Tambien puede ser utilizado sobre cualquier superficie porosa que requiera de una protección natural. No crea película y deja transpirar superficie.",
     "description": [
       "Tixol Nature Protect Arcilla es un sellador hidrofugante acrílico polisiloxano invisible, para la protección de acabados Nature Wall y Nature Arcilla. Formulado para proteger sin desnaturalizar terminaciones de cal y arcilla. Repele el agua y evita el manchado superficial tanto en interior como en exterior. Muy transpirable."
@@ -3906,6 +4054,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Nature Wall es un mortero de cal natural, permite realizar terminaciones naturales de cal consiguiendo desde texturas rusticas hasta fratasados o planchados suaves al tacto, como enlucidos de cal apretada.",
     "description": [
       "Tixol Nature Wall es un mortero de cal natural, áridos seleccionados y aditivos especiales que permiten la aplicación directa sobre superficies no minerales como placas de cartón yeso, yeso y superficies pintadas en la decoración de paramentos verticales en interior y exterior. Formulado para la realización de enlucidos decorativos de aspecto encalado antiguo. Permite realizar terminaciones naturales de cal consiguiendo desde texturas rusticas hasta fratasados o planchados suaves al tacto, como enlucidos de cal apretada.",
@@ -3933,6 +4082,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Nature Wall Extrafino es un mortero de cal natural, permite realizar terminaciones naturales de cal consiguiendo desde texturas rusticas hasta fratasados o planchados suaves al tacto, como enlucidos de cal apretada.",
     "description": [
       "Tixol Nature Wall Extrafino. Mortero de Cal aérea natural y áridos de granulometría extrafina para la decoración en espesores de hasta 1,5 mm por capa. Permite realizar terminaciones naturales de cal consiguiendo fratasados o planchados suaves al tacto, como enlucidos de cal apretada.",
@@ -3960,6 +4110,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Nature Wall Fino es un mortero de cal natural, permite realizar terminaciones naturales de cal consiguiendo desde texturas rusticas hasta fratasados o planchados suaves al tacto, como enlucidos de cal apretada.",
     "description": [
       "Tixol Nature Wall Fino. Mortero de Cal hidráulica natural, puzolana y áridos de granulometría fina para la decoración en espesores de hasta 3 mm por capa. Permite realizar terminaciones naturales de cal consiguiendo fratasados o planchados suaves al tacto, como enlucidos de cal apretada.",
@@ -3987,6 +4138,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura natural Tixol Natur Line en base agua para el marcado de lineales sobre hierba en terrenos deportivos.",
     "description": [
       "Tixol Naturline es una pintura de cal natural ecológica para interior y exterior, de aspecto mineral mate. Esta pintura está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal para aumentar flexibilidad, resistencia y adherencia sobre superficies pintadas."
@@ -4017,6 +4169,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura aislante de manchas en base disolvente sin olor, para aislar manchas difíciles incluso en soportes con restos de humedad. Interior / Exterior",
     "description": [
       "Tixol Optima 3F es una pintura antimanchas disolvente perfecta para aislar manchas difíciles, incluso en soportes con restos de humedad. Además, esta pintura tixotrópica tiene 3 funciones, ya que la puedes utilizar como pintura de aislamiento, adherencia y acabado, además, cuenta con dilución en disolvente sin olor y es muy fácil de aplicar."
@@ -4043,6 +4196,7 @@
     ],
     "gamaMain": "Complementos Oxitec",
     "tone": null,
+    "uso": "Para metal",
     "short": "Preparado reactivo especial para oxidar superficies metálicas, de alto poder catalítico. Capaz de obtener resultados oxidantes óptimos sin presentar los inconvenientes de otros oxidantes más agresivos. Diseñado para la oxidación del hierro en el proceso decorativo de oxidación, ya sea sobre Tixol Oxitec Hierro y Cobre, o directamente sobre aceros o sobre una base oxidable.",
     "description": [
       "El activador de óxido Tixol Oxitec acabado Gel es un preparado reactivo especial para oxidar superficies metálicas, de alto poder catalítico, capaz de obtener resultados oxidantes óptimos sin presentar los inconvenientes de otros oxidantes más agresivos. Diseñado para la oxidación del hierro en el proceso decorativo de oxidación, ya sea sobre nuestro sistema Iron/Copper O2 o directamente sobre aceros o bien sobre una base oxidable. Es un producto que se utiliza como complemento para las pinturas oxidadas de Tixol Oxitec. Este producto está disponible en formato gel y en formato líquido, en tamaños de 1 y 5 litros"
@@ -4069,6 +4223,7 @@
     ],
     "gamaMain": "Complementos Oxitec",
     "tone": null,
+    "uso": "Para metal",
     "short": "Activador de óxido en versión líquido para oxidar acabados decorativos Tixol Oxitec Hierro y Cobre. También puede ser aplicado sobre cualquier superficie metálica que requiera ser oxidada.",
     "description": [
       "Tixol Oxitec activador líquido es un producto que se utiliza como complemento para las pinturas oxidadas de Tixol Oxitec. Este producto está disponible en tamaño de 1 y 5 litros.",
@@ -4099,6 +4254,7 @@
     ],
     "gamaMain": "Oxitec",
     "tone": "Metálico",
+    "uso": "Para paredes",
     "short": "Formulaciones en base aquosa con partículas metálicas que tras su aplicación y posterior pulido ofrecen auténticos acabados metálicos. Todos los acabados pueden ser aplicados con llana, rodillo, brocha o pistola ajustando su viscosidad con agua.",
     "description": [
       "Tixol Oxitec Bronce es un revestimiento base agua con cargas metálicas para realizar “Acabados Acero Inoxidable” de alto valor estético en acabado bronce. Este producto se presenta en pasta, listo al uso para aplicación a llana, permite aplicación con rodillo, brocha o pistola ajustando su viscosidad. Es ideal para decorar paredes interiores y exteriores, creando efectos de luz y sombra según el ángulo de visión."
@@ -4125,6 +4281,7 @@
     ],
     "gamaMain": "Oxitec",
     "tone": "Metálico",
+    "uso": "Para paredes",
     "short": "Revestimiento base agua con cargas metálicas para realizar acabados “Óxido Cobre” de alto valor estético. Presentación en pasta, listo al uso par aplicación a llana, permite aplicación con rodillo, brocha o pistola ajustando su viscosidad con agua",
     "description": [
       "Tixol Oxitec Cobre es un revestimiento preoxidado en base agua con cargas metálicas de Tixol que se utiliza para realizar acabados “Óxido Cobre” de alto valor estético.",
@@ -4158,6 +4315,7 @@
     ],
     "gamaMain": "Oxitec",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Oxitec Hierro, es un revestimiento decorativo con el que conseguir un acabado «Óxido hierro» de alto valor estético. Ideal para conseguir acabados decorativos óxido natural muy polivalente.",
     "description": [
       "Tixol Oxitec Hierro es un revestimiento base agua con cargas metálicas para realizar acabados «Óxido Hierro» de alto valor estético. Presentación en pasta, listo al uso para aplicar a llana. Permite la aplicación con rodillo, brocha o pistola ajustando su viscosidad con agua.",
@@ -4191,6 +4349,7 @@
     ],
     "gamaMain": "Oxitec",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Formulaciones en base acuosa con partículas metálicas que tras su aplicación y posterior pulido ofrecen auténticos acabados metálicos. Todos los acabados pueden ser aplicados con llana, rodillo, brocha o pistola ajustando su viscosidad con agua.",
     "description": [
       "Tixol Oxitec Inox Fine es una pintura metalizada en acabado Inox Fine de Tixol que pertenece a la gama de revestimientos Tixol Oxitec. Esta pintura es un revestimiento en base acuosa con partículas metálicas que, tras su aplicación y posterior pulido, ofrecen auténticos acabados metálicos a tus superficies"
@@ -4217,6 +4376,7 @@
     ],
     "gamaMain": "Complementos Oxitec",
     "tone": null,
+    "uso": "Para metal",
     "short": "Aceite Inhibidor de óxido para la protección de acabados Oxitec y superficies de hierro natural oxidado. También como aditivo para mejorar el comportamiento de esmaltes alquídicos o al aceite.",
     "description": [
       "Oxitec Oil es un aceite inhibidor de corrosión de óxido de alta calidad que está formulado para sellar y proteger superficies metálicas en acabados óxido, así como protector de acabados Tixol Oxitec Hierro, Cobre o metales como bronce o zinc."
@@ -4243,6 +4403,7 @@
     ],
     "gamaMain": "Oxitec",
     "tone": "Metálico",
+    "uso": "Para paredes",
     "short": "Formulaciones en base aquosa con partículas metálicas que tras su aplicación y posterior pulido ofrecen auténticos acabados metálicos. Todos los acabados pueden ser aplicados con llana, rodillo, brocha o pistola ajustando su viscosidad con agua.",
     "description": [
       "Tixol Oxitec Oro es un revestimiento base agua con cargas metálicas para realizar “Acabados Acero Inoxidable” de alto valor estético en acabado oro. Este producto se presenta en pasta, listo al uso para aplicación a llana, permite aplicación con rodillo, brocha o pistola ajustando su viscosidad"
@@ -4269,6 +4430,7 @@
     ],
     "gamaMain": "Humedades",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Pintura Anticondensación Interior",
     "description": [
       "Tixol Pintura Anticondensación Interior. Pintura térmica anti condensación con micro esferas cerámicas huecas. Actúa como rotura de puente térmico reduciendo la diferencia de temperatura",
@@ -4295,6 +4457,7 @@
     ],
     "gamaMain": "Humedades",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura mineral bicomponente, a base de cal natural, cargas cementosas y aditivos especiales. Formulada para la reparación de humedades preferiblemente sobre soportes minerales porosos y transpirables.",
     "description": [
       "Tixol Pintura Barrier Antihumedad es una Pintura bicomponente al agua a base de cal aérea natural y aditivos especiales para renovación de superficies con humedad capilar.",
@@ -4323,6 +4486,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Pintura de Cal Natural de agradable aspecto mineral a base cal en pasta envejecida, carbonatos cálcicos y cola vegetal para aumentar flexibilidad, resistencia y adherencia sobre superficies. pintadas.",
     "description": [
       "Tixol pintura de cal ecológica 100% natural que se puede usar tanto para interior como para exterior. Tiene un aspecto mineral mate y está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal para aumentar flexibilidad, resistencia y adherencia sobre superficies pintadas. Es una pintura de cal de agradable aspecto mineral que posee una excelente transpirabilidad y buena adherencia."
@@ -4349,6 +4513,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Para paredes",
     "short": "Pintura de Cal Natural ECO de agradable aspecto mineral a base cal en pasta envejecida, carbonatos cálcicos y cola vegetal para aumentar flexibilidad, resistencia y adherencia sobre superficies. pintadas.",
     "description": [
       "Tixol pintura de cal ECO es 100% natural que se puede usar tanto para interior como para exterior. Tiene un aspecto mineral mate y está compuesta a base de cal en pasta envejecida, carbonatos cálcicos y cola vegetal para aumentar flexibilidad, resistencia y adherencia sobre superficies pintadas. Es una pintura de cal de agradable aspecto mineral que posee una excelente transpirabilidad y buena adherencia."
@@ -4375,6 +4540,7 @@
     ],
     "gamaMain": "Humedades",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Además de proporcionar un acabado estético y duradero, Tixol Pintura Higienizante Ag+ contribuye a mantener un ambiente más saludable al reducir la presencia de agentes patógenos en las paredes. Esto resulta especialmente útil en áreas donde se requiere una alta higiene, como hospitales, clínicas, escuelas, restaurantes y espacios públicos.",
     "description": [
       "Tixol Pintura Higienizante Ag+ es una pintura formulada para higienizar superficies y proteger contra la proliferación de bacterias, microorganismos y moho. Es ideal para hospitales, residencias, hoteles, restaurantes, panaderías, colegios, viviendas, gimnasios y cualquier local con poca ventilación donde se busque una atmósfera limpia y libre de malos olores."
@@ -4401,6 +4567,7 @@
     ],
     "gamaMain": "Thermoaislantes",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Los productos de esta gama han sido diseñados para reflejar un 90% de la radiación solar, esto se consigue por una combinación de pigmentos especiales y aditivos que hacen posible esta extraordinaria capacidad de reflexión.",
     "description": [
       "Tixol Pintura Térmica Reflexiva Interior. La aplicación de esta versión es muy interesante ya que, aunque no reciba radiación solar evita la fuga del calor al exterior del edificio. Tiene la capacidad de mantener la temperatura interior tanto en invierno como en verano. Productos Certificados por CSIC"
@@ -4427,6 +4594,7 @@
     ],
     "gamaMain": "Microesferas huecas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Pintura térmica y anticondensación aplicado en interiores evita condensaciones provocadas por la diferencia de temperatura. Sus propiedades mecánicas, su resistencia al agua y elasticidad reducen la formación de grietas.",
     "description": [
       "TIXOL Pintura Térmica y Anticondensación es una pintura térmica con microesferas de vidrio huecas para la reducción de frio-calor y evitar condensaciones tanto en interior como en exterior",
@@ -4454,6 +4622,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Primer universal en base agua. Actúa como primer y fondo de adherencia, pero también puede quedar como terminación gracias a su excelente acabado. Se aplica y adhiere sobre cualquier tipo de soporte. Interior / Exterior",
     "description": [
       "Tixol Primer Universal es una pintura al agua que actúa como puente de adherencia sobre cualquier superficie lisa o de difícil anclaje. Se adhiere sobre cualquier tipo de soporte y se puede usar tanto en el interior como en el exterior."
@@ -4480,6 +4649,7 @@
     ],
     "gamaMain": "Impermeabilizantes",
     "tone": null,
+    "uso": "Complemento",
     "short": "Tixol Promotor adherencia Acryflex PU mejora la adhesión en húmedo y la resistencia al frote en seco.",
     "description": [
       "Tixol Promotor adherencia Acryflex PU mejora la adhesión en húmedo y la resistencia al frote en seco. La dosificación del PROMOTOR DE ADHERENCIA puede oscilar entre el 0’5 y el 2% en sistemas de poliuretano donde se desea incrementar la adherencia sobre sustratos inorgánicos.",
@@ -4508,6 +4678,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Para metal",
     "short": "Tixol Protec-Fer es un mortero inhibidor de corrosión alcalino para la protección de barras de hierro de forjados. Este mortero anticorrosión tiene grandes propiedades, entre ellas destacan: • Gran adherencia sobre hierro y hormigón. • Ph Alcalin. • Contiene inhibidores de corrosión. • Encapsulamiento total del metal. • Fácil aplicación a brocha. • Secado rápido. • Sin retracción",
     "description": [
       "Tixol Protec-Fer es un mortero de inhibidor de corrosión alcalino para la protección de barras de hierro de forjados."
@@ -4534,6 +4705,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Barniz de poliuretano 100% solidos, mono componente, sin disolventes. Alto rendimiento y máxima resistencia al rayado tanto en interior como exterior. Muy resistente a los rayos U.V, no amarillea. Disponible en acabados mate y brillo",
     "description": [
       "Tixol PU Finish Extreme. Barniz de poliuretano 100% solidos, monocomponente, sin disolventes. Alto rendimiento y máxima resistencia tanto en interior como exterior.",
@@ -4561,6 +4733,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Tixol Pu Finish Water Extreme Mate",
     "description": [
       "Tixol Pu Finish Water Extreme Mate, Barniz de poliuretano alifático bicomponente en base agua. Excelente resistencia al impacto abrasión y agentes químicos. Formulado para la protección de pavimentos continuos, Tixol Nature Floor, Tixol Top Level, Tixol Cement Floor, microcementos, autonivelantes, hormigón pulido, y en general, pavimentos decorativos que requieran de la máxima resistencia sin desnaturalizar fondo. Apto para exteriores, no amarillea con los rayos ultravioleta."
@@ -4587,6 +4760,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Tixol Pu Finish Water Extreme Satinado",
     "description": [
       "Tixol Pu Finish Water Extreme Satinado, Barniz de poliuretano alifático bicomponente en base agua. Excelente resistencia al impacto abrasión y agentes químicos. Formulado para la protección de pavimentos continuos, Tixol Nature Floor, Tixol Top Level, Tixol Cement Floor, microcementos, autonivelantes, hormigón pulido, y en general, pavimentos decorativos que requieran de la máxima resistencia sin desnaturalizar fondo. Apto para exteriores, no amarillea con los rayos ultravioleta."
@@ -4613,6 +4787,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Disponible en dos versiones: Acabado Rugoso y Acabado con Taking de alta pegajosidad para garantizar la adhesión de capas sucesivas. Recomendado como fondo de adherencia para revestimientos e impermeabilizantes acrílicos sobre fondos sin absorción.",
     "description": [
       "Tixol Puente de Unión Taking es un primer acuoso con gran capacidad de anclaje pensado para aplicarlo sobre materiales de construcción difíciles, lisos y sin poro. Además, gracias a la versión Taking, este puente de unión cuenta con una alta pegajosidad para garantizar la adhesión de capas sucesivas."
@@ -4639,6 +4814,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Multisuperficie",
     "short": "Con Tixol Puente de Unión se logra una excelente adherencia de morteros sobre soportes lisos y no porosos. También es ideal como unión de hormigón viejo con nuevo. Se puede utilizar como imprimación en cerramientos de tabiquería con pilares. Además, soluciona problemas de adherencia en paredes donde es muy difícil pintar. Sirve como adhesión de aplacados y como reparación de pavimentos viejos que necesitan una nueva capa de compresión.",
     "description": [
       "Tixol Puente Unión Rugoso es una imprimación en fase acuosa que se utiliza como puente de unión para facilitar el anclaje de diferentes materiales sobre superficies lisas y difíciles. Actúa como puente de unión o fondo de adherencia entre materiales de diferente naturaleza."
@@ -4665,6 +4841,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Renovador de pavimentos Tixol acrílico coloreado para pavimentos porosos. Endurece y sella el fondo, protege contra los líquidos creando una superficie sin polvo, muy resistente al frote y de fácil limpieza. No crea película ni modifica texturas del sustrato. Ideal en la renovación de pavimentos de hormigón impreso, hormigón pulido, adoquines, piedra natural, ladrillo visto. Producto óptimo para cualquier soporte poroso horizontal o vertical que requiera de una renovación de color, sellado del fondo y protección duradera. Alto poder hidrofugo. Interior y Exterior",
     "description": [
       "Tixol Renovación de Pavimentos es un producto que se utiliza para la renovación de pavimentos de hormigón y terrazo. Este producto es un limpiador y renovador de pavimentos que elimina la suciedad y las manchas de los pavimentos."
@@ -4691,6 +4868,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Cement-Extreme ha sido formulado para la renovación de una nueva capa superficial sobre soportes absorbentes. Tiene una extraordinaria dureza lo que la transitable por vehículos. Su aspecto es ligeramente texturada y antideslizante. Además, confiere una capa flexible, no quebradiza, para soportar las posibles dilataciones de la superficie. Además es impermeable y transpirable, con gran resistencia al envejecimiento y fácil aplicación.",
     "description": [
       "Tixol Renovación de Pavimentos Cement Extreme. Es un pintura cementosa bicomponente para renovación de pavimentos en exterior. Su aspecto es ligeramente texturado para evitar deslizamientos. El componente A se suministra en polvo y mezclado con componente B, se obtiene una pintura de viscosidad adaptada para aplicación a rodillo. Cement-Extreme ha sido formulado para la renovación de una nueva capa superficial sobre soportes absorbentes como hormigón impreso, cemento, adoquines, aceras, losetas y en general todo tipo de pavimentos exteriores que requieran una capa superficial totalmente nueva. Es transitable por vehículos, impermeable, extraordinariamente duro y flexible para que la aplicación en 2 o3 capas no forme película quebradiza y absorba pequeñas dilataciones. Se presenta en color blanco roto y debe ser recubierto con Renovador de Pavimentos standard, Extreme o cualquier pintura de pavimentos en exterior."
@@ -4717,6 +4895,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Tixol Renovador de pavimentos extreme formulado especialmente para renovación de hormigón impreso virgen o con restos de pintura o barnices previamente lijado. Es un producto al agua con alta penetración y un gran poder hidrófugo. Por su bajo extracto sólido, apenas modifica textura del fondo. Cuenta con una gran resistencia a la abrasión. Su aplicación es rápida y permite el repintado en 4 horas.",
     "description": [
       "Tixol Renovación de Pavimentos Extreme es un revestimiento especial para pavimentos no cerámicos. Formulado especialmente para renovación de hormigón impreso virgen o con restos de pintura o barnices de protección previamente lijados. Endurece y sella el fondo, protege contra los líquidos creando una superficie sin polvo, muy resistente al frote y de fácil limpieza. Crea una película de acabado satinado resistente al roce y al tránsito sin crear sobreespesores que desnaturalicen el fondo."
@@ -4743,6 +4922,7 @@
     ],
     "gamaMain": "Thermoaislantes",
     "tone": null,
+    "uso": "Para fachadas y cubiertas",
     "short": "Tixol Revestimiento Elástico reflexivo, es una familia de productos con alta eficiencia energética, capaz de reflectar el 97% de la radiación solar, diseñados para su uso en diferentes fases constructivas. Su composición confiere a los productos una muy baja conductividad de la energía, mejorando así la eficiencia y aislamiento de las estructuras tratadas. En toda la familia utilizamos una nueva tecnología , en desarrollo conjunto con el CSIC (Centro Superior de Investigaciones Científicas de España). Dicha tecnología nos permite cambiar de manera radical el concepto de eficiencia energética en los productos resinosos. La tecnología anterior, basada en microesferas de vidrio o cerámica, tienen una efectividad limitada, por su concepto de producto.",
     "description": [
       "Tixol Revestimiento Elástico Reflexivo. Revestimiento elástico, impermeabilizante de fachadas y cubiertas.",
@@ -4771,6 +4951,7 @@
     ],
     "gamaMain": "Thermoaislantes",
     "tone": null,
+    "uso": "Para fachadas y cubiertas",
     "short": "Los productos de esta gama han sido diseñados para reflejar un 90% de la radiación solar, esto se consigue por una combinación de pigmentos especiales y aditivos que hacen posible esta extraordinaria capacidad de reflexión.",
     "description": [
       "Tixol Revestimiento Térmico Reflexivo. Su eficacia reflexiva es del 90% de la irradiación solar es por tanto un tratamiento realmente eficaz para evitar la transmisión de calor a través de la superficie exterior al interior. En verano supone un ahorro energético importante reduciendo el uso del aire acondicionado.",
@@ -4798,6 +4979,7 @@
     ],
     "gamaMain": "Acabados Int/Ext",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Tixol Satinée Lion es una pintura Satinada a base de copolímeros vinílicos para la decoración de superficies murales. Cuenta con una excelente nivelación. Su color es blanco nieve y no amarillea. Es una pintura muy lavable, indicada para interior y exterior.",
     "description": [
       "Tixol Satinée Lion, pintura Satinada a base de copolímeros vinílicos diseñado para ofrecer un acabado satinado suave y lujoso. Con este esmalte premium podrás resaltar la belleza de tus paredes y superficies. Además, gracias a su fórmula de alta calidad y durabilidad, Tixol Satinée Lion garantiza una cobertura uniforme y de larga duración. Cuenta con una aplicación fácil y rápida que, te permitirá lograr resultados profesionales sin esfuerzo, con un aspecto sedoso y radiante. Elige Tixol Satinée Lion y descubre la excelencia en acabados satinados."
@@ -4824,6 +5006,7 @@
     ],
     "gamaMain": "Nature",
     "tone": "Natural",
+    "uso": "Para suelos",
     "short": "El sistema Tixol Nature Floor confiere acabados continuos muy naturales y resistentes al impacto y abrasión. Disponible en dos granulometrías, Grano medio y Grano fino, 13 colores y 3 acabados con cristal reciclado.",
     "description": [
       "Tixol Sistema Nature Floor es sistema compuesto por un mortero de cal hidráulica natural NHL-5, puzolanas, áridos seleccionados y resinas base agua para la realización de pavimentos y paramentos continuos en interior y exterior.",
@@ -4855,6 +5038,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Sellador de manchas Ultra-Rápido. Ideal en trabajos de parcheo de pequeñas manchas. Indispensable en la caja de herramientas de cualquier profesional. Repintado en 15 minutos con cualquier pintura. Interior / Exterior.",
     "description": [
       "Tixol Spray 15 minutos es una pintura en base disolvente sin olor para aislar manchas de forma ULTRA RÁPIDA. Puede utilizarse en interior y exterior. Sella las manchas en una sola pasada y permite el repintado con cualquier producto de acabado en tan solo 15 minutos."
@@ -4881,6 +5065,7 @@
     ],
     "gamaMain": "Decoración de Pavimentos",
     "tone": null,
+    "uso": "Para suelos",
     "short": "• Gran poder de adhesión. • Totalmente transparente. • Alifático 100% sólidos. • No amarillea. • Garantiza la cohesión de los áridos en soluciones decorativas.",
     "description": [
       "Tixol Stone Carpet, Resina de poliuretano 100% solidos para la compactación de piedra natural.",
@@ -4909,6 +5094,7 @@
     ],
     "gamaMain": "Renovación Falsos Techos",
     "tone": null,
+    "uso": "Para techos",
     "short": "Es un producto de fácil aplicación, estudiado y puesto a punto para tratar y rescatar antiguos techos de placas y techos técnicos que recuperan su aspecto inicial quedando limpios y descontaminados. Interior",
     "description": [
       "Tixol Tecnoplac es una pintura para techos desmontables de fácil aplicación que destaca por su gran rendimiento y por no aportar tensión superficial que deforme las placas. Además, no pega las placas a los perfiles y respeta las cualidades acústicas de las placas."
@@ -4935,6 +5121,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Revestimiento acrílico impermeable con propiedades acústicas y termo-aislantes. Es un revestimiento de base acuosa formulado con corcho natural y resinas acrílicas con propiedades impermeabilizantes. Aislamientos: acústico y térmico. Este producto tiene dos versiones: para su aplicación con máquina de proyección y para aplicación a rodillo.",
     "description": [
       "Tixol Thermo Corcho a Rodillo es un revestimiento de base acuosa formulado con corcho natural y resinas acrílicas con propiedades impermeabilizantes. Es un revestimiento acrílico impermeable con propiedades acústicas y termoaislantes. Por sus propiedades Elásticas, impermeabilizantes y aislantes térmicas y acústicas es ideal para aplicar sobre cubiertas de naves industriales, fachadas, tejados, suelos y terrazas resolviendo problemas relacionados con humedades, condensaciones y aislando contra el calor y el ruido."
@@ -4961,6 +5148,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": "Gris",
+    "uso": "Para fachadas",
     "short": "Tixol Thermo Corcho Cementoso es una membrana cementosa flexible con corcho natural para el aislamiento térmico sobre superficies minerales en vertical. Disponible en 8 colores + blanco.",
     "description": [
       "Tixol Thermo Corcho Cementoso es una membrana cementosa bi-componente acrílica con corcho natural para la impermeabilización y aislamiento térmico de las superficies donde se aplica. Formulada para la rotura del",
@@ -4988,6 +5176,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": "Natural",
+    "uso": "Para fachadas y cubiertas",
     "short": "Por sus propiedades Elásticas, impermeabilizantes y aislantes térmicas y acústicas es ideal en la aplicación sobre cubiertas de naves industriales, fachadas, tejados, suelos y terrazas resolviendo problemas relacionados con humedades, condensaciones y aislando contra el calor y el ruido.",
     "description": [
       "Tixol Thermo Corcho Natural Proyectado es un revestimiento acrílico impermeable con propiedades acústicas y termo-aislantes. Está formulado con corcho natural y resinas acrílicas con propiedades impermeabilizantes. Este producto tiene un acabado Natural color alcornoque.",
@@ -5015,6 +5204,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": "Natural",
+    "uso": "Para fachadas y cubiertas",
     "short": "Por sus propiedades Elásticas, impermeabilizantes y aislantes térmicas y acústicas es ideal en la aplicación sobre cubiertas de naves industriales, fachadas, tejados, suelos y terrazas resolviendo problemas relacionados con humedades, condensaciones y aislando contra el calor y el ruido.",
     "description": [
       "Tixol Thermo Corcho Natural Proyectado Fino es un revestimiento acrílico impermeable con propiedades acústicas y termo-aislantes. Está formulado con corcho natural y resinas acrílicas con propiedades impermeabilizantes. Este producto tiene un acabado Natural color alcornoque y está compuesto por granzas de corcho más fina para obtener acabados menos rugosos.",
@@ -5042,6 +5232,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": null,
+    "uso": "Para fachadas y cubiertas",
     "short": "Por sus propiedades Elásticas, impermeabilizantes y aislantes térmicas y acústicas es ideal en la aplicación sobre cubiertas de naves industriales, fachadas, tejados, suelos y terrazas resolviendo problemas relacionados con humedades, condensaciones y aislando contra el calor y el ruido.",
     "description": [
       "Tixol Thermo Proyectado es un revestimiento acrílico impermeable con propiedades acústicas y termo-aislantes. Está formulado con corcho natural y resinas acrílicas con propiedades impermeabilizantes. Es una opción ideal para proteger y aislar tus superficies. Además, es un material aislante perfecto para el aislamiento térmico de tejados, fachadas y otras superficies."
@@ -5068,6 +5259,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": null,
+    "uso": "Para fachadas y cubiertas",
     "short": "Por sus propiedades Elásticas, impermeabilizantes y aislantes térmicas y acústicas es ideal en la aplicación sobre cubiertas de naves industriales, fachadas, tejados, suelos y terrazas resolviendo problemas relacionados con humedades, condensaciones y aislando contra el calor y el ruido.",
     "description": [
       "Tixol Thermo Corcho Proyectado Fino es un revestimiento acrílico impermeable con propiedades acústicas y termo-aislantes. Está formulado con corcho natural y resinas acrílicas con propiedades impermeabilizantes. En este caso está compuesto por granzas de corcho más fina para obtener acabados menos rugosos. Es una opción ideal para proteger y aislar tus superficies. Además, es un material aislante perfecto para el aislamiento térmico de tejados, fachadas y otras superficies."
@@ -5094,6 +5286,7 @@
     ],
     "gamaMain": "Microesferas huecas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Masilla térmica lista al uso formulada con microesferas cerámicas huecas.",
     "description": [
       "Tixol Thermo Masilla F es una masilla al uso, formulada a base de copolímeros acrílicos, gránulos de perlita y microesferas de vidrio huecas. Estas micro esferas forman millones de micro-cámaras de aire que proporcionan un aislamiento térmico complementario, tanto para frío como para calor."
@@ -5120,6 +5313,7 @@
     ],
     "gamaMain": "Microesferas huecas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Mortero en polvo formulado con corcho natural, cal hidráulica y fibras para enlucidos de hasta 1 cm de espesor por capa.",
     "description": [
       "Tixol Thermo mortero G formulado a partir de cemento, cal hidráulica natural, corcho natural triturado y áridos calcáreos selectos, destinado para los revocos aislantes, con una mejora acústico-térmica frente a los convencionales de cal y arena. Es apto para paredes y techos interiores o exteriores. El mortero tiene propiedades físico-químicas y mecánicas de permeabilidad al vapor, transpirabilidad y durabilidad."
@@ -5146,6 +5340,7 @@
     ],
     "gamaMain": "Microesferas huecas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Los soportes deben estar firmes, libres de polvo, desencofrantes y eflorescencias y cualquier material que impida las condiciones normales de adherencia.",
     "description": [
       "Tixol Thermo mortero G.Porex es un mortero formulado a partir de cemento, cal hidráulica natural, virutas de poliexpan recicladas y áridos calcáreos seleccionados, destinado para los revocos aislantes, con una mejora acústico-térmica frente a los convencionales de cal y arena. El mortero tiene propiedades físico-químicas y mecánicas de permeabilidad al vapor, transpirabilidad y durabilidad."
@@ -5176,6 +5371,7 @@
     ],
     "gamaMain": "Antimanchas",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Pintura aislante de manchas en base disolvente sin olor. Acabado muy mate y decorativo. Excelente nivelado, se puede teñir. Recomendado para cualquier trabajo de renovación sobre nicotina, hollín y cualquier tipo de manchas incluso con restos de humedad. Interior",
     "description": [
       "Tixol Tisolver es una pintura antimanchas al disolvente con dos funciones: aislante de manchas y pintura de acabado. Su acabado es muy mate y decorativo y tiene un excelente nivelado. Está formulada para utilizar en interior y se puede teñir. Además, su olor es casi inapreciable. Es ideal para paredes y techos de hoteles, cocinas, restaurantes, hospitales y locales donde se busquen soluciones rápidas, limpias y con total eficacia."
@@ -5202,6 +5398,7 @@
     ],
     "gamaMain": "Cal Aérea Natural",
     "tone": "Natural",
+    "uso": "Complemento",
     "short": "Carta de colores con 12 pigmentos distintos a elegir. Tonos: Arenisca, Feldespato, Agua Marina, Terracota, Greda, Cuarzo Rosa, Senia, Piedra, Feldespato Intenso, Jaspe, Jade, Alamagra.",
     "description": [
       "Tixol Toner Nature son pigmentos naturales especiales para teñir los productos de nuestra gama Tixol Nature. Contamos con 12 pigmentos distintos para conseguir un acabado espectacular, sin renunciar a las excelentes propiedades de las pinturas y morteros de cal."
@@ -5228,6 +5425,7 @@
     ],
     "gamaMain": "Corcho Proyectado",
     "tone": null,
+    "uso": "Complemento",
     "short": "Tixol Toners Thermo corcho es una pasta pigmentaria formulada en base agua con pigmentos seleccionados y emulgentes de alta calidad, de uso exclusivo en nuestra gama Tixol Thermo Aislantes.",
     "description": [
       "Tixol Toners Thermo corcho es una pasta pigmentaria formulada en base agua con pigmentos seleccionados y emulgentes de alta calidad, de uso exclusivo en nuestra gama Tixol Thermo Aislantes.",
@@ -5254,6 +5452,7 @@
     ],
     "gamaMain": "Sistema de Microcemento a Rodillo",
     "tone": null,
+    "uso": "Para suelos",
     "short": "Top level es un mortero de nivelación formulado para la aplicación directa sobre pavimentos minerales porosos y sobre cerámicas no pororsas previa imprimación epoxi Floor Primer. Su aplicación es rápida y sencilla, con un tiempo de vida de mezcla de 30 minutos, es transitable a las 3 horas y estará listo para recubrir con sistema Cement-Floor o Crema Pu transcurridas 24 horas. Tiene una capacidad de relleno de 5 a 15 mm.»",
     "description": [
       "Tixol Top Level es un mortero autonivelante de alta resistencia y dureza. Es ideal para la nivelación y regularización de superficies interiores y exteriores."
@@ -5280,6 +5479,7 @@
     ],
     "gamaMain": "Imprimaciones Especiales",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Imprimación al agua para nivelar y homogeneizar la absorción sobre placas de cartón-yeso nuevas o con problemas de textura por envejecimiento. Es un fondo único para recubrir con pinturas de acabado sin que se aprecien los empalmes del cartón-yeso ni las diferencias de absorción de pequeñas reparaciones. Capacidad de rellenos de hasta 1 mm espesor. Interior",
     "description": [
       "Tixol Top Nivelador es una imprimación al agua para nivelar y homogeneizar la absorción sobre placas de cartón-yeso nuevas o con problemas de textura por envejecimiento. Es un fondo único para recubrir con pinturas de acabado sin que se aprecien los empalmes del cartón-yeso ni las diferencias de pequeñas reparaciones."
@@ -5306,6 +5506,7 @@
     ],
     "gamaMain": "Humedades",
     "tone": null,
+    "uso": "Para paredes",
     "short": "Mortero reparador de humedades a base de cal hidráulica NHL-5.",
     "description": [
       "Tixol W-Barrier es un mortero de reparación y tratamiento de humedades por capilaridad. Bloquea la humedad dejando respirar el soporte en espesores desde 2 mm a 2 cm."
@@ -5332,6 +5533,7 @@
     ],
     "gamaMain": "Aceites",
     "tone": null,
+    "uso": "Para madera",
     "short": "Es un aceite natural de Tung especialmente indicado para el mantenimiento de teca y otras maderas. Se aplica siempre sobre maderas sin barnizar. La aplicación es sencilla, directamente sobre la madera limpia sin necesidad de tapaporos.",
     "description": [
       "Tixol Wood Aceite de Teca es una emulsión acuosa de aceites nutrientes de la madera que protege contra las manchas y nutre e hidrata las maderas. Este producto es ideal para la protección y decoración de mobiliario de jardín."
@@ -5358,6 +5560,7 @@
     ],
     "gamaMain": "Aceites",
     "tone": null,
+    "uso": "Para madera",
     "short": "Aceite totalmente transparente para proteger de las manchas en interior y exterior. Alto poder hidrófugo, no crea película ni altera aspecto natural del sustrato.",
     "description": [
       "Tixol Wood Aceite Protector antimanchas para madera interior de Tixol Wood es un producto acrílico incoloro al agua que protege tus maderas de manchas y es principalmente indicado para uso interior, aunque también se puede aplicar en exterior. Su alto poder hidrófugo permite proteger tus maderas de manchas"
@@ -5384,6 +5587,7 @@
     ],
     "gamaMain": "Lasur",
     "tone": null,
+    "uso": "Para madera",
     "short": "Lasur Acrílico Puro, máxima resistencia al exterior. Muy penetrante, bajo extracto sólido que permite proteger sin desnaturalizar el fondo. Brocheable como en sistema disolvente.",
     "description": [
       "Tixol Wood Lasur Satinado es un monocomponente al agua de alta resistencia a la intemperie ideal para la protección y nutrición de muebles y superficies de madera. Este producto está formulado a partir de resinas acrílicas, protege de la ración U.V y agentes atmosféricos. Además de la alta protección, decora e iguala los tonos de la madera."
