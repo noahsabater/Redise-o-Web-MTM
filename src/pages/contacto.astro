@@ -303,6 +303,11 @@ import { site } from '../data/site';
         form.querySelectorAll('.field-err').forEach((el) => el.classList.remove('is-on'));
         form.querySelectorAll('.field').forEach((el) => el.classList.remove('has-error'));
         decir('Gracias. Hemos recibido tu mensaje y te responderemos en menos de 24 horas laborables.', 'is-ok');
+        // Conversion: solo se registra si el usuario acepto cookies.
+        // Sin datos personales, unicamente la pagina desde la que se envio.
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { pagina: window.location.pathname });
+        }
       } catch (error) {
         console.error('MTM - error al enviar el formulario:', error);
         decir(

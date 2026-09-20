@@ -13,7 +13,7 @@ export const site = {
   // Datos fiscales (LSSI / Aviso legal)
   cif: 'A30234801',
   // Google Analytics 4 — pega el ID de medición (G-XXXXXXXXXX). Vacío = sin analítica.
-  gaId: '',
+  gaId: 'G-RMVKZHBWQM',
   contact: {
     address: 'P.I. Torre Alcayna · C/ San Pancracio 2 y 4, 30110 Churra, Murcia',
     email: 'mtm@mtm-murcia.com',

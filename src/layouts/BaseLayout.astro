@@ -163,6 +163,27 @@ const orgSchema = {
       })();
     </script>
 
+    <!-- Analitica: clics en telefono y correo. Solo miden si el usuario acepto
+         cookies; sin consentimiento gtag no existe y esto no hace nada. -->
+    <script is:inline>
+      (function () {
+        document.addEventListener(
+          'click',
+          function (e) {
+            var t = e.target;
+            if (!t || typeof t.closest !== 'function') return;
+            var a = t.closest('a[href^="tel:"], a[href^="mailto:"]');
+            if (!a || typeof window.gtag !== 'function') return;
+            var href = a.getAttribute('href') || '';
+            window.gtag('event', href.indexOf('tel:') === 0 ? 'clic_telefono' : 'clic_email', {
+              pagina: location.pathname,
+            });
+          },
+          true
+        );
+      })();
+    </script>
+
     <!-- Revelado sutil al hacer scroll (respeta prefers-reduced-motion) -->
     <script>
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
