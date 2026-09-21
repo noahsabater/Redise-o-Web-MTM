@@ -2,25 +2,32 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Newsletter from '../components/sections/Newsletter.astro';
 import { Image } from 'astro:assets';
-import imgNave from '../assets/nosotros/nosotros-2.webp';
-import imgEquipo from '../assets/nosotros/nosotros-1.webp';
 
-// La nave: abre la pagina con la fachada.
-const nave = {
+// Diseño provisional mientras no haya fotos propias de la nave ni el vídeo del
+// dron: todo son imágenes de alta resolución que no se usan en ninguna otra
+// página (comprobado contra dist/ por huella perceptual el 2026-09-21).
+import imgHero from '../assets/proyectos/floor-1.jpg';
+import imgBanda from '../assets/proyectos/wall-2.jpg';
+import imgObra1 from '../assets/proyectos/wall-1.jpg';
+import imgObra2 from '../assets/proyectos/arcilla-1.jpg';
+import imgEquipo from '../assets/formacion/aplicador.png';
+import imgEncimera from '../assets/proyectos/floor-2.jpg';
+import imgCal from '../assets/nosotros/pasta-cal.png';
+import imgCorcho from '../assets/nosotros/corcho-macro.jpg';
+
+const origen = {
   num: '01',
-  kicker: 'La nave',
+  kicker: 'Origen',
   title: 'Donde nace cada producto',
   text: 'Más de 30 años fabricando en España. Bienvenido a MTM — Materiales Modernos.',
 };
 
-// Los tres pilares, en rejilla.
 const pilares = [
-  { num: '02', kicker: 'Fabricación',        title: 'Materiales que resuelven', text: 'Pinturas aislantes, morteros de cal natural, epoxi 3D y revestimientos de fibras naturales, desarrollados aquí con obsesión por el detalle.' },
-  { num: '03', kicker: 'Innovación',         title: 'Tecnología y tradición',   text: 'Combinamos la tecnología más innovadora con materiales nobles como la cal, para acabados sanos, transpirables y atemporales.' },
-  { num: '04', kicker: 'Control de calidad', title: 'Nada sale sin revisarse',  text: 'Cada lote pasa un control exhaustivo para garantizar el mismo resultado, una y otra vez.' },
+  { num: '02', kicker: 'Fabricación',        title: 'Materiales que resuelven', text: 'Pinturas aislantes, morteros de cal natural, epoxi 3D y revestimientos de fibras naturales, desarrollados aquí con obsesión por el detalle.', img: imgEncimera, alt: 'Encimera con acabado continuo de MTM' },
+  { num: '03', kicker: 'Innovación',         title: 'Tecnología y tradición',   text: 'Combinamos la tecnología más innovadora con materiales nobles como la cal, para acabados sanos, transpirables y atemporales.', img: imgCal, alt: 'Primer plano de pasta de cal madura' },
+  { num: '04', kicker: 'Control de calidad', title: 'Nada sale sin revisarse',  text: 'Cada lote pasa un control exhaustivo para garantizar el mismo resultado, una y otra vez.', img: imgCorcho, alt: 'Detalle macro de un revestimiento de corcho' },
 ];
 
-// El equipo: cierra con la banda de la jornada de demostracion.
 const equipo = {
   num: '05',
   kicker: 'El equipo',
@@ -38,53 +45,67 @@ const stats = [
 
 <BaseLayout
   title="Sobre MTM · Nosotros"
-  description="MTM es una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora. Conoce nuestra nave, cómo fabricamos y el equipo que hay detrás."
+  description="MTM es una empresa familiar dedicada a la fabricación de pinturas y revestimientos de alta calidad con la tecnología más innovadora. Conoce cómo trabajamos y el equipo que hay detrás."
   darkHeader
 >
-  <!-- ===== Intro ===== -->
+  <!-- ===== Intro: texto + imagen ===== -->
   <section class="nos-intro">
-    <span class="label label--tick nos-eyebrow">Sobre MTM</span>
-    <h1 class="nos-title">Fabricamos <span class="serif-italic">con intención</span></h1>
-    <p class="nos-lead">
-      Una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la
-      tecnología más innovadora. Baja y conócenos.
-    </p>
-    <span class="nos-scroll" aria-hidden="true">
-      Desliza para conocernos
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
-    </span>
+    <div class="intro-text">
+      <span class="label label--tick nos-eyebrow">Sobre MTM</span>
+      <h1 class="nos-title">Fabricamos <span class="serif-italic">con intención</span></h1>
+      <p class="nos-lead">
+        Una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la
+        tecnología más innovadora. Baja y conócenos.
+      </p>
+      <span class="nos-scroll" aria-hidden="true">
+        Desliza para conocernos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </span>
+    </div>
+    <figure class="intro-fig">
+      <Image
+        src={imgHero}
+        alt="Muro curvo revestido con cal junto a una piscina"
+        widths={[700, 1100, 1600, 2200]}
+        sizes="(max-width: 880px) 100vw, 46vw"
+        quality={86}
+        loading="eager"
+        class="intro-img"
+      />
+    </figure>
   </section>
 
-  <!-- ===== La nave ===== -->
+  <!-- ===== Origen ===== -->
   <section class="nband nband--tall">
     <div class="nband-media">
       <Image
-        src={imgNave}
-        alt="Fachada de la nave de MTM — Materiales Modernos, en Churra (Murcia)"
-        widths={[600, 900]}
+        src={imgBanda}
+        alt="Interior de restaurante con paredes texturizadas en tonos rosados"
+        widths={[1200, 1800, 2560]}
         sizes="100vw"
-        quality={88}
-        loading="eager"
+        quality={86}
         class="nband-img"
       />
       <div class="nband-scrim"></div>
     </div>
-
     <div class="nband-inner container-mtm">
       <div class="nband-content reveal">
-        <span class="nband-eyebrow">{nave.num} · {nave.kicker}</span>
-        <h2 class="nband-title">{nave.title}</h2>
-        <p class="nband-text">{nave.text}</p>
+        <span class="nband-eyebrow">{origen.num} · {origen.kicker}</span>
+        <h2 class="nband-title">{origen.title}</h2>
+        <p class="nband-text">{origen.text}</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== Los pilares ===== -->
+  <!-- ===== Pilares ===== -->
   <section class="nos-pilares">
     <div class="container-mtm">
       <div class="pilares-grid">
         {pilares.map((p) => (
           <article class="pilar reveal">
+            <figure class="pilar-fig">
+              <Image src={p.img} alt={p.alt} widths={[480, 800, 1100]} sizes="(max-width: 880px) 100vw, 31vw" quality={84} class="pilar-img" />
+            </figure>
             <span class="pilar-num">{p.num}</span>
             <span class="pilar-kicker">{p.kicker}</span>
             <h3 class="pilar-title">{p.title}</h3>
@@ -95,21 +116,37 @@ const stats = [
     </div>
   </section>
 
+  <!-- ===== Obra ===== -->
+  <section class="nos-obra">
+    <div class="container-mtm">
+      <div class="obra-head reveal">
+        <span class="nband-eyebrow">En obra</span>
+        <h2 class="obra-title">Acabados que <span class="serif-italic">se viven</span></h2>
+      </div>
+      <div class="obra-grid">
+        <figure class="obra-fig obra-fig--wide reveal">
+          <Image src={imgObra1} alt="Jardinera curva revestida con cal e iluminación integrada" widths={[800, 1300, 1900]} sizes="(max-width: 880px) 100vw, 60vw" quality={86} class="obra-img" />
+        </figure>
+        <figure class="obra-fig obra-fig--tall reveal">
+          <Image src={imgObra2} alt="Estancia revestida con arcilla en tonos terracota" widths={[600, 1000, 1400]} sizes="(max-width: 880px) 100vw, 36vw" quality={86} class="obra-img" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== El equipo ===== -->
   <section class="nband nband--right">
     <div class="nband-media">
       <Image
         src={imgEquipo}
-        alt="Equipo de MTM atendiendo a profesionales en una jornada de demostración de producto"
-        widths={[600, 900]}
+        alt="Aplicadores trabajando con productos de MTM durante una formación"
+        widths={[1200, 1800, 2600]}
         sizes="100vw"
-        quality={88}
-        loading="lazy"
+        quality={86}
         class="nband-img"
       />
       <div class="nband-scrim"></div>
     </div>
-
     <div class="nband-inner container-mtm">
       <div class="nband-content reveal">
         <span class="nband-eyebrow">{equipo.num} · {equipo.kicker}</span>
@@ -161,17 +198,19 @@ const stats = [
     background: var(--color-carbon);
     color: var(--color-paper);
     min-height: 92vh;
-    display: flex; flex-direction: column; justify-content: center;
+    display: grid; grid-template-columns: 1.05fr 1fr; align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
     padding: clamp(6rem, 12vw, 9rem) clamp(1.25rem, 5vw, 5rem) clamp(3rem, 6vw, 5rem);
     max-width: 92rem; margin-inline: auto;
   }
+  .intro-text { display: flex; flex-direction: column; }
   .nos-eyebrow { color: rgba(244,244,242,0.7); margin-bottom: 1.6rem; }
   .nos-title {
     color: var(--color-paper);
-    font-size: clamp(2.8rem, 9vw, 7rem); line-height: 0.98; letter-spacing: -0.01em;
+    font-size: clamp(2.8rem, 7vw, 6.4rem); line-height: 0.98; letter-spacing: -0.01em;
     margin-bottom: 1.8rem; max-width: 16ch;
   }
-  .nos-lead { color: rgba(244,244,242,0.78); font-size: clamp(1.1rem, 1.6vw, 1.4rem); line-height: 1.6; max-width: 46ch; }
+  .nos-lead { color: rgba(244,244,242,0.78); font-size: clamp(1.1rem, 1.6vw, 1.35rem); line-height: 1.6; max-width: 44ch; }
   .nos-scroll {
     margin-top: clamp(2.5rem, 6vw, 4rem);
     display: inline-flex; align-items: center; gap: 0.7rem;
@@ -179,8 +218,10 @@ const stats = [
   }
   .nos-scroll svg { width: 18px; height: 18px; animation: bob 1.8s var(--ease-soft) infinite; }
   @keyframes bob { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(5px); } }
+  .intro-fig { margin: 0; height: min(74vh, 760px); overflow: hidden; border-radius: 2px; }
+  .intro-img { width: 100%; height: 100%; object-fit: cover; }
 
-  /* ===== Bandas a sangre (la nave / el equipo) ===== */
+  /* ===== Bandas a sangre ===== */
   .nband {
     position: relative;
     min-height: clamp(440px, 68vh, 700px);
@@ -224,14 +265,16 @@ const stats = [
   .nos-pilares {
     background: var(--color-carbon); color: var(--color-paper);
     padding-block: clamp(3.5rem, 8vw, 6.5rem);
-    border-top: 1px solid rgba(244,244,242,0.1);
   }
-  .pilares-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 4vw, 3.5rem); }
-  .pilar { border-top: 1px solid rgba(244,244,242,0.18); padding-top: 1.5rem; }
+  .pilares-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 3.5vw, 3rem); }
+  .pilar { display: flex; flex-direction: column; }
+  .pilar-fig { margin: 0 0 1.6rem; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 2px; }
+  .pilar-img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-soft); }
+  .pilar:hover .pilar-img { transform: scale(1.05); }
   .pilar-num {
     display: block; font-family: var(--font-display);
-    font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1;
-    color: rgba(244,244,242,0.35); margin-bottom: 0.9rem;
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem); line-height: 1;
+    color: rgba(244,244,242,0.35); margin-bottom: 0.8rem;
   }
   .pilar-kicker {
     display: block; font-size: 0.78rem; letter-spacing: 0.2em;
@@ -239,6 +282,22 @@ const stats = [
   }
   .pilar-title { color: var(--color-paper); font-size: clamp(1.35rem, 2.2vw, 1.9rem); line-height: 1.12; margin-bottom: 0.8rem; }
   .pilar-text { color: rgba(244,244,242,0.8); font-size: 1rem; line-height: 1.6; }
+
+  /* ===== Obra ===== */
+  .nos-obra {
+    background: var(--color-carbon); color: var(--color-paper);
+    padding-block: clamp(1rem, 3vw, 2rem) clamp(4rem, 9vw, 7rem);
+  }
+  .obra-head { margin-bottom: clamp(2rem, 4vw, 3rem); }
+  .obra-title { color: var(--color-paper); font-size: clamp(2rem, 4.6vw, 3.6rem); line-height: 1.02; letter-spacing: -0.01em; }
+  .obra-grid { display: grid; grid-template-columns: 1.65fr 1fr; gap: clamp(1rem, 2vw, 1.6rem); align-items: end; }
+  .obra-fig { margin: 0; overflow: hidden; border-radius: 2px; }
+  .obra-fig--wide { aspect-ratio: 3 / 2; }
+  .obra-fig--tall { aspect-ratio: 4 / 5; }
+  .obra-img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-soft); }
+  .obra-fig:hover .obra-img { transform: scale(1.04); }
+  /* La sala de arcilla tiene una pantalla con texto a la izquierda: se encuadra a la derecha */
+  .obra-fig--tall .obra-img { object-position: 78% center; }
 
   /* ===== Datos ===== */
   .nos-stats { background: var(--color-carbon); color: var(--color-paper); padding-block: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid rgba(244,244,242,0.1); }
@@ -258,7 +317,11 @@ const stats = [
 
   /* ===== Responsive ===== */
   @media (max-width: 880px) {
-    .pilares-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+    .nos-intro { grid-template-columns: 1fr; min-height: 0; }
+    .intro-fig { height: auto; aspect-ratio: 4 / 5; }
+    .pilares-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .pilar-fig { aspect-ratio: 3 / 2; }
+    .obra-grid { grid-template-columns: 1fr; }
     /* En movil el texto ocupa el ancho: el degradado pasa a ser solo vertical */
     .nband-content { max-width: none; }
     .nband--right .nband-content { margin-left: 0; text-align: left; }
@@ -271,6 +334,6 @@ const stats = [
 
   @media (prefers-reduced-motion: reduce) {
     .nos-scroll svg { animation: none; }
-    .nband-img, .nband:hover .nband-img { transition: none; transform: none; }
+    .nband-img, .pilar-img, .obra-img { transition: none; transform: none !important; }
   }
 </style>
