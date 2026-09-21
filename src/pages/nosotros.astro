@@ -1,20 +1,32 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Newsletter from '../components/sections/Newsletter.astro';
+import { Image } from 'astro:assets';
+import imgNave from '../assets/nosotros/nosotros-2.webp';
+import imgEquipo from '../assets/nosotros/nosotros-1.webp';
 
-// Vídeo del recorrido por la nave. Placeholder: el vídeo del hero.
-// Cuando tengas el del dron, súbelo a public/video/ y cambia esta ruta.
-const journeyVideo = '/video/hero-mtm.mp4';
+// La nave: abre la pagina con la fachada.
+const nave = {
+  num: '01',
+  kicker: 'La nave',
+  title: 'Donde nace cada producto',
+  text: 'Más de 30 años fabricando en España. Bienvenido a MTM — Materiales Modernos.',
+};
 
-// Capítulos del recorrido. `at` = punto del vídeo (0 a 1) donde ocurre.
-// Edítalos para que coincidan con los momentos reales del vídeo del dron.
-const chapters = [
-  { at: 0.02, nav: 'La nave',        kicker: '01 · La nave',            title: 'Donde nace cada producto', text: 'Más de 30 años fabricando en España. Bienvenido a MTM — Materiales Modernos.' },
-  { at: 0.28, nav: 'Fabricación',    kicker: '02 · Fabricación',        title: 'Materiales que resuelven', text: 'Pinturas aislantes, morteros de cal natural, epoxi 3D y revestimientos de fibras naturales, desarrollados aquí con obsesión por el detalle.' },
-  { at: 0.52, nav: 'Cal natural',    kicker: '03 · Innovación',         title: 'Tecnología y tradición',   text: 'Combinamos la tecnología más innovadora con materiales nobles como la cal, para acabados sanos, transpirables y atemporales.' },
-  { at: 0.76, nav: 'Calidad',        kicker: '04 · Control de calidad', title: 'Nada sale sin revisarse',  text: 'Cada lote pasa un control exhaustivo para garantizar el mismo resultado, una y otra vez.' },
-  { at: 0.95, nav: 'El equipo',      kicker: '05 · El equipo',          title: 'Una empresa familiar',     text: 'Detrás de cada bote hay un equipo que cuida lo que hace. Ese es el compromiso de MTM.' },
+// Los tres pilares, en rejilla.
+const pilares = [
+  { num: '02', kicker: 'Fabricación',        title: 'Materiales que resuelven', text: 'Pinturas aislantes, morteros de cal natural, epoxi 3D y revestimientos de fibras naturales, desarrollados aquí con obsesión por el detalle.' },
+  { num: '03', kicker: 'Innovación',         title: 'Tecnología y tradición',   text: 'Combinamos la tecnología más innovadora con materiales nobles como la cal, para acabados sanos, transpirables y atemporales.' },
+  { num: '04', kicker: 'Control de calidad', title: 'Nada sale sin revisarse',  text: 'Cada lote pasa un control exhaustivo para garantizar el mismo resultado, una y otra vez.' },
 ];
+
+// El equipo: cierra con la banda de la jornada de demostracion.
+const equipo = {
+  num: '05',
+  kicker: 'El equipo',
+  title: 'Una empresa familiar',
+  text: 'Detrás de cada bote hay un equipo que cuida lo que hace. Ese es el compromiso de MTM.',
+};
 
 const stats = [
   { n: '+30', label: 'Años de experiencia' },
@@ -26,7 +38,7 @@ const stats = [
 
 <BaseLayout
   title="Sobre MTM · Nosotros"
-  description="MTM es una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora. Recorre nuestra nave."
+  description="MTM es una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la tecnología más innovadora. Conoce nuestra nave, cómo fabricamos y el equipo que hay detrás."
   darkHeader
 >
   <!-- ===== Intro ===== -->
@@ -35,54 +47,74 @@ const stats = [
     <h1 class="nos-title">Fabricamos <span class="serif-italic">con intención</span></h1>
     <p class="nos-lead">
       Una empresa familiar dedicada a la fabricación de pinturas de alta calidad con la
-      tecnología más innovadora. Baja y recorre nuestra nave.
+      tecnología más innovadora. Baja y conócenos.
     </p>
     <span class="nos-scroll" aria-hidden="true">
-      Desliza para recorrer
+      Desliza para conocernos
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
     </span>
   </section>
 
-  <!-- ===== Recorrido por la nave (vídeo por scroll) ===== -->
-  <section class="journey" data-journey>
-    <div class="journey-sticky">
-      <video
-        class="journey-video" data-journey-video
-        muted playsinline preload="auto" poster="/favicon.webp"
-        aria-label="Recorrido en dron por la nave de MTM"
-      >
-        <source src={journeyVideo} type="video/mp4" />
-      </video>
-      <div class="journey-scrim"></div>
+  <!-- ===== La nave ===== -->
+  <section class="nband nband--tall">
+    <div class="nband-media">
+      <Image
+        src={imgNave}
+        alt="Fachada de la nave de MTM — Materiales Modernos, en Churra (Murcia)"
+        widths={[600, 900]}
+        sizes="100vw"
+        quality={88}
+        loading="eager"
+        class="nband-img"
+      />
+      <div class="nband-scrim"></div>
+    </div>
 
-      <!-- Textos superpuestos por tramo -->
-      <div class="journey-caps">
-        {chapters.map((c, i) => (
-          <div class="cap" data-cap={i}>
-            <span class="cap-kicker">{c.kicker}</span>
-            <h2 class="cap-title">{c.title}</h2>
-            <p class="cap-text">{c.text}</p>
-          </div>
+    <div class="nband-inner container-mtm">
+      <div class="nband-content reveal">
+        <span class="nband-eyebrow">{nave.num} · {nave.kicker}</span>
+        <h2 class="nband-title">{nave.title}</h2>
+        <p class="nband-text">{nave.text}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Los pilares ===== -->
+  <section class="nos-pilares">
+    <div class="container-mtm">
+      <div class="pilares-grid">
+        {pilares.map((p) => (
+          <article class="pilar reveal">
+            <span class="pilar-num">{p.num}</span>
+            <span class="pilar-kicker">{p.kicker}</span>
+            <h3 class="pilar-title">{p.title}</h3>
+            <p class="pilar-text">{p.text}</p>
+          </article>
         ))}
       </div>
+    </div>
+  </section>
 
-      <!-- Índice de capítulos -->
-      <nav class="journey-index" aria-label="Capítulos del recorrido">
-        {chapters.map((c, i) => (
-          <button class="jx" type="button" data-goto={i}>
-            <span class="jx-dot"></span>
-            <span class="jx-label">{c.nav}</span>
-          </button>
-        ))}
-      </nav>
+  <!-- ===== El equipo ===== -->
+  <section class="nband nband--right">
+    <div class="nband-media">
+      <Image
+        src={imgEquipo}
+        alt="Equipo de MTM atendiendo a profesionales en una jornada de demostración de producto"
+        widths={[600, 900]}
+        sizes="100vw"
+        quality={88}
+        loading="lazy"
+        class="nband-img"
+      />
+      <div class="nband-scrim"></div>
+    </div>
 
-      <!-- Barra de progreso / deslizador -->
-      <div class="journey-barwrap" data-bar-wrap>
-        <div class="journey-bar">
-          <div class="journey-bar-fill" data-bar-fill></div>
-          {chapters.map((c) => <span class="journey-tick" style={`left:${c.at * 100}%`}></span>)}
-          <span class="journey-knob" data-bar-knob></span>
-        </div>
+    <div class="nband-inner container-mtm">
+      <div class="nband-content reveal">
+        <span class="nband-eyebrow">{equipo.num} · {equipo.kicker}</span>
+        <h2 class="nband-title">{equipo.title}</h2>
+        <p class="nband-text">{equipo.text}</p>
       </div>
     </div>
   </section>
@@ -122,7 +154,7 @@ const stats = [
 
 <style>
   /* La página entera en oscuro */
-  :global(body:has(.journey)) { background: var(--color-carbon); }
+  :global(body:has(.nos-intro)) { background: var(--color-carbon); }
 
   /* ===== Intro ===== */
   .nos-intro {
@@ -148,55 +180,65 @@ const stats = [
   .nos-scroll svg { width: 18px; height: 18px; animation: bob 1.8s var(--ease-soft) infinite; }
   @keyframes bob { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(5px); } }
 
-  /* ===== Recorrido ===== */
-  .journey { position: relative; height: 560vh; background: var(--color-carbon); }
-  .journey-sticky { position: sticky; top: 0; height: 100vh; overflow: hidden; background: #000; }
-  .journey-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .journey-scrim {
-    position: absolute; inset: 0; pointer-events: none;
+  /* ===== Bandas a sangre (la nave / el equipo) ===== */
+  .nband {
+    position: relative;
+    min-height: clamp(440px, 68vh, 700px);
+    display: flex; align-items: flex-end;
+    padding-block: clamp(2.5rem, 7vh, 5rem);
+    overflow: hidden;
+    background: var(--color-carbon);
+  }
+  .nband--tall { min-height: clamp(520px, 82vh, 860px); }
+  .nband-media { position: absolute; inset: 0; }
+  .nband-img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease-soft); }
+  .nband:hover .nband-img { transform: scale(1.04); }
+  /* Doble degradado: desde abajo para el texto, lateral para separarlo de la foto */
+  .nband-scrim {
+    position: absolute; inset: 0;
     background:
-      linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0) 55%),
-      linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0) 75%);
+      linear-gradient(to top, rgba(11,11,10,0.94) 0%, rgba(11,11,10,0.6) 34%, rgba(11,11,10,0.1) 68%, rgba(11,11,10,0) 100%),
+      linear-gradient(to right, rgba(11,11,10,0.9) 0%, rgba(11,11,10,0.58) 30%, rgba(11,11,10,0.14) 62%, rgba(11,11,10,0) 86%);
   }
+  .nband--right .nband-scrim {
+    background:
+      linear-gradient(to top, rgba(11,11,10,0.94) 0%, rgba(11,11,10,0.6) 34%, rgba(11,11,10,0.1) 68%, rgba(11,11,10,0) 100%),
+      linear-gradient(to left, rgba(11,11,10,0.9) 0%, rgba(11,11,10,0.58) 30%, rgba(11,11,10,0.14) 62%, rgba(11,11,10,0) 86%);
+  }
+  .nband-inner { position: relative; z-index: 2; width: 100%; }
+  .nband-content { max-width: 48ch; color: var(--color-paper); }
+  .nband--right .nband-content { margin-left: auto; text-align: right; }
+  .nband-eyebrow {
+    display: inline-block;
+    font-size: 0.8rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(244,244,242,0.75); margin-bottom: 1.1rem;
+  }
+  .nband-title {
+    color: var(--color-paper);
+    font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.02;
+    letter-spacing: -0.01em; margin-bottom: 1.1rem;
+  }
+  .nband-text { color: rgba(244,244,242,0.88); font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.6; }
 
-  /* Textos superpuestos */
-  .journey-caps { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
-  .cap {
-    position: absolute; left: clamp(1.5rem, 6vw, 6rem); bottom: clamp(6rem, 14vh, 10rem);
-    max-width: 40ch; color: var(--color-paper);
-    opacity: 0; visibility: hidden; transform: translateY(20px);
-    transition: opacity 0.35s var(--ease-soft), transform 0.45s var(--ease-soft), visibility 0.35s;
+  /* ===== Pilares ===== */
+  .nos-pilares {
+    background: var(--color-carbon); color: var(--color-paper);
+    padding-block: clamp(3.5rem, 8vw, 6.5rem);
+    border-top: 1px solid rgba(244,244,242,0.1);
   }
-  .cap.is-active { opacity: 1; visibility: visible; transform: none; }
-  .cap-kicker { display: inline-block; font-size: 0.8rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244,244,242,0.75); margin-bottom: 1rem; }
-  .cap-title { color: var(--color-paper); font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.02; margin-bottom: 1.1rem; }
-  .cap-text { color: rgba(244,244,242,0.9); font-size: clamp(1.05rem, 1.5vw, 1.3rem); line-height: 1.55; }
-
-  /* Índice de capítulos (derecha) */
-  .journey-index {
-    position: absolute; right: clamp(1.2rem, 3vw, 2.6rem); top: 50%; transform: translateY(-50%); z-index: 4;
-    display: flex; flex-direction: column; gap: 0.5rem;
+  .pilares-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(2rem, 4vw, 3.5rem); }
+  .pilar { border-top: 1px solid rgba(244,244,242,0.18); padding-top: 1.5rem; }
+  .pilar-num {
+    display: block; font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1;
+    color: rgba(244,244,242,0.35); margin-bottom: 0.9rem;
   }
-  .jx {
-    display: flex; align-items: center; gap: 0.7rem; justify-content: flex-end;
-    background: none; border: 0; cursor: pointer; padding: 0.35rem 0;
-    color: rgba(244,244,242,0.55); font-family: var(--font-sans); font-size: 0.8rem;
-    letter-spacing: 0.06em; text-transform: uppercase;
-    transition: color 0.3s var(--ease-soft);
+  .pilar-kicker {
+    display: block; font-size: 0.78rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: rgba(244,244,242,0.62); margin-bottom: 0.7rem;
   }
-  .jx-label { opacity: 0; transform: translateX(6px); transition: opacity 0.3s var(--ease-soft), transform 0.3s var(--ease-soft); }
-  .jx:hover .jx-label, .jx.is-active .jx-label { opacity: 1; transform: none; }
-  .jx-dot { width: 9px; height: 9px; border-radius: 50%; border: 1px solid rgba(244,244,242,0.5); flex: 0 0 auto; transition: background 0.3s, border-color 0.3s, transform 0.3s; }
-  .jx:hover { color: var(--color-paper); }
-  .jx.is-active { color: var(--color-paper); }
-  .jx.is-active .jx-dot { background: var(--color-paper); border-color: var(--color-paper); transform: scale(1.25); }
-
-  /* Barra de progreso / deslizador (abajo) */
-  .journey-barwrap { position: absolute; left: 0; right: 0; bottom: clamp(1.4rem, 4vh, 2.6rem); z-index: 4; padding-inline: clamp(1.5rem, 6vw, 6rem); }
-  .journey-bar { position: relative; height: 3px; border-radius: 3px; background: rgba(244,244,242,0.22); cursor: pointer; }
-  .journey-bar-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: var(--color-paper); border-radius: 3px; }
-  .journey-tick { position: absolute; top: 50%; width: 2px; height: 10px; background: rgba(244,244,242,0.4); transform: translate(-50%, -50%); }
-  .journey-knob { position: absolute; top: 50%; left: 0%; width: 15px; height: 15px; border-radius: 50%; background: var(--color-paper); transform: translate(-50%, -50%); box-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none; }
+  .pilar-title { color: var(--color-paper); font-size: clamp(1.35rem, 2.2vw, 1.9rem); line-height: 1.12; margin-bottom: 0.8rem; }
+  .pilar-text { color: rgba(244,244,242,0.8); font-size: 1rem; line-height: 1.6; }
 
   /* ===== Datos ===== */
   .nos-stats { background: var(--color-carbon); color: var(--color-paper); padding-block: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid rgba(244,244,242,0.1); }
@@ -216,126 +258,19 @@ const stats = [
 
   /* ===== Responsive ===== */
   @media (max-width: 880px) {
-    .journey { height: 460vh; }
-    .journey-index { display: none; }
-    .cap { left: clamp(1.25rem, 6vw, 2rem); right: clamp(1.25rem, 6vw, 2rem); bottom: clamp(7rem, 18vh, 11rem); max-width: none; }
+    .pilares-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+    /* En movil el texto ocupa el ancho: el degradado pasa a ser solo vertical */
+    .nband-content { max-width: none; }
+    .nband--right .nband-content { margin-left: 0; text-align: left; }
+    .nband-scrim,
+    .nband--right .nband-scrim {
+      background: linear-gradient(to top, rgba(11,11,10,0.95) 0%, rgba(11,11,10,0.65) 40%, rgba(11,11,10,0.15) 75%, rgba(11,11,10,0) 100%);
+    }
     .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .nos-scroll svg { animation: none; }
-    .cap { transition: opacity 0.3s linear; }
+    .nband-img, .nband:hover .nband-img { transition: none; transform: none; }
   }
 </style>
-
-<script>
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const journey = document.querySelector<HTMLElement>('[data-journey]');
-  const video = document.querySelector<HTMLVideoElement>('[data-journey-video]');
-  const caps = Array.from(document.querySelectorAll<HTMLElement>('[data-cap]'));
-  const jxs = Array.from(document.querySelectorAll<HTMLElement>('[data-goto]'));
-  const barWrap = document.querySelector<HTMLElement>('[data-bar-wrap]');
-  const barFill = document.querySelector<HTMLElement>('[data-bar-fill]');
-  const barKnob = document.querySelector<HTMLElement>('[data-bar-knob]');
-  const bar = barWrap?.querySelector<HTMLElement>('.journey-bar');
-
-  // Puntos de cada capítulo (data-cap corresponde al orden de `chapters`)
-  const ats = jxs.map((b) => {
-    const i = parseInt(b.dataset.goto || '0', 10);
-    return i;
-  });
-  // Los `at` reales los leemos de las marcas de la barra
-  const tickEls = Array.from(document.querySelectorAll<HTMLElement>('.journey-tick'));
-  const chapterAt = tickEls.map((t) => parseFloat(t.style.left) / 100);
-
-  if (journey && video) {
-    const isTouch = window.matchMedia('(max-width: 880px)').matches || window.matchMedia('(pointer: coarse)').matches;
-
-    // En móvil/táctil el scrubbing por currentTime es poco fiable:
-    // el vídeo se reproduce en bucle y solo los textos/índice responden al scroll.
-    if (isTouch || reduce) {
-      video.loop = true;
-      const tryPlay = () => { const p = video.play(); if (p && p.catch) p.catch(() => {}); };
-      video.addEventListener('canplay', tryPlay, { once: true });
-      tryPlay();
-    } else {
-      video.pause();
-    }
-
-    let duration = 0;
-    video.addEventListener('loadedmetadata', () => { duration = video.duration || 0; });
-
-    const clamp = (v: number, a = 0, b = 1) => Math.min(Math.max(v, a), b);
-    const segmentIndex = (p: number) => {
-      let idx = 0;
-      for (let i = 0; i < chapterAt.length; i++) if (p >= chapterAt[i] - 0.001) idx = i;
-      return idx;
-    };
-
-    let progress = 0;      // 0..1 dentro del recorrido
-    let curTime = 0;
-
-    const computeProgress = () => {
-      const total = journey.offsetHeight - window.innerHeight;
-      const scrolled = -journey.getBoundingClientRect().top;
-      return clamp(total > 0 ? scrolled / total : 0);
-    };
-
-    const paint = () => {
-      // Vídeo (solo scrubbing en escritorio)
-      if (!isTouch && !reduce && duration > 0) {
-        const target = progress * duration;
-        curTime += (target - curTime) * 0.12;           // suavizado
-        if (video.readyState >= 2 && Math.abs(target - curTime) > 0.015) {
-          try { video.currentTime = curTime; } catch (e) {}
-        }
-      }
-      // Barra
-      const pct = (progress * 100).toFixed(2) + '%';
-      if (barFill) barFill.style.width = pct;
-      if (barKnob) barKnob.style.left = pct;
-      // Capítulo activo
-      const active = segmentIndex(progress);
-      caps.forEach((c, i) => c.classList.toggle('is-active', i === active));
-      jxs.forEach((b, i) => b.classList.toggle('is-active', i === active));
-    };
-
-    let ticking = false;
-    const loop = () => {
-      progress = computeProgress();
-      paint();
-      ticking = false;
-    };
-    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(loop); } };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    loop();
-
-    // Ir a un capítulo (índice) o a una posición (barra)
-    const scrollToProgress = (p: number) => {
-      const total = journey.offsetHeight - window.innerHeight;
-      const y = journey.offsetTop + clamp(p) * total;
-      const lenis = (window as any).__lenis;
-      if (lenis) lenis.scrollTo(y, { duration: 1.1 }); else window.scrollTo({ top: y, behavior: 'smooth' });
-    };
-    jxs.forEach((b) => b.addEventListener('click', () => {
-      const i = parseInt(b.dataset.goto || '0', 10);
-      scrollToProgress(chapterAt[i]);
-    }));
-
-    // Deslizador: arrastrar la barra para navegar
-    if (bar) {
-      const fromX = (clientX: number) => {
-        const r = bar.getBoundingClientRect();
-        return clamp((clientX - r.left) / r.width);
-      };
-      let dragging = false;
-      const jump = (x: number) => scrollToProgress(fromX(x));
-      bar.addEventListener('pointerdown', (e) => { dragging = true; bar.setPointerCapture(e.pointerId); jump(e.clientX); });
-      bar.addEventListener('pointermove', (e) => { if (dragging) jump(e.clientX); });
-      const end = (e: PointerEvent) => { dragging = false; try { bar.releasePointerCapture(e.pointerId); } catch {} };
-      bar.addEventListener('pointerup', end);
-      bar.addEventListener('pointercancel', end);
-    }
-  }
-</script>
