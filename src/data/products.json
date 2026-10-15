@@ -1799,7 +1799,8 @@
       "El film de protección Supertape es un producto que se utiliza para proteger superficies como paredes, suelos o ventanas durante la construcción o renovación de un espacio. Este film es fácil de aplicar y retirar, y no deja residuos pegajosos. Además, el film de protección Supertape es resistente a la humedad y a los rayos UV."
     ],
     "image": "/products/film-plastico-polyane.webp",
-    "imageAlt": "Protección Film / Plástico Polyane"
+    "imageAlt": "Protección Film / Plástico Polyane",
+    "datasheet": "/fichas/film-plastico-polyane.pdf"
   },
   {
     "id": 1735,
@@ -1821,7 +1822,8 @@
       "El papel hidrófugo Supertape es un producto que se utiliza para proteger los suelos durante la construcción o renovación de un espacio. Este papel es antideslizante y tiene un tratamiento WS (resistente al agua) que frena el traspaso de líquidos"
     ],
     "image": "/products/papel-hidrofugo.webp",
-    "imageAlt": "Protección Papel Hidrófugo"
+    "imageAlt": "Protección Papel Hidrófugo",
+    "datasheet": "/fichas/papel-hidrofugo.pdf"
   },
   {
     "id": 1701,
