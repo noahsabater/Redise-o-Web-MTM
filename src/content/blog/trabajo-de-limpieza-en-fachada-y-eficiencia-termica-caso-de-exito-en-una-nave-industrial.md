@@ -22,7 +22,7 @@ Antes empezar con la pintura, el primer paso fue realizar un **trabajo de limpie
 
 #### **¿Por qué usar Scalp Pronet?**
 
-El aplicador optó por [**Scalp Pronet**](https://materialesmodernos.com/producto/scalp/limpiadores/limpieza/scalp-pronet/), un limpiador desincrustante y desengrasante concentrado que es una auténtica «bestia» (pero ecológica) contra la suciedad.
+El aplicador optó por [**Scalp Pronet**](/producto/scalp-pronet/), un limpiador desincrustante y desengrasante concentrado que es una auténtica «bestia» (pero ecológica) contra la suciedad.
 
 - **Rapidez:** Se aplicó sin diluir y se dejó actuar solo **15 minutos**.
 
@@ -36,7 +36,7 @@ El aplicador optó por [**Scalp Pronet**](https://materialesmodernos.com/product
 
 ### **Paso 2: Aislamiento térmico con Tixol Elástico Reflexivo**
 
-Una vez que la chapa quedó impecable y libre de restos de limpiador, llegó el momento de aplicar la tecnología. El profesional aplicó **500 gr/m2** de nuestro [revestimiento elástico reflexivo](https://materialesmodernos.com/producto/tixol/soluciones/thermo-aislantes/termicos-reflexivos/tixol-revestimiento-elastico-reflexivo/) en dos capas.
+Una vez que la chapa quedó impecable y libre de restos de limpiador, llegó el momento de aplicar la tecnología. El profesional aplicó **500 gr/m2** de nuestro [revestimiento elástico reflexivo](/producto/tixol-revestimiento-elastico-reflexivo/) en dos capas.
 
 ![](/blog-img/8-Aplicacion-Tixol-Elastico-Reflexivo.jpg)
 

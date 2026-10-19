@@ -21,6 +21,7 @@ const panels = [
   description="Explora el catálogo de MTM por marca: Tixol, Scalp y Supertape."
   transparentHeader={true}
 >
+  <h1 class="sr-only">Catálogo de productos MTM: Tixol, Supertape y Scalp</h1>
   <section class="chooser" aria-label="Elige una marca">
     {panels.map((p, i) => (
       <a class="panel" href={`/productos/${p.slug}/`} style={`--i:${i}`}>

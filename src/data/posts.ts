@@ -37,12 +37,12 @@ export const featuredPosts: FeaturedPost[] = [
   },
   {
     title:
-      'Soluciones para humedad por capilaridad: evita daños antes de que aparezcan',
+      'Humedad por capilaridad: cómo identificarla y el sistema para eliminarla',
     category: 'Humedades',
-    date: '17 noviembre, 2025',
+    date: '8 septiembre, 2026',
     excerpt:
-      'La humedad por capilaridad es uno de los problemas más frecuentes —y a menudo más infravalorados— en viviendas y locales.',
-    href: '/blog/soluciones-para-humedad-por-capilaridad-evita-danos-antes-de-que-aparezcan/',
+      'La humedad que sube del suelo no se va ventilando ni tapándola con pintura: vuelve. Te explicamos cómo distinguirla de la condensación y cómo cortarla.',
+    href: '/blog/el-mejor-sistema-antihumedad-para-la-humedad-por-capilaridad/',
     image: humedad,
   },
 ];

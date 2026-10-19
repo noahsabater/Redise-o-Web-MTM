@@ -46,7 +46,7 @@ El suelo debe estar limpio de polvo, grasas, moho o restos de pinturas viejas qu
 
 ### Paso 2: El refuerzo invisible con Tixol Fibra Elastic
 
-Antes de abrir el bote de la membrana general, hay que blindar los puntos críticos que mencionamos antes (juntas, grietas, sumideros). Para esto, el aliado perfecto es **[Tixol Fibra Elastic](https://materialesmodernos.com/producto/tixol/soluciones/impermeabilizantes/tixol-fibra-elastic/)**. Es una masilla armada con fibra de vidrio, ultra elástica, ideal para la reparación de medias cañas, juntas de dilatación y el sellado de huecos con un máximo de 5 mm. Al aplicarla de forma previa en las zonas que sufren más de los movimientos estructurales, creas una base segura antes de la impermeabilización general con poliuretano, acrílicos o corcho proyectado.
+Antes de abrir el bote de la membrana general, hay que blindar los puntos críticos que mencionamos antes (juntas, grietas, sumideros). Para esto, el aliado perfecto es **[Tixol Fibra Elastic](/producto/tixol-fibra-elastic/)**. Es una masilla armada con fibra de vidrio, ultra elástica, ideal para la reparación de medias cañas, juntas de dilatación y el sellado de huecos con un máximo de 5 mm. Al aplicarla de forma previa en las zonas que sufren más de los movimientos estructurales, creas una base segura antes de la impermeabilización general con poliuretano, acrílicos o corcho proyectado.
 
 ### Paso 3: Aplicación de la membrana de acabado o protección
 
@@ -58,15 +58,15 @@ Dependiendo de la terminación y el uso que le des a ese espacio exterior, en MT
 
 ### 🔹Para terrazas muy transitadas y máxima durabilidad: Tixol Acryflex PU
 
-Si tu terraza es el lugar donde disfrutas de las noches de verano con amigos y queda el revestimiento a la vista, necesitas una resistencia superior. **[Tixol Acryflex PU](https://materialesmodernos.com/producto/tixol/soluciones/impermeabilizantes/acryflex-pu/)** es una membrana líquida de poliuretano al agua que, al secar, forma una piel elástica continua sin juntas. Soporta perfectamente el desgaste del tránsito peatonal diario y el agua estancada sin degradarse.
+Si tu terraza es el lugar donde disfrutas de las noches de verano con amigos y queda el revestimiento a la vista, necesitas una resistencia superior. **[Tixol Acryflex PU](/producto/acryflex-pu/)** es una membrana líquida de poliuretano al agua que, al secar, forma una piel elástica continua sin juntas. Soporta perfectamente el desgaste del tránsito peatonal diario y el agua estancada sin degradarse.
 
 ### 🔹Para impermeabilizar antes de enlosar (Baños y Terrazas): Tixol Acryflex PU Rugoso
 
-Si tu plan de reforma en verano no es dejar la pintura a la vista, sino colocar encima un nuevo suelo de baldosas o gres, tu producto es **[Tixol Acryflex PU Rugoso](https://materialesmodernos.com/producto/tixol/soluciones/impermeabilizantes/acryflex-pu-rugoso/)**. Esta membrana líquida de poliuretano está diseñada específicamente para usarse antes de enlosar en terrazas, cuartos de baño o cualquier superficie. Su gran ventaja es que incorpora un acabado rugoso que permite los enlucidos con cemento cola, garantizando que las baldosas queden perfectamente adheridas sobre una barrera 100% impermeable.
+Si tu plan de reforma en verano no es dejar la pintura a la vista, sino colocar encima un nuevo suelo de baldosas o gres, tu producto es **[Tixol Acryflex PU Rugoso](/producto/acryflex-pu-rugoso/)**. Esta membrana líquida de poliuretano está diseñada específicamente para usarse antes de enlosar en terrazas, cuartos de baño o cualquier superficie. Su gran ventaja es que incorpora un acabado rugoso que permite los enlucidos con cemento cola, garantizando que las baldosas queden perfectamente adheridas sobre una barrera 100% impermeable.
 
 ### 🔹La solución versátil para cubiertas y tejados: Tixol Acryflex Acrílico
 
-Para cubiertas visitables de forma ocasional (mantenimiento, azoteas de acceso limitado), la mejor alternativa en relación calidad-precio es **[Tixol Acryflex Acrílico](https://materialesmodernos.com/producto/tixol/soluciones/impermeabilizantes/tixol-acryflex-acrilico/)**. Es una pintura elástica de base acrílica muy fácil de aplicar, resistente a los rayos UV de los meses de verano y perfecta para mantener el agua fuera de tu estructura sin complicaciones.
+Para cubiertas visitables de forma ocasional (mantenimiento, azoteas de acceso limitado), la mejor alternativa en relación calidad-precio es **[Tixol Acryflex Acrílico](/producto/tixol-acryflex-acrilico/)**. Es una pintura elástica de base acrílica muy fácil de aplicar, resistente a los rayos UV de los meses de verano y perfecta para mantener el agua fuera de tu estructura sin complicaciones.
 
 ### 🔹El escudo 2 en 1 (Impermeabiliza y Aísla): Tixol Corcho Proyectado
 

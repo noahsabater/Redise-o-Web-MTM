@@ -5,7 +5,7 @@ category: 'Construcción'
 excerpt: 'Renueva tu hogar con la pintura satinada de Tixol ¿Estás pensando en cambiar de estilo tu casa? La pintura satinada es la mejor opción para renovar tu hogar. Pero antes hay que tener en…'
 ---
 
-# Renueva tu hogar con la pintura satinada de Tixol
+## Renueva tu hogar con la pintura satinada de Tixol
 
 ¿Estás pensando en cambiar de estilo tu casa? La pintura satinada es la mejor opción para renovar tu hogar. Pero antes hay que tener en cuenta muchos factores: la luz natural de la estancia que vas a pintar; el estilo que quieres para la misma; la resistencia de la pintura, sobre todo si hay niños en casa; entre otras.
 

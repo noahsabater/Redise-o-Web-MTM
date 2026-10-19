@@ -16,7 +16,7 @@ Empecemos por el principio: **¿Qué es el Stone Carpet?** Pues es, básicamente
 
 ![tixol-stone-carpet](/blog-img/3-tixol-stone-carpet-1024x684.jpg)
 
-Sin embargo, el secreto de un buen acabado no está solo en la piedra, sino en la resina que la une. Nuestro [**Tixol Stone Carpet**](https://materialesmodernos.com/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-stone-carpet/) es un sistema bi-componente de poliuretano alifático 100% sólidos. Esto es fundamental porque, a diferencia de otras opciones, este producto **no amarillea con el sol**, manteniendo la transparencia y el color original del árido para siempre.
+Sin embargo, el secreto de un buen acabado no está solo en la piedra, sino en la resina que la une. Nuestro [**Tixol Stone Carpet**](/producto/tixol-stone-carpet/) es un sistema bi-componente de poliuretano alifático 100% sólidos. Esto es fundamental porque, a diferencia de otras opciones, este producto **no amarillea con el sol**, manteniendo la transparencia y el color original del árido para siempre.
 
 ## ¿Para qué sirve Stone Carpet?
 
@@ -72,11 +72,11 @@ La resina se mezcla en una **proporción 1:1 en peso**. Una vez lista, se añade
 
 Ahora que tienes **todo lo que necesitas saber sobre el Stone Carpet**, es el momento de pasar a la acción. El sistema **Tixol Stone Carpet** representa la evolución de los pavimentos modernos: es duradero, estético y extremadamente práctico. Ya sea para un camino de jardín o para un proyecto arquitectónico de gran envergadura, el resultado siempre supera las expectativas.
 
-Si quieres conocer algunas de nuestras otras novedades para este año, echa un vistazo a nuestras [Novedades 2026](https://materialesmodernos.com/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/)
+Si quieres conocer algunas de nuestras otras novedades para este año, echa un vistazo a nuestras [Novedades 2026](/blog/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/)
 
 **¿Te animas con este tipo de pavimentos drenantes?** Si necesitas ayuda, ponte en contacto con nosotros y te asesoramos con los detalles técnicos. ¡Vamos a darle vida a esos suelos!
 
-				[**AntNovedades Tixol y Scalp 2026: La revolución que tus proyectos estaban esperando](https://materialesmodernos.com/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/)
+				[**AntNovedades Tixol y Scalp 2026: La revolución que tus proyectos estaban esperando](/blog/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/)
 
 				[Trabajo de limpieza en fachada y eficiencia térmica: Caso de éxito en una nave industrial**Siguiente](https://materialesmodernos.com/trabajo-de-limpieza-en-fachada-y-eficiencia-termica-caso-de-exito-en-una-nave-industrial/)
 

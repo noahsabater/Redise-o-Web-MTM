@@ -383,22 +383,22 @@
     },
     {
       "source": "/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/",
-      "destination": "/blog/",
+      "destination": "/blog/novedades-tixol-y-scalp-2026-la-revolucion-que-tus-proyectos-estaban-esperando/",
       "permanent": true
     },
     {
       "source": "/todo-sobre-stone-carpet/",
-      "destination": "/blog/",
+      "destination": "/blog/todo-sobre-stone-carpet/",
       "permanent": true
     },
     {
       "source": "/trabajo-de-limpieza-en-fachada-y-eficiencia-termica-caso-de-exito-en-una-nave-industrial/",
-      "destination": "/blog/",
+      "destination": "/blog/trabajo-de-limpieza-en-fachada-y-eficiencia-termica-caso-de-exito-en-una-nave-industrial/",
       "permanent": true
     },
     {
       "source": "/impermeabilizacion-de-terrazas-errores-comunes-que-causan-goteras-y-como-evitarlos/",
-      "destination": "/blog/",
+      "destination": "/blog/impermeabilizacion-de-terrazas-errores-comunes-que-causan-goteras-y-como-evitarlos/",
       "permanent": true
     },
     {
@@ -1048,6 +1048,11 @@
     },
     {
       "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-barniz-poliuretano-anti-slip/",
+      "destination": "/producto/tixol-barniz-poliuretano-anti-slip/",
+      "permanent": true
+    },
+    {
+      "source": "/producto/tixol/decoracion-de-pavimentos/renovacion-de-pavimentos/tixol-barniz-poliuretano/",
       "destination": "/producto/tixol-barniz-poliuretano-anti-slip/",
       "permanent": true
     },

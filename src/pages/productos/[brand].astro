@@ -15,10 +15,10 @@ export function getStaticPaths() {
 }
 
 const { brand, items } = Astro.props;
-const meta: Record<string, { name: string }> = {
-  tixol: { name: 'Tixol' },
-  scalp: { name: 'Scalp' },
-  supertape: { name: 'Supertape' },
+const meta: Record<string, { name: string; tagline: string }> = {
+  tixol: { name: 'Tixol', tagline: 'pinturas, revestimientos y decoración' },
+  scalp: { name: 'Scalp', tagline: 'limpieza y protección de superficies' },
+  supertape: { name: 'Supertape', tagline: 'protección para reformas' },
 };
 const brandName = meta[brand].name;
 const amb: Record<string, any> = { tixol: ambTixol, scalp: ambScalp, supertape: ambSupertape };
@@ -69,6 +69,7 @@ const panels = [
   darkHeader={true}
 >
   <section class="cats">
+    <h1 class="sr-only">Catálogo {brandName}: {meta[brand].tagline}</h1>
     <div class="cats-top container-mtm">
       <a class="cats-back" href="/productos/">← Todas las marcas</a>
       <a class="btn btn--red cats-dl" href="/catalogo-mtm.pdf" download>

@@ -5,7 +5,7 @@ category: 'Construcción'
 excerpt: 'Si quieres tener tus paredes perfectas, Tixol es tu solución. Mantén tus paredes intactas con la pintura antimanchas ultra-rápida de Tixol. A nadie le gusta tener en casa esas odiosas…'
 ---
 
-# Si quieres tener tus paredes perfectas, Tixol es tu solución.
+## Si quieres tener tus paredes perfectas, Tixol es tu solución.
 
 Mantén tus paredes intactas con la pintura antimanchas ultra-rápida de Tixol. A nadie le gusta tener en casa esas odiosas manchas que salen a causa de la humedad o de la nicotina, entre otras. En Materiales Modernos ([MTM](http://mtm-murcia.com)) te traemos la solución.
 

@@ -42,6 +42,6 @@ Cuando se trata de innovación y compromiso con el medio ambiente, MTM es el ali
 
 ¿Listo para sumarte a las tendencias de 2025? Con **Tixol Nature** y **Tixol Nature Floor**, no solo estarás a la vanguardia, también estarás contribuyendo a un futuro más verde y responsable.
 
-¡No dejes pasar la oportunidad de transformar tus proyectos con soluciones innovadoras y sostenibles! Explora nuestra gama completa en www.materialesmodernos.com y descubre cómo podemos ayudarte a dar el siguiente paso en construcción y reformas.
+¡No dejes pasar la oportunidad de transformar tus proyectos con soluciones innovadoras y sostenibles! Explora nuestra gama completa en [materialesmodernos.com](/) y descubre cómo podemos ayudarte a dar el siguiente paso en construcción y reformas.
 
 ### **¡El futuro empieza hoy, y queremos construirlo contigo**
