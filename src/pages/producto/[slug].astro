@@ -1,7 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import products from '../../data/products.json';
+import ampliadas from '../../data/fichas-ampliadas.json';
 import { site } from '../../data/site';
+
+// Contenido ampliado a mano a partir de la ficha técnica (fichas-ampliadas.json)
+type Ampliada = { intro: string; usos: string[]; pasos: string[]; datos: [string, string][]; faq: { q: string; a: string }[] };
 
 export function getStaticPaths() {
   return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
@@ -9,6 +13,7 @@ export function getStaticPaths() {
 
 const { product } = Astro.props;
 const datasheet = (product as any).datasheet as string | undefined;
+const extra = (ampliadas as Record<string, Ampliada>)[product.slug];
 const related = products
   .filter((p) => p.slug !== product.slug && p.gamaMain && p.gamaMain === product.gamaMain)
   .slice(0, 4);
@@ -55,10 +60,21 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: gamaSlug ? 4 : 3, name: product.name, item: canonical },
   ],
 };
+
+// FAQPage: Google ya no muestra el desplegable salvo en webs oficiales/salud, pero
+// es válido y ayuda a buscadores e IA a citar la respuesta exacta
+const faqSchema = extra?.faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: extra.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    }
+  : null;
 ---
 
 <BaseLayout title={seoTitle} description={metaDesc} ogImage={product.image ?? undefined}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbSchema)} />
+  {faqSchema && <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />}
   <div class="wrap">
     <!-- Migas -->
     <nav class="crumbs container-mtm" aria-label="Miga de pan">
@@ -112,7 +128,41 @@ const breadcrumbSchema = {
       </div>
     </section>
 
-    {product.description.length > 0 && (
+    {extra ? (
+      <section class="desc ext container-mtm">
+        <h2 class="desc-h">Para qué sirve</h2>
+        <p class="ext-intro">{extra.intro}</p>
+
+        <div class="ext-cols">
+          <div>
+            <h2 class="ext-h">Dónde se usa</h2>
+            <ul class="ext-list">{extra.usos.map((u) => <li>{u}</li>)}</ul>
+          </div>
+          <div>
+            <h2 class="ext-h">Cómo se aplica</h2>
+            <ol class="ext-steps">{extra.pasos.map((p) => <li>{p}</li>)}</ol>
+          </div>
+        </div>
+
+        <h2 class="ext-h">Datos técnicos</h2>
+        <dl class="ext-datos">
+          {extra.datos.map(([k, v]) => (<div><dt>{k}</dt><dd>{v}</dd></div>))}
+        </dl>
+        {datasheet && (
+          <p class="ext-nota">Resumen de la <a href={datasheet} target="_blank" rel="noopener">ficha técnica (PDF)</a>, donde están todos los datos, precauciones y seguridad.</p>
+        )}
+
+        <h2 class="ext-h">Preguntas frecuentes</h2>
+        <div class="ext-faq">
+          {extra.faq.map((f) => (
+            <details>
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    ) : product.description.length > 0 && (
       <section class="desc container-mtm">
         <h2 class="desc-h">Descripción</h2>
         <div class="desc-body">
@@ -185,6 +235,29 @@ const breadcrumbSchema = {
   .desc-body p { margin-bottom: 1.1rem; }
   .desc-li { padding-left: 0.4rem; }
 
+  /* Contenido ampliado */
+  .ext-intro { font-size: 1.208rem; line-height: 1.75; color: #2a2926; max-width: 52rem; }
+  .ext-h { font-size: clamp(1.3rem, 2.2vw, 1.6rem); line-height: 1.2; margin: clamp(2.2rem, 4vw, 3rem) 0 1.1rem; }
+  .ext-cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); }
+  .ext-list, .ext-steps { font-size: 1.092rem; line-height: 1.65; color: #2a2926; padding-left: 1.2rem; }
+  .ext-list { list-style: disc; }
+  .ext-steps { list-style: decimal; }
+  .ext-list li, .ext-steps li { margin-bottom: 0.6rem; padding-left: 0.3rem; }
+  .ext-list li::marker, .ext-steps li::marker { color: var(--color-ash); }
+  .ext-datos { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--color-line); }
+  .ext-datos > div { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.9rem 1rem 0.9rem 0; border-bottom: 1px solid var(--color-line); }
+  .ext-datos dt { font-size: 0.759rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-ash); }
+  .ext-datos dd { font-size: 1.035rem; color: var(--color-ink); }
+  .ext-nota { margin-top: 1rem; font-size: 0.92rem; color: var(--color-slate); }
+  .ext-nota a { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
+  .ext-faq { border-top: 1px solid var(--color-line); }
+  .ext-faq details { border-bottom: 1px solid var(--color-line); }
+  .ext-faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1rem; padding: 1.05rem 0; font-size: 1.15rem; color: var(--color-ink); }
+  .ext-faq summary::-webkit-details-marker { display: none; }
+  .ext-faq summary::after { content: '+'; color: var(--color-ash); font-size: 1.4rem; line-height: 1; transition: transform 0.25s var(--ease-soft); }
+  .ext-faq details[open] summary::after { transform: rotate(45deg); }
+  .ext-faq details p { padding: 0 0 1.2rem; font-size: 1.092rem; line-height: 1.7; color: #2a2926; max-width: 52rem; }
+
   .related { margin-top: clamp(3.5rem, 8vw, 6rem); padding-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--color-line); }
   .related-head { display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: clamp(1.8rem, 3vw, 2.6rem); }
   .related-h { font-size: var(--text-title); }
@@ -200,5 +273,6 @@ const breadcrumbSchema = {
     .detail { grid-template-columns: 1fr; }
     .detail-media { position: relative; top: 0; aspect-ratio: 4 / 3; }
     .related-grid { grid-template-columns: repeat(2, 1fr); }
+    .ext-cols, .ext-datos { grid-template-columns: 1fr; }
   }
 </style>

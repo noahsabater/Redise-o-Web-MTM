@@ -1,0 +1,1654 @@
+{
+  "renovador-de-pavimentos": {
+    "intro": "Tixol Renovador de Pavimentos es un acrílico al agua y coloreado que devuelve el color a los pavimentos porosos y los protege. Penetra en el soporte, lo endurece y lo sella, de modo que el suelo deja de soltar polvo, repele los líquidos y se limpia con facilidad. No forma película ni cambia la textura del fondo, así que el hormigón impreso conserva su relieve.",
+    "usos": [
+      "Hormigón impreso y hormigón pulido que han perdido el color.",
+      "Adoquines, piedra natural y ladrillo visto.",
+      "Cualquier soporte poroso, horizontal o vertical, que necesite color, sellado y protección.",
+      "Interior y exterior."
+    ],
+    "pasos": [
+      "Limpiar el soporte de polvo y grasa y dejarlo seco.",
+      "En hormigón pulido, lijar antes para abrir el poro. Si el impreso conserva restos de barniz, lijarlo o decaparlo por completo.",
+      "Sobre soportes muy porosos, diluir la primera mano con un 10 % de agua para que actúe como imprimación selladora.",
+      "Aplicar con rodillo, brocha o pulverizador, en capas uniformes y sin sobrecargas.",
+      "Dar como mínimo dos capas, dejando 1 hora entre una y otra."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "8-10 m²/kg, según la absorción del soporte"
+      ],
+      [
+        "Seco al tacto",
+        "1 hora"
+      ],
+      [
+        "Seco total",
+        "7 días"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 35 °C, sin sol directo"
+      ],
+      [
+        "Colores",
+        "5 colores estándar y una base transparente para teñir"
+      ],
+      [
+        "Envases",
+        "5 kg y 10 kg"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con agua"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Sirve para renovar hormigón impreso?",
+        "a": "Sí, es su uso principal. Si el pavimento conserva restos del barniz original, hay que lijarlo o decaparlo por completo para que el renovador ancle bien. Si el barniz está en buen estado y solo quieres pintar encima, mira el Renovador de Pavimentos Extreme."
+      },
+      {
+        "q": "¿Cambia la textura del suelo?",
+        "a": "No. Penetra en el poro y no forma película, así que el relieve del hormigón impreso o de la piedra se mantiene."
+      },
+      {
+        "q": "¿Cuántas capas hay que dar?",
+        "a": "Como mínimo dos, con 1 hora de secado entre capas. En soportes muy porosos, la primera se diluye con un 10 % de agua."
+      },
+      {
+        "q": "¿Cuánto tarda en poder usarse?",
+        "a": "Está seco al tacto en 1 hora y alcanza el secado total a los 7 días."
+      }
+    ]
+  },
+  "tixol-renovador-de-pavimentos-extreme": {
+    "intro": "Tixol Renovador de Pavimentos Extreme es un revestimiento al agua pensado para renovar hormigón impreso, tanto nuevo como ya pintado o barnizado. A diferencia del Renovador de Pavimentos, deja una película satinada que aguanta el roce y el tránsito, y se puede aplicar sobre barnices antiguos en buen estado tras un lijado ligero, sin decaparlos.",
+    "usos": [
+      "Hormigón impreso nuevo o con restos de pintura o barniz.",
+      "Hormigón pulido, adoquines, piedra natural y ladrillo visto.",
+      "Soportes porosos horizontales o verticales que necesiten color, sellado y protección duradera.",
+      "Interior y exterior."
+    ],
+    "pasos": [
+      "Limpiar el soporte con agua a presión y dejarlo seco y sin grasa.",
+      "Si la pintura o el barniz anterior están en buen estado, lijar ligeramente para mejorar el anclaje. En hormigón pulido, lijar para abrir el poro.",
+      "Sobre superficies muy absorbentes o que sueltan polvo, aplicar antes una capa de Tixol Endurecedor de Fondos.",
+      "Aplicar con rodillo, brocha o pulverizador, sin sobrecargas, en capas de 75-100 g/m².",
+      "Dar como mínimo dos capas, dejando entre 4 y 72 horas entre ellas. Pasado ese plazo, lijar antes de la siguiente."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "5-8 m²/kg en dos capas, según la absorción"
+      ],
+      [
+        "Repintado",
+        "Entre 4 y 72 horas"
+      ],
+      [
+        "Seco al tacto",
+        "1 hora"
+      ],
+      [
+        "Seco total",
+        "7 días"
+      ],
+      [
+        "Acabado",
+        "Satinado"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 35 °C, sin sol directo"
+      ],
+      [
+        "Colores",
+        "5 colores estándar y una base transparente para teñir"
+      ],
+      [
+        "Envases",
+        "5 kg y 10 kg"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con agua"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Hay que quitar el barniz viejo del hormigón impreso?",
+        "a": "No, si está en buen estado: basta con limpiarlo con agua a presión y lijarlo ligeramente. Las zonas con barniz o pintura mal adheridos sí hay que eliminarlas."
+      },
+      {
+        "q": "¿Qué diferencia hay con el Renovador de Pavimentos normal?",
+        "a": "El Extreme deja una película satinada resistente al tránsito y se puede aplicar sobre barnices antiguos en buen estado. El normal no forma película y necesita el soporte limpio de barniz."
+      },
+      {
+        "q": "¿Cuánto hay que esperar entre capas?",
+        "a": "Entre 4 y 72 horas. Si pasan más de 72 horas, hay que lijar la capa anterior para que la siguiente agarre bien."
+      },
+      {
+        "q": "¿Se puede dar en capa gruesa para acabar antes?",
+        "a": "No es recomendable: las capas gruesas pueden secar mal y no anclar bien. Mejor dos capas de 75-100 g/m²."
+      }
+    ]
+  },
+  "tixol-impermeabilizante-termico": {
+    "intro": "Tixol Impermeabilizante Térmico es una membrana al agua, de resinas acrílicas y microesferas de vidrio, que impermeabiliza y a la vez aísla. Refleja la radiación solar y reduce el paso del calor hacia el interior, lo que ayuda a ahorrar energía. Es elástica, resiste bien la intemperie y se adhiere a soportes como galvanizado, aluminio, hormigón, yeso, cemento o ladrillo, incluso húmedos.",
+    "usos": [
+      "Impermeabilización de fachadas y azoteas, antes o después del acabado definitivo.",
+      "Cubiertas metálicas de galvanizado o aluminio.",
+      "Interiores con condensaciones por diferencia de temperatura.",
+      "Locales donde se quiera reducir la reverberación del sonido."
+    ],
+    "pasos": [
+      "Remover el envase a máquina hasta que el contenido quede homogéneo.",
+      "Limpiar el soporte: sin polvo, grasa, cal ni restos de pintura en mal estado. Reparar desconchados.",
+      "Imprimar con Tixol Endurecedor de Fondos y dejar secar 12 horas.",
+      "Aplicar dos capas con brocha, rodillo o pistola, respetando 12 horas como mínimo entre ellas.",
+      "Aplicar entre 5 °C y 40 °C."
+    ],
+    "datos": [
+      [
+        "Secado al tacto",
+        "4-5 horas"
+      ],
+      [
+        "Repintado",
+        "Mínimo 12 horas"
+      ],
+      [
+        "Tránsito",
+        "Moderado a las 48 horas; normal a los 7 días"
+      ],
+      [
+        "Espesor recomendado",
+        "1-2 mm"
+      ],
+      [
+        "Acabado",
+        "Blanco semimate, liso o texturado"
+      ],
+      [
+        "Transpirabilidad",
+        "Transpirable al vapor de agua"
+      ],
+      [
+        "COV",
+        "Libre de COV"
+      ],
+      [
+        "Envase",
+        "15 litros"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Se puede aplicar sobre una cubierta húmeda?",
+        "a": "Tiene buena adherencia incluso sobre soportes húmedos, pero el soporte debe estar limpio e imprimado con Tixol Endurecedor de Fondos."
+      },
+      {
+        "q": "¿Sirve sobre chapa galvanizada o aluminio?",
+        "a": "Sí, se adhiere bien al galvanizado y al aluminio, igual que al hormigón, el yeso, el cemento o el ladrillo."
+      },
+      {
+        "q": "¿Cuándo se puede pisar la azotea?",
+        "a": "Admite tránsito moderado a las 48 horas y tránsito normal a los 7 días."
+      },
+      {
+        "q": "¿Qué espesor hay que dar?",
+        "a": "Entre 1 y 2 mm en total, repartidos en dos capas con al menos 12 horas entre ellas."
+      }
+    ]
+  },
+  "tixol-pintura-termica-y-anticondensacion": {
+    "intro": "Tixol Pintura Térmica y Anticondensación es una pintura acrílica al agua con microesferas cerámicas, para interior y exterior. En fachadas refleja la radiación solar y reduce el paso del calor; en interiores ayuda a evitar las condensaciones que aparecen por diferencia de temperatura y mejora la absorción acústica. Es elástica y resistente al agua, lo que reduce la formación de grietas.",
+    "usos": [
+      "Paredes y techos interiores con condensaciones.",
+      "Fachadas expuestas al sol.",
+      "Superficies de cemento y hormigón, nuevas o antiguas.",
+      "Directamente sobre galvanizado o aluminio, sin polvo ni grasa."
+    ],
+    "pasos": [
+      "Remover el envase a máquina hasta que quede homogéneo.",
+      "Limpiar el soporte y eliminar la pintura en mal estado; reparar los desconchados.",
+      "Imprimar con Tixol Endurecedor de Fondos (sobre galvanizado o aluminio no hace falta).",
+      "Aplicar dos capas con brocha, rodillo o pistola, dejando 4-6 horas entre ellas.",
+      "Aplicar entre 5 °C y 40 °C."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "700 g/m² en dos capas"
+      ],
+      [
+        "Secado al tacto",
+        "4-5 horas"
+      ],
+      [
+        "Repintado",
+        "Mínimo 4-6 horas"
+      ],
+      [
+        "Acabado",
+        "Blanco semimate, liso"
+      ],
+      [
+        "Dilución",
+        "Lista al uso; admite hasta un 5 % de agua"
+      ],
+      [
+        "COV",
+        "Libre de COV"
+      ],
+      [
+        "Envase",
+        "15 litros"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Sirve para quitar la condensación de una habitación?",
+        "a": "Ayuda a evitar las condensaciones causadas por la diferencia de temperatura entre la pared y el ambiente. Si la humedad viene del suelo (capilaridad) o de filtraciones, hay que tratar primero esa causa."
+      },
+      {
+        "q": "¿Se puede usar en exterior?",
+        "a": "Sí. En fachadas refleja la radiación solar y reduce el paso del calor hacia el interior."
+      },
+      {
+        "q": "¿Cuánta pintura hace falta?",
+        "a": "Unos 700 g/m² repartidos en dos capas."
+      },
+      {
+        "q": "¿Qué diferencia hay con el Impermeabilizante Térmico?",
+        "a": "La pintura se aplica en capa fina y está pensada para paredes y condensaciones. El Impermeabilizante Térmico es una membrana de 1-2 mm que además impermeabiliza fachadas y azoteas."
+      }
+    ]
+  },
+  "thermo-corcho-proyectado": {
+    "intro": "Tixol Thermo Corcho Proyectado es un revestimiento al agua de corcho natural y resinas acrílicas que se aplica con pistola. Forma una capa elástica e impermeable que aísla del calor y del ruido, por lo que se usa para resolver humedades y condensaciones en cubiertas, fachadas y terrazas. Además es decorativo: se fabrica en tres bases y admite más de 40 colores.",
+    "usos": [
+      "Cubiertas de naves industriales y tejados.",
+      "Fachadas, suelos y terrazas con humedades o condensaciones.",
+      "Aislamiento térmico y acústico.",
+      "Revestimiento decorativo."
+    ],
+    "pasos": [
+      "Dejar el soporte seco, sano y libre de polvo, grasa y moho. Rascar lo que esté mal adherido.",
+      "Fijar los soportes débiles con Tixol Endurecedor de Fondos. Sobre superficies brillantes o no absorbentes, aplicar antes Tixol Puente de Unión Taking.",
+      "Mezclar el producto con batidora eléctrica hasta que quede homogéneo.",
+      "Proyectar con pistola de vaso por gravedad (boquilla del 6) en varias capas, hasta un espesor mínimo de 3 mm.",
+      "Dejar 12 horas entre capas."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "2 kg/m² (espesor aproximado de 2,5-3 mm)"
+      ],
+      [
+        "Repintado",
+        "12 horas"
+      ],
+      [
+        "Secado al tacto",
+        "Unos 120 minutos a 20 °C"
+      ],
+      [
+        "Secado total",
+        "Unas 48 horas en capa de 3 mm a 20 °C"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 35 °C (soporte entre 10 °C y 35 °C)"
+      ],
+      [
+        "Granulometría del corcho",
+        "0,5 mm (estándar) y 0,3 mm (fino)"
+      ],
+      [
+        "Colores",
+        "Bases blanca, media y transparente; más de 40 colores con los toners Thermo Corcho"
+      ],
+      [
+        "Envase",
+        "15 l (12 kg), con el corcho ya incorporado"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Se puede aplicar sin máquina de proyección?",
+        "a": "Este producto está pensado para pistola de vaso por gravedad. Para aplicar a rodillo existe Tixol Thermo Corcho a Rodillo."
+      },
+      {
+        "q": "¿Qué espesor hay que dar?",
+        "a": "Un mínimo de 3 mm, en varias capas. Con 2 kg/m² se consiguen unos 2,5-3 mm."
+      },
+      {
+        "q": "¿Sirve para la cubierta de una nave?",
+        "a": "Sí, es uno de sus usos principales: impermeabiliza y aísla del calor y del ruido."
+      },
+      {
+        "q": "¿Hay colores?",
+        "a": "Sí: tres bases (blanca, media y transparente) que se tiñen con los toners Thermo Corcho para conseguir más de 40 colores."
+      }
+    ]
+  },
+  "tixol-barniz-poliuretano-anti-slip": {
+    "intro": "Tixol Barniz Poliuretano Anti Slip es un barniz bicomponente acrílico/isocianato alifático, transparente, con acabado texturado que evita resbalones. Con dos capas sobre suelos minerales, cerámicos, de hormigón o pintados con epoxi o poliuretano se obtiene un acabado antideslizante de clase C3.",
+    "usos": [
+      "Rampas y garajes.",
+      "Gimnasios y entornos de piscinas.",
+      "Pavimentos de hormigón, cerámica, madera, metal o sintéticos.",
+      "Cualquier suelo que necesite un tratamiento antideslizante, en interior o exterior."
+    ],
+    "pasos": [
+      "Sanear el soporte lijando o granallando hasta dejarlo homogéneo, poroso, seco y limpio.",
+      "En cerámica industrial, granallar o diamantar para abrir el poro; en cerámica doméstica, lijar y aplicar un promotor de adherencia.",
+      "Mezclar 3 partes de barniz por 1 de endurecedor (en peso) con batidora a menos de 400 rpm durante 2 minutos, sin meter aire.",
+      "Aplicar con rodillo de pelo corto, aerográfica o airless, en dos capas de 40-70 micras secas.",
+      "Dejar entre 6 y 24 horas entre capas."
+    ],
+    "datos": [
+      [
+        "Consumo",
+        "0,100-0,200 kg/m²"
+      ],
+      [
+        "Secado al tacto",
+        "60 minutos (25 °C y 50 % HR)"
+      ],
+      [
+        "Repintado",
+        "6-24 horas"
+      ],
+      [
+        "Curado total",
+        "7 días"
+      ],
+      [
+        "Clase antideslizante",
+        "C3, con dos capas"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 35 °C, HR inferior al 75 %"
+      ],
+      [
+        "Color",
+        "Transparente"
+      ],
+      [
+        "Envases",
+        "Kits de 12 + 4 l y de 3 + 1 l"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué clase antideslizante consigue?",
+        "a": "Clase C3, aplicando dos capas sobre suelos minerales, cerámicos, de hormigón o pintados con epoxi o poliuretano."
+      },
+      {
+        "q": "¿Se puede aplicar sobre baldosa cerámica?",
+        "a": "Sí. En cerámica industrial hay que granallar o diamantar; en cerámica doméstica basta con lijar y aplicar un promotor de adherencia."
+      },
+      {
+        "q": "¿Sirve en exterior?",
+        "a": "Sí, se puede usar en interior y exterior: rampas, garajes, entornos de piscinas…"
+      },
+      {
+        "q": "¿Cuándo se puede pisar?",
+        "a": "Está seco al tacto en 60 minutos y alcanza el curado total a los 7 días."
+      }
+    ]
+  },
+  "epoxi-capa-gruesa": {
+    "intro": "Tixol Epoxi Capa Gruesa es una resina epoxi bicomponente 100 % sólidos, transparente, que permite verter hasta 5 cm de espesor en una sola capa. Una vez curada forma una capa brillante, dura y ligeramente flexible, muy transparente y estable. Está pensada para mesas de resina epoxi, rellenos y suelos decorativos donde se busca profundidad y efecto 3D.",
+    "usos": [
+      "Mesas de resina epoxi y rellenos de hasta 5 cm.",
+      "Suelos decorativos de viviendas, oficinas y exposiciones.",
+      "Protección transparente sobre panorámicas y diseños decorativos.",
+      "Cuartos de baño, siempre que estén bien sellados contra la entrada de agua por debajo."
+    ],
+    "pasos": [
+      "Preparar el soporte seco, limpio y sin grasa. En hormigón, abrir el poro por medios mecánicos (lijado, granallado, fresado…).",
+      "Mezclar 3 partes de base (A) por 1 de catalizador (B), en peso, con batidora lenta (400-500 rpm) para no meter aire.",
+      "Usar la mezcla antes de 2 horas.",
+      "Verter la cantidad necesaria para el espesor deseado y extender con llana dentada.",
+      "Trabajar con temperatura ambiente entre 15 °C y 30 °C y la del soporte al menos 3 °C por encima del punto de rocío."
+    ],
+    "datos": [
+      [
+        "Espesor",
+        "Hasta 5 cm por capa"
+      ],
+      [
+        "Sólidos",
+        "100 % en peso y en volumen"
+      ],
+      [
+        "Secado al tacto",
+        "12 horas"
+      ],
+      [
+        "Seco total",
+        "48 horas"
+      ],
+      [
+        "Endurecimiento total",
+        "15 días"
+      ],
+      [
+        "Tiempo de vida de la mezcla",
+        "2 horas"
+      ],
+      [
+        "Brillo",
+        "70-80 (a 60°)"
+      ],
+      [
+        "Envases",
+        "Kits de 0,936 kg, 2,670 kg y 10,670 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Sirve para hacer mesas de resina epoxi?",
+        "a": "Sí, es para lo que está pensada: permite verter hasta 5 cm de espesor en una sola capa."
+      },
+      {
+        "q": "¿Amarillea con el tiempo?",
+        "a": "Es muy estable y resistente al amarilleamiento, aunque, como toda resina epoxi, puede amarillear algo con los años."
+      },
+      {
+        "q": "¿Cuánto tiempo hay para trabajar la mezcla?",
+        "a": "Unas 2 horas desde que se mezclan los dos componentes."
+      },
+      {
+        "q": "¿Cuánto tarda en endurecer?",
+        "a": "Está seca al tacto en 12 horas, seca del todo en 48 horas y alcanza el endurecimiento total a los 15 días."
+      }
+    ]
+  },
+  "barniz-parquet": {
+    "intro": "Tixol Barniz Parquet es un barniz de poliuretano modificado al agua, incoloro, para suelos de madera, tarimas y parquet. Tiene una viveza muy parecida a la de los barnices al disolvente, pero seca muy rápido y apenas huele, así que la vivienda no queda inhabitable durante días. Forma una película dura y elástica que resalta el color natural de la madera.",
+    "usos": [
+      "Parquet, tarima y suelos de madera en interior.",
+      "Renovación de suelos ya barnizados, sin necesidad de decapar.",
+      "Locales de alto tránsito, añadiendo Tixol Endurecedor Parquet."
+    ],
+    "pasos": [
+      "Eliminar manchas, polvo, barnices y pinturas: lavar con agua y detergente, aclarar y dejar secar.",
+      "Para renovar un suelo barnizado, basta con lijar, limpiar y aplicar una capa nueva. En madera sin tratar, lijar siempre y asegurarse de que está limpia y seca.",
+      "Agitar el barniz. Para más resistencia, mezclar con un 3 % de Tixol Endurecedor Parquet.",
+      "Aplicar a brocha, rodillo de capa fina o pistola, como mínimo dos manos."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "8-12 m²/l"
+      ],
+      [
+        "Acabados",
+        "Brillo, satinado y mate"
+      ],
+      [
+        "Color",
+        "Incoloro"
+      ],
+      [
+        "Contenido en sólidos",
+        "35 ± 5 %"
+      ],
+      [
+        "Envases",
+        "4 l y 0,75 l"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con agua"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Hay que decapar el parquet antes de barnizar?",
+        "a": "No para renovarlo: basta con lijar, limpiar y aplicar una capa nueva. Solo hay que decapar si se quieren eliminar pinturas o barnices antiguos en mal estado."
+      },
+      {
+        "q": "¿Huele mucho?",
+        "a": "No. Al ser al agua tiene muy bajo olor y seca rápido, así que la vivienda no queda inhabitable durante días."
+      },
+      {
+        "q": "¿Qué acabados hay?",
+        "a": "Brillo, satinado y mate, siempre incoloro."
+      },
+      {
+        "q": "¿Sirve para un local con mucho paso?",
+        "a": "Sí, mezclándolo con un 3 % de Tixol Endurecedor Parquet, que aumenta la resistencia al impacto y al roce."
+      }
+    ]
+  },
+  "scalpik-eliminador-de-adhesivos": {
+    "intro": "Scalpik Eliminador de Adhesivos es un decapante extrafuerte en gel, formulado con disolventes orgánicos, que elimina adhesivos, siliconas, tintas y grasas. Su textura no gotea, así que se puede aplicar tanto en superficies verticales como horizontales, y también sirve en baño para sumergir herramientas.",
+    "usos": [
+      "Restos de cola y adhesivo en madera, metal, mármol, piedra, gres y azulejo.",
+      "Siliconas, tintas y grasas.",
+      "Limpieza de máquinas y herramientas de carpintería.",
+      "No apto para soportes orgánicos como pintura, revestimientos murales o goma."
+    ],
+    "pasos": [
+      "Hacer antes una prueba en una zona pequeña.",
+      "Aplicar puro, en capa gruesa, con brocha o pincel de fibras naturales (o sumergir las herramientas).",
+      "Dejar actuar unos minutos, hasta unos 20 según el adhesivo y la temperatura, sin dejar que se seque.",
+      "Rascar con rascador o garlopín y limpiar con un paño mojado en agua o disolvente.",
+      "No aplicar sobre superficies mojadas."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "0,3-0,5 kg/m², según los restos de cola"
+      ],
+      [
+        "Dilución",
+        "Listo al uso"
+      ],
+      [
+        "Tiempo de actuación",
+        "Unos 20 minutos"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 50 °C"
+      ],
+      [
+        "Aspecto",
+        "Gel ligeramente amarillento"
+      ],
+      [
+        "Envases",
+        "0,9 kg, 6 kg y 25 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Quita la silicona?",
+        "a": "Sí: elimina adhesivos, siliconas, tintas y grasas."
+      },
+      {
+        "q": "¿Se puede usar en vertical?",
+        "a": "Sí. Al ser un gel no gotea y se queda en la pared mientras actúa."
+      },
+      {
+        "q": "¿Sobre qué superficies no se debe usar?",
+        "a": "Sobre soportes orgánicos como pintura, revestimientos murales y goma. Siempre conviene probar antes en una zona pequeña."
+      },
+      {
+        "q": "¿Qué protección hace falta?",
+        "a": "Es un producto profesional y peligroso: guantes, mascarilla, gafas y ropa de protección, y trabajar en un lugar ventilado. Consulta la ficha de datos de seguridad."
+      }
+    ]
+  },
+  "tixol-renovador-de-pavimentos-cement-extreme": {
+    "intro": "Tixol Renovador de Pavimentos Cement Extreme es una pintura cementosa bicomponente que crea una capa superficial totalmente nueva sobre pavimentos exteriores absorbentes. Es extraordinariamente dura, transitable por vehículos, impermeable y transpirable, y tiene un acabado ligeramente texturado que evita resbalones. Aplicada en 2 o 3 capas es lo bastante flexible para absorber pequeñas dilataciones.",
+    "usos": [
+      "Hormigón impreso y cemento muy desgastados.",
+      "Adoquines, aceras y losetas.",
+      "Pavimentos exteriores que necesitan una superficie completamente nueva.",
+      "Accesos y zonas transitadas por vehículos."
+    ],
+    "pasos": [
+      "Dejar el soporte seco y limpio; rascar partículas, pinturas o barnices mal adheridos. Sobre superficies endebles, aplicar Tixol Endurecedor de Fondos.",
+      "Verter el componente A (polvo) sobre el B (resina) y batir hasta eliminar grumos. Se puede añadir hasta un 20 % de agua, siempre la misma cantidad en todas las mezclas para que el color no varíe.",
+      "Aplicar a rodillo, normalmente en dos capas, con un espesor total de 0,3 a 0,8 mm.",
+      "Dejar 4-6 horas entre capas (a 20 °C). No aplicar con sol directo, lluvia, viento ni por debajo de 10 °C o por encima de 30 °C.",
+      "Proteger después con Tixol Renovador de Pavimentos o Renovador de Pavimentos Extreme."
+    ],
+    "datos": [
+      [
+        "Consumo",
+        "800 g/m² en dos capas"
+      ],
+      [
+        "Espesor recomendado",
+        "0,3-0,8 mm"
+      ],
+      [
+        "Repintado",
+        "4-6 horas"
+      ],
+      [
+        "Seco al tacto",
+        "1 hora a 20 °C"
+      ],
+      [
+        "Curado total",
+        "28 días"
+      ],
+      [
+        "Tiempo de vida de la mezcla",
+        "2 horas a 20 °C"
+      ],
+      [
+        "Acabado",
+        "Mate, ligeramente texturado"
+      ],
+      [
+        "Envase",
+        "Kit de 25 kg (15 kg + 10 kg)"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Aguanta el paso de coches?",
+        "a": "Sí, es transitable por vehículos una vez curado; el curado total tarda 28 días."
+      },
+      {
+        "q": "¿Es resbaladizo?",
+        "a": "No. Tiene un acabado ligeramente texturado precisamente para evitar deslizamientos."
+      },
+      {
+        "q": "¿Hay que protegerlo después?",
+        "a": "Sí, se recomienda una capa de Tixol Renovador de Pavimentos o Renovador de Pavimentos Extreme."
+      },
+      {
+        "q": "¿Por qué el color puede salir distinto en zonas del mismo suelo?",
+        "a": "Suele pasar si cada mezcla lleva una cantidad de agua distinta. Hay que usar siempre la misma proporción de agua en todas las mezclas."
+      }
+    ]
+  },
+  "anti-manchas-07": {
+    "intro": "Scalp Anti-Manchas 07 es un protector superhidrófugo y oleófugo, al agua y a base de resina acrílica fluorada, que no forma película. Penetra en los poros del material y evita que entren agua, aceite, grasa, barro, vino o café, sin cambiar su aspecto. No lleva silicona ni disolventes, no huele y se puede aplicar incluso con dron.",
+    "usos": [
+      "Fachadas, paredes y cualquier superficie vertical.",
+      "Suelos, terrazas y adoquines.",
+      "Terracota, piedra natural y reconstituida, mármol, hormigón, cemento y madera.",
+      "Si buscas además un aspecto oscurecido o «mojado», existe la versión Anti-Manchas 07 EM."
+    ],
+    "pasos": [
+      "Limpiar la superficie y, preferiblemente, dejarla seca.",
+      "Aplicar puro, sin diluir, con rodillo, pulverizador manual, airless o dron.",
+      "Extender de forma homogénea, de abajo arriba en paredes, sin sobrecargas que puedan escurrir.",
+      "Dar una o dos pasadas con 10 minutos de intervalo.",
+      "La protección es efectiva en cuanto el producto se seca del todo, en una o varias horas."
+    ],
+    "datos": [
+      [
+        "Base",
+        "Resina acrílica fluorada en fase acuosa"
+      ],
+      [
+        "Aspecto final",
+        "Invisible, no forma película"
+      ],
+      [
+        "Dilución",
+        "Listo al uso"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 50 °C"
+      ],
+      [
+        "COV",
+        "Sin COV, sin disolventes ni silicona"
+      ],
+      [
+        "Envases",
+        "1 l, 5 l y 20 l"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con agua"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Cambia el color de la piedra?",
+        "a": "No. Es invisible y no forma película. Si quieres un aspecto oscurecido, tipo mojado, la versión indicada es el Anti-Manchas 07 EM."
+      },
+      {
+        "q": "¿Sirve para fachadas?",
+        "a": "Sí, protege fachadas y paredes además de suelos y terrazas."
+      },
+      {
+        "q": "¿Contra qué protege?",
+        "a": "Contra la penetración de agua, aceite, grasa, barro, vino, café y taninos."
+      },
+      {
+        "q": "¿Cuántas manos hay que dar?",
+        "a": "Una o dos, con 10 minutos entre pasadas, sin sobrecargar."
+      }
+    ]
+  },
+  "scalp-anti-manchas-07-em": {
+    "intro": "Scalp Anti-Manchas 07 EM (efecto mojado) es una protección hidrófuga que, además de impermeabilizar, renueva y aviva el aspecto del material con un acabado oscurecido, como recién mojado. A diferencia del Anti-Manchas 07, forma película, por lo que está pensada sobre todo para soportes porosos horizontales que se quieren renovar: tejas, terrazas y suelos.",
+    "usos": [
+      "Tejados de teja y terracota.",
+      "Terrazas, embaldosados y adoquines autobloqueantes.",
+      "Piedra natural y reconstituida, mármol, hormigón y cemento.",
+      "Si no quieres cambiar el aspecto del material, usa el Anti-Manchas 07, que es invisible."
+    ],
+    "pasos": [
+      "Limpiar la superficie y, preferiblemente, dejarla seca.",
+      "Aplicar puro, sin diluir, con rodillo, pulverizador manual, airless o dron.",
+      "Extender de forma homogénea, sin sobrecargas que puedan escurrir.",
+      "Dar dos pasadas con 2 horas de intervalo.",
+      "La protección es efectiva cuando el producto seca del todo, a las 8 horas."
+    ],
+    "datos": [
+      [
+        "Aspecto final",
+        "Efecto mojado; forma película"
+      ],
+      [
+        "Dilución",
+        "Listo al uso"
+      ],
+      [
+        "Capas",
+        "Dos, con 2 horas de intervalo"
+      ],
+      [
+        "Secado completo",
+        "8 horas"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 50 °C"
+      ],
+      [
+        "COV",
+        "Sin COV, sin disolventes"
+      ],
+      [
+        "Envases",
+        "1 l, 5 l y 20 l"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con white spirit"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué diferencia hay con el Anti-Manchas 07?",
+        "a": "El 07 EM forma película y deja un aspecto oscurecido, tipo mojado; el 07 es invisible y no forma película. Los dos protegen contra agua, aceite y manchas."
+      },
+      {
+        "q": "¿Sirve para tejados?",
+        "a": "Sí: impermeabiliza, renueva y aviva tejados de teja o terracota."
+      },
+      {
+        "q": "¿Cuántas manos hay que dar?",
+        "a": "Dos, dejando 2 horas entre una y otra. Es efectivo cuando seca del todo, a las 8 horas."
+      }
+    ]
+  },
+  "pintura-de-cal": {
+    "intro": "Tixol Pintura de Cal es una pintura natural para interior y exterior, formulada con cal en pasta envejecida, carbonatos cálcicos y ligante vegetal, sin biocidas ni aditivos químicos. Da un acabado mate mineral profundo, muy transpirable y de gran blancura, que no amarillea. Su alta alcalinidad dificulta la aparición de mohos, y al endurecer absorbe CO₂.",
+    "usos": [
+      "Viviendas, colegios, guarderías y hoteles que buscan un acabado natural.",
+      "Restauración de patrimonio, iglesias y museos.",
+      "Sobre cualquier superficie mineral o pintada con pinturas tradicionales.",
+      "Como acabado de los morteros de cal Tixol, formando un sistema 100 % natural."
+    ],
+    "pasos": [
+      "Dejar el soporte sano, duro y sin polvo, grasa ni eflorescencias.",
+      "Si hay pintura en mal estado, eliminar lo que no esté adherido y consolidar con Tixol Endurecedor de Fondos.",
+      "Remover bien el envase. Está lista al uso; sobre superficies muy porosas se puede diluir con un 5 % de agua.",
+      "Aplicar con brocha, rodillo o pistola, con temperatura entre 5 °C y 35 °C y el soporte sin exceso de humedad.",
+      "Esperar 4-6 horas antes de dar la siguiente mano."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "6-8 m²/l por capa"
+      ],
+      [
+        "Seco al tacto",
+        "40-60 minutos"
+      ],
+      [
+        "Repintado",
+        "A partir de 4-6 horas"
+      ],
+      [
+        "Acabado",
+        "Mate mineral"
+      ],
+      [
+        "Lavabilidad",
+        "Clase 2"
+      ],
+      [
+        "Diluyente",
+        "Agua"
+      ],
+      [
+        "Envases",
+        "15 l y 4 l"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Cómo evitar que la pintura de cal se caiga o manche?",
+        "a": "La clave está en el soporte: sano, duro, sin polvo ni pintura suelta. Si hay pintura antigua en mal estado, hay que eliminarla y consolidar con Tixol Endurecedor de Fondos antes de pintar."
+      },
+      {
+        "q": "¿Se puede usar en exterior?",
+        "a": "Sí. Es resistente a la intemperie, a los rayos UV y al ozono, y sirve en interior y exterior."
+      },
+      {
+        "q": "¿Se puede aplicar sobre una pared ya pintada?",
+        "a": "Sí, sobre pinturas tradicionales en buen estado. Las zonas mal adheridas se eliminan y se consolida el fondo."
+      },
+      {
+        "q": "¿Qué diferencia hay con la Pintura de Cal ECO?",
+        "a": "Las dos comparten base y acabado; la versión ECO está formulada libre de COV."
+      }
+    ]
+  },
+  "tixol-pintura-de-cal-eco": {
+    "intro": "Tixol Pintura de Cal ECO es la versión libre de COV de la pintura de cal Tixol: una pintura natural para interior y exterior, de cal en pasta envejecida, carbonatos cálcicos y ligante vegetal, sin biocidas ni aditivos químicos. Da un acabado mate mineral profundo y muy transpirable, de gran blancura y que no amarillea.",
+    "usos": [
+      "Proyectos que exigen pinturas sin COV.",
+      "Viviendas, colegios, guarderías y hoteles.",
+      "Restauración de patrimonio, iglesias y museos.",
+      "Como acabado de los morteros de cal Tixol."
+    ],
+    "pasos": [
+      "Dejar el soporte sano, duro y sin polvo, grasa ni eflorescencias.",
+      "Si hay pintura en mal estado, eliminar lo que no esté adherido y consolidar con Tixol Endurecedor de Fondos.",
+      "Remover bien el envase. Está lista al uso; sobre superficies muy porosas se puede diluir con un 5 % de agua.",
+      "Aplicar con brocha, rodillo o pistola, con temperatura entre 5 °C y 35 °C.",
+      "Esperar 4-6 horas antes de dar la siguiente mano."
+    ],
+    "datos": [
+      [
+        "COV",
+        "0 %"
+      ],
+      [
+        "Rendimiento",
+        "6-8 m²/l por capa"
+      ],
+      [
+        "Seco al tacto",
+        "40-60 minutos"
+      ],
+      [
+        "Repintado",
+        "A partir de 4-6 horas"
+      ],
+      [
+        "Acabado",
+        "Mate mineral"
+      ],
+      [
+        "Lavabilidad",
+        "Clase 2"
+      ],
+      [
+        "Envases",
+        "15 l y 4 l"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué diferencia hay con la Pintura de Cal normal?",
+        "a": "La base y el acabado son los mismos; la versión ECO está formulada libre de COV (0 %)."
+      },
+      {
+        "q": "¿Sirve para exterior?",
+        "a": "Sí, se puede usar en interior y exterior."
+      },
+      {
+        "q": "¿Cuánto rinde?",
+        "a": "Entre 6 y 8 m² por litro y capa."
+      }
+    ]
+  },
+  "thermo-corcho-a-rodillo": {
+    "intro": "Tixol Thermo Corcho a Rodillo es la versión del revestimiento de corcho natural que se aplica con rodillo, sin máquina de proyección. Es un revestimiento al agua de corcho y resinas acrílicas que forma una capa elástica e impermeable, aísla del calor y del ruido y ayuda a resolver humedades y condensaciones. Se fabrica en tres bases y admite más de 40 colores.",
+    "usos": [
+      "Fachadas, tejados y terrazas con humedades o condensaciones.",
+      "Cubiertas de naves industriales.",
+      "Obras pequeñas o medianas donde no compensa una máquina de proyección.",
+      "Revestimiento decorativo con aislamiento térmico y acústico."
+    ],
+    "pasos": [
+      "Dejar el soporte seco, sano y libre de polvo, grasa y moho; rascar lo que esté mal adherido.",
+      "Fijar los soportes débiles con Tixol Endurecedor de Fondos. Sobre superficies brillantes o no absorbentes, aplicar antes Tixol Puente de Unión Taking.",
+      "Mezclar con batidora eléctrica hasta que quede homogéneo.",
+      "Aplicar con rodillo de pelo medio y repasar con rodillo de picar para repartir bien el corcho.",
+      "Dejar 12 horas entre capas."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "2 kg/m² (espesor aproximado de 2,5-3 mm)"
+      ],
+      [
+        "Repintado",
+        "12 horas"
+      ],
+      [
+        "Secado al tacto",
+        "Unos 120 minutos a 20 °C"
+      ],
+      [
+        "Secado total",
+        "Unas 48 horas en capa de 3 mm a 20 °C"
+      ],
+      [
+        "Temperatura de aplicación",
+        "Entre 5 °C y 35 °C (soporte entre 10 °C y 35 °C)"
+      ],
+      [
+        "Colores",
+        "Bases blanca, media y transparente; más de 40 colores con los toners Thermo Corcho"
+      ],
+      [
+        "Envase",
+        "15 l, con el corcho ya incorporado"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Hace falta máquina para aplicarlo?",
+        "a": "No, esta versión se aplica con rodillo de pelo medio y se repasa con rodillo de picar. Para proyectar con pistola existe Tixol Thermo Corcho Proyectado."
+      },
+      {
+        "q": "¿Cuánto producto hace falta?",
+        "a": "Unos 2 kg/m², que dan un espesor aproximado de 2,5-3 mm."
+      },
+      {
+        "q": "¿Se puede pintar de colores?",
+        "a": "Sí: hay tres bases que se tiñen con los toners Thermo Corcho, con más de 40 colores."
+      }
+    ]
+  },
+  "mortero-de-cal-aislante-termico": {
+    "intro": "Tixol Mortero de Cal Aislante Térmico es un mortero seco de cal hidráulica natural, corcho natural triturado y áridos calcáreos, para hacer revocos que aíslan mejor del calor, del frío y del ruido que los de cal y arena convencionales. Es transpirable y permeable al vapor, ayuda a cortar el puente térmico y a evitar condensaciones, y tiene una reacción al fuego A2-s1,d0.",
+    "usos": [
+      "Aislamiento de fachadas con base de cal.",
+      "Rehabilitación de edificios antiguos y obra nueva.",
+      "Paredes y techos interiores con condensaciones o pérdida de calor.",
+      "Sobre morteros, hormigón y ladrillo."
+    ],
+    "pasos": [
+      "Echar el saco de 8 kg en 6 litros de agua limpia y mezclar a bajas revoluciones durante 2 minutos.",
+      "Dejar reposar 2 minutos y volver a mezclar hasta obtener una pasta homogénea.",
+      "Aplicar con llana de acero en espesores de 5 a 20 mm, haciendo paños enteros siempre que se pueda.",
+      "En encuentros entre soportes distintos, embeber una malla de fibra de vidrio; en paños grandes, hacer juntas de dilatación.",
+      "Esperar 24-48 horas antes del revoco fino final. En exterior, dejar al menos 5 mm de revoco de corcho (1,5 cm en zonas muy lluviosas)."
+    ],
+    "datos": [
+      [
+        "Consumo",
+        "5 kg/m² por cm de espesor"
+      ],
+      [
+        "Espesor por capa",
+        "5-20 mm"
+      ],
+      [
+        "Seco al tacto (50 % HR)",
+        "20-24 h a 10 °C; 8-10 h a 25 °C; 4-6 h a 35 °C"
+      ],
+      [
+        "Temperatura de aplicación",
+        "5-30 °C, HR inferior al 75 %"
+      ],
+      [
+        "Reacción al fuego",
+        "A2-s1,d0"
+      ],
+      [
+        "Permeabilidad al vapor",
+        "µ < 15"
+      ],
+      [
+        "Color",
+        "Blanco roto"
+      ],
+      [
+        "Envase",
+        "Sacos de 8 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué espesor hay que dar?",
+        "a": "Entre 5 y 20 mm por capa. En exterior, al menos 5 mm de revoco de corcho, y 1,5 cm en zonas muy lluviosas o expuestas. No se aconsejan más de 3 cm en total."
+      },
+      {
+        "q": "¿Cuánto mortero hace falta?",
+        "a": "Unos 5 kg por m² y por cada centímetro de espesor."
+      },
+      {
+        "q": "¿Sirve para evitar condensaciones?",
+        "a": "Sí: crea una barrera térmica que reduce el paso del frío y ayuda a evitar condensaciones en el interior."
+      },
+      {
+        "q": "¿Es transpirable?",
+        "a": "Sí, es permeable al vapor de agua (µ < 15) y deja evaporar la humedad del muro."
+      }
+    ]
+  },
+  "epoxi-metal-colors": {
+    "intro": "Tixol Epoxi Metal Colors es una resina epoxi bicomponente 100 % sólidos, autonivelante, con pigmentos metalizados para decorar suelos con efecto metálico. Está disponible en tres colores directos, Gold, Metal y Copper, y se aplica a llana. Una vez curada forma una capa brillante, dura y ligeramente flexible, con buena resistencia química.",
+    "usos": [
+      "Suelos decorativos con efecto metalizado en viviendas, locales y exposiciones.",
+      "Pavimentos de hormigón y cemento."
+    ],
+    "pasos": [
+      "Preparar el soporte seco, limpio y sin grasa; en hormigón, abrir el poro por medios mecánicos. La humedad del hormigón debe ser inferior al 4 %.",
+      "Agitar por separado la base (A) y el catalizador (B).",
+      "Mezclar 2 partes de A por 1 de B, en peso, con batidora lenta (400-500 rpm) para no meter aire.",
+      "Usar la mezcla antes de 30-40 minutos y extender a llana.",
+      "Aplicar entre 5 °C y 35 °C, con humedad relativa inferior al 75 % y el soporte 3 °C por encima del punto de rocío."
+    ],
+    "datos": [
+      [
+        "Colores",
+        "Gold, Metal y Copper"
+      ],
+      [
+        "Sólidos",
+        "100 % en peso y en volumen"
+      ],
+      [
+        "Secado al tacto",
+        "60 minutos"
+      ],
+      [
+        "Repintado",
+        "6-24 horas"
+      ],
+      [
+        "Secado total",
+        "15 días (a 25 °C y 50 % HR)"
+      ],
+      [
+        "Tiempo de vida de la mezcla",
+        "30-40 minutos"
+      ],
+      [
+        "Brillo",
+        "70-80 (a 60°)"
+      ],
+      [
+        "Envases",
+        "Kits de 0,700 + 0,350 kg, 2 + 1 kg y 8 + 4 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué colores hay?",
+        "a": "Tres colores metalizados directos: Gold, Metal y Copper."
+      },
+      {
+        "q": "¿Cómo se aplica?",
+        "a": "A llana, tras mezclar 2 partes de base por 1 de catalizador en peso. La mezcla hay que usarla antes de 30-40 minutos."
+      },
+      {
+        "q": "¿Cuánto tarda en poder usarse el suelo?",
+        "a": "Está seco al tacto en 60 minutos, pero el secado total tarda 15 días a 25 °C."
+      }
+    ]
+  },
+  "hidrofugante-invisible": {
+    "intro": "Tixol Hidrofugante Invisible es un protector hidrófugo y oleófugo de polímeros fluorados para suelos porosos sin esmaltar. Frena la penetración de agua, aceite, grasa, vino o café sin cambiar el aspecto natural del material, lo deja respirar y facilita su limpieza. Se usa en interior y exterior.",
+    "usos": [
+      "Suelos de barro cocido y terracota.",
+      "Piedra natural, hormigón y terrazo.",
+      "Cualquier soporte poroso sin esmaltar, en interior o exterior.",
+      "Si buscas además un aspecto oscurecido, mira el Hidrofugante Efecto Mojado."
+    ],
+    "pasos": [
+      "Dejar el soporte duro, seco, limpio y sano.",
+      "Aplicar puro con brocha, rodillo o airless.",
+      "Dar dos pasadas fresco sobre fresco hasta saturar, de forma homogénea.",
+      "Está seco al tacto en unos 20 minutos."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "100-200 g/m², según la absorción"
+      ],
+      [
+        "Seco al tacto",
+        "20 minutos"
+      ],
+      [
+        "Aspecto",
+        "Incoloro, efecto perlado"
+      ],
+      [
+        "Base",
+        "Polímero fluorado"
+      ],
+      [
+        "Dilución",
+        "Listo al uso"
+      ],
+      [
+        "Envases",
+        "5 l y 25 l"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Sirve para suelos de barro?",
+        "a": "Sí, está formulado para proteger barro cocido y terracota, además de piedra natural, hormigón y terrazo."
+      },
+      {
+        "q": "¿Cambia el color del suelo?",
+        "a": "No. Es invisible y respeta el aspecto natural del material."
+      },
+      {
+        "q": "¿Cómo se aplica?",
+        "a": "En dos pasadas fresco sobre fresco hasta saturar, con brocha, rodillo o airless: entre 100 y 200 g/m²."
+      },
+      {
+        "q": "¿Deja respirar el material?",
+        "a": "Sí, es muy transpirable."
+      }
+    ]
+  },
+  "barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente": {
+    "intro": "Tixol PU Finish 2C es un barniz de poliuretano alifático bicomponente, al disolvente, incoloro e inalterable a la luz. Se usa como capa de acabado cuando hace falta alta resistencia mecánica y química, y se fabrica en cuatro acabados: brillo, satinado, mate y ultra mate.",
+    "usos": [
+      "Protección de suelos de resina como Tixol Epoxi 3D.",
+      "Suelos industriales y mantenimiento industrial.",
+      "Carrocería industrial, maquinaria, calderería y silos.",
+      "Mobiliario y equipamiento metálico de exterior y mantenimiento marino."
+    ],
+    "pasos": [
+      "Aplicar sobre soporte seco y limpio. Desengrasar o granallar; eliminar calamina u óxido.",
+      "Sobre aluminio, latón, galvanizado o cerámica, aplicar antes una imprimación de anclaje (consultar con el Servicio Técnico).",
+      "Mezclar los dos componentes con batidora a menos de 400 rpm durante al menos 2 minutos, sin meter aire.",
+      "Aplicar con rodillo de pelo corto, aerográfica o airless, en capas de 50-80 micras secas.",
+      "Dejar entre 6 y 24 horas entre capas. Aplicar entre 5 °C y 35 °C y HR inferior al 75 %."
+    ],
+    "datos": [
+      [
+        "Consumo",
+        "0,120-0,250 kg/m²"
+      ],
+      [
+        "Secado al tacto",
+        "40 minutos (25 °C y 50 % HR)"
+      ],
+      [
+        "Repintado",
+        "6-24 horas"
+      ],
+      [
+        "Curado total",
+        "7 días"
+      ],
+      [
+        "Acabados",
+        "Brillo, satinado, mate y ultra mate"
+      ],
+      [
+        "Espesor recomendado",
+        "50-80 micras secas"
+      ],
+      [
+        "Envases",
+        "Kits de 12 + 4 l, 3 + 1 l y 0,75 + 0,25 l"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Amarillea?",
+        "a": "No: al ser alifático es inalterable e incoloro."
+      },
+      {
+        "q": "¿Sirve para proteger un suelo de epoxi?",
+        "a": "Sí, es uno de sus usos: protección de Tixol Epoxi 3D y de suelos industriales."
+      },
+      {
+        "q": "¿Qué acabados hay?",
+        "a": "Brillo, satinado, mate y ultra mate."
+      },
+      {
+        "q": "¿Cuándo alcanza su resistencia final?",
+        "a": "Seca al tacto en 40 minutos y alcanza el curado total a los 7 días."
+      }
+    ]
+  },
+  "cal-hidraulica-blanca": {
+    "intro": "Tixol Cal Hidráulica Blanca es una cal hidráulica natural NHL 3,5 de gran pureza, sin aditivos químicos, para enlucidos muy transpirables y duraderos. Se usa en restauración de patrimonio, enlucido de muros y reparación de paredes con humedad y salitre. Absorbe CO₂ al endurecer, admite pigmentos minerales y tiene una reacción al fuego A1.",
+    "usos": [
+      "Enlucido de paramentos, en capas de hasta 1 mm.",
+      "Restauración de patrimonio histórico.",
+      "Paredes con humedad y salitre, cuartos de baño y zonas húmedas.",
+      "Revoco a la tirolesa y acabados decorativos planchados, pigmentada."
+    ],
+    "pasos": [
+      "Usar sobre soporte mineral: piedra, ladrillo o morteros de cemento o de cal. Sobre superficies no minerales, aplicar antes Tixol Mortero de Cal de Agarre.",
+      "Eliminar pinturas, eflorescencias y todo lo que impida la adherencia, y humedecer el soporte con agua.",
+      "Amasar el polvo con un 20 % de agua hasta obtener una pasta sin grumos.",
+      "Aplicar en capas de 1 mm, fresco sobre fresco si hace falta más de una, entre 5 °C y 35 °C.",
+      "Fratasar cuando haya tirado. Evitar corrientes de aire y sol directo durante el secado."
+    ],
+    "datos": [
+      [
+        "Tipo",
+        "Cal hidráulica natural NHL 3,5"
+      ],
+      [
+        "Rendimiento",
+        "1,6 kg/m² por cada mm de espesor"
+      ],
+      [
+        "Espesor por capa",
+        "1 mm en enlucidos"
+      ],
+      [
+        "Resistencia a compresión",
+        "3,5 MPa a 28 días"
+      ],
+      [
+        "Granulometría del árido",
+        "< 0,5 mm"
+      ],
+      [
+        "Reacción al fuego",
+        "A1"
+      ],
+      [
+        "Aditivos",
+        "0 %"
+      ],
+      [
+        "Envase",
+        "Cubos de 17 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué significa NHL 3,5?",
+        "a": "Es la clase de la cal hidráulica natural según su resistencia a compresión: esta alcanza 3,5 MPa a los 28 días. Es una cal adecuada para enlucidos transpirables."
+      },
+      {
+        "q": "¿Sirve para paredes con humedad?",
+        "a": "Sí: es muy transpirable y se usa para reparar paramentos con humedad y salitre."
+      },
+      {
+        "q": "¿Cuánto material hace falta?",
+        "a": "Unos 1,6 kg por m² y por cada milímetro de espesor."
+      },
+      {
+        "q": "¿Se puede teñir?",
+        "a": "Sí, admite pigmentos minerales para acabados decorativos."
+      }
+    ]
+  },
+  "epoxi-3d": {
+    "intro": "Tixol Epoxi 3D es una resina epoxi bicomponente 100 % sólidos, transparente o pigmentada, para crear suelos continuos y sin juntas. En transparente se aplica sobre imágenes, paisajes o diseños impresos colocados en el suelo para conseguir el efecto 3D; en pigmentado se usa en garajes y suelos deportivos. Una vez curada forma una capa brillante, dura y con buena resistencia química.",
+    "usos": [
+      "Suelos 3D sobre imágenes y diseños decorativos en viviendas, oficinas y exposiciones.",
+      "Garajes, aparcamientos y suelos deportivos de interior (versión pigmentada).",
+      "Cuartos de baño bien sellados contra la entrada de agua por debajo."
+    ],
+    "pasos": [
+      "Preparar el soporte seco, limpio y sin grasa; en hormigón, abrir el poro por medios mecánicos. La humedad del hormigón debe ser inferior al 4 %.",
+      "Agitar por separado la base (A) y el catalizador (B) y mezclar 2 partes de A por 1 de B, en peso, con batidora lenta.",
+      "Usar la mezcla antes de 30-40 minutos.",
+      "Como imprimación, diluir un 10 %; como autonivelante transparente, verter la cantidad necesaria y extender con llana dentada.",
+      "Aplicar entre 5 °C y 35 °C (lo ideal, entre 15 °C y 30 °C) con HR inferior al 75 %."
+    ],
+    "datos": [
+      [
+        "Sólidos",
+        "100 % en peso y en volumen"
+      ],
+      [
+        "Versiones",
+        "Transparente y pigmentada (rojo, verde, gris, negro y RAL bajo pedido)"
+      ],
+      [
+        "Secado al tacto",
+        "60 minutos (25 °C y 50 % HR)"
+      ],
+      [
+        "Secado total",
+        "15 días"
+      ],
+      [
+        "Tiempo de vida de la mezcla",
+        "30-40 minutos"
+      ],
+      [
+        "Brillo",
+        "70-80 (a 60°)"
+      ],
+      [
+        "Consumo como autonivelante",
+        "1-2,5 kg/m², según el espesor"
+      ],
+      [
+        "Envases",
+        "Kits de 8 + 4 kg y de 2 + 1 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Cómo se hace un suelo 3D?",
+        "a": "Se coloca en el suelo la imagen o el diseño decorativo y se cubre con Tixol Epoxi 3D transparente, que lo protege y le da profundidad."
+      },
+      {
+        "q": "¿Tiene juntas?",
+        "a": "No, forma un revestimiento continuo sin juntas."
+      },
+      {
+        "q": "¿Se puede pigmentar?",
+        "a": "Sí: rojo, verde, gris, negro y cualquier color RAL bajo pedido."
+      },
+      {
+        "q": "¿Cuánto tarda en curar?",
+        "a": "Está seco al tacto en 60 minutos a 25 °C y el secado total tarda 15 días."
+      }
+    ]
+  },
+  "bronce": {
+    "intro": "Tixol Oxitec Bronce es un revestimiento al agua con cargas metálicas que, una vez lijado y pulido, da un auténtico acabado metálico en bronce. Viene en pasta, listo para aplicar a llana, y también se puede dar con rodillo, brocha o pistola ajustando la viscosidad con agua. Según la herramienta y la mano del aplicador, el acabado va de muy liso a rústico y texturado.",
+    "usos": [
+      "Paredes interiores y exteriores con acabado metalizado.",
+      "Superficies porosas previamente imprimadas.",
+      "Directamente sobre superficies sin absorción.",
+      "Superficies metálicas tratadas con imprimación antioxidante."
+    ],
+    "pasos": [
+      "Dejar el soporte duro, limpio y seco. Sobre metal, eliminar la calamina y aplicar una imprimación antioxidante; sobre superficies porosas, Tixol Primer Universal.",
+      "Diluir con agua según la herramienta: 5 % a llana, 10 % a rodillo, 15 % a pistola.",
+      "Aplicar dos manos, dejando 6 horas entre ellas a unos 20 °C.",
+      "Con la superficie totalmente seca, lijar con grano 320 y pulir a máquina con grano de 800 a 2000 hasta el brillo deseado.",
+      "Para una protección extrema, aplicar Tixol PU Finish 2C en mate, satinado o brillo."
+    ],
+    "datos": [
+      [
+        "Consumo",
+        "500 g/m² a llana; 600 g/m² a rodillo; 700 g/m² a pistola"
+      ],
+      [
+        "Capas",
+        "Dos, con 6 horas entre ellas (a 20 °C)"
+      ],
+      [
+        "Dilución",
+        "5 % llana, 10 % rodillo, 15 % pistola"
+      ],
+      [
+        "Acabado",
+        "Metalizado bronce, del liso al rústico"
+      ],
+      [
+        "Envases",
+        "1 kg y 5 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Es metal de verdad?",
+        "a": "Lleva cargas metálicas: al lijar y pulir la superficie seca aparece el brillo metálico del bronce."
+      },
+      {
+        "q": "¿Se puede usar en exterior?",
+        "a": "Sí, sirve para interior y exterior."
+      },
+      {
+        "q": "¿Cómo se consigue más brillo?",
+        "a": "Puliendo con lijas más finas: a mayor finura (hasta grano 2000), más brillo y mejor tacto."
+      },
+      {
+        "q": "¿Cuánto producto hace falta?",
+        "a": "Unos 500 g/m² a llana, 600 g/m² a rodillo o 700 g/m² a pistola."
+      }
+    ]
+  },
+  "tixol-nature-arcilla": {
+    "intro": "Tixol Nature Arcilla es una pintura de arcilla 100 % natural, formulada con ligantes vegetales y tierras naturales, para paredes y techos de interior. Es extraordinariamente transpirable, lavable y libre de COV, formaldehído, metales pesados y disolventes. Se puede usar tal cual o con arena para conseguir acabados texturados, y se tiñe con pigmentos naturales.",
+    "usos": [
+      "Paredes y techos interiores con acabado natural, liso o texturado.",
+      "Bioconstrucción, passivhaus, casas cueva y patrimonio.",
+      "Hostelería y locales que buscan un acabado natural.",
+      "Como acabado sobre reparaciones con morteros de cal Tixol Nature."
+    ],
+    "pasos": [
+      "Dejar el soporte seco, limpio y sin partes mal adheridas.",
+      "Si el fondo es mineral, consolidar con Tixol Endurecedor de Fondos o Tixol Ecosil Fondo al Silicato; sobre pintura o cartón yeso, fondear con Tixol Aquaprim.",
+      "Agitar: en reposo es una pasta espesa que se vuelve fluida. Para acabado texturado, añadir arena Tixol Textura Fina o Rústica.",
+      "Aplicar con rodillo para un acabado uniforme, o con paletina ancha, en abanico y cruzando capas, para texturas y cambios de tono.",
+      "Dejar 4-6 horas entre capas."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "250-300 g/m² en dos capas"
+      ],
+      [
+        "Repintado",
+        "4-6 horas"
+      ],
+      [
+        "Espesor recomendado",
+        "150-200 micras"
+      ],
+      [
+        "Texturas",
+        "Natural, fina y rústica"
+      ],
+      [
+        "COV",
+        "0 %, libre de formaldehído"
+      ],
+      [
+        "Envase",
+        "10 kg"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con agua"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Se puede pintar sobre pintura plástica?",
+        "a": "Sí, fondeando antes con Tixol Aquaprim para igualar la absorción. También sobre cartón yeso, yeso o cemento imprimados."
+      },
+      {
+        "q": "¿Necesita protección?",
+        "a": "No, salvo en zonas de mucho paso o que se ensucien; ahí se recomienda Tixol Nature Protect Arcilla, un hidrofugante invisible formulado para la arcilla."
+      },
+      {
+        "q": "¿Es lavable?",
+        "a": "Sí, es lavable."
+      },
+      {
+        "q": "¿Cuánta pintura hace falta?",
+        "a": "Entre 250 y 300 g/m² en dos capas."
+      }
+    ]
+  },
+  "tixol-eliminador-de-manchas-de-humedad": {
+    "intro": "Tixol Eliminador de Manchas de Humedad es un limpiador clorado de amplio espectro, listo al uso, que elimina las manchas oscuras que deja la humedad. Actúa en unos 10 minutos sobre ladrillo, cemento, hormigón, yeso, madera, piedra o teja, en interior y exterior.",
+    "usos": [
+      "Paredes y techos con manchas de humedad.",
+      "Juntas de azulejo, bañeras, sanitarios y cortinas de ducha.",
+      "Muros, terrazas, tejados y cubiertas.",
+      "Ladrillo, cemento, hormigón, yeso, madera, teja, piedra y plástico."
+    ],
+    "pasos": [
+      "Asegurarse de que el soporte no está empapado.",
+      "Aplicar con pulverizador o brocha (airless en grandes superficies), de abajo arriba en paredes.",
+      "Dejar actuar 10 minutos.",
+      "Aclarar con agua, a presión si es posible."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "1 l para 5-10 m², según el soporte y la suciedad"
+      ],
+      [
+        "Tiempo de actuación",
+        "10 minutos"
+      ],
+      [
+        "Dilución",
+        "Listo al uso, no diluir"
+      ],
+      [
+        "Aspecto",
+        "Líquido transparente"
+      ],
+      [
+        "Envase",
+        "Pulverizador de 500 ml"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto tiempo hay que dejarlo actuar?",
+        "a": "Unos 10 minutos; después se aclara con agua, a presión si es posible."
+      },
+      {
+        "q": "¿Quita el origen de la humedad?",
+        "a": "No: elimina las manchas. Si la humedad sigue entrando, volverán a aparecer, así que hay que tratar antes la causa (capilaridad, filtración o condensación)."
+      },
+      {
+        "q": "¿Se puede usar en el baño?",
+        "a": "Sí, en juntas de azulejo, bañeras, sanitarios y cortinas de ducha."
+      },
+      {
+        "q": "¿Qué precauciones hay que tomar?",
+        "a": "Contiene blanqueantes clorados e hidróxido de sodio: usar guantes y gafas y consultar la ficha de seguridad."
+      }
+    ]
+  },
+  "nature-floor-roc-primer": {
+    "intro": "Tixol Nature Floor Roc Primer es una imprimación de agarre texturada, al agua, que crea una capa puente sobre baldosa cerámica o superficies sin absorción. Es la primera capa del sistema decorativo de cal natural Tixol Nature Floor, y permite revestir suelos y paredes alicatados sin levantar la cerámica.",
+    "usos": [
+      "Suelos y paredes de baldosa cerámica que se van a revestir con Tixol Nature Floor.",
+      "Superficies sin absorción.",
+      "Reformas de pavimentos sin levantar el suelo existente."
+    ],
+    "pasos": [
+      "Limpiar el soporte de polvo y grasa y dejarlo sin humedad.",
+      "Rascar partículas mal adheridas y restos de revestimientos o pintura antigua.",
+      "Está lista al uso; se puede ajustar la viscosidad con un 5 % de agua como máximo.",
+      "Aplicar con rodillo, paletina o brocha.",
+      "Esperar 6 horas antes de aplicar la siguiente capa del sistema."
+    ],
+    "datos": [
+      [
+        "Rendimiento",
+        "350 g/m² en una capa"
+      ],
+      [
+        "Repintado",
+        "6 horas"
+      ],
+      [
+        "Espesor recomendado",
+        "150 micras"
+      ],
+      [
+        "Aspecto",
+        "Membrana de acabado satinado"
+      ],
+      [
+        "Envase",
+        "15 kg"
+      ],
+      [
+        "Limpieza de herramientas",
+        "Con agua"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Sirve para revestir un suelo de baldosas sin levantarlo?",
+        "a": "Sí: crea la capa puente sobre la cerámica para aplicar encima el sistema de cal Tixol Nature Floor."
+      },
+      {
+        "q": "¿Cuántas capas lleva?",
+        "a": "Una capa, con un consumo de unos 350 g/m²."
+      },
+      {
+        "q": "¿Cuándo se puede seguir con el sistema?",
+        "a": "A las 6 horas."
+      }
+    ]
+  },
+  "mortero-de-cal-romano-grueso": {
+    "intro": "Tixol Mortero de Cal Romano Grueso es un mortero de reparación de cal hidráulica natural NHL 5 con puzolanas y áridos seleccionados, sin aditivos químicos. Permite rellenos de hasta 1 cm por capa y es muy transpirable, por lo que se usa en restauración de patrimonio, reparación de muros con humedad y salitre, rejuntado de piedra y bioconstrucción.",
+    "usos": [
+      "Restauración de patrimonio histórico y reparación de muros.",
+      "Rejuntado de mampostería de piedra natural y ladrillo visto.",
+      "Paramentos con humedad y salitre.",
+      "Bioconstrucción y acabados rústicos o fratasados."
+    ],
+    "pasos": [
+      "Usar sobre soporte mineral: piedra, ladrillo o morteros de cemento o de cal. Sobre superficies no minerales, aplicar antes Tixol Mortero de Cal de Agarre.",
+      "Eliminar pinturas, eflorescencias y todo lo que impida la adherencia, y humedecer el soporte.",
+      "Amasar el polvo con un 22 % de agua.",
+      "Aplicar en capas de 3 mm como mínimo y hasta 1 cm, fresco sobre fresco si hace falta más de una, entre 5 °C y 35 °C.",
+      "Fratasar cuando haya tirado. Evitar corrientes de aire y sol directo durante el secado."
+    ],
+    "datos": [
+      [
+        "Tipo",
+        "Cal hidráulica natural NHL 5 con puzolanas"
+      ],
+      [
+        "Rendimiento",
+        "20 kg/m² por cm de espesor"
+      ],
+      [
+        "Espesor por capa",
+        "De 3 mm a 1 cm"
+      ],
+      [
+        "Granulometría del árido",
+        "< 1,2 mm"
+      ],
+      [
+        "Reacción al fuego",
+        "A1"
+      ],
+      [
+        "Color",
+        "Beige"
+      ],
+      [
+        "Envase",
+        "Sacos de 23 kg"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "¿Qué espesor admite?",
+        "a": "Hasta 1 cm por capa, con un mínimo de 3 mm. Si hacen falta más capas, se aplican fresco sobre fresco."
+      },
+      {
+        "q": "¿Sirve para muros con humedad?",
+        "a": "Sí: es muy transpirable y está indicado para reparar paramentos con humedad y salitre."
+      },
+      {
+        "q": "¿Cuánto mortero hace falta?",
+        "a": "Unos 20 kg por m² y por cada centímetro de espesor."
+      },
+      {
+        "q": "¿Se puede usar para rejuntar piedra?",
+        "a": "Sí, para rejuntar mampostería de piedra natural y ladrillo visto."
+      }
+    ]
+  }
+}

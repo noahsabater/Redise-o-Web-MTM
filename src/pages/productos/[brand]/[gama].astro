@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageHeader from '../../../components/layout/PageHeader.astro';
 import products from '../../../data/products.json';
 import { catalog } from '../../../data/catalog';
+import categorias from '../../../data/categorias.json';
 
 export function getStaticPaths() {
   const brands = ['tixol', 'scalp', 'supertape'];
@@ -45,6 +46,10 @@ const meta: Record<string, { name: string; tagline: string }> = {
 };
 const brandName = meta[brand].name;
 
+// Textos escritos a mano para las categorías con más impresiones (categorias.json)
+type Cat = { seoTitle: string; seoDesc: string; intro: string; texto: string[] };
+const cat = (categorias as Record<string, Cat>)[`${brand}/${Astro.params.gama}`];
+
 // Sólo el catálogo completo muestra el selector de categoría
 const allGamas = catalog.find((c) => c.slug === brand)?.gamas ?? [];
 const gamas = isAll
@@ -58,12 +63,12 @@ const tones = toneOrder.filter((t) => items.some((p) => p.tone === t));
 const PAGE_SIZE = 12;
 ---
 
-<BaseLayout title={`${gamaName} · ${brandName}`} description={`Productos de ${gamaName} de ${brandName}.`}>
+<BaseLayout title={cat?.seoTitle ?? `${gamaName} · ${brandName}`} description={cat?.seoDesc ?? `Productos de ${gamaName} de ${brandName}.`}>
   <PageHeader
     eyebrow={`${brandName} · Catálogo`}
     title={isAll ? 'Todos los' : gamaName}
     accent={isAll ? 'productos' : undefined}
-    intro={isAll ? meta[brand].tagline : `Productos de ${gamaName}.`}
+    intro={isAll ? meta[brand].tagline : cat?.intro ?? `Productos de ${gamaName}.`}
   />
 
   <div class="catalog-bg"></div>
@@ -156,9 +161,19 @@ const PAGE_SIZE = 12;
       <p class="pager-info" data-pager-info></p>
     </div>
   </section>
+
+  {cat && (
+    <section class="cat-texto container-mtm">
+      <h2>{gamaName}: qué incluye</h2>
+      {cat.texto.map((t) => <p>{t}</p>)}
+    </section>
+  )}
 </BaseLayout>
 
 <style>
+  .cat-texto { max-width: 52rem; margin-block: clamp(2.5rem, 6vw, 4.5rem); padding-top: clamp(2rem, 4vw, 3rem); border-top: 1px solid var(--color-line); }
+  .cat-texto h2 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); line-height: 1.2; margin-bottom: 1rem; }
+  .cat-texto p { font-size: 1.15rem; line-height: 1.75; color: #2a2926; margin-bottom: 1rem; }
   .catalog-bg {
     position: fixed; inset: 0; z-index: -1; pointer-events: none;
     background:

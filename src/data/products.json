@@ -85,7 +85,7 @@
     "gamaMain": "Hidrófugos",
     "tone": null,
     "uso": "Para suelos",
-    "short": "Scalp Anti-Manchas 07 es una protección hidrófuga y oleófuga incolora contra la penetración de líquidos (agua, vino, café, taninos, aceite, grasa, etc.), en suelos porosos, principalmente horizontales, como hormigón, mármol, piedra, etc.",
+    "short": "Scalp Anti-Manchas 07 EM es una protección hidrófuga con efecto mojado que impermeabiliza, renueva y aviva tejados, terrazas y suelos porosos como teja, terracota, piedra u hormigón.",
     "description": [
       "Scalp Antimanchas 07 EM (Efecto Mojado) está destinado a la protección de materiales porosos contra la penetración de aceites, grasas, lubricantes, vinos, cafés, tanino… sobre superficies principalmente horizontales como pavimentos de autobloqueo, baldosas con forma hexagonal, piedras reconstruidas, mármol, hormigón, cemento, piedras naturales. Ventajas del producto:",
       "• Gran eficacia",
@@ -100,7 +100,9 @@
     ],
     "image": "/products/scalp-anti-manchas-07-em.webp",
     "imageAlt": "Scalp Anti-Manchas 07 EM",
-    "datasheet": "/fichas/scalp-anti-manchas-07-em.pdf"
+    "datasheet": "/fichas/scalp-anti-manchas-07-em.pdf",
+    "seoTitle": "Scalp Anti-Manchas 07 EM: protector efecto mojado",
+    "seoDesc": "Protección hidrófuga con efecto mojado que impermeabiliza, renueva y aviva tejados, terrazas y suelos de teja, piedra u hormigón. Sin disolventes."
   },
   {
     "id": 2423,
