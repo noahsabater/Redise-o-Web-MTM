@@ -18,18 +18,27 @@ const brandHref = `/productos/${product.brand}/`;
 const gamaSlug = product.gamas.find((g) => g.name === product.gamaMain)?.slug;
 const canonical = new URL(`/producto/${product.slug}`, site.url).href;
 
-// Meta description: short → 1ª frase de la descripción → nombre; acortada a ~155
-const rawDesc =
-  product.short ||
+// Algunas fichas de Scalp solo traen "Disponible en N formatos" como entradilla:
+// no sirve ni de resumen ni de descripción, así que se muestra como etiqueta.
+const formatos = product.short?.trim().match(/^Disponible en (\d+) formatos\.?$/)?.[1];
+const lead = formatos ? (product as any).seoDesc : product.short;
+
+// Meta description: la escrita a mano (seoDesc) si la hay; si no, short → 1ª
+// frase de la descripción → nombre, sin viñetas y acortada a ~155
+const rawDesc = (
+  (product as any).seoDesc ||
+  (!formatos && product.short) ||
   (Array.isArray(product.description) ? product.description[0] : product.description) ||
-  product.name;
+  product.name
+).replace(/\s*•\s*/g, ' ').replace(/\s+/g, ' ').trim();
 const metaDesc =
   rawDesc.length > 158 ? rawDesc.slice(0, 155).replace(/\s+\S*$/, '') + '…' : rawDesc;
 
-// Título sin duplicar la marca si el nombre ya empieza por ella
-const seoTitle = product.name.startsWith(product.brandName)
+// Título: el escrito a mano (seoTitle, dice qué es el producto) o el nombre,
+// sin duplicar la marca si el nombre ya empieza por ella
+const seoTitle = (product as any).seoTitle ?? (product.name.startsWith(product.brandName)
   ? product.name
-  : `${product.name} · ${product.brandName}`;
+  : `${product.name} · ${product.brandName}`);
 
 // Nota: no emitimos datos estructurados de tipo "Product" porque Google exige
 // offers/review/aggregateRating para validarlo, y la web no muestra precios ni
@@ -72,10 +81,11 @@ const breadcrumbSchema = {
         <div class="tags">
           <a href={brandHref} class="tag tag--brand">{product.brandName}</a>
           {product.tone && <span class="tag">{product.tone}</span>}
+          {formatos && <span class="tag">{formatos} formatos</span>}
         </div>
         <h1 class="detail-title">{product.name}</h1>
         {product.uso && <p class="detail-uso">{product.uso}</p>}
-        {product.short && <p class="detail-short">{product.short}</p>}
+        {lead && <p class="detail-short">{lead}</p>}
 
         {product.gamas.length > 0 && (
           <div class="detail-cats">
@@ -140,7 +150,10 @@ const breadcrumbSchema = {
   .crumbs { display: flex; gap: 0.6rem; align-items: center; font-size: 0.828rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-ash); margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
   .crumbs a { color: var(--color-slate); }
   .crumbs a:hover { color: var(--color-ink); }
-  .crumb-cur { color: var(--color-ink); }
+  /* Siempre en una línea: si se partiera en dos con la fuente de reserva y en
+     una con NATS, toda la ficha saltaría al cargar la fuente (CLS) */
+  .crumbs { white-space: nowrap; min-width: 0; }
+  .crumb-cur { color: var(--color-ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 
   .detail { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
   .detail-media { background: var(--color-surface); border: 1px solid var(--color-line); aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; position: sticky; top: 100px; }

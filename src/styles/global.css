@@ -25,6 +25,18 @@
   font-style: normal;
   font-display: swap;
 }
+/* Reserva con las medidas de NATS: mientras llega el woff2 se pinta con Arial
+   encogida al ancho de NATS, y el cambio de fuente no mueve la página (CLS).
+   Medido con fontTools: ancho medio 0,384 em frente a 0,467 de Arial;
+   ascendente 1294 y descendente 756 sobre 970 unidades. */
+@font-face {
+  font-family: 'Nats Fallback';
+  src: local('Arial'), local('ArialMT'), local('Helvetica Neue'), local('Roboto');
+  size-adjust: 82.28%;
+  ascent-override: 162.1%;
+  descent-override: 94.7%;
+  line-gap-override: 0%;
+}
 
 /* ------------------------------------------------------------
    1. DESIGN TOKENS  →  generan utilidades de Tailwind
@@ -44,8 +56,8 @@
   --color-mtm-red-dark: #b41c22; /* rojo hover                */
 
   /* ---- Tipografía (misma familia y grosor que la referencia) ---- */
-  --font-display: 'Nats', system-ui, -apple-system, sans-serif;
-  --font-sans: 'Nats', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Nats', 'Nats Fallback', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Nats', 'Nats Fallback', 'Helvetica Neue', Arial, sans-serif;
   --font-serif: 'Bodoni Moda Variable', 'Bodoni 72', 'Times New Roman', Georgia, serif;
 
   /* ---- Escala tipográfica fluida ----

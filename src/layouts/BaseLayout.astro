@@ -147,8 +147,13 @@ const orgSchema = {
         var consent = getConsent();
         if (consent === 'accepted') { loadGA(); }
         else if (gaId && !consent && banner) {
-          banner.hidden = false;
-          requestAnimationFrame(function () { banner.classList.add('is-in'); });
+          // Se muestra cuando ya ha llegado NATS (como mucho 2,5 s): si saliera con
+          // la fuente de reserva, su texto cambiaría de alto al llegar NATS (CLS)
+          var fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
+          Promise.race([fontsReady, new Promise(function (r) { setTimeout(r, 2500); })]).then(function () {
+            banner.hidden = false;
+            requestAnimationFrame(function () { banner.classList.add('is-in'); });
+          });
         }
         if (banner) {
           banner.querySelector('[data-cookie-accept]').addEventListener('click', function () {

@@ -24,7 +24,9 @@
     ],
     "image": "/products/anti-m.webp",
     "imageAlt": "Scalp Anti-M",
-    "datasheet": "/fichas/anti-m.pdf"
+    "datasheet": "/fichas/anti-m.pdf",
+    "seoTitle": "Scalp Anti-M: antimusgo y antilíquenes para cubiertas",
+    "seoDesc": "Tratamiento al agua contra musgo, líquenes y microorganismos en cubiertas, fachadas, suelos y muros. Curativo y preventivo, de acción duradera."
   },
   {
     "id": 2256,
@@ -60,7 +62,9 @@
     ],
     "image": "/products/anti-manchas-07.webp",
     "imageAlt": "Scalp Anti-Manchas 07",
-    "datasheet": "/fichas/anti-manchas-07.pdf"
+    "datasheet": "/fichas/anti-manchas-07.pdf",
+    "seoTitle": "Scalp Anti-Manchas 07: protector antimanchas para suelos",
+    "seoDesc": "Protección incolora para suelos porosos de hormigón, mármol y piedra: impide que penetren aceite, vino, café o grasa. Sin olor y sin disolventes."
   },
   {
     "id": 8295,
@@ -123,7 +127,9 @@
     ],
     "image": "/products/antigraffiti-49.webp",
     "imageAlt": "Scalp Antigraffiti 49",
-    "datasheet": "/fichas/antigraffiti-49.pdf"
+    "datasheet": "/fichas/antigraffiti-49.pdf",
+    "seoTitle": "Scalp Antigraffiti 49: quitagrafitis suave",
+    "seoDesc": "Removedor de grafitis formulado para superficies delicadas y para las protegidas con Vernaeau PU 16. Elimina todo tipo de pintadas."
   },
   {
     "id": 8298,
@@ -177,7 +183,9 @@
     ],
     "image": "/products/aqua-03.webp",
     "imageAlt": "Scalp Aqua 03",
-    "datasheet": "/fichas/aqua-03.pdf"
+    "datasheet": "/fichas/aqua-03.pdf",
+    "seoTitle": "Scalp Aqua 03: desengrasante universal sin aclarado",
+    "seoDesc": "Desengrasante universal sin aclarado para PVC, aluminio, zinc, revestimientos y superficies pintadas. Sin amoniaco, ácido ni cloro. Interior y exterior."
   },
   {
     "id": 2259,
@@ -204,7 +212,9 @@
     ],
     "image": "/products/aqua-04.webp",
     "imageAlt": "Scalp Aqua 04",
-    "datasheet": "/fichas/aqua-04.pdf"
+    "datasheet": "/fichas/aqua-04.pdf",
+    "seoTitle": "Scalp Aqua 04: desengrasante para industria alimentaria",
+    "seoDesc": "Limpiador desengrasante concentrado para la industria alimentaria: utensilios, piezas de maquinaria y superficies en contacto con alimentos."
   },
   {
     "id": 8385,
@@ -380,7 +390,9 @@
     ],
     "image": "/products/scalp-consolidante-hidrofugante.webp",
     "imageAlt": "Scalp Consolidante Hidrofugante",
-    "datasheet": "/fichas/scalp-consolidante-hidrofugante.pdf"
+    "datasheet": "/fichas/scalp-consolidante-hidrofugante.pdf",
+    "seoTitle": "Scalp Consolidante Hidrofugante para piedra y fachadas",
+    "seoDesc": "Endurece, consolida y protege del agua en una sola aplicación. Para piedra natural calcárea y de sílice, ladrillo, hormigón y revestimientos minerales."
   },
   {
     "id": 2401,
@@ -430,7 +442,9 @@
     ],
     "image": "/products/derox-320.webp",
     "imageAlt": "Scalp Derox 320",
-    "datasheet": "/fichas/derox-320.pdf"
+    "datasheet": "/fichas/derox-320.pdf",
+    "seoTitle": "Scalp Derox 320: desengrasante para aluminio",
+    "seoDesc": "Limpiador desengrasante concentrado para aluminio, zinc y acero galvanizado. Prepara el metal para pintar y evita ampollas y desconchados."
   },
   {
     "id": 6920,
@@ -511,7 +525,9 @@
     ],
     "image": "/products/dmc-73.webp",
     "imageAlt": "Scalp DMC 73",
-    "datasheet": "/fichas/dmc-73.pdf"
+    "datasheet": "/fichas/dmc-73.pdf",
+    "seoTitle": "Scalp DMC 73: limpiador de piedra y mármol",
+    "seoDesc": "Descalcificador que limpia y purifica piedra, mármol y recubrimientos minerales ensuciados por la contaminación urbana."
   },
   {
     "id": 7014,
@@ -675,7 +691,9 @@
     ],
     "image": "/products/scalp-mineralizante-95.webp",
     "imageAlt": "Scalp Mineralizante 95",
-    "datasheet": "/fichas/scalp-mineralizante-95.pdf"
+    "datasheet": "/fichas/scalp-mineralizante-95.pdf",
+    "seoTitle": "Scalp Mineralizante 95: consolidante de fachadas",
+    "seoDesc": "Mineralizante consolidante para piedra calcárea y de sílice, ladrillo y hormigón. Protege fachadas, paredes y suelos de la humedad y la contaminación."
   },
   {
     "id": 2349,
@@ -702,7 +720,9 @@
     ],
     "image": "/products/nds-72.webp",
     "imageAlt": "Scalp NDS 72",
-    "datasheet": "/fichas/nds-72.pdf"
+    "datasheet": "/fichas/nds-72.pdf",
+    "seoTitle": "Scalp NDS 72: elimina el salitre y las sales blancas",
+    "seoDesc": "Tratamiento por impregnación que elimina las sales blancas (salitre) de cualquier superficie y neutraliza soportes limpiados con productos alcalinos."
   },
   {
     "id": 2231,
@@ -729,7 +749,9 @@
     ],
     "image": "/products/neutral-da-66.webp",
     "imageAlt": "Scalp Neutral DA 66",
-    "datasheet": "/fichas/neutral-da-66.pdf"
+    "datasheet": "/fichas/neutral-da-66.pdf",
+    "seoTitle": "Scalp Neutral DA 66: aclarador de madera envejecida",
+    "seoDesc": "Neutralizante y aclarante que devuelve el color a la madera ennegrecida por el tiempo: carpinterías, marcos de ventanas y muebles de jardín."
   },
   {
     "id": 6915,
@@ -807,7 +829,9 @@
     ],
     "image": "/products/pierre-aqua-89.webp",
     "imageAlt": "Scalp Pierre Aqua 89",
-    "datasheet": "/fichas/pierre-aqua-89.pdf"
+    "datasheet": "/fichas/pierre-aqua-89.pdf",
+    "seoTitle": "Scalp Pierre Aqua 89: limpiador de fachadas de piedra",
+    "seoDesc": "Limpiador rápido de fachadas que elimina la contaminación de piedra, mármol, hormigón, enlucidos y revestimientos pintados o plásticos."
   },
   {
     "id": 2377,
@@ -834,7 +858,9 @@
     ],
     "image": "/products/primafix.webp",
     "imageAlt": "Scalp Primafix",
-    "datasheet": "/fichas/primafix.pdf"
+    "datasheet": "/fichas/primafix.pdf",
+    "seoTitle": "Scalp Primafix: fijador para yeso antes de pintar",
+    "seoDesc": "Consolidante fijador para yeso, cartón yeso y soportes porosos o polvorientos: endurece, regula la absorción y mejora la adherencia de la pintura."
   },
   {
     "id": 2403,
@@ -861,7 +887,9 @@
     ],
     "image": "/products/primer-36.webp",
     "imageAlt": "Scalp Primer 36",
-    "datasheet": "/fichas/primer-36.pdf"
+    "datasheet": "/fichas/primer-36.pdf",
+    "seoTitle": "Scalp Primer 36: sellador antigraffiti al agua",
+    "seoDesc": "Sellador aislante al agua que evita el efecto mojado y crea una capa entre el soporte y la pintura o barniz, para que los grafitis no traspasen."
   },
   {
     "id": 6999,
@@ -998,7 +1026,9 @@
     ],
     "image": "/products/renovexpress.webp",
     "imageAlt": "Scalp Rénov’Express",
-    "datasheet": "/fichas/renovexpress.pdf"
+    "datasheet": "/fichas/renovexpress.pdf",
+    "seoTitle": "Scalp Rénov’Express: limpiador de fachadas y cubiertas",
+    "seoDesc": "Limpiador que elimina la suciedad y la contaminación de fachadas, techos, suelos y muros con revestimientos plásticos gruesos o semigruesos."
   },
   {
     "id": 6981,
@@ -1153,7 +1183,9 @@
     ],
     "image": "/products/scalpfuge-35.webp",
     "imageAlt": "Scalp Scalpfuge 35",
-    "datasheet": "/fichas/scalpfuge-35.pdf"
+    "datasheet": "/fichas/scalpfuge-35.pdf",
+    "seoTitle": "Scalp Scalpfuge 35: hidrófugo transparente para fachadas",
+    "seoDesc": "Impermeabilizante de impregnación transparente que repele el agua sin formar película. Para fachadas, muros y cubiertas de piedra, ladrillo u hormigón."
   },
   {
     "id": 6954,
@@ -1301,7 +1333,9 @@
     ],
     "image": "/products/scalpinox-d.webp",
     "imageAlt": "Para reavivar el metal dejandolo con un aspecto nuevo",
-    "datasheet": "/fichas/scalpinox-d.pdf"
+    "datasheet": "/fichas/scalpinox-d.pdf",
+    "seoTitle": "Scalpinox D: limpiador para aluminio anodizado",
+    "seoDesc": "Limpiador desengrasante pasivante y antioxidante para aluminio: quita manchas de óxido y mejora la adherencia antes de pintar. Para carpintería de aluminio."
   },
   {
     "id": 2352,
@@ -1328,7 +1362,9 @@
     ],
     "image": "/products/scalpnet-aqua-37.webp",
     "imageAlt": "Scalp Scalpnet Aqua 37",
-    "datasheet": "/fichas/scalpnet-aqua-37.pdf"
+    "datasheet": "/fichas/scalpnet-aqua-37.pdf",
+    "seoTitle": "Scalp Scalpnet Aqua 37: limpiador de fachadas de piedra",
+    "seoDesc": "Limpiador de fachadas y superficies de piedra natural y artificial. Se aplica con rodillo, brocha o pulverizador, con o sin aire."
   },
   {
     "id": 6988,
@@ -1518,7 +1554,9 @@
     ],
     "image": "/products/vernacryl-30.webp",
     "imageAlt": "Scalp Vernacryl 30",
-    "datasheet": "/fichas/vernacryl-30.pdf"
+    "datasheet": "/fichas/vernacryl-30.pdf",
+    "seoTitle": "Scalp Vernacryl 30: protección antigraffiti renovable",
+    "seoDesc": "Protección antigrafitis semipermanente e hidrofugante para piedra, ladrillo, hormigón y madera. Frena pintadas de pintura, rotulador o tinta."
   },
   {
     "id": 7010,
@@ -1645,7 +1683,9 @@
     ],
     "image": "/products/scalpik-eliminador-de-adhesivos.webp",
     "imageAlt": "Scalpik eliminador de adhesivos",
-    "datasheet": "/fichas/scalpik-eliminador-de-adhesivos.pdf"
+    "datasheet": "/fichas/scalpik-eliminador-de-adhesivos.pdf",
+    "seoTitle": "Scalpik Eliminador de Adhesivos, siliconas y chicles",
+    "seoDesc": "Disolvente enérgico que elimina adhesivos, siliconas, tintas, grasas y chicles por penetración. En gel o líquido, y reutilizable sin perder eficacia."
   },
   {
     "id": 1651,
@@ -1895,7 +1935,9 @@
     ],
     "image": "/products/barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente.webp",
     "imageAlt": "barniz producto tixol mtm",
-    "datasheet": "/fichas/barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente.pdf"
+    "datasheet": "/fichas/barniz-de-poliuretano-alifatico-pu-finish-2-c-base-disolvente.pdf",
+    "seoTitle": "Barniz de poliuretano alifático PU Finish 2C · Tixol",
+    "seoDesc": "Barniz de poliuretano alifático bicomponente, incoloro e inalterable, con alta resistencia mecánica y química. Acabado brillo, satinado, mate o ultramate."
   },
   {
     "id": 1665,
@@ -2389,7 +2431,9 @@
     ],
     "image": "/products/barniz-parquet.webp",
     "imageAlt": "Tixol Barniz Parquet",
-    "datasheet": "/fichas/barniz-parquet.pdf"
+    "datasheet": "/fichas/barniz-parquet.pdf",
+    "seoTitle": "Tixol Barniz Parquet: barniz al agua para madera",
+    "seoDesc": "Barniz acrílico de poliuretano al agua, incoloro y muy resistente al impacto y al rayado. Protege el parquet sin cambiar el aspecto natural de la madera."
   },
   {
     "id": 1643,
@@ -2416,7 +2460,9 @@
     ],
     "image": "/products/tixol-barniz-poliuretano-anti-slip.webp",
     "imageAlt": "Tixol Barniz Poliuretano Anti Slip",
-    "datasheet": "/fichas/tixol-barniz-poliuretano-anti-slip.pdf"
+    "datasheet": "/fichas/tixol-barniz-poliuretano-anti-slip.pdf",
+    "seoTitle": "Tixol Barniz PU Anti Slip: barniz antideslizante",
+    "seoDesc": "Barniz de poliuretano antideslizante para proteger y decorar hormigón, ladrillo y piedra. Resiste la intemperie y los rayos UV, ideal para exteriores."
   },
   {
     "id": 7537,
@@ -2550,7 +2596,9 @@
     ],
     "image": "/products/cal-hidraulica-blanca.webp",
     "imageAlt": "Tixol Cal Hidráulica Blanca",
-    "datasheet": "/fichas/cal-hidraulica-blanca.pdf"
+    "datasheet": "/fichas/cal-hidraulica-blanca.pdf",
+    "seoTitle": "Tixol Cal Hidráulica Blanca NHL 3,5 natural",
+    "seoDesc": "Cal hidráulica natural blanca NHL 3,5, de gran pureza y sin aditivos químicos. Para revocos sobre soportes poco resistentes y restauración de patrimonio."
   },
   {
     "id": 6435,
@@ -2778,7 +2826,9 @@
     ],
     "image": "/products/tixol-eliminador-de-manchas-de-humedad.webp",
     "imageAlt": "Tixol Eliminador de manchas de humedad",
-    "datasheet": "/fichas/tixol-eliminador-de-manchas-de-humedad.pdf"
+    "datasheet": "/fichas/tixol-eliminador-de-manchas-de-humedad.pdf",
+    "seoTitle": "Tixol Eliminador de Manchas de Humedad",
+    "seoDesc": "Limpiador de manchas de humedad de amplio espectro y acción duradera para ladrillo, cemento, hormigón, yeso, madera y piedra, en muros y terrazas."
   },
   {
     "id": 1382,
@@ -2920,7 +2970,9 @@
     ],
     "image": "/products/epoxi-3d.webp",
     "imageAlt": "Tixol Epoxi 3D",
-    "datasheet": "/fichas/epoxi-3d.pdf"
+    "datasheet": "/fichas/epoxi-3d.pdf",
+    "seoTitle": "Tixol Epoxi 3D: resina para suelos con efecto 3D",
+    "seoDesc": "Resina epoxi transparente 100 % sólidos para crear suelos 3D sobre imágenes y motivos decorativos: continua, sin juntas y resistente a químicos."
   },
   {
     "id": 8266,
@@ -2978,7 +3030,9 @@
     ],
     "image": "/products/epoxi-capa-gruesa.webp",
     "imageAlt": "Tixol Epoxi Capa Gruesa",
-    "datasheet": "/fichas/epoxi-capa-gruesa.pdf"
+    "datasheet": "/fichas/epoxi-capa-gruesa.pdf",
+    "seoTitle": "Tixol Epoxi Capa Gruesa: resina autonivelante hasta 5 cm",
+    "seoDesc": "Resina epoxi autonivelante 100 % sólidos, transparente o pigmentada, para rellenos de hasta 5 cm. Para mesas epoxi 3D y suelos decorativos."
   },
   {
     "id": 6539,
@@ -3039,7 +3093,9 @@
     ],
     "image": "/products/epoxi-metal-colors.webp",
     "imageAlt": "Tixol Epoxi Metal Colors",
-    "datasheet": "/fichas/epoxi-metal-colors.pdf"
+    "datasheet": "/fichas/epoxi-metal-colors.pdf",
+    "seoTitle": "Tixol Epoxi Metal Colors: suelos epoxi metalizados",
+    "seoDesc": "Pigmentos metalizados 100 % sólidos para decorar suelos de resina epoxi, en tres colores: Gold, Metal y Copper. Aplicación a llana."
   },
   {
     "id": 1529,
@@ -3427,7 +3483,9 @@
     ],
     "image": "/products/hidrofugante-invisible.webp",
     "imageAlt": "producto mtm tixol hidrofugante invisible",
-    "datasheet": "/fichas/hidrofugante-invisible.pdf"
+    "datasheet": "/fichas/hidrofugante-invisible.pdf",
+    "seoTitle": "Tixol Hidrofugante Invisible para barro y piedra",
+    "seoDesc": "Protector invisible y transpirable para barro cocido, piedra y terrazo: impide que penetren agua, aceite, vino o café sin cambiar su aspecto."
   },
   {
     "id": 6480,
@@ -3510,7 +3568,9 @@
     ],
     "image": "/products/tixol-impermeabilizante-termico.webp",
     "imageAlt": "Tixol impermeabilizante térmico",
-    "datasheet": "/fichas/tixol-impermeabilizante-termico.pdf"
+    "datasheet": "/fichas/tixol-impermeabilizante-termico.pdf",
+    "seoTitle": "Tixol Impermeabilizante Térmico: fachadas y cubiertas",
+    "seoDesc": "Membrana impermeable con microesferas de vidrio que refleja el sol y aísla del calor y del ruido. Para fachadas y azoteas, incluso sobre soportes húmedos."
   },
   {
     "id": 7514,
@@ -3675,7 +3735,9 @@
     ],
     "image": "/products/mortero-de-cal-aislante-termico.webp",
     "imageAlt": "Tixol Mortero de Cal Aislante Térmico",
-    "datasheet": "/fichas/mortero-de-cal-aislante-termico.pdf"
+    "datasheet": "/fichas/mortero-de-cal-aislante-termico.pdf",
+    "seoTitle": "Tixol Mortero de Cal Aislante Térmico con corcho",
+    "seoDesc": "Mortero de cal hidráulica natural con corcho triturado para revocos aislantes: rompe el puente térmico y evita condensaciones. Hasta 1 cm por capa."
   },
   {
     "id": 5438,
@@ -3867,7 +3929,9 @@
     ],
     "image": "/products/mortero-de-cal-romano-grueso.webp",
     "imageAlt": "Tixol Mortero de Cal Romano Grueso",
-    "datasheet": "/fichas/mortero-de-cal-romano-grueso.pdf"
+    "datasheet": "/fichas/mortero-de-cal-romano-grueso.pdf",
+    "seoTitle": "Tixol Mortero de Cal Romano Grueso NHL 5",
+    "seoDesc": "Mortero de cal hidráulica NHL 5 con puzolanas, sin aditivos químicos y hasta 1 cm por capa. Para restaurar patrimonio, rejuntar piedra y bioconstrucción."
   },
   {
     "id": 7873,
@@ -3898,7 +3962,9 @@
     ],
     "image": "/products/tixol-nature-arcilla.webp",
     "imageAlt": "Tixol Nature Arcilla",
-    "datasheet": "/fichas/tixol-nature-arcilla.pdf"
+    "datasheet": "/fichas/tixol-nature-arcilla.pdf",
+    "seoTitle": "Tixol Nature Arcilla: pintura de arcilla natural",
+    "seoDesc": "Pintura de arcilla 100 % natural con ligantes vegetales, sin COV ni formaldehído. Muy transpirable, para paredes y techos interiores. Tres texturas."
   },
   {
     "id": 8363,
@@ -3962,7 +4028,9 @@
     ],
     "image": "/products/nature-floor-roc-primer.webp",
     "imageAlt": "Tixol nature floor roc primer",
-    "datasheet": "/fichas/nature-floor-roc-primer.pdf"
+    "datasheet": "/fichas/nature-floor-roc-primer.pdf",
+    "seoTitle": "Tixol Nature Floor Roc Primer: imprimación cerámica",
+    "seoDesc": "Imprimación de agarre texturada que crea una capa puente sobre baldosa cerámica o superficies sin absorción. Primera capa del sistema Tixol Nature Floor."
   },
   {
     "id": 7527,
@@ -4270,7 +4338,9 @@
     ],
     "image": "/products/bronce.webp",
     "imageAlt": "Tixol Oxitec Bronce",
-    "datasheet": "/fichas/bronce.pdf"
+    "datasheet": "/fichas/bronce.pdf",
+    "seoTitle": "Tixol Oxitec Bronce: revestimiento efecto metal",
+    "seoDesc": "Revestimiento al agua con partículas metálicas que, una vez pulido, da un auténtico acabado bronce. Para paredes; a llana, rodillo, brocha o pistola."
   },
   {
     "id": 1470,
@@ -4502,7 +4572,9 @@
     ],
     "image": "/products/pintura-de-cal.webp",
     "imageAlt": "Tixol Pintura de Cal",
-    "datasheet": "/fichas/pintura-de-cal.pdf"
+    "datasheet": "/fichas/pintura-de-cal.pdf",
+    "seoTitle": "Tixol Pintura de Cal natural para interior y exterior",
+    "seoDesc": "Pintura de cal en pasta envejecida con cola vegetal: acabado mineral mate, muy transpirable y con buena adherencia sobre superficies ya pintadas."
   },
   {
     "id": 7727,
@@ -4529,7 +4601,9 @@
     ],
     "image": "/products/tixol-pintura-de-cal-eco.webp",
     "imageAlt": "Tixol Pintura de Cal ECO",
-    "datasheet": "/fichas/tixol-pintura-de-cal-eco.pdf"
+    "datasheet": "/fichas/tixol-pintura-de-cal-eco.pdf",
+    "seoTitle": "Tixol Pintura de Cal ECO: pintura ecológica de cal",
+    "seoDesc": "Versión ECO de la pintura de cal Tixol: 100 % natural, de cal en pasta envejecida y cola vegetal, con acabado mineral mate y alta transpirabilidad."
   },
   {
     "id": 6412,
@@ -4611,7 +4685,9 @@
     ],
     "image": "/products/tixol-pintura-termica-y-anticondensacion.webp",
     "imageAlt": "Tixol Pintura Térmica y Anticondensación",
-    "datasheet": "/fichas/tixol-pintura-termica-y-anticondensacion.pdf"
+    "datasheet": "/fichas/tixol-pintura-termica-y-anticondensacion.pdf",
+    "seoTitle": "Tixol Pintura Térmica y Anticondensación",
+    "seoDesc": "Pintura térmica con microesferas de vidrio huecas que evita condensaciones y reduce el paso de frío y calor. Elástica y resistente al agua."
   },
   {
     "id": 1395,
@@ -4857,7 +4933,9 @@
     ],
     "image": "/products/renovador-de-pavimentos.webp",
     "imageAlt": "Tixol Renovador de Pavimentos",
-    "datasheet": "/fichas/renovador-de-pavimentos.pdf"
+    "datasheet": "/fichas/renovador-de-pavimentos.pdf",
+    "seoTitle": "Tixol Renovador de Pavimentos para hormigón impreso",
+    "seoDesc": "Renovador acrílico coloreado para hormigón impreso, adoquín y piedra: sella el poro, repele líquidos y renueva el color sin crear película."
   },
   {
     "id": 7892,
@@ -4884,7 +4962,9 @@
     ],
     "image": "/products/tixol-renovador-de-pavimentos-cement-extreme.webp",
     "imageAlt": "Tixol Renovador de Pavimentos Cement Extreme",
-    "datasheet": "/fichas/tixol-renovador-de-pavimentos-cement-extreme.pdf"
+    "datasheet": "/fichas/tixol-renovador-de-pavimentos-cement-extreme.pdf",
+    "seoTitle": "Tixol Cement Extreme: renovador de pavimentos exteriores",
+    "seoDesc": "Pintura cementosa bicomponente que crea una capa nueva sobre hormigón impreso, adoquín y aceras. Antideslizante, impermeable y transitable por vehículos."
   },
   {
     "id": 7888,
@@ -4911,7 +4991,9 @@
     ],
     "image": "/products/tixol-renovador-de-pavimentos-extreme.webp",
     "imageAlt": "Tixol renovador de pavimentos extrreme",
-    "datasheet": "/fichas/tixol-renovador-de-pavimentos-extreme.pdf"
+    "datasheet": "/fichas/tixol-renovador-de-pavimentos-extreme.pdf",
+    "seoTitle": "Tixol Renovador Pavimentos Extreme: hormigón impreso",
+    "seoDesc": "Renovador al agua para hormigón impreso virgen o ya pintado: gran poder hidrófugo y acabado satinado resistente al tránsito. Repintado en 4 h."
   },
   {
     "id": 7511,
@@ -5137,7 +5219,9 @@
     ],
     "image": "/products/thermo-corcho-a-rodillo.webp",
     "imageAlt": "Tixol Corcho Proyectado",
-    "datasheet": "/fichas/thermo-corcho-a-rodillo.pdf"
+    "datasheet": "/fichas/thermo-corcho-a-rodillo.pdf",
+    "seoTitle": "Tixol Thermo Corcho a Rodillo: corcho aislante",
+    "seoDesc": "Corcho natural para aplicar a rodillo, sin máquina de proyección. Impermeabiliza y aísla del calor y del ruido en fachadas, tejados y terrazas."
   },
   {
     "id": 7502,
@@ -5248,7 +5332,9 @@
     ],
     "image": "/products/thermo-corcho-proyectado.webp",
     "imageAlt": "Tixol Corcho Proyectado",
-    "datasheet": "/fichas/thermo-corcho-proyectado.pdf"
+    "datasheet": "/fichas/thermo-corcho-proyectado.pdf",
+    "seoTitle": "Tixol Thermo Corcho Proyectado: aislante e impermeable",
+    "seoDesc": "Revestimiento de corcho natural proyectado que impermeabiliza y aísla del calor y del ruido en cubiertas de naves, fachadas, tejados y terrazas."
   },
   {
     "id": 8244,
