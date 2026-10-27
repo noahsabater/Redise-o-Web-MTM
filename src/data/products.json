@@ -5064,10 +5064,6 @@
     "brandName": "Tixol",
     "gamas": [
       {
-        "name": "Thermoaislantes",
-        "slug": "thermo-aislantes"
-      },
-      {
         "name": "Acabados Int/Ext",
         "slug": "acabados-interior-exterior"
       }
