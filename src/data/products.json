@@ -2087,7 +2087,9 @@
     ],
     "image": "/products/acryflex-pu.webp",
     "imageAlt": "Tixol acryflex PU",
-    "datasheet": "/fichas/acryflex-pu.pdf"
+    "datasheet": "/fichas/acryflex-pu.pdf",
+    "seoTitle": "Acryflex PU: membrana impermeabilizante de poliuretano",
+    "seoDesc": "Membrana de poliuretano al agua Tixol Acryflex PU para impermeabilizar terrazas y cubiertas: elástica, transitable y resistente a UV."
   },
   {
     "id": 1435,
@@ -2545,7 +2547,9 @@
     ],
     "image": "/products/cal-en-pasta-envejecida-encalar.webp",
     "imageAlt": "Tixol Cal en Pasta Envejecida – Encalar",
-    "datasheet": "/fichas/cal-en-pasta-envejecida-encalar.pdf"
+    "datasheet": "/fichas/cal-en-pasta-envejecida-encalar.pdf",
+    "seoTitle": "Cal en pasta envejecida para encalar paredes",
+    "seoDesc": "Cal aérea en pasta Tixol reposada más de 6 meses para encalar paredes, estucos y esgrafiados. Blanco puro, a rodillo, brocha o pulverizado."
   },
   {
     "id": 6416,
@@ -2858,7 +2862,9 @@
     ],
     "image": "/products/endurecedor-de-fondos.webp",
     "imageAlt": "producto de tixol edurecedor de fondos materiales modernos",
-    "datasheet": "/fichas/endurecedor-de-fondos.pdf"
+    "datasheet": "/fichas/endurecedor-de-fondos.pdf",
+    "seoTitle": "Fijador endurecedor de fondos al agua",
+    "seoDesc": "Fijador al agua Tixol de nanopartícula para consolidar yesos, paredes que harinean y soportes blandos antes de pintar o revestir. Sin olor, 0 % COV."
   },
   {
     "id": 8259,
@@ -2913,7 +2919,9 @@
     ],
     "image": "/products/epo-roc.webp",
     "imageAlt": "Tixol Epo Roc",
-    "datasheet": "/fichas/epo-roc.pdf"
+    "datasheet": "/fichas/epo-roc.pdf",
+    "seoTitle": "Epo Roc: mortero epoxi para reparar agujeros en suelos",
+    "seoDesc": "Mortero epoxi Tixol Epo Roc para reparar agujeros en pavimentos sin límite de espesor ni retracción. Duro, transitable y repintable en 24 horas."
   },
   {
     "id": 8393,
@@ -3459,7 +3467,9 @@
     ],
     "image": "/products/hidrofugante-efecto-mojado.webp",
     "imageAlt": "Tixol Hidrofugante Efecto Mojado",
-    "datasheet": "/fichas/hidrofugante-efecto-mojado.pdf"
+    "datasheet": "/fichas/hidrofugante-efecto-mojado.pdf",
+    "seoTitle": "Hidrofugante efecto mojado para piedra y suelos",
+    "seoDesc": "Barniz hidrofugante Tixol de efecto mojado: protege piedra, hormigón y soportes minerales y realza su color. Interior y exterior, secado rápido."
   },
   {
     "id": 1445,
@@ -3628,7 +3638,9 @@
     ],
     "image": "/products/tixol-imprimacion-epoxi-100-solidos.webp",
     "imageAlt": "Tixol Imprimación Epoxi 100% solidos",
-    "datasheet": "/fichas/tixol-imprimacion-epoxi-100-solidos.pdf"
+    "datasheet": "/fichas/tixol-imprimacion-epoxi-100-solidos.pdf",
+    "seoTitle": "Imprimación epoxi 100 % sólidos para suelos",
+    "seoDesc": "Imprimación epoxi bicomponente Tixol, transparente o pigmentada, para preparar suelos de hormigón antes de Epoxi 3D, Metal Colors o Standard Colors."
   },
   {
     "id": 6452,
@@ -3711,7 +3723,9 @@
     ],
     "image": "/products/tixol-mortero-de-arcilla.webp",
     "imageAlt": "Mortero de Arcilla Tixol",
-    "datasheet": "/fichas/tixol-mortero-de-arcilla.pdf"
+    "datasheet": "/fichas/tixol-mortero-de-arcilla.pdf",
+    "seoTitle": "Mortero de arcilla natural para paredes interiores",
+    "seoDesc": "Mortero de arcilla Tixol para enlucidos decorativos de interior sobre pintura, pladur o yeso. 11 colores naturales, de planchado fino a textura rústica."
   },
   {
     "id": 5468,
@@ -3770,7 +3784,9 @@
     ],
     "image": "/products/mortero-de-cal-anti-humedad.webp",
     "imageAlt": "Tixol Mortero de Cal Anti Humedad",
-    "datasheet": "/fichas/mortero-de-cal-anti-humedad.pdf"
+    "datasheet": "/fichas/mortero-de-cal-anti-humedad.pdf",
+    "seoTitle": "Mortero de cal para paredes con humedad capilar",
+    "seoDesc": "Mortero de cal aérea Tixol para reparar paredes con humedad capilar: transpirable, sin sales solubles y en pasta lista al uso. Hasta 1 cm por capa."
   },
   {
     "id": 5432,
@@ -3797,7 +3813,9 @@
     ],
     "image": "/products/mortero-de-cal-de-agarre.webp",
     "imageAlt": "Tixol Mortero de Cal de Agarre",
-    "datasheet": "/fichas/mortero-de-cal-de-agarre.pdf"
+    "datasheet": "/fichas/mortero-de-cal-de-agarre.pdf",
+    "seoTitle": "Mortero de cal de agarre sobre azulejo, pintura o pladur",
+    "seoDesc": "Mortero de cal aérea Tixol que agarra sobre azulejo, pintura, gotelé o pladur. Puente de unión para morteros de cal y renovación hasta 5 mm."
   },
   {
     "id": 5451,
@@ -3851,7 +3869,9 @@
     ],
     "image": "/products/mortero-de-cal-fino.webp",
     "imageAlt": "Tixol Mortero de Cal Fino",
-    "datasheet": "/fichas/mortero-de-cal-fino.pdf"
+    "datasheet": "/fichas/mortero-de-cal-fino.pdf",
+    "seoTitle": "Mortero de cal fino para enlucir y planchar",
+    "seoDesc": "Mortero de cal aérea CL 90 Tixol para enlucidos finos, planchados y bruñidos, hasta 1 mm por capa. En pasta, natural y transpirable."
   },
   {
     "id": 5443,
@@ -3878,7 +3898,9 @@
     ],
     "image": "/products/mortero-de-cal-grueso.webp",
     "imageAlt": "Tixol Mortero de Cal Grueso",
-    "datasheet": "/fichas/mortero-de-cal-grueso.pdf"
+    "datasheet": "/fichas/mortero-de-cal-grueso.pdf",
+    "seoTitle": "Mortero de cal grueso para reparar paredes",
+    "seoDesc": "Mortero de cal aérea Tixol en pasta para reparar muros y paramentos con rellenos de hasta 1 cm por capa. Natural, transpirable y proyectable."
   },
   {
     "id": 5463,
@@ -4142,7 +4164,9 @@
     ],
     "image": "/products/tixol-nature-wall.webp",
     "imageAlt": "Tixol Nature Wall",
-    "datasheet": "/fichas/tixol-nature-wall.pdf"
+    "datasheet": "/fichas/tixol-nature-wall.pdf",
+    "seoTitle": "Nature Wall: mortero de cal decorativo para paredes",
+    "seoDesc": "Mortero de cal aérea Tixol Nature Wall para enlucidos decorativos sobre pladur, yeso o pintura. Interior y exterior, de rústico a planchado."
   },
   {
     "id": 8352,
@@ -4314,7 +4338,9 @@
     ],
     "image": "/products/activador-liquido.webp",
     "imageAlt": "Tixol Oxitec Activador Líquido",
-    "datasheet": "/fichas/activador-liquido.pdf"
+    "datasheet": "/fichas/activador-liquido.pdf",
+    "seoTitle": "Activador de óxido líquido para Oxitec Hierro y Cobre",
+    "seoDesc": "Activador líquido Tixol para oxidar los acabados Oxitec Hierro y Cobre y otras superficies metálicas. Cómo se aplica, secado previo y almacenamiento."
   },
   {
     "id": 1543,
@@ -4661,7 +4687,9 @@
     ],
     "image": "/products/pintura-termica-reflexiva-interior.webp",
     "imageAlt": "Tixol Pintura Térmica y Anticondensación",
-    "datasheet": "/fichas/pintura-termica-reflexiva-interior.pdf"
+    "datasheet": "/fichas/pintura-termica-reflexiva-interior.pdf",
+    "seoTitle": "Pintura térmica reflexiva de interior",
+    "seoDesc": "Pintura térmica Tixol para paredes y techos interiores: barrera infrarroja que ayuda a conservar el calor de la calefacción. Sin olor y lavable."
   },
   {
     "id": 6520,
@@ -4910,7 +4938,9 @@
     ],
     "image": "/products/puente-union-rugoso.webp",
     "imageAlt": "Tixol Puente de unión rugoso",
-    "datasheet": "/fichas/puente-union-rugoso.pdf"
+    "datasheet": "/fichas/puente-union-rugoso.pdf",
+    "seoTitle": "Puente de unión rugoso para azulejo y superficies lisas",
+    "seoDesc": "Imprimación Tixol con árido de cuarzo para anclar morteros sobre azulejo, hormigón liso o pintura brillante. Interior y exterior, a brocha o rodillo."
   },
   {
     "id": 1652,
@@ -5026,7 +5056,9 @@
     ],
     "image": "/products/tixol-revestimiento-elastico-reflexivo.webp",
     "imageAlt": "Tixol Pintura Térmica y Anticondensación",
-    "datasheet": "/fichas/tixol-revestimiento-elastico-reflexivo.pdf"
+    "datasheet": "/fichas/tixol-revestimiento-elastico-reflexivo.pdf",
+    "seoTitle": "Pintura térmica reflexiva elástica para cubiertas",
+    "seoDesc": "Pintura térmica reflexiva Tixol para fachadas y cubiertas: refleja más del 90 % del sol (ensayo CSIC), es elástica y agarra sobre metal."
   },
   {
     "id": 7508,
@@ -5054,7 +5086,9 @@
     ],
     "image": "/products/tixol-revestimiento-termico-reflexivo.webp",
     "imageAlt": "Tixol Pintura Térmica y Anticondensación",
-    "datasheet": "/fichas/tixol-revestimiento-termico-reflexivo.pdf"
+    "datasheet": "/fichas/tixol-revestimiento-termico-reflexivo.pdf",
+    "seoTitle": "Revestimiento térmico reflexivo para fachadas",
+    "seoDesc": "Revestimiento hidrófugo Tixol para fachadas que refleja más del 90 % del sol según ensayo CSIC. Acrílico-siloxano, extrablanco y de alta cubrición."
   },
   {
     "id": 6470,
@@ -5105,7 +5139,9 @@
     ],
     "image": "/products/sistema-nature-floor.webp",
     "imageAlt": "Tixol nature floor sistema",
-    "datasheet": "/fichas/sistema-nature-floor.pdf"
+    "datasheet": "/fichas/sistema-nature-floor.pdf",
+    "seoTitle": "Nature Floor: pavimento continuo de cal natural",
+    "seoDesc": "Sistema Tixol Nature Floor de cal hidráulica natural para suelos y paredes continuos. Acabado mineral resistente al impacto y la abrasión."
   },
   {
     "id": 1372,
@@ -5136,7 +5172,9 @@
     ],
     "image": "/products/spray-15-minutos.webp",
     "imageAlt": "spray 15 min tixol soluciones mtm",
-    "datasheet": "/fichas/spray-15-minutos.pdf"
+    "datasheet": "/fichas/spray-15-minutos.pdf",
+    "seoTitle": "Spray antimanchas para tapar humo, humedad y nicotina",
+    "seoDesc": "Imprimación antimanchas en aerosol Tixol para aislar manchas de humo, grasa, humedad o nicotina antes de pintar. Interior y exterior, bote de 500 ml."
   },
   {
     "id": 8383,
@@ -5165,7 +5203,9 @@
     ],
     "image": "/products/tixol-stone-carpet.webp",
     "imageAlt": "Tixol-Stone-Carpet",
-    "datasheet": "/fichas/tixol-stone-carpet.pdf"
+    "datasheet": "/fichas/tixol-stone-carpet.pdf",
+    "seoTitle": "Stone Carpet: resina para suelos drenantes de piedra",
+    "seoDesc": "Resina de poliuretano Tixol Stone Carpet para pavimentos drenantes de árido de mármol: transparente, no amarillea. Alcorques, terrazas y accesos."
   },
   {
     "id": 1376,
