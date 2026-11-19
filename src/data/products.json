@@ -1060,29 +1060,6 @@
     "datasheet": "/fichas/scalp-scalpex-al23.pdf"
   },
   {
-    "id": 8308,
-    "name": "Scalp Scalpex Aqua 15",
-    "slug": "scalp-scalpex-aqua-15",
-    "brand": "scalp",
-    "brandName": "Scalp",
-    "gamas": [
-      {
-        "name": "Decapantes",
-        "slug": "decapantes"
-      }
-    ],
-    "gamaMain": "Decapantes",
-    "tone": null,
-    "uso": "Multisuperficie",
-    "short": "• Biodegradable • Eficaz y rápido en su categoría • Sin parafina y sin aclarado • Viscosidad ideal, adaptado a las superficies verticales • No se derrama, (consumo reducido) • No etiquetable según la normativa vigente, en la utilización y en los transportes.",
-    "description": [
-      "Scalp Scalpex Aqua 15 Este producto está destinado al decapado de pinturas de edificios, ITE, RPE, RSE, colas, tintas, barnices, graffiti, sobre superficies de yeso hormigón, piedras, ladrillos, pasta de vidrio, madera, enlucidos minerales, siendo especial para decapar gotelé."
-    ],
-    "image": "/products/scalp-scalpex-aqua-15.webp",
-    "imageAlt": "scalpex-aqua-15",
-    "datasheet": "/fichas/scalp-scalpex-aqua-15.pdf"
-  },
-  {
     "id": 2364,
     "name": "Scalp Scalpex Nw",
     "slug": "scalpex-nw",

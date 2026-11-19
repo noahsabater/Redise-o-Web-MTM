@@ -993,7 +993,7 @@
     },
     {
       "source": "/producto/scalp/decapantes/scalp-scalpex-aqua-15/",
-      "destination": "/producto/scalp-scalpex-aqua-15/",
+      "destination": "/productos/scalp/decapantes/",
       "permanent": true
     },
     {
@@ -1494,6 +1494,11 @@
     {
       "source": "/categoria-producto/tixol/soluciones/thermo-aislantes/corcho-proyectado/",
       "destination": "/productos/tixol/soluciones/",
+      "permanent": true
+    },
+    {
+      "source": "/producto/scalp-scalpex-aqua-15/",
+      "destination": "/productos/scalp/decapantes/",
       "permanent": true
     },
     {
@@ -3078,7 +3083,7 @@
     },
     {
       "source": "/wp-content/uploads/2025/11/FICHA-TECNICA-SCALPEX-AQUA-15.pdf",
-      "destination": "/producto/scalp-scalpex-aqua-15/",
+      "destination": "/productos/scalp/decapantes/",
       "permanent": true
     },
     {
